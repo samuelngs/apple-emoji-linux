@@ -1,11 +1,8 @@
 #!/usr/bin/env ruby
 
-require 'fileutils'
-require 'emoji/extractor'
 require_relative './apple_emoji_extractor.rb'
 
 unicode_version = 11
-project_root = "#{File.dirname(__FILE__)}/"
 
 emoji_extractor = EmojiExtractor.new(unicode_version, 160)
 emoji_extractor.download_sequences
