@@ -10,8 +10,8 @@ require 'open-uri'
 class EmojiExtractor
   attr_reader :size
 
-  SOURCE_PATH = File.join(File.dirname(__FILE__), 'source')
-  OUTPUT_PATH = File.join(File.dirname(__FILE__), 'images')
+  SOURCE_PATH = File.join(File.dirname(__FILE__), '..', 'source')
+  OUTPUT_PATH = File.join(File.dirname(__FILE__), '..', 'images')
 
   SKIN_TONE_TYPES = {
     "\u{1F3FB}" => 'light skin tone',
@@ -66,7 +66,7 @@ class EmojiExtractor
   end
 
   def extract!
-    puts "Creating output directory (#{OUTPUT_PATH})..."
+    puts 'Creating output directory...'
     if File.directory? OUTPUT_PATH
         FileUtils.remove_dir OUTPUT_PATH
     end
