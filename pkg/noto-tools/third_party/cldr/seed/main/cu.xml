@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2014 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
+<ldml>
+	<identity>
+		<version number="$Revision: 10679 $"/>
+		<generation date="$Date: 2014-07-25 15:19:23 -0700 (Fri, 25 Jul 2014) $"/>
+		<language type="cu"/>
+	</identity>
+	<localeDisplayNames>
+		<languages>
+			<language type="ar" draft="unconfirmed">а҆ра́вскїй</language>
+			<language type="cu" draft="unconfirmed">слове́нскїй</language>
+			<language type="ru" draft="unconfirmed">рѡссі́йскїй</language>
+		</languages>
+		<territories>
+			<territory type="AU" draft="unconfirmed">А҆ѵстралі́ѧ</territory>
+			<territory type="BR" draft="unconfirmed">Бразїлі́а</territory>
+			<territory type="CA" draft="unconfirmed">Кана́да</territory>
+			<territory type="DK" draft="unconfirmed">Дані́ѧ</territory>
+			<territory type="MX" draft="unconfirmed">Ме́ѯїка</territory>
+			<territory type="RU" draft="unconfirmed">Рѡссі́ѧ</territory>
+		</territories>
+	</localeDisplayNames>
+	<layout>
+		<orientation>
+			<characterOrder>left-to-right</characterOrder>
+			<lineOrder>top-to-bottom</lineOrder>
+		</orientation>
+	</layout>
+	<characters>
+		<exemplarCharacters>[\u0487 \u0483 \u2DE0 \u2DE1 \u2DE2 \u2DE3 \u2DE4 \u2DE5 \u2DE6 \u2DE7 \u2DE8 \u2DE9 \u2DEA \u2DEC \u2DED \u2DEF \u2DF1 ⸯ \uA67D ꙿ \u2DF4 ҂ а б в г д е є ж ѕ з ꙁ и й і ї к л м н ѻ о ѡ ꙍ ѽ ѿ п р с т ꙋ у ф х ц ч ш щ ъ ы ь ѣ ю ꙗ ѧ ѫ ѯ ѱ ѳ ѵ ѷ]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[\u200C\u200D \u2DF6 \u2DF7 \uA674 \uA675 \uA676 \uA67B \u2DEB \u2DF5 \u2DEE \u2DF9 \uA677 \u2DF0 \u2DF2 \u2DF3 \uA678 \uA679 \uA67A \u2DFA \u2DFB \u2DFC \u2DFD \u2DFE \u2DFF \u0488\u0489\uA670\uA671\uA672 \u0484 \uA66F ꙣ ꙃ ꙅ ꙇ ꙉ \u2DF8 ꙥ ꙧ ҥ ꙩꙫꙭꙮ ҁ ꙡ џ ꙏ ꙑ ꙓ ꙕ ѥ \uA69F ꙙ ꙛ ѩ ꙝ ѭ ꙟ Ꚙ ꚙ Ꚛ ꚛ 🕄 🕅]</exemplarCharacters>
+		<exemplarCharacters type="index">[А Б В Г Д Є Ж Ѕ З И І К Л М Н Ѻ О Ѡ Ѿ П Р С Т Ꙋ Ф Х Ц Ч Ш Щ Ъ Ы Ь Ѣ Ю Ꙗ Ѧ Ѫ Ѯ Ѱ Ѳ Ѵ]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[꙾ , \- . \: ; _ – — ꙳ ‐ ! ? ( ) /]</exemplarCharacters>
+	</characters>
+</ldml>

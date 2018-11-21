@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2017 Unicode, Inc.
+For terms of use, see http://www.unicode.org/copyright.html
+Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+-->
+<ldml>
+	<identity>
+		<version number="$Revision: 13571 $"/>
+		<language type="en"/>
+		<territory type="ZZ"/>
+	</identity>
+	<localeDisplayNames>
+		<languages>
+			<language type="zh">Chinese (translation hint: specifically, Mandarin Chinese.)&quot;</language>
+		</languages>
+		<territories>
+			<territory type="003">North America (translation hint: Warning, see info panel on right.)</territory>
+			<territory type="018">Southern Africa (translation hint: Warning, see info panel on right.)</territory>
+			<territory type="021">Northern America (translation hint: Warning, see info panel on right.)</territory>
+			<territory type="057">Micronesian Region (translation hint: Warning, see info panel on right.)</territory>
+			<territory type="CD">Congo - Kinshasa (translation hint: Warning, see info panel on right.)</territory>
+			<territory type="CD" alt="variant">Congo (DRC) (translation hint: Warning, see info panel on right.)</territory>
+			<territory type="CG">Congo - Brazzaville (translation hint: Warning, see info panel on right.)</territory>
+			<territory type="CG" alt="variant">Congo (Republic) (translation hint: Warning, see info panel on right.)</territory>
+			<territory type="CI">Côte d’Ivoire (translation hint: Warning, see info panel on right.)</territory>
+			<territory type="CI" alt="variant">Ivory Coast (translation hint: Warning, see info panel on right.)</territory>
+			<territory type="FK">Falkland Islands (translation hint: Warning, see info panel on right.)</territory>
+			<territory type="FK" alt="variant">Falkland Islands (Islas Malvinas) (translation hint: Warning, see info panel on right.)</territory>
+			<territory type="FM">Micronesia (translation hint: Warning, see info panel on right.)</territory>
+			<territory type="HK">Hong Kong SAR China (translation hint: Warning, see info panel on right.)</territory>
+			<territory type="HK" alt="short">Hong Kong (translation hint: Warning, see info panel on right.)</territory>
+			<territory type="MK">Macedonia (translation hint: Warning, see info panel on right.)</territory>
+			<territory type="MK" alt="variant">Macedonia (FYROM) (translation hint: Warning, see info panel on right.)</territory>
+			<territory type="MM">Myanmar (Burma) (translation hint: Warning, see info panel on right.)</territory>
+			<territory type="MO">Macau SAR China (translation hint: Warning, see info panel on right.)</territory>
+			<territory type="MO" alt="short">Macau (translation hint: Warning, see info panel on right.)</territory>
+			<territory type="PS">Palestinian Territories (translation hint: Warning, see info panel on right.)</territory>
+			<territory type="PS" alt="short">Palestine (translation hint: Warning, see info panel on right.)</territory>
+			<territory type="TL">Timor-Leste (translation hint: Warning, see info panel on right.)</territory>
+			<territory type="TL" alt="variant">East Timor (translation hint: Warning, see info panel on right.)</territory>
+			<territory type="ZA">South Africa (translation hint: Warning, see info panel on right.)</territory>
+		</territories>
+		<types>
+			<type key="calendar" type="roc">Minguo Calendar (translation hint: also called &quot;Republic of China Calendar&quot;, &quot;Republican Calendar&quot;)</type>
+		</types>
+	</localeDisplayNames>
+	<dates>
+		<timeZoneNames>
+			<metazone type="Africa_Southern">
+				<long>
+					<standard>South Africa Standard Time [translation hint: translate as just &quot;South Africa Time&quot;]</standard>
+				</long>
+			</metazone>
+			<metazone type="America_Central">
+				<long>
+					<generic>Central Time [translation hint: translate as &quot;North American Central Time&quot;]</generic>
+					<standard>Central Standard Time [translation hint: translate as &quot;North American Central Standard Time&quot;]</standard>
+					<daylight>Central Daylight Time [translation hint: translate as &quot;North American Central Daylight Time&quot;]</daylight>
+				</long>
+			</metazone>
+			<metazone type="America_Eastern">
+				<long>
+					<generic>Eastern Time [translation hint: translate as &quot;North American Eastern Time&quot;]</generic>
+					<standard>Eastern Standard Time [translation hint: translate as &quot;North American Eastern Standard Time&quot;]</standard>
+					<daylight>Eastern Daylight Time [translation hint: translate as &quot;North American Eastern Daylight Time&quot;]</daylight>
+				</long>
+			</metazone>
+			<metazone type="America_Mountain">
+				<long>
+					<generic>Mountain Time [translation hint: translate as &quot;North American Mountain Time&quot;]</generic>
+					<standard>Mountain Standard Time [translation hint: translate as &quot;North American Mountain Standard Time&quot;]</standard>
+					<daylight>Mountain Daylight Time [translation hint: translate as &quot;North American Mountain Daylight Time&quot;]</daylight>
+				</long>
+			</metazone>
+			<metazone type="America_Pacific">
+				<long>
+					<generic>Pacific Time [translation hint: translate as &quot;North American Pacific Time&quot;]</generic>
+					<standard>Pacific Standard Time [translation hint: translate as &quot;North American Pacific Standard Time&quot;]</standard>
+					<daylight>Pacific Daylight Time [translation hint: translate as &quot;North American Pacific Daylight Time&quot;]</daylight>
+				</long>
+			</metazone>
+			<metazone type="Chamorro">
+				<long>
+					<standard>Chamorro Standard Time [translation hint: translate as just &quot;Chamorro Time&quot;]</standard>
+				</long>
+			</metazone>
+			<metazone type="Guam">
+				<long>
+					<standard>Guam Standard Time [translation hint: translate as just &quot;Guam Time&quot;]</standard>
+				</long>
+			</metazone>
+			<metazone type="Gulf">
+				<long>
+					<standard>Gulf Standard Time [translation hint: translate as just &quot;Gulf Time&quot;]</standard>
+				</long>
+			</metazone>
+			<metazone type="India">
+				<long>
+					<standard>India Standard Time [translation hint: translate as just &quot;India Time&quot;]</standard>
+				</long>
+			</metazone>
+			<metazone type="Singapore">
+				<long>
+					<standard>Singapore Standard Time [translation hint: translate as just &quot;Singapore Time&quot;]</standard>
+				</long>
+			</metazone>
+		</timeZoneNames>
+	</dates>
+	<units>
+		<unitLength type="long">
+			<unit type="area-acre">
+				<displayName>acres [translation hint: refers specifically to an English acre]</displayName>
+				<unitPattern count="one">{0} acre [translation hint: refers specifically to an English acre]</unitPattern>
+				<unitPattern count="other">{0} acres [translation hint: refers specifically to an English acre]</unitPattern>
+			</unit>
+			<unit type="duration-day">
+				<displayName>days [translation hint: &quot;day&quot; here means a time duration of 24 hours, not a calendar day]</displayName>
+				<unitPattern count="one">{0} day [translation hint: &quot;day&quot; here means a time duration of 24 hours, not a calendar day]</unitPattern>
+				<unitPattern count="other">{0} days [translation hint: &quot;day&quot; here means a time duration of 24 hours, not a calendar day]</unitPattern>
+			</unit>
+			<unit type="energy-kilocalorie">
+				<displayName>kilocalories [translation hint: kilocalories for uses not specific to food energy, such as chemistry]</displayName>
+				<unitPattern count="one">{0} kilocalorie [translation hint: kilocalories for uses not specific to food energy, such as chemistry]</unitPattern>
+				<unitPattern count="other">{0} kilocalories [translation hint: kilocalories for uses not specific to food energy, such as chemistry]</unitPattern>
+			</unit>
+			<unit type="energy-calorie">
+				<displayName>calories [translation hint: calories as used in chemistry, not the same as food calorie]</displayName>
+				<unitPattern count="one">{0} calorie [translation hint: calories as used in chemistry, not the same as food calorie]</unitPattern>
+				<unitPattern count="other">{0} calories [translation hint: calories as used in chemistry, not the same as food calorie]</unitPattern>
+			</unit>
+			<unit type="energy-foodcalorie">
+				<displayName>Calories [translation hint: kilocalories for food energy, may have same translation as energy-kilocalorie; displayed as Calories in the US/UK]</displayName>
+				<unitPattern count="one">{0} Calorie [translation hint: kilocalories for food energy, may have same translation as energy-kilocalorie; displayed as Calories in the US/UK]</unitPattern>
+				<unitPattern count="other">{0} Calories [translation hint: kilocalories for food energy, may have same translation as energy-kilocalorie; displayed as Calories in the US/UK]</unitPattern>
+			</unit>
+			<unit type="mass-ton">
+				<displayName>tons [translation hint: refers to U.S. short ton, not U.K. long ton or metric ton]</displayName>
+				<unitPattern count="one">{0} ton [translation hint: refers to U.S. short ton, not U.K. long ton or metric ton]</unitPattern>
+				<unitPattern count="other">{0} tons [translation hint: refers to U.S. short ton, not U.K. long ton or metric ton]</unitPattern>
+			</unit>
+			<unit type="mass-stone">
+				<displayName>stones [translation hint: used in UK/Ireland for body weight, equal to 14 pounds]</displayName>
+				<unitPattern count="one">{0} stone [translation hint: used in UK/Ireland for body weight, equal to 14 pounds]</unitPattern>
+				<unitPattern count="other">{0} stones [translation hint: used in UK/Ireland for body weight, equal to 14 pounds]</unitPattern>
+			</unit>
+		</unitLength>
+		<unitLength type="short">
+			<unit type="area-acre">
+				<displayName>acres [translation hint: refers specifically to an English acre]</displayName>
+				<unitPattern count="one">{0} ac [translation hint: refers specifically to an English acre]</unitPattern>
+				<unitPattern count="other">{0} ac [translation hint: refers specifically to an English acre]</unitPattern>
+			</unit>
+			<unit type="duration-day">
+				<displayName>days [translation hint: &quot;day&quot; here means a time duration of 24 hours, not a calendar day]</displayName>
+				<unitPattern count="one">{0} day [translation hint: &quot;day&quot; here means a time duration of 24 hours, not a calendar day]</unitPattern>
+				<unitPattern count="other">{0} days [translation hint: &quot;day&quot; here means a time duration of 24 hours, not a calendar day]</unitPattern>
+			</unit>
+			<unit type="energy-kilocalorie">
+				<displayName>kcal [translation hint: kilocalories for uses not specific to food energy, such as chemistry]</displayName>
+				<unitPattern count="one">{0} kcal [translation hint: kilocalories for uses not specific to food energy, such as chemistry]</unitPattern>
+				<unitPattern count="other">{0} kcal [translation hint: kilocalories for uses not specific to food energy, such as chemistry]</unitPattern>
+			</unit>
+			<unit type="energy-calorie">
+				<displayName>cal [translation hint: calories as used in chemistry, not the same as food calorie]</displayName>
+				<unitPattern count="one">{0} cal [translation hint: calories as used in chemistry, not the same as food calorie]</unitPattern>
+				<unitPattern count="other">{0} cal [translation hint: calories as used in chemistry, not the same as food calorie]</unitPattern>
+			</unit>
+			<unit type="energy-foodcalorie">
+				<displayName>Cal [translation hint: kilocalories for food energy, may have same translation as energy-kilocalorie; displayed as Cal in the US/UK]</displayName>
+				<unitPattern count="one">{0} Cal [translation hint: kilocalories for food energy, may have same translation as energy-kilocalorie; displayed as Cal in the US/UK]</unitPattern>
+				<unitPattern count="other">{0} Cal [translation hint: kilocalories for food energy, may have same translation as energy-kilocalorie; displayed as Cal in the US/UK]</unitPattern>
+			</unit>
+			<unit type="mass-ton">
+				<displayName>tons [translation hint: refers to U.S. short ton, not U.K. long ton or metric ton]</displayName>
+				<unitPattern count="one">{0} tn [translation hint: refers to U.S. short ton, not U.K. long ton or metric ton]</unitPattern>
+				<unitPattern count="other">{0} tn [translation hint: refers to U.S. short ton, not U.K. long ton or metric ton]</unitPattern>
+			</unit>
+			<unit type="mass-stone">
+				<displayName>stones [translation hint: used in UK/Ireland for body weight, equal to 14 pounds]</displayName>
+				<unitPattern count="one">{0} st [translation hint: used in UK/Ireland for body weight, equal to 14 pounds]</unitPattern>
+				<unitPattern count="other">{0} st [translation hint: used in UK/Ireland for body weight, equal to 14 pounds]</unitPattern>
+			</unit>
+		</unitLength>
+		<unitLength type="narrow">
+			<unit type="area-acre">
+				<displayName>acre [translation hint: refers specifically to an English acre]</displayName>
+				<unitPattern count="one">{0}ac [translation hint: refers specifically to an English acre]</unitPattern>
+				<unitPattern count="other">{0}ac [translation hint: refers specifically to an English acre]</unitPattern>
+			</unit>
+			<unit type="duration-day">
+				<displayName>day [translation hint: &quot;day&quot; here means a time duration of 24 hours, not a calendar day]</displayName>
+				<unitPattern count="one">{0}d [translation hint: &quot;day&quot; here means a time duration of 24 hours, not a calendar day]</unitPattern>
+				<unitPattern count="other">{0}d [translation hint: &quot;day&quot; here means a time duration of 24 hours, not a calendar day]</unitPattern>
+			</unit>
+			<unit type="duration-minute">
+				<unitPattern count="one">{0}m [translation hint: if in your locale &quot;m&quot; is always understood as meters, use something else here - e.g. &quot;min&quot;, &quot;mn.&quot;]</unitPattern>
+				<unitPattern count="other">{0}m [translation hint: if in your locale &quot;m&quot; is always understood as meters, use something else here - e.g. &quot;min&quot;, &quot;mn.&quot;]</unitPattern>
+			</unit>
+			<unit type="energy-kilocalorie">
+				<displayName>kcal [translation hint: kilocalories for uses not specific to food energy, such as chemistry]</displayName>
+				<unitPattern count="one">{0}kcal [translation hint: kilocalories for uses not specific to food energy, such as chemistry]</unitPattern>
+				<unitPattern count="other">{0}kcal [translation hint: kilocalories for uses not specific to food energy, such as chemistry]</unitPattern>
+			</unit>
+			<unit type="energy-calorie">
+				<displayName>cal [translation hint: calories as used in chemistry, not the same as food calorie]</displayName>
+				<unitPattern count="one">{0}cal [translation hint: calories as used in chemistry, not the same as food calorie]</unitPattern>
+				<unitPattern count="other">{0}cal [translation hint: calories as used in chemistry, not the same as food calorie]</unitPattern>
+			</unit>
+			<unit type="energy-foodcalorie">
+				<displayName>Cal [translation hint: kilocalories for food energy, may have same translation as energy-kilocalorie; displayed as Cal in the US/UK]</displayName>
+				<unitPattern count="one">{0}Cal [translation hint: kilocalories for food energy, may have same translation as energy-kilocalorie; displayed as Cal in the US/UK]</unitPattern>
+				<unitPattern count="other">{0}Cal [translation hint: kilocalories for food energy, may have same translation as energy-kilocalorie; displayed as Cal in the US/UK]</unitPattern>
+			</unit>
+			<unit type="mass-ton">
+				<displayName>ton [translation hint: refers to U.S. short ton, not U.K. long ton or metric ton]</displayName>
+				<unitPattern count="one">{0}tn [translation hint: refers to U.S. short ton, not U.K. long ton or metric ton]</unitPattern>
+				<unitPattern count="other">{0}tn [translation hint: refers to U.S. short ton, not U.K. long ton or metric ton]</unitPattern>
+			</unit>
+			<unit type="mass-stone">
+				<displayName>stone [translation hint: used in UK/Ireland for body weight, equal to 14 pounds]</displayName>
+				<unitPattern count="one">{0}st [translation hint: used in UK/Ireland for body weight, equal to 14 pounds]</unitPattern>
+				<unitPattern count="other">{0}st [translation hint: used in UK/Ireland for body weight, equal to 14 pounds]</unitPattern>
+			</unit>
+		</unitLength>
+	</units>
+</ldml>

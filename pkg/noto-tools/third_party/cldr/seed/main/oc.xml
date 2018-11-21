@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2017 Unicode, Inc.
+For terms of use, see http://www.unicode.org/copyright.html
+Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+-->
+<ldml>
+	<identity>
+		<version number="$Revision: 13592 $"/>
+		<language type="oc"/>
+	</identity>
+	<localeDisplayNames>
+		<languages>
+			<language type="aa" draft="unconfirmed">afar</language>
+			<language type="af" draft="unconfirmed">afrikaans</language>
+			<language type="ain" draft="unconfirmed">aino</language>
+			<language type="ale" draft="unconfirmed">aleut</language>
+			<language type="am" draft="unconfirmed">amaric</language>
+			<language type="an" draft="unconfirmed">aragonés</language>
+			<language type="ar" draft="unconfirmed">arabi</language>
+			<language type="arn" draft="unconfirmed">mapoche</language>
+			<language type="ay" draft="unconfirmed">aimara</language>
+			<language type="az" draft="unconfirmed">azerbaijani</language>
+			<language type="az" alt="short" draft="unconfirmed">azeri</language>
+			<language type="ban" draft="unconfirmed">balinés</language>
+			<language type="be" draft="unconfirmed">belarús</language>
+			<language type="bg" draft="unconfirmed">bulgar</language>
+			<language type="bi" draft="unconfirmed">bislama</language>
+			<language type="bm" draft="unconfirmed">bambara</language>
+			<language type="bo" draft="unconfirmed">tibetan</language>
+			<language type="br" draft="unconfirmed">breton</language>
+			<language type="bs" draft="unconfirmed">bosniac</language>
+			<language type="bug" draft="unconfirmed">buginés</language>
+			<language type="ca" draft="unconfirmed">catalan</language>
+			<language type="ce" draft="unconfirmed">chechen</language>
+			<language type="ceb" draft="unconfirmed">cebuan</language>
+			<language type="chr" draft="unconfirmed">cheroqui</language>
+			<language type="ckb" draft="unconfirmed">kurd central</language>
+			<language type="co" draft="unconfirmed">còrs</language>
+			<language type="cs" draft="unconfirmed">chèc</language>
+			<language type="cu" draft="unconfirmed">eslavon</language>
+			<language type="cv" draft="unconfirmed">chovash</language>
+			<language type="da" draft="unconfirmed">danés</language>
+			<language type="de" draft="unconfirmed">aleman</language>
+			<language type="el" draft="unconfirmed">grèc</language>
+			<language type="en" draft="unconfirmed">anglés</language>
+			<language type="eo" draft="unconfirmed">esperanto</language>
+			<language type="es" draft="unconfirmed">espanhòl</language>
+			<language type="es_419" draft="unconfirmed">espanhòl d’America latina</language>
+			<language type="es_ES" draft="unconfirmed">espanhòl d’Espanha</language>
+			<language type="es_MX" draft="unconfirmed">espanhòl de Mexic</language>
+			<language type="et" draft="unconfirmed">estonian</language>
+			<language type="eu" draft="unconfirmed">bàscol</language>
+			<language type="fa" draft="unconfirmed">perse</language>
+			<language type="fi" draft="unconfirmed">finlandés</language>
+			<language type="fil" draft="unconfirmed">filipino</language>
+			<language type="fj" draft="unconfirmed">fijian</language>
+			<language type="fo" draft="unconfirmed">feroés</language>
+			<language type="fon" draft="unconfirmed">fòn</language>
+			<language type="fr" draft="unconfirmed">francés</language>
+			<language type="frm" draft="unconfirmed">francés mejan</language>
+			<language type="fur" draft="unconfirmed">friolan</language>
+			<language type="ga" draft="unconfirmed">irlandés</language>
+			<language type="gd" draft="unconfirmed">gaelic escossés</language>
+			<language type="gez" draft="unconfirmed">gueèz</language>
+			<language type="gl" draft="unconfirmed">galician</language>
+			<language type="gn" draft="unconfirmed">guaraní</language>
+			<language type="grc" draft="unconfirmed">grec ancian</language>
+			<language type="gsw" draft="unconfirmed">aleman de Soïssa</language>
+			<language type="gu" draft="unconfirmed">gujarati</language>
+			<language type="he" draft="unconfirmed">ebreu</language>
+			<language type="hi" draft="unconfirmed">hindi</language>
+			<language type="hr" draft="unconfirmed">croat</language>
+			<language type="hu" draft="unconfirmed">ongrés</language>
+			<language type="hy" draft="unconfirmed">armèni</language>
+			<language type="ia" draft="unconfirmed">interlingua</language>
+			<language type="id" draft="unconfirmed">indonesian</language>
+			<language type="io" draft="unconfirmed">ido</language>
+			<language type="is" draft="unconfirmed">islandés</language>
+			<language type="it" draft="unconfirmed">italian</language>
+			<language type="iu" draft="unconfirmed">inuktitut</language>
+			<language type="ja" draft="unconfirmed">japonés</language>
+			<language type="jv" draft="unconfirmed">javanés</language>
+			<language type="ka" draft="unconfirmed">georgian</language>
+			<language type="kab" draft="unconfirmed">cabil</language>
+			<language type="kk" draft="unconfirmed">cazac</language>
+			<language type="km" draft="unconfirmed">cambojian</language>
+			<language type="kn" draft="unconfirmed">kannada</language>
+			<language type="ko" draft="unconfirmed">corean</language>
+			<language type="krl" draft="unconfirmed">carelian</language>
+			<language type="ks" draft="unconfirmed">cashmiri</language>
+			<language type="ku" draft="unconfirmed">curd</language>
+			<language type="kw" draft="unconfirmed">cornic</language>
+			<language type="la" draft="unconfirmed">latin</language>
+			<language type="lad" draft="unconfirmed">ladin</language>
+			<language type="lb" draft="unconfirmed">luxemborgés</language>
+			<language type="lo" draft="unconfirmed">lao</language>
+			<language type="lt" draft="unconfirmed">lituan</language>
+			<language type="lv" draft="unconfirmed">leton</language>
+			<language type="mg" draft="unconfirmed">malgash</language>
+			<language type="mi" draft="unconfirmed">maòri</language>
+			<language type="mk" draft="unconfirmed">macedonian</language>
+			<language type="mn" draft="unconfirmed">mongòl</language>
+			<language type="mt" draft="unconfirmed">maltés</language>
+			<language type="mul" draft="unconfirmed">lengas multiplas</language>
+			<language type="mwl" draft="unconfirmed">mirandés</language>
+			<language type="my" draft="unconfirmed">birman</language>
+			<language type="na" draft="unconfirmed">nauru</language>
+			<language type="nb" draft="unconfirmed">norvegian bokmål</language>
+			<language type="ne" draft="unconfirmed">nepalés</language>
+			<language type="nl" draft="unconfirmed">neerlandés</language>
+			<language type="nl_BE" draft="unconfirmed">flamenc</language>
+			<language type="nn" draft="unconfirmed">norvegian nynorsk</language>
+			<language type="oc" draft="unconfirmed">occitan</language>
+			<language type="os" draft="unconfirmed">osseta</language>
+			<language type="pa" draft="unconfirmed">punjabi</language>
+			<language type="phn" draft="unconfirmed">fenician</language>
+			<language type="pl" draft="unconfirmed">polonés</language>
+			<language type="pro" draft="unconfirmed">occitan ancian</language>
+			<language type="ps" draft="unconfirmed">pashto</language>
+			<language type="pt" draft="unconfirmed">portugués</language>
+			<language type="pt_BR" draft="unconfirmed">portugués de Brasil</language>
+			<language type="pt_PT" draft="unconfirmed">portugués de Portugal</language>
+			<language type="qu" draft="unconfirmed">quechua</language>
+			<language type="rm" draft="unconfirmed">romanch</language>
+			<language type="ro" draft="unconfirmed">romanés</language>
+			<language type="ru" draft="unconfirmed">rus</language>
+			<language type="sa" draft="unconfirmed">sanscrit</language>
+			<language type="sc" draft="unconfirmed">sard</language>
+			<language type="scn" draft="unconfirmed">sicilian</language>
+			<language type="sco" draft="unconfirmed">escossés</language>
+			<language type="sk" draft="unconfirmed">eslovac</language>
+			<language type="sl" draft="unconfirmed">eslovèn</language>
+			<language type="sm" draft="unconfirmed">samoan</language>
+			<language type="snk" draft="unconfirmed">soninke</language>
+			<language type="so" draft="unconfirmed">somàli</language>
+			<language type="sq" draft="unconfirmed">albanés</language>
+			<language type="sr" draft="unconfirmed">serbi</language>
+			<language type="sv" draft="unconfirmed">suedés</language>
+			<language type="sw" draft="unconfirmed">swahili</language>
+			<language type="sw_CD" draft="unconfirmed">swahili de Congo</language>
+			<language type="swb" draft="unconfirmed">comorian</language>
+			<language type="syr" draft="unconfirmed">siriac</language>
+			<language type="ta" draft="unconfirmed">tamol</language>
+			<language type="te" draft="unconfirmed">telogó</language>
+			<language type="tg" draft="unconfirmed">tajic</language>
+			<language type="th" draft="unconfirmed">thai</language>
+			<language type="tig" draft="unconfirmed">tigré</language>
+			<language type="tk" draft="unconfirmed">turcmèn</language>
+			<language type="tr" draft="unconfirmed">turc</language>
+			<language type="tt" draft="unconfirmed">tatar</language>
+			<language type="ty" draft="unconfirmed">tahician</language>
+			<language type="ug" draft="unconfirmed">oigor</language>
+			<language type="uk" draft="unconfirmed">ucrainés</language>
+			<language type="und" draft="unconfirmed">lenga inconoissuda</language>
+			<language type="ur" draft="unconfirmed">ordó</language>
+			<language type="uz" draft="unconfirmed">ozbèc</language>
+			<language type="vai" draft="unconfirmed">vai</language>
+			<language type="ve" draft="unconfirmed">venda</language>
+			<language type="vi" draft="unconfirmed">vietnamian</language>
+			<language type="vo" draft="unconfirmed">volapuc</language>
+			<language type="xal" draft="unconfirmed">kalmoc</language>
+			<language type="xh" draft="unconfirmed">xhòsa</language>
+			<language type="yi" draft="unconfirmed">yiddish</language>
+			<language type="yo" draft="unconfirmed">yoruba</language>
+			<language type="yue" draft="unconfirmed">cantonés</language>
+			<language type="zh" draft="unconfirmed">chinés (chinés mandarin)</language>
+			<language type="zh_Hans" draft="unconfirmed">chinés simplificat</language>
+			<language type="zh_Hant" draft="unconfirmed">chinés tradicional</language>
+			<language type="zu" draft="unconfirmed">zólo</language>
+			<language type="zun" draft="unconfirmed">zuni</language>
+		</languages>
+		<scripts>
+			<script type="Arab" draft="unconfirmed">arabi</script>
+			<script type="Armn" draft="unconfirmed">armèni</script>
+			<script type="Bopo" draft="unconfirmed">bopomofó</script>
+			<script type="Cyrl" draft="unconfirmed">cirilic</script>
+			<script type="Deva" draft="unconfirmed">devanagàri</script>
+			<script type="Geor" draft="unconfirmed">georgian</script>
+			<script type="Grek" draft="unconfirmed">grec</script>
+			<script type="Gujr" draft="unconfirmed">gojrati</script>
+			<script type="Hang" draft="unconfirmed">hangol</script>
+			<script type="Hani" draft="unconfirmed">chinés</script>
+			<script type="Hans" draft="unconfirmed">simplificat</script>
+			<script type="Hans" alt="stand-alone" draft="unconfirmed">chinés simplificat</script>
+			<script type="Hant" draft="unconfirmed">tradicional</script>
+			<script type="Hant" alt="stand-alone" draft="unconfirmed">chinés tradicional</script>
+			<script type="Hebr" draft="unconfirmed">ebreu</script>
+			<script type="Hira" draft="unconfirmed">hiragana</script>
+			<script type="Jpan" draft="unconfirmed">japonés</script>
+			<script type="Kana" draft="unconfirmed">katakana</script>
+			<script type="Khmr" draft="unconfirmed">khmer</script>
+			<script type="Kore" draft="unconfirmed">corean</script>
+			<script type="Laoo" draft="unconfirmed">lao</script>
+			<script type="Latn" draft="unconfirmed">latin</script>
+			<script type="Mlym" draft="unconfirmed">malayalam</script>
+			<script type="Mymr" draft="unconfirmed">birman</script>
+			<script type="Phnx" draft="unconfirmed">fenician</script>
+			<script type="Syre" draft="unconfirmed">siriac estranguelo</script>
+			<script type="Syrj" draft="unconfirmed">siriac occidental</script>
+			<script type="Syrn" draft="unconfirmed">siriac oriental</script>
+			<script type="Taml" draft="unconfirmed">tamol</script>
+		</scripts>
+		<territories>
+			<territory type="002" draft="unconfirmed">Africa</territory>
+			<territory type="013" draft="unconfirmed">America centrala</territory>
+			<territory type="019" draft="unconfirmed">Americas</territory>
+			<territory type="053" draft="unconfirmed">Austràlia e Nòva Zelanda</territory>
+			<territory type="142" draft="unconfirmed">Asia</territory>
+			<territory type="143" draft="unconfirmed">Asia centrala</territory>
+			<territory type="150" draft="unconfirmed">Euròpa</territory>
+			<territory type="AD" draft="unconfirmed">Andòrra</territory>
+			<territory type="AF" draft="unconfirmed">Afganistan</territory>
+			<territory type="AG" draft="unconfirmed">Antigua e Barbuda</territory>
+			<territory type="AI" draft="unconfirmed">Anguilla</territory>
+			<territory type="AL" draft="unconfirmed">Albania</territory>
+			<territory type="AM" draft="unconfirmed">Armènia</territory>
+			<territory type="AO" draft="unconfirmed">Angòla</territory>
+			<territory type="AQ" draft="unconfirmed">Antartica</territory>
+			<territory type="AR" draft="unconfirmed">Argentina</territory>
+			<territory type="AS" draft="unconfirmed">Samòa americana</territory>
+			<territory type="AT" draft="unconfirmed">Àustria</territory>
+			<territory type="AU" draft="unconfirmed">Austràlia</territory>
+			<territory type="AZ" draft="unconfirmed">Azerbaijan</territory>
+			<territory type="BA" draft="unconfirmed">Bòsnia e Ercegovina</territory>
+			<territory type="BB" draft="unconfirmed">Barbados</territory>
+			<territory type="BD" draft="unconfirmed">Bangladesh</territory>
+			<territory type="BE" draft="unconfirmed">Belgica</territory>
+			<territory type="BF" draft="unconfirmed">Burkina Faso</territory>
+			<territory type="BG" draft="unconfirmed">Bolgària</territory>
+			<territory type="BH" draft="unconfirmed">Bahrain</territory>
+			<territory type="BI" draft="unconfirmed">Burundi</territory>
+			<territory type="BJ" draft="unconfirmed">Benin</territory>
+			<territory type="BM" draft="unconfirmed">Bermuda</territory>
+			<territory type="BN" draft="unconfirmed">Brunei</territory>
+			<territory type="BO" draft="unconfirmed">Bolívia</territory>
+			<territory type="BR" draft="unconfirmed">Brasil</territory>
+			<territory type="BS" draft="unconfirmed">Bahamas</territory>
+			<territory type="BT" draft="unconfirmed">Botan</territory>
+			<territory type="BV" draft="unconfirmed">Isla Bouvet</territory>
+			<territory type="BW" draft="unconfirmed">Botswana</territory>
+			<territory type="BY" draft="unconfirmed">Bielorussia</territory>
+			<territory type="BZ" draft="unconfirmed">Belize</territory>
+			<territory type="CA" draft="unconfirmed">Canadà</territory>
+			<territory type="CD" draft="unconfirmed">Còngo - Kinshasa</territory>
+			<territory type="CF" draft="unconfirmed">Republica Centraficana</territory>
+			<territory type="CG" draft="unconfirmed">Còngo - Brazzaville</territory>
+			<territory type="CH" draft="unconfirmed">Soïssa</territory>
+			<territory type="CI" draft="unconfirmed">Còsta d’Evòri</territory>
+			<territory type="CL" draft="unconfirmed">Chile</territory>
+			<territory type="CM" draft="unconfirmed">Cameron</territory>
+			<territory type="CN" draft="unconfirmed">China</territory>
+			<territory type="CO" draft="unconfirmed">Colómbia</territory>
+			<territory type="CR" draft="unconfirmed">Còsta Rica</territory>
+			<territory type="CU" draft="unconfirmed">Cuba</territory>
+			<territory type="CV" draft="unconfirmed">Cap Verd</territory>
+			<territory type="CY" draft="unconfirmed">Chipre</territory>
+			<territory type="CZ" draft="unconfirmed">Republica chèca</territory>
+			<territory type="DE" draft="unconfirmed">Alemanha</territory>
+			<territory type="DJ" draft="unconfirmed">Jiboti</territory>
+			<territory type="DK" draft="unconfirmed">Danemarc</territory>
+			<territory type="DO" draft="unconfirmed">Republica dominicana</territory>
+			<territory type="DZ" draft="unconfirmed">Argeria</territory>
+			<territory type="EC" draft="unconfirmed">Eqüator</territory>
+			<territory type="EE" draft="unconfirmed">Estònia</territory>
+			<territory type="EG" draft="unconfirmed">Egipte</territory>
+			<territory type="ER" draft="unconfirmed">Eritrèa</territory>
+			<territory type="ES" draft="unconfirmed">Espanha</territory>
+			<territory type="ET" draft="unconfirmed">Etiopia</territory>
+			<territory type="EU" draft="unconfirmed">Union Europèa</territory>
+			<territory type="FI" draft="unconfirmed">Finlàndia</territory>
+			<territory type="FJ" draft="unconfirmed">Fiji</territory>
+			<territory type="FR" draft="unconfirmed">França</territory>
+			<territory type="GA" draft="unconfirmed">Gabon</territory>
+			<territory type="GB" draft="unconfirmed">Reiaume Unit</territory>
+			<territory type="GF" draft="unconfirmed">Guiana francesa</territory>
+			<territory type="GQ" draft="unconfirmed">Guinèa Eqüatoriala</territory>
+			<territory type="HR" draft="unconfirmed">Croàcia</territory>
+			<territory type="IL" draft="unconfirmed">Israèl</territory>
+			<territory type="IN" draft="unconfirmed">Índia</territory>
+			<territory type="IT" draft="unconfirmed">Itàlia</territory>
+			<territory type="JP" draft="unconfirmed">Japon</territory>
+			<territory type="KH" draft="unconfirmed">Cambòja</territory>
+			<territory type="KM" draft="unconfirmed">Comòros</territory>
+			<territory type="KP" draft="unconfirmed">Corèa del Nòrd</territory>
+			<territory type="KR" draft="unconfirmed">Corèa del Sud</territory>
+			<territory type="KY" draft="unconfirmed">Islas Caiman</territory>
+			<territory type="KZ" draft="unconfirmed">Cazacstan</territory>
+			<territory type="LY" draft="unconfirmed">Libia</territory>
+			<territory type="MA" draft="unconfirmed">Marròc</territory>
+			<territory type="MC" draft="unconfirmed">Mónegue</territory>
+			<territory type="MM" draft="unconfirmed">Birmania</territory>
+			<territory type="MR" draft="unconfirmed">Mauritània</territory>
+			<territory type="MZ" draft="unconfirmed">Moçambic</territory>
+			<territory type="PE" draft="unconfirmed">Peró</territory>
+			<territory type="PT" draft="unconfirmed">Portugal</territory>
+			<territory type="PW" draft="unconfirmed">Belau</territory>
+			<territory type="RU" draft="unconfirmed">Russia</territory>
+			<territory type="SA" draft="unconfirmed">Arabia Saudita</territory>
+			<territory type="SV" draft="unconfirmed">Lo Salvador</territory>
+			<territory type="SY" draft="unconfirmed">Súria</territory>
+			<territory type="TD" draft="unconfirmed">Chad</territory>
+			<territory type="TL" draft="unconfirmed">Timòr Èst</territory>
+			<territory type="UA" draft="unconfirmed">Ucràina</territory>
+			<territory type="US" draft="unconfirmed">Estats Units</territory>
+			<territory type="VE" draft="unconfirmed">Veneçuèla</territory>
+			<territory type="VN" draft="unconfirmed">Vietnam</territory>
+			<territory type="ZZ" draft="unconfirmed">Desconegut o Region invalida</territory>
+		</territories>
+		<keys>
+			<key type="calendar" draft="unconfirmed">calendier</key>
+			<key type="collation" draft="unconfirmed">òrde alfabetic</key>
+			<key type="currency" draft="unconfirmed">moneda</key>
+		</keys>
+		<codePatterns>
+			<codePattern type="language" draft="unconfirmed">Lenga: {0}</codePattern>
+			<codePattern type="script" draft="unconfirmed">Escritura: {0}</codePattern>
+			<codePattern type="territory" draft="unconfirmed">Region: {0}</codePattern>
+		</codePatterns>
+	</localeDisplayNames>
+	<characters>
+		<exemplarCharacters draft="unconfirmed">[a á à b c d e é è f g h i í ï j k l m n o ó ò p q r s t u ú ü v w x y z]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary" draft="unconfirmed">[ç]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="unconfirmed">[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]</exemplarCharacters>
+	</characters>
+	<dates>
+		<calendars>
+			<calendar type="generic">
+				<days>
+					<dayContext type="format">
+						<dayWidth type="wide">
+							<day type="sun" draft="unconfirmed">dimenge</day>
+							<day type="mon" draft="unconfirmed">diluns</day>
+							<day type="tue" draft="unconfirmed">dimarç</day>
+							<day type="wed" draft="unconfirmed">dimècres</day>
+							<day type="thu" draft="unconfirmed">dijòus</day>
+							<day type="fri" draft="unconfirmed">divendres</day>
+							<day type="sat" draft="unconfirmed">dissabte</day>
+						</dayWidth>
+					</dayContext>
+				</days>
+			</calendar>
+			<calendar type="gregorian">
+				<months>
+					<monthContext type="format">
+						<monthWidth type="wide">
+							<month type="1" draft="unconfirmed">genièr</month>
+							<month type="2" draft="unconfirmed">febrièr</month>
+							<month type="3" draft="unconfirmed">març</month>
+							<month type="4" draft="unconfirmed">abril</month>
+							<month type="5" draft="unconfirmed">mai</month>
+							<month type="6" draft="unconfirmed">junh</month>
+							<month type="7" draft="unconfirmed">julhet</month>
+							<month type="8" draft="unconfirmed">agost</month>
+							<month type="9" draft="unconfirmed">setembre</month>
+							<month type="10" draft="unconfirmed">octòbre</month>
+							<month type="11" draft="unconfirmed">novembre</month>
+							<month type="12" draft="unconfirmed">decembre</month>
+						</monthWidth>
+					</monthContext>
+				</months>
+				<days>
+					<dayContext type="format">
+						<dayWidth type="wide">
+							<day type="sun" draft="unconfirmed">dimenge</day>
+							<day type="mon" draft="unconfirmed">diluns</day>
+							<day type="tue" draft="unconfirmed">dimarç</day>
+							<day type="wed" draft="unconfirmed">dimècres</day>
+							<day type="thu" draft="unconfirmed">dijòus</day>
+							<day type="fri" draft="unconfirmed">divendres</day>
+							<day type="sat" draft="unconfirmed">dissabte</day>
+						</dayWidth>
+					</dayContext>
+				</days>
+			</calendar>
+		</calendars>
+		<fields>
+			<field type="era">
+				<displayName draft="unconfirmed">èra</displayName>
+			</field>
+			<field type="year">
+				<displayName draft="unconfirmed">annada</displayName>
+			</field>
+			<field type="month">
+				<displayName draft="unconfirmed">meses</displayName>
+			</field>
+			<field type="week">
+				<displayName draft="unconfirmed">setmana</displayName>
+			</field>
+			<field type="day">
+				<displayName draft="unconfirmed">jorn</displayName>
+				<relative type="-1" draft="unconfirmed">ièr</relative>
+				<relative type="0" draft="unconfirmed">uèi</relative>
+				<relative type="1" draft="unconfirmed">deman</relative>
+			</field>
+			<field type="weekday">
+				<displayName draft="unconfirmed">jorn de la setmana</displayName>
+			</field>
+			<field type="hour">
+				<displayName draft="unconfirmed">ora</displayName>
+			</field>
+			<field type="minute">
+				<displayName draft="unconfirmed">minuta</displayName>
+			</field>
+			<field type="second">
+				<displayName draft="unconfirmed">segonda</displayName>
+			</field>
+			<field type="zone">
+				<displayName draft="unconfirmed">zòna</displayName>
+			</field>
+		</fields>
+		<timeZoneNames>
+			<regionFormat draft="unconfirmed">Ora de: {0}</regionFormat>
+			<zone type="Europe/Andorra">
+				<exemplarCity draft="unconfirmed">Andorra</exemplarCity>
+			</zone>
+			<zone type="Europe/Athens">
+				<exemplarCity draft="unconfirmed">Atenas</exemplarCity>
+			</zone>
+			<zone type="Europe/Amsterdam">
+				<exemplarCity draft="unconfirmed">Amsterdam</exemplarCity>
+			</zone>
+			<zone type="Atlantic/Azores">
+				<exemplarCity draft="unconfirmed">Azores</exemplarCity>
+			</zone>
+		</timeZoneNames>
+	</dates>
+	<numbers>
+		<symbols numberSystem="latn">
+			<percentSign draft="unconfirmed">%</percentSign>
+			<plusSign draft="unconfirmed">+</plusSign>
+			<minusSign draft="unconfirmed">-</minusSign>
+			<perMille draft="unconfirmed">‰</perMille>
+		</symbols>
+		<currencies>
+			<currency type="EUR">
+				<displayName draft="unconfirmed">euro</displayName>
+			</currency>
+		</currencies>
+	</numbers>
+	<units>
+		<unitLength type="long">
+			<unit type="duration-year">
+				<unitPattern count="other">{0} annadas</unitPattern>
+			</unit>
+			<unit type="duration-month">
+				<unitPattern count="other">{0} mes</unitPattern>
+			</unit>
+			<unit type="duration-week">
+				<unitPattern count="other">{0} setmanas</unitPattern>
+			</unit>
+			<unit type="duration-day">
+				<unitPattern count="other">{0} jorns</unitPattern>
+			</unit>
+			<unit type="duration-hour">
+				<unitPattern count="other">{0} oras</unitPattern>
+			</unit>
+			<unit type="duration-minute">
+				<unitPattern count="other">{0} minutas</unitPattern>
+			</unit>
+			<unit type="duration-second">
+				<unitPattern count="other">{0} segondas</unitPattern>
+			</unit>
+		</unitLength>
+	</units>
+</ldml>

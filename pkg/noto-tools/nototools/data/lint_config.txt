@@ -1,0 +1,112 @@
+# we've not checked this before
+disable head/os2/unicoderange
+
+# assume most variant support is based on cmap 14
+disable complex/gsub/variants
+
+vendor Monotype
+disable extrema
+
+# most variant tests are not useful.
+# but we do need variant zero in sans/serif LGC
+script is not LGC
+disable cmap/variants
+
+script *
+filename like Avestan
+disable gpos/missing
+
+filename like Batak
+enable gdef/classdef/not_combining_mismatch except cp 1bee
+
+filename like Bengali
+enable script_required except cp 951-952
+
+filename like ColorEmoji
+disable cmap/tables/missing # don't need format 4 cmap
+
+filename like Cherokee
+# deferred to phase 3
+enable script_required except cp 300-302 304 30b-30c 323-324 330-331
+
+filename like Devanagari
+enable bounds/glyph/ui_ymin except gid 788
+disable bounds/font/ui_ymin
+enable bounds/glyph/ymax except gid 801-818 829-831 865 868-878
+disable bounds/font/ymax
+
+filename like Emoji
+disable filename/name
+disable complex/gpos/missing
+
+filename like Glagolitic
+disable complex
+enable cmap/script_required except cp 0487 a66f
+
+filename like Hanunoo
+enable gdef/classdef/combining_mismatch except cp 1734
+
+filename like Historic
+enable complex/gsub/variants
+disable cmap/variants
+
+filename like Javanese
+disable bounds/font/ymin
+disable bounds/glyph/ymin
+enable gdef/classdef/not_combining_mismatch except cp a9bd a9be a9bf
+
+filename like MeeteiMayek
+enable gdef/classdef/not_combining_mismatch except cp abe9-abea
+
+filename like Mongolian
+enable gdef/classdef/not_combining_mismatch except cp 180e
+enable complex/gsub/variants
+disable cmap/variants
+
+filename like Nastaliq
+# TODO: (dougfelt) find a better way of making these exceptions
+enable bounds/glyph/ymin except gid 222 223 250 280 882 887 950 959 974
+
+filename like PhagsPa
+enable complex/gsub/variants
+disable cmap/variants
+
+filename like Tamil
+enable script_required except cp 951-952 1cda a8f3
+
+filename like TaiTham
+enable gdef/classdef/combining_mismatch except cp 1a58
+enable gdef/classdef/not_combining_mismatch except cp 1a55
+
+filename like Telugu
+enable script_required except cp 951-952 1cda a8f3
+enable reachable except gid 611
+
+filename like Symbols
+disable filename/name
+
+
+condition
+vendor Adobe
+
+# Adobe's position is that these (mathematical) characters are intended to be used with CJK
+# in an LTR environment.  For true bidi text (that would naturally trigger bidi) these
+# characters should come from a font designed for bidi.  So there is no need in this font
+# for the mirrored glyphs.
+disable bidi
+
+# The v1.003 fonts align the windows ascent/descent with the hhea values, but not the
+# typographic ascender. 1.004 patched some glyphs but otherwise behavior is the same.
+version == 1.004
+disable head/os2/ascender, head/os2/descender
+
+# Adobe says "None of the zero-width glyphs are involved with attachment"
+disable gdef/classdef/not_present
+
+# Adobe says that most of the glyphs are indeed reachable, so perhaps the linter/ttx is
+# at fault?
+disable reachable
+
+# Adobe has a well-defined list of variation sequences they support in the different CJK
+# fonts.  No point in trying to second-guess them.
+disable cmap/variants

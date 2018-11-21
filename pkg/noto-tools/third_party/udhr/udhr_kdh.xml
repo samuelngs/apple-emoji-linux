@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--© The Office of the High Commisioner for Human Rights-->
+
+<udhr iso639-3="kdh" xml:lang="kdh" key="kdh" n="Tem" dir='ltr' iso15924='Latn' xmlns="http://www.unhchr.ch/udhr">
+   <title>Ɩrʊ́-dɛ́ɛ yíkowá-ɖɔ́ feríi-dɛ́ɛ fatɩma lɩzɩ́ɩ</title>
+   <preamble>
+      <title>Kabaazɩya</title>
+      <para>Á ɖɔ́ɔ́gbɔ́ɔ sɩsɩ ɩrʊ́-dɛ́ɛ kezéḿbiídi tɩjaarɛ́ɛ nɛ́ dɛ́ɛ tɩlɩ́ɩ tɩdamáána ɩráa na bɛdɛ́ɛ yíkowá ɖéyi-ɖéyi ńdɩ tɩdɛ́ndɛm nɛ́ kɛ́ɛ́na ɩrʊ́-dɛ́ɛ ɩdɩ yuú, na toovonúm, na fɛɛzɩrɛ ɖʊɖɔ dɛ́ɛ yuú,</para>
+      <para>Á ɖɔ́ɔ́gbɔ́ɔ sɩsɩ ɩrʊ́-dɛ́ɛ yíkowá-dɛ́ɛ sɔ́ɔ́náa na kpɛɛnáa weeyéle yóóni wɔɔgɔná ɩráa-dɛ́ɛ laakárɩ kʊsɩ́ bɩka ɖʊɖɔ iiyélé ɩráa-dɛ́ɛ lomaazɛ́ waabɩ́sɩ wenbí bɩtɛ́ bɩlá boyuú ɖúúlinya wenkí kɩdaá ɩráa wónÿuú ɖáámá báŋmátɩ káma balɩ́ɩ fitíína na kadambʊrʊ́tɩ-daá nɛ́,</para>
+      <para>Á ɖɔ́ɔ́gbɔ́ɔ sɩsɩ bɩgɛ́ɛ ɖóóle gɛ yíkowá-dɛ́ɛ kʊjʊʊ́ dɩnáa ifére ɩráa-dɛ́ɛ yíkowá káma bɩ́kábɩ́sɩ ɩrʊ́ ɖóóle ɩsɩ ɩkpɔɔná ɖóni iyooná ɩrʊ́-dɛ́ɛ imuuliɖé na ɩdɛ́ɛ yoḿti,</para>
+      <para>Á ɖɔ́ɔ́gbɔ́ɔ sɩsɩ bɩmɔɔ́na ɖɩsɩná wenbí bɩtɛ́ bɩlá tɛ́ɛ́dɩwá-dɛ́ɛ ɖɔ́ndɩ́rɛ-tám ɩtásɩ bɩnyɔ́ɔzɩ nɛ́,</para>
+      <para>Á ɖɔ́ɔ́gbɔ́ɔ sɩsɩ tɛ́ɛ́dɩwá-dɛ́ɛ mará baaŋmáa tákaraɖá balɩzɩ́ tɩ fatɩma sɩsɩ bánzɩnáa ɩráa-dɛ́ɛ yíkowá tɩjaarɛ́ɛ nɛ́, na ɩrʊ́-dɛ́ɛ kezéńbíídi, na ɩrʊ́-dɛ́ɛ gírímá, na aláa na abaaláa-dɛ́ɛ yíkowá-dɛ́ɛ ɖéyi-ɖéyi lám, bɩka ɖʊɖɔ bazɩŋɛ́ɛ sɩsɩ bánzɩnáa ɩráa-dɛ́ɛ bɩɩzán-daá boɖé na bɔnyɔ́ɔ́zɩ ɩráa-dɛ́ɛ cɔwʊrɛ fɛɛzɩrɛ-daá,</para>
+      <para>Á ɖɔ́ɔ́gbɔ́ɔ sɩsɩ tɛ́ɛ́dɩwá tɩɩŋmáa tákaraɖá kɩna ɖɔ́ nɛ́ na tɛ́ɛ́dɩwá-dɛ́ɛ bɔwʊ́ɖɛ bánÿaá ɖɛ sɩsɩ Nations Unies waazɩ́m sɩsɩ bánzɩnáa wenbí bɩtɛ́ bɩlá ɩráa ɖúúlinya rɩ́ŋa-daá ɩfa ɩráa-dɛ́ɛ yíkowá na bɛdɛ́ɛ fɛɛzɩrɛ gírímá,</para>
+      <para>Á ɖɔ́ɔ́gbɔ́ɔ sɩsɩ yíkowá tɩḿ na fɛɛzɩrɛ́ tɩḿ tɩdɛ́ɛ bala tɩ kʊ́ɖʊmʊ́ʊ kɛ́ɛ́na wenbí bɩ́tɛbɩlá báa weení ɩkpɔ́ɔ tɩ yíni nɛ́,</para>
+      <para>Wenbá rɩ́ŋa bɔɔjɔ́ɔ baŋmáa bɔwʊ́tɩ tɩna nɛ́</para>
+      <para>baazɩ́ɩ sɩsɩ: ɖúúlinya rɩ́ŋa bɔwʊ́tɩ tɩna tɩdamáána ɩráa-dɛ́ɛ yíkowá kɛ́ɛna kpɩ́ńɖɛ wenɖé ɩráa rɩ́ŋa na tɛ́ɛ́dɩwá rɩ́ŋa waalá tɩ́lasɩ ɩsɩ bofu nɛ́ káma ɩrʊ́ báa weení na zamɔ́ɔ báa wenkí baanɩ́ɩ bɔwʊ́tɩ tɩna nɛ́ bála konkárɩ́ basɩná balɩzɩ́ fatɩma yíkowá tɩḿ na fɛɛzɩrɛ na wɩlɩ́ɩ yáá bɛdɛ́ɛ bíya ketí-daá, bɩka bɩɩlá tɩ́lasɩ ɖʊɖɔ bacáárɩ badɩ ɖɛfɛɛ-ɖɛfɛɛ bɛdɛ́ɛ tɛ́ɛ́dɩ-daá yáá ɖúúlinya ríŋa-daá beyéle ɩráa ɩtɩlɩ́ bɩka bofu yɛ ɖéyi-ɖéyi-daá báa lénle, tɛ́ɛ́dɩwá wentí tɩɩva bɔwʊ́tɩwá tɩna toovonúm nɛ́ tɩdaá na tɛ́ɛ́dɩwá wentí tɩwɛ tɩdɛɛzɩ́ nɛ́.</para>
+   </preamble>
+   <article number="1">
+      <title>Wɛ́ɖɛ kaɖaa-ńɖɛ</title> 
+      <para>Bánlʊrʊ́ʊ ɩrʊ́ báa weení na kezéńbíídi gɛ bɩka bɛdɛ́ɛ ɖɔɔzɩ́tɩ na yíkowá kɛgɛ́ɛ ɖéyí-ɖéyí gɛ. Bɔwɛná laakárɩ na ɩrʊ́tɩ bɩka bɩɩbɔ́ɔ́zɩ bɔcɔɔná ɖamá koobíre cɔwʊrɛ.</para>
+   </article>
+   <article number="2">
+      <title>Wɛ́ɖɛ 2</title>
+      <para>Báa weení wánbɩɩzí ɩɖɛɛzɩná yíkowá na kezéńbíídi tɩwɛ bɔwʊ́tɩ tɩna tɩ-daá nɛ́, bɩdakɛ́ɛna taazɩ́ bɩdamáána tanʊʊ́ yáá alʊ́ yáá abaalʊ́ yáá kʊnʊm yáá aɖííni yáá kowurodɔ́m-dɛ́ɛ lomaazɛ́ yáá cɔwʊrɛ-daá yáá ɩrʊ́-dɛ́ɛ arizikí yáá ɩdɛ́ɛ lʊrʊ́ʊ-jɔ́ yáá yáásí báa wenkí-daá.</para>
+      <para>Bɩka ɖʊɖɔ, bɩdalá kamaata taazɩ́tɩ ɩcɔ́ɔ tɛ́ɛ́dɩ mará-dɛ́ɛ cɔwʊrɛ-daá, yáá tɔ́m fʊ́ʊ́dɩ-dɛ́ɛ cɔwʊrɛ yáá tɛ́ɛ́dɩ na tɛ́ɛ́dɩwá-dɛ́ɛ ɖamá-daá sʊʊ́-dɛ́ɛ cɔwʊrɛ yáá tɛ́ɛ́dɩ wentí-daá ɩrʊ́ waagálɩ́ɩ́na nɛ́. Báa bɩɩlá sɩsɩ tɛ́ɛ́dɩ tɩḿ tiiyuú tɩdɩ yáá tɩwɛ natɩ́rɩ-dɛɛzɩ nɛ́, tɩdayúúta tɩdɩ yáá tɛ́ɛ́dɩ natɩ́rɩ wɛ́nbɛɛmɩ́ kɔrɔɔzɩ́.</para>
+  </article>
+   <article number="3">
+      <title>Wɛ́ɖɛ 3</title>
+      <para>Ɩrʊ́ báa weení wɛna yíko iɖi ɩdɛ́ɛ ɖúúlinya, kezéńbíídi na beféré ɩdɛ́ɛ alaafɩ́ya cɔwʊrɛ.</para>
+   </article>
+   <article number="4">
+      <title>Wɛ́ɖɛ 4</title>
+      <para>Bádángbáa naárʊ yoḿti yáá bɔwʊtá lám. Beegízi kpataa yoḿti na yomáa-dɛ́ɛ yám.</para>
+   </article>
+   <article number="5">
+      <title>Wɛ́ɖɛ 5</title>
+      <para>Badánlám naárʊ ɖeciriɖi yáá banáázɩ yɩ yáá balá yɩ wenbí bɩdamɔɔná balá ɩrʊ́ nɛ́ yáá baŋmɩ́ɩ́zɩ yɩ.</para>
+   </article>
+   <article number="6">
+      <title>Wɛ́ɖɛ 6</title>
+      <para>Ɩrʊ́ báa weení wɛná yíko batɩlɩ́ ɩdɛ́ɛ ɩrʊ́tɩ na ɩdɛ́ɛ tɩlasɩwá báa lénle.</para>
+   </article>
+   <article number="7">
+      <title>Wɛ́ɖɛ 7</title>
+      <para>Ɩráa rɩ́ŋa kɛ́ɛ ɖéyí-ɖéyí gɛ mará-jɔ́ bɩdakɛ́ɛna taazɩ́ na bɩ́nbɔɔzɩ́ bekéti ɩráa ɖéyí-ɖéyí bɩdakɛ́ɛ́na taazɩ́ yáá na wenbí bɩyaavóo mará awɛ bɔwʊ́tɩ tɩna tɩdaá nɛ́.</para>
+   </article>
+   <article number="8">
+      <title>Wɛ́ɖɛ 8</title>
+      <para>Ɩrʊ́ báa weení wɛna yíko iyéle bɔnyɔ́ɔ́zɩ bafʊ́ʊ ɩdɛ́ɛ tɔ́m tɛ́ɛ́dɩ-dɛ́ɛ tɔ́mvʊʊráa-jɔ́ abɩgɛ́ɛ sɩ boomúúli yɩ bɛlɛ́ɛ ɩdɛ́ɛ yíkowá wentí mará waava yɩ.</para>
+   </article>
+   <article number="9">
+      <title>Wɛ́ɖɛ 9</title>
+      <para>Bedengbím naárʊ bɔtɔ yáá balɩzɩ́ yɩ tɛ́ɛ́dɩ bɩdɛkɛ́ɛna seríya nakɩ́rɩ.</para>
+   </article>
+   <article number="10">
+      <title>Wɛ́ɖɛ 10</title>
+      <para>Ɩrʊ́ báa weení wɛná yíko tɔ́mvʊʊráa bɔwɛ badɩ nɛ́ yáá gómínantɩ ɩnɩ́ɩ ɩdɛ́ɛ tɔ́m. Bɩka balá wenbí wánjáádɩ nɛ́ ɖéyí-ɖéyí-daá yáá zamɔɔ-daá. Bɩlɛ́ bɩnáá sɩsɩ babɩ́ɩ́zɩ betísi becélé yɩ ɩdɛ́ɛ yíkowá yáá wenbí bɩɩlá ɩdɛ́ɛ tɩ́lasɩ nɛ́ yáá wenbí bɩ́nbɩɩzɩ́ bɩlɩzɩ́ yɩ tɔ́m-daá nɛ́.</para>
+   </article>
+   <article number="11">
+      <title>Wɛ́ɖɛ 11</title>
+      <orderedlist>
+         <listitem>
+            <para>Bɩdɔbɔ́ɔ́zɩ bakpa ɩrʊ́ báa weení gɛ boobuuná tɔ́m bɩdamáána kideevééniti-dɛ́ɛ lám nɛ́, hálɩ bafʊʊná yɩ bɩlá ɖacɩrɩ-cɩrɩ sɩsɩ waalá wenbí bómbuunáa yɩ nɛ́.</para>
+         </listitem>
+         <listitem>
+            <para>Bɩdɔbɔ́ɔ́zɩ bakpa naárʊ sɩsɩ waalá bideevé bɩka sáátɩ wenkí bɩdɛ́ɛ lakásɩ waalá nɛ́, tɛ́ɛ́dɩ yáá ɖúúlinya yíko dɩnáa bɛɛ́na sɩsɩ bɩdakɛ́ɛ bideevé. Bɩdɔbɔ́ɔ́zɩ ɖʊɖɔ bamɩ́lɩ ɩnɩgbamʊʊ́ bɩcɛzɩ́ mará weená baazɩ́ɩ zaamáánɩ wenkí waayɩ́sɩ nɛ́.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="12">
+      <title>Wɛ́ɖɛ 12</title>
+      <para>Bɩdɔbɔ́ɔ́zɩ naárʊ ɩsʊ́ʊ ɩrɔwʊ́, yáá ɩlɛ́ ɩdɛ́ɛ koobíre yáá ɩlɛ́ ɩdɛ́ɛ ɖáána yáá ɩlɛ́ ɩdɔndɩnáa-dɛ́ɛ tɔ́m-daá na iwenbiré sɔɔlɩ́m yáá ɩlá wenbí bɩtɛ́ bɩfɔrɔ́sɩ ɩrɔwʊ́ yáá bitisi ɩlɛ́ nɛ́. Ɩrʊ́ báa weení wɛná yíko mará ifére ɩrɔɔzɩ́ na bɩdɛ́ɛ kɔrɔmɔ́tɔ na wenbí sɩ bɩfɔrɔ́sɩ yɩ nɛ́.</para>
+   </article>
+   <article number="13">
+      <title>Wɛ́ɖɛ 13</title>
+      <orderedlist>
+         <listitem>
+            <para>Ɩrʊ́ báa weení wɛná yíko ikíli yáá ɩlɩzɩ́ lénlé ɩzɔɔlɛ́ɛ sɩɩcɔ́ɔ ɩdɛ́ɛ laadɔ́ɔ-rɔ nɛ́.</para>
+         </listitem>
+         <listitem>
+            <para>Ɩrʊ́ báa weení wɛná yíko ɩlɩ́ɩ laadɔ́ɔ báa wenká-daá bɩkpɛdɩ́na ɩdɛ́ɛ laadɔ́ɔ bɩka ɩkábɩsɩ kadaá ɖʊɖɔ.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="14">
+      <title>Wɛ́ɖɛ 14</title>
+      <orderedlist>
+         <listitem>
+            <para>Ɩrʊ́ báa weení á bɩgɛ́ɛ sɩ balá yɩ deciriɖi, ɩwɛná yíko ɩcáa bɩka iyuú yaajɔɔzɩɖɛ́ laadásɩ sɩɩganáa-daá.</para>
+         </listitem>
+         <listitem>
+            <para>Ɩráa wenbá baajáa baranáa tɔ́m yáá badanʊm ná bɔwʊ́ɖɛ baayááɖɛ sɩsɩ Nations Unies nɛ́-dɛ́ɛ mará yáá wenbí bánjáádɩ nɛ́ tɔmɔɔná boyuú yíkowá wentí ɖááŋmátɩ nɛ́-dɛ́ɛ alɩbáráka.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="15">
+      <title>Wɛ́ɖɛ 15</title>
+      <orderedlist>
+         <listitem>
+            <para>Ɩrʊ́ báa weení wɛná yíko iyuú ɩdɛ́ɛ tɛ́ɛ́dɩbíídi-dɛ́ɛ tákaraɖá.</para>
+         </listitem>
+         <listitem>
+            <para>Bɩdɔbɔ́ɔ́zɩ bekízi ɩrʊ́ tákaraɖá fáa wenbiré sɔɔlɩ́m rɔɔzɩ́ yáá bekízíyi sɩsɩ ɩkɛ́kɛ́ɛ tɛ́ɛ́dɩbíídi tákaraɖá.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="16">
+      <title>Wɛ́ɖɛ 16</title>
+      <orderedlist>
+         <listitem>
+            <para>Alʊ́ na abaalʊ́ wenbá baadála sáárɛ nɛ́ wɛná yíko bɔkpɔ́ɔ ɖamá bɩdakɛ́ɛna taazɩ́ tɩdamáana tanʊʊ́ yáá tɛ́ɛ́dɩ yáá aɖííni. Alʊ́ na abaalʊ́ wɛná yíkowá ɖéyí-ɖéyí wenbí bɩdamáana hiiye yáá kɩdɛ́ɛ cɔwʊrɛ yáá kɩdɛ́ɛ tarɩ́ɩ-daá nɛ́.</para>
+         </listitem>
+         <listitem>
+            <para>Bɩgɛ́ɛ tɩ́lasɩ gɛ ɩráa ɩŋmátɩ banɩ́ɩ ɖamá naanɩ́ ná balá hiiye.</para>
+         </listitem>
+         <listitem>
+            <para>Koobíre kɛ́ɛ́na zamɔ́ɔ-daá-dɛ́ɛ kpɩ́nɖɛ wenɖé ɖɩjaarɛ́ɛ nɛ́, bɩlɛ́ bʊrɔɔzɩ́ nɛ́, bɩɩlá tɩ́lasɩ zamɔ́ɔ yáá tɛ́ɛ́dɩ ifére ɖɩrɔ.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="17">
+      <title>Wɛ́ɖɛ 17</title>
+      <orderedlist>
+         <listitem>
+            <para>Bɩ́nbɔɔzɩ́ ɩrʊ́ báa weení ɩjɔɔ́ iriké nɛ́ yáá zamɔ́ɔ-daá nɛ́ iyuú ɩcɔ́ɔ ɖacɩrɩ-cɩrɩ.</para>
+         </listitem>
+         <listitem>
+            <para>Bɩdɔbɔ́ɔ́zɩ naárʊ ɩbɛ́ ɩrɔwʊ́-dɛ́ɛ ɖácɩrɩ-cɩrɩtɩ.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="18">
+      <title>Wɛ́ɖɛ 18</title>
+      <para>Báa weení wɛná yíko ɩmáázɩ yáá ɩkuná laakárɩ ɩdɩ ɩrɔɔzɩ́ yáá ɩlá ɩdɛ́ɛ aɖííni, bɩlɛ́ bɩgɛ́ɛ ná sɩsɩ wánbɩɩzɩ́ ɩkɛ́ɛ aɖííni á ɩzɔɔlɛ́ɛ, yáá ɩdɛ́ɛ wénbiréfúúle yáá ɩwɩ́lɩ sɩsɩ mɔ́ɔ́ mɛ́dɛ́ɛ aɖííni nɖɔ́ yáá iwenbiré fúúle. Wenbí bɩrɩ́ŋa ɖáádɩ ɖɔ́ nɛ́, ɩrʊ́ wánbɩɩzɩ́ ɩlɩzɩ́ yɛ fátɩma yáá ɩsɩɩná yɛ ɩdɩ yáá zamɔ́ɔ wɩlɩ́ɩ-daá yáá lám-daá yáá bɔwʊ́tɩ-daá yáá sɔ́ɔ́zɩ-dɛ́ɛ lám-daá.</para>
+   </article>
+   <article number="19">
+      <title>Wɛ́ɖɛ 19</title>
+      <para>Ɩrʊ́ báa weení wɛná yíko ɩlá bayáána ɩdɛ́ɛ lomaazɛ́ yáá ɩŋmátɩ wentí tɩváa yɩ nɛ́, bɩnáa sɩsɩ bɩdabɔ́ɔ́zɩ ɩrʊ́ ɩnyɛ́ sɩ ɩlɩzɩ́ ɩdɛ́ɛ lomaazɛ́ nɛ́ yáá ɩdɛ́ɛ sɩ ɩcáa yáá iyuú laabáárʊ yáá ɩlá bayáana báa lénlé laabáárʊ kɩḿ yáá lomaazɛ́ na nɩ́báánɩ rɩ́ŋa kpátáá laabáárʊ wánbɩɩzɩ́ kɩbana kɩtala ɩrʊ́ nɛ́.</para>
+   </article>
+   <article number="20">
+      <title>Wɛ́ɖɛ 20</title>
+      <orderedlist>
+          <listitem>
+            <para>Ɩrʊ́ báa weení wɛná yíko ibó kediiziya zamɔ́ɔ-daá bɩka ɖʊɖɔ ɩwɛná yíko ɩcɔ́ɔ zamɔ́ɔ-daá.</para>
+         </listitem>
+         <listitem>
+            <para>Bɩdɔbɔ́ɔ́zɩ bamɩ́lɩ naárʊ nʊ́ʊnɩ sɩ ɩ́sʊ́ʊ bɔwʊ́ɖɛ naɖéré-daá.</para>
+         </listitem>
+     </orderedlist>
+   </article>
+   <article number="21">
+      <title>Wɛ́ɖɛ 21</title>
+      <orderedlist>
+         <listitem>
+            <para>Ɩrʊ́ báa weení wɛná yíko ɩsɩná ɩdɛ́ɛ tɛ́ɛ́dɩ-dɛ́ɛ ketí yáá ɩbaná nɛbɛ́rɛ baalɩzɩ́ wɛ zamɔɔ-daá nɛ́ bɩdɛkɛ́ɛna ɖóóle.</para>
+         </listitem>
+         <listitem>
+            <para>Bɩmɔɔ́na tɛ́ɛ́dɩ bú báa weení, á sɩ bɔkpɔ́ɔ yɩ tɩmɛ́rɛ ɩdɛ́ɛ tɛ́ɛ́dɩ-daá, bofu mará ɖéyí-ɖéyí ńná.</para>
+         </listitem>
+         <listitem>
+            <para>Tɛ́ɛ́dɩ bíya-dɛ́ɛ wénbire sɔɔlɩ́m kɛ́ɛna bɛdɛ́ɛ boyuú tɛ́ɛ́dɩ-dɛ́ɛ kétí-dɛ́ɛ kabaazɩya, tɛ́tɛ́ tɔ́ɔ ɩlá ɖacɩrɩ-cɩrɩ wenkí kɩɩlá kamaata balátɩ fatɩma ɖamá-rɔ bɩka bɩlá ɖéyí-ɖéyí-daá yáá mʊ́sɩrɛ-daá yáá nɩ́báánɩ natɩ́rɩ tɩdamáána tɩna nɛ́ na wenbí bɩtɛbɩlá tɛ́tɛ́ ɖéyí-ɖéyí-daá waalá kamaata kɩwɩ́lɩ wenbiré sɔɔlɩ́m kɩḿ.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="22">
+      <title>Wɛ́ɖɛ 22</title>
+      <para>Ɩrʊ́ báa weení ɩwɛ ɩráa-daá nɛ́ wɛná yíko ɩráa wenbá badaá ɩwɛ nɛ́ befére ɩrɔɔzɩ́. Bɩɩlá tɩ́lasɩ ɩbɩ́ɩ́zɩ iyuú arizikí, zamɔ́ɔ na taáɖɛwá dɛ́ɛ yíko wentí tɩdamáana ɩdɛ́ɛ ɩrʊ́tɩ nɛ́ na ɩdɩtɩŋa ɩdɛ́ɛ bɩ́ɩ́zán-daá bodé ; bɩɩlɩɩná tɛ́ɛ́dɩ-daá-dɛ́ɛ kookárɩ na ɩdɛ́ɛ ɖúúlinya-dɛ́ɛ cɔwʊrɛ bɩdamáana tɛ́ɛ́dɩ-dɛ́ɛ yíkowá nɛ́.</para>
+   </article>
+   <article number="23">
+      <title>Wɛ́ɖɛ 23</title>
+      <orderedlist>
+         <listitem>
+            <para>Bɩ́nbɔɔzɩ́ ɩrʊ́ báa weení ɩlá tɩmɛ́rɛ yáá ɩdɩtɩŋa ɩlɩzɩ́ ɩdɛ́ɛ tɩmɛ́rɛ ɖéyí-ɖéyí-daá káma bɩ́kálá ɩcɔ́ɔ bɩka tɩmɛ́rɛ fɛ́yɩ́.</para>
+         </listitem>
+         <listitem>
+            <para>Bɩmɔɔ́na barɩ́ŋa bɔwɛná fɛrɩ́tɩ ɖéyí-ɖéyí á bɩgɛ́ɛ baalá tɩmɛ́rɛ bɩdakɛ́ɛna tarɩ́ɩ.</para>
+         </listitem>
+         <listitem>
+            <para>Weení ɩrɩŋa wánlám tɩmɛ́rɛ nɛ́, bɩɩlá tɩ́lasɩ iyúu fɛrɩ́tɩ ɖéyí-ɖéyí ńɖɛ wenbí bɩ́tɛ bɩlá ɩbɛ́ɛ́mɩ ɩdɛ́ɛ koobire ɖéyí-ɖéyí-daá nɛ́ yáá wenbí rɩ́ŋa bɩ́nbɩɩzɩ́ bifére bɔrɔɔzɩ́ nɛ́.</para>
+         </listitem>
+         <listitem>
+            <para>Ɩrʊ́ báa weení wɛná yíko ɩsʊ́ʊ bɔwʊ́ɖɛ yáá ɩsɩná bɔwʊ́ɖɛ wenbí bɩ́tɛ bɩlá boyóo befére badɩ bɔrɔɔzɩ́ nɛ́.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="24">
+      <title>Wɛ́ɖɛ 24</title>
+      <para>Ɩrʊ́ báa weení wɛná yíko iyuú fɛɛzɩrɛ yáá amʊʊzɛ́ yáá bɛfɛ́rɛ yɩ tɩmɛ́rɛ-dɛ́ɛ leerí-dɛ́ɛ fɛrɩ́tɩ ɖéyí-ɖéyí ńɖɛ yáá tɩmɛ́rɛ-daá-dɛ́ɛ nɩ́baawʊ sʊlʊ́ʊ-dɛ́ɛ yíko.</para>
+   </article>
+   <article number="25">
+      <title>Wɛ́ɖɛ 25</title>
+      <orderedlist>
+         <listitem>
+            <para>Ɩrʊ́ báa weení wɛná yíko iɖi bɩtáláyɩ na biféré ɩdɛ́ɛ alaafɩ́ya-rɔ yáá ɩdɛ́ɛ alaafɩ́ya cɔwʊrɛ ɩna igoobíre wenbí bɩɩlá bɩ́ kíɖiim yáá kúsúúdi yáá yaaɖooɖɛ́ yáá ɩdɛ́ɛ alaafɩ́ya bɛɛmɩ́ na ɩdɛ́ɛ zamɔ́ɔ-daá cɔwʊ́ʊ. Bɩ́nbɔɔzɩ́ beféré ɩrɔɔzɩ́ á bɩgɛ́ɛ ɩdoyuúta tɩmɛ́rɛ yáá kʊdɔḿ wáágba-yɩ yáá ɩgɛ́ɛ madafɩ́ya yáá weení ɩɖɛɛlʊ́ yáá ɩwaalʊ́ waazɩ́ nɛ́ yáá weení waalá kʊ́bɔnɩ́ yáá weení wɛɛbɛ́ɖɩ ɩdɛ́ɛ árisikí nɛ́ bɩdɛkɛ́ɛna ɩzɔɔlɩ́m.</para>
+         </listitem>
+         <listitem>
+            <para>Wenbá bɛ́wɛ lʊrʊ́ʊ-dɛ́ɛ sáátɩ-daá nɛ́ na bíya kúmúwáa wɛná yíko basɩná wɛ́. Bú báa weení baalʊ́rʊ-yɩ hiiye-daá yáá hiiye wɔ́rɔ́ nɛ́ mɔ́ɔ́na befére barɩ́ŋa bɔrɔ.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="26">
+      <title>Wɛ́ɖɛ 26</title>
+      <orderedlist>
+         <listitem>
+            <para>Bɩ́nbɔɔzɩ́ báa weení ɩcáa tɩlɩ́ɩ. Tɩlɩ́ɩ cáádɩ waalá tɩ́lasɩ kɩlá faala. Báa tɩlɩ́ɩ cáádɩ rɩ́ŋa talá faala, bɩɩlá tɩ́lasɩ bíya kúmúwáa dɛ́ńgɩ ɩlá faala. Bíya kúmúwáa-dɛ́ɛ wɩlɩ́ɩ kɛ́ɛ́ dóóle gɛ. ɩzámʊ́sɩ-dɛ́ɛ tɩlɩ́ɩ cáádɩ waalá tɩ́lasɩ báa weení ibó ɩlá kɩ. Bɩ́nbɔɔzɩ́ bú báa weení ɩbɩ́ɩ́zɩ ɩbó lɔwʊ-lɔwʊ ńgɩ á bɩgɛ́ɛ weeɖi iyuú wenbí bínbɔɔzɩ́ nɛ́.</para>
+         </listitem>
+         <listitem>
+            <para>Tɩlɩ́ɩ cáádɩ waalá tɩ́lasɩ bɩka kiyéle báa weení ɩcɔ́ɔ ɖúúlinya-daá iyuú ɩdɩ bɩka kiyéle ɩráa rɩ́ŋa ɩtɩlɩ́ ɖamá-dɛ́ɛ yíkowá-dɛ́ɛ gírímá na bɛdɛ́ɛ kezénbíídi tɩjaarɛ́ɛ nɛ́. Bɩ́nbɔɔzɩ́ kɩsɩná wenbí bɩdamáána ɩráa-dɛ́ɛ baŋmátɩ banɩ́ɩ ɖamá nɛ́, na bɛdɛ́ɛ ɖamá cɛ́m, na nyɔɔzɩ́tɩ bɩdamáána tɛ́ɛ́dɩ, bɔwʊ́ɖɛwá na aɖííniwá-ɖɛ́ɛ ɖamá-daá sʊʊ́ na ɖʊɖɔ kɩsɩná tɛ́ɛ́dɩ-dɛ́ɛ bɔwʊ́ɖɛ baayáa ɖɛ sɩsɩ Nations Unies nɛ́-dɛ́ɛ tɩmɛ́-dɛ́ɛ bɩɩzá-daá bode.</para>
+         </listitem>
+         <listitem>
+            <para>Caanáa wɛná yíko baɖu bebíya tɩlɩ́ɩ cáádɩ wenkí bɔzɔɔlɛ́ɛ nɛ́.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="27">
+      <title>Wɛ́ɖɛ 27</title>
+      <orderedlist>
+         <listitem>
+            <para>Ɩrʊ́ báa weení wɛná yíko ifu ɩráa wenbá ɩzɔɔlɛ́ɛ nɛ́, iɖi bɛdɛ́ɛ nʊ́ʊ́zɩ tɩmɛ́rɛ-dɛ́ɛ anfaanɩ́wá, bɩka ɩsɩná-wɛ tɩlɩ́ɩ kɩ́fatɩ-dɛ́ɛ cáádɩ-daá na iyuú bɩdɛ́ɛ anfaanɩ́wá.</para>
+         </listitem>
+         <listitem>
+            <para>Báa weení wɛná yíko bekéti idɛ́ɛ kpɩná na ɩdɛ́ɛ ɩrʊ́tɩ-dɛ́ɛ hákiwá bɩdamáána ɩdɛ́ɛ kpɩná kɩ́fala lám, na ɩdɛ́ɛ tákaraɖáwá waaŋmáa nɛ́ na ɩdɛ́ɛ nʊ́ʊ́zɩ timɛ́rɛ ɖʊɖɔ.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="28">
+      <title>Wɛ́ɖɛ 28</title>
+      <para>Ɩrʊ́ báa weení wɛná yíko iyéle bofu mará nyazɩ yíkowá na kezénbíídi tɩwɛ bɔwʊ́tɩ tɩna tɩ-daá nɛ́ bɩdamáána zamɔ́ɔ yáá ɖúúlinya rɩ́ŋa nɛ́.</para>
+   </article>
+   <article number="29">
+      <title>Wɛ́ɖɛ 29</title>
+      <orderedlist>
+         <listitem>
+            <para>ɩrʊ́ báa weení wɛná wenbí bɩɩbɔ́ɔ́zɩ ɩlá zamɔ́ɔ wenkí kɩ-daá ɩdɛ́ɛ ceré-ceré kɔwɛ nɛ́.</para>
+         </listitem>
+         <listitem>
+            <para>Bɩɩlá tɩ́lasɩ ɩdɛ́ɛ yíkowá-dɛ́ɛ fúúle na ɩdɛ́ɛ wánnɩɩ́ niíni na ɩdɛ́ɛ kezénbíídi, ɩ́tɩlɩ́ sɩsɩ bɩdɔmɔɔná ɩfɛ́lɛ tɛ́ɛ́dɩ-dɛ́ɛ mará káma báa weení iyuú ɩtɩlɩ́ na ɩfa ɩráa-dɛ́ɛ yíkowá na kezénbíídi-dɛ́ɛ gírímá. Na ɖʊɖɔ, bʊdʊ́ʊ ɩbɩɩzɩ ɩfa tɛ́ɛ́dɩ na ɩrʊ́ báa weeni-dɛ́ɛ cɔwʊrɛ niíni gírímá bɩdamáána zamɔ́ɔ wenkí-daá báa weení wɛná ɩdɩ nɛ́.</para>
+         </listitem>
+         <listitem>
+            <para>Bɩdɔmɔɔná yíkowá na kezéńbíídi tɩḿ tɩlɩɩná tɩ́ndɩ na wenbí laadásɩ-dɛ́ɛ bɔwʊ́ɖɛ baayáa ɖɛ sɩsɩ Nations Unies waaŋmáa basɩ́ɩ ɩsɩ bánʊmnáa tɩrɔ nɛ́.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="30">
+      <title>Wɛ́ɖɛ 30</title>
+      <para>Bɩdɔbɔ́ɔ́zɩ naárʊ ɩkɛ́ɛzɩ mará ana adɛ́ɛ nabʊ́rʊ nyazɩ wenbí bɩdamáána tɛ́ɛ́dɩ yáá tɛ́ɛ́dɩ kʊjʊʊ́ dɩnáa yáá ɩlá wenbí bɩtɛ bunúúdi yíkowá yáá kezénbíídi-dɛ́ɛ tɔ́m tɩwɛ tákaraɖá kɩna kɩ-daá nɛ́.</para>
+   </article>
+</udhr>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2014 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
+<ldml>
+	<identity>
+		<version number="$Revision: 11072 $"/>
+		<generation date="$Date: 2014-12-04 15:58:51 -0800 (Thu, 04 Dec 2014) $"/>
+		<language type="bfd"/>
+		<script type="Latn"/>
+	</identity>
+	<layout>
+		<orientation>
+			<characterOrder>left-to-right</characterOrder>
+			<lineOrder>top-to-bottom</lineOrder>
+		</orientation>
+	</layout>
+	<characters>
+		<exemplarCharacters draft="unconfirmed">[a á â ǎ ā b c d e é ê ě ē ə {ə\u0301} {ə\u0302} {ə\u030C} {ə\u0304} ɛ {ɛ\u0301} {ɛ\u0302} {ɛ\u030C} {ɛ\u0304} f g h i í î ǐ ī j k l m n ŋ o ó ô ǒ ō ɔ {ɔ\u0301} {ɔ\u0302} {ɔ\u030C} {ɔ\u0304} p s t u ú û ǔ ū v w y ʼ]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary" draft="unconfirmed">[r]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="unconfirmed">[A B C D E Ə Ɛ F G H I J K l M N Ŋ O Ɔ P R S T U V W Y Z]</exemplarCharacters>
+		<exemplarCharacters type="punctuation" draft="unconfirmed">[, ; \: ! ? . ' &quot;]</exemplarCharacters>
+	</characters>
+</ldml>
+

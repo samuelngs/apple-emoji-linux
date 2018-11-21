@@ -1,0 +1,247 @@
+default namespace = "http://www.unhchr.ch/udhr"
+
+start = udhr
+
+udhr = 
+  element udhr {
+    attribute xml:lang { text },
+    attribute iso639-3 { text },
+    attribute iso15924 { text },
+    attribute dir { "ltr" | "rtl" },
+    attribute key { text },
+    attribute language { text },
+
+    note?, title, note?, preamble, articles, note?}
+
+title =
+  element title { text }
+
+note =
+  element note {
+    para+ }
+
+preamble =
+  element preamble {
+    title, para+ }
+
+
+preamble2 =
+  element preamble {
+    title, recitals, proclamation }
+
+recitals =
+  element recital {
+    attribute number { "1" },
+    para },
+  element recital {
+    attribute number { "2" },
+    para },
+  element recital {
+    attribute number { "3" },
+    para },
+  element recital {
+    attribute number { "4" },
+    para },
+  element recital {
+    attribute number { "5" },
+    para },
+  element recital {
+    attribute number { "6" },
+    para },
+  element recital {
+    attribute number { "7" },
+    para }
+
+proclamation =
+  element proclamation {
+    para+ }
+
+articles =
+    element article { 
+      attribute number { "1" },
+      title,
+      para },
+
+    element article {
+      attribute number { "2" },
+      title,
+      para, para? }, # in some languages the two paragraphs are merged
+
+    element article {
+      attribute number { "3" },
+      title,
+      para },
+
+    element article {
+      attribute number { "4" },
+      title,
+      para },
+
+    element article {
+      attribute number { "5" },
+      title,
+      para },
+
+    element article {
+      attribute number { "6" },
+      title,
+      para },
+
+    element article {
+      attribute number { "7" },
+      title,
+      para },
+
+    element article {
+      attribute number { "8" },
+      title,
+      para },
+
+    element article {
+      attribute number { "9" },
+      title,
+      para },
+
+    element article {
+      attribute number { "10" },
+      title,
+      para },
+
+    element article {
+      attribute number { "11" },
+      title,
+      two-clauses },
+
+    element article {
+      attribute number { "12" },
+      title,
+      para },
+
+    element article {
+      attribute number { "13" },
+      title,
+      two-clauses },
+
+    element article {
+      attribute number { "14" },
+      title,
+      two-clauses },
+
+    element article {
+      attribute number { "15" },
+      title,
+      two-clauses },
+
+    element article {
+      attribute number { "16" },
+      title,
+      three-clauses },
+
+    element article {
+      attribute number { "17" },
+      title,
+      two-clauses },
+
+    element article {
+      attribute number { "18" },
+      title,
+      para },
+
+    element article {
+      attribute number { "19" },
+      title,
+      para },
+
+    element article {
+      attribute number { "20" },
+      title,
+      two-clauses },
+
+    element article {
+      attribute number { "21" },
+      title,
+      three-clauses },
+
+    element article {
+      attribute number { "22" },
+      title,
+      para },
+
+    element article {
+      attribute number { "23" },
+      title,
+      four-clauses },
+
+    element article {
+      attribute number { "24" },
+      title,
+      para },
+
+    element article {
+      attribute number { "25" },
+      title,
+      two-clauses },
+
+    element article {
+      attribute number { "26" },
+      title,
+      three-clauses },
+
+    element article {
+      attribute number { "27" },
+      title,
+      two-clauses },
+
+    element article {
+      attribute number { "28" },
+      title,
+      para },
+
+    element article {
+      attribute number { "29" },
+      title,
+      three-clauses },
+
+    element article {
+      attribute number { "30" },
+      title,
+      para }
+
+two-clauses =
+  element orderedlist {
+    element listitem {
+      attribute tag { text }?,
+      para },
+    element listitem {
+      attribute tag { text }?,
+      para }}
+
+three-clauses =
+  element orderedlist {
+    element listitem {
+      attribute tag { text }?,
+      para },
+    element listitem {
+      attribute tag { text }?,
+      para },
+    element listitem {
+      attribute tag { text }?,
+      para }}
+
+four-clauses =
+  element orderedlist {
+    element listitem {
+      attribute tag { text }?,
+      para },
+    element listitem {
+      attribute tag { text }?,
+      para },
+    element listitem {
+      attribute tag { text }?,
+      para },
+    element listitem {
+      attribute tag { text }?,
+      para }}
+
+para = 
+  element para { text }

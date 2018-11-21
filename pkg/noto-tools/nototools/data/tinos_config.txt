@@ -1,0 +1,235 @@
+vendor Monotype
+disable extrema
+
+name like Arimo
+disable private_use
+
+name like Tinos; weight like BoldItalic; version == 1.30
+disable head/hhea
+disable head/os2
+# 26 glyphs have bounds errors
+# glyph bounds limits max 1825, min -443
+# cp 01d9 (gid 840) above max (1830) but target (gid 908) is not
+# cp 01e0 (gid 947) above max (1845) but target (gid 1019) is not
+# cp 021f (gid 1004) above max (1853) but target (gid 1076) is not
+# cp 022c (gid 1017) above max (1845) but target (gid 1089) is not
+# cp 0230 (gid 1021) above max (1845) but target (gid 1093) is not
+# cp 0309 (gid 692) above max (1835) but target (gid 760) is not
+# cp 0333 (gid 1358) below min (-463) but target (gid 1430) is not
+# cp 0347 (gid 1378) below min (-463) but target (gid 1450) is not
+# cp 03e1 (gid 1423) below min (-448) but target (gid 1495) is not
+# cp 040d (gid 1446) above max (1830) but target (gid 1518) is not
+# cp 04c3 (gid 1526) below min (-444) but target (gid 1598) is not
+# cp 0527 (gid 2596) below min (-444) but target (gid 2940) is not
+# cp 1d09 (gid 2046) below min (-481) but target (gid 2149) is not
+# cp 1d68 (gid 2141) below min (-447) but target (gid 2244) is not
+# cp 1d69 (gid 2142) below min (-445) but target (gid 2245) is not
+# cp 1e1f (gid 1629) above max (1853) but target (gid 1732) is not
+# cp 1e31 (gid 1647) above max (1831) but target (gid 1750) is not
+# cp 1e9b (gid 1747) above max (1852) but target (gid 1850) is not
+# cp 1ec4 (gid 776) above max (1854) but target (gid 844) is not
+# cp 2017 (gid 307) below min (-579) but target (gid 308) is not
+# cp 222b (gid 155) below min (-549) but target (gid 156) is not
+# cp a717 (gid 2370) above max (1834) but target (gid 2492) is not
+# cp a718 (gid 2371) above max (1829) but target (gid 2493) is not
+# cp a719 (gid 2372) above max (1835) but target (gid 2494) is not
+# cp a71b (gid 2405) above max (1910) but target (gid 2527) is not
+# cp a71c (gid 2406) above max (1910) but target (gid 2528) is not
+enable bounds/glyph/ymax only gid 692 776 840 947 1004 1017 1021 1446 1629 1647 1747 2370-2372 2405-2406
+enable bounds/glyph/ymin only gid 155 307 1358 1378 1423 1526 2046 2141-2142 2596
+# 8 mark glyphs have classDef errors
+# cp 0334 (gid 1359) has non-combining-mark glyph class 1 but target (gid 1431) is correct
+# cp 0335 (gid 1360) has non-combining-mark glyph class 1 but target (gid 1432) is correct
+# cp 0336 (gid 1361) has non-combining-mark glyph class 1 but target (gid 1433) is correct
+# cp 0337 (gid 1362) has non-combining-mark glyph class 1 but target (gid 1434) is correct
+# cp 0338 (gid 1363) has non-combining-mark glyph class 1 but target (gid 1435) is correct
+# cp 0340 (gid 1371) has non-combining-mark glyph class 1 but target (gid 1443) is correct
+# cp 0341 (gid 1372) has non-combining-mark glyph class 1 but target (gid 1444) is correct
+# cp 034f (gid 1386) has non-combining-mark glyph class 1 but target (gid 1458) is correct
+enable gdef/classdef/combining_mismatch only cp 0334-0338 0340-0341 034f
+# 10 glyphs have classDef differences
+# cp 0334 (gid 1359) has class 1 but target (gid 1431) has class 3
+# cp 0335 (gid 1360) has class 1 but target (gid 1432) has class 3
+# cp 0336 (gid 1361) has class 1 but target (gid 1433) has class 3
+# cp 0337 (gid 1362) has class 1 but target (gid 1434) has class 3
+# cp 0338 (gid 1363) has class 1 but target (gid 1435) has class 3
+# cp 0340 (gid 1371) has class 1 but target (gid 1443) has class 3
+# cp 0341 (gid 1372) has class 1 but target (gid 1444) has class 3
+# cp 034f (gid 1386) has class 1 but target (gid 1458) has class 3
+# cp 0488 (gid 1489) has class 1 but target (gid 1561) has class 3
+# cp 0489 (gid 1490) has class 1 but target (gid 1562) has class 3
+enable gdef/classdef/not_combining_mismatch only cp 0334-0338 0340-0341 034f 0488-0489
+
+name like Tinos; weight like Bold; version == 1.30
+disable head/hhea
+disable head/os2
+# 46 glyphs have bounds errors
+# glyph bounds limits max 1825, min -443
+# cp 0067 (gid 74) below min (-452) but target (gid 74) is not
+# cp 011d (gid 418) below min (-452) but target (gid 419) is not
+# cp 011f (gid 246) below min (-452) but target (gid 247) is not
+# cp 0121 (gid 420) below min (-452) but target (gid 421) is not
+# cp 0123 (gid 422) below min (-452) but target (gid 423) is not
+# cp 013a (gid 269) above max (1837) but target (gid 270) is not
+# cp 018d (gid 885) below min (-444) but target (gid 1687) is not
+# cp 01db (gid 842) above max (1826) but target (gid 1290) is not
+# cp 01e0 (gid 947) above max (1845) but target (gid 1749) is not
+# cp 01e5 (gid 952) below min (-452) but target (gid 1754) is not
+# cp 01e7 (gid 954) below min (-452) but target (gid 1756) is not
+# cp 01f5 (gid 968) below min (-452) but target (gid 1770) is not
+# cp 01f8 (gid 971) above max (1831) but target (gid 1773) is not
+# cp 022c (gid 1017) above max (1826) but target (gid 1819) is not
+# cp 0230 (gid 1021) above max (1845) but target (gid 1823) is not
+# cp 0309 (gid 692) above max (1835) but target (gid 1140) is not
+# cp 0325 (gid 1344) below min (-453) but target (gid 2146) is not
+# cp 0326 (gid 1345) below min (-523) but target (gid 2147) is not
+# cp 0333 (gid 1358) below min (-463) but target (gid 2160) is not
+# cp 0347 (gid 1378) below min (-463) but target (gid 2180) is not
+# cp 03e1 (gid 1423) below min (-448) but target (gid 2225) is not
+# cp 0402 (gid 556) below min (-450) but target (gid 557) is not
+# cp 04c3 (gid 1526) below min (-454) but target (gid 2328) is not
+# cp 1d09 (gid 2046) below min (-481) but target (gid 2879) is not
+# cp 1d69 (gid 2142) below min (-445) but target (gid 2975) is not
+# cp 1d77 (gid 2193) below min (-538) but target (gid 3194) is not
+# cp 1d83 (gid 2205) below min (-452) but target (gid 3206) is not
+# cp 1e00 (gid 1598) below min (-453) but target (gid 2431) is not
+# cp 1e01 (gid 1599) below min (-453) but target (gid 2432) is not
+# cp 1e10 (gid 1614) below min (-523) but target (gid 2447) is not
+# cp 1e11 (gid 1615) below min (-523) but target (gid 2448) is not
+# cp 1e1f (gid 1629) above max (1837) but target (gid 2462) is not
+# cp 1e21 (gid 1631) below min (-452) but target (gid 2464) is not
+# cp 1e31 (gid 1647) above max (1831) but target (gid 2480) is not
+# cp 1e9b (gid 1747) above max (1829) but target (gid 2580) is not
+# cp 1eaa (gid 750) above max (1855) but target (gid 1198) is not
+# cp 1eb4 (gid 760) above max (1875) but target (gid 1208) is not
+# cp 1ec4 (gid 776) above max (1855) but target (gid 1224) is not
+# cp 1ed6 (gid 794) above max (1855) but target (gid 1242) is not
+# cp 2017 (gid 307) below min (-534) but target (gid 308) is not
+# cp 222b (gid 155) below min (-549) but target (gid 156) is not
+# cp a717 (gid 2370) above max (1834) but target (gid 3373) is not
+# cp a718 (gid 2371) above max (1829) but target (gid 3374) is not
+# cp a719 (gid 2372) above max (1835) but target (gid 3375) is not
+# cp a71b (gid 2405) above max (1910) but target (gid 3408) is not
+# cp a71c (gid 2406) above max (1910) but target (gid 3409) is not
+enable bounds/glyph/ymax only gid 269 692 750 760 776 794 842 947 971 1017 1021 1629 1647 1747 2370-2372 2405-2406
+enable bounds/glyph/ymin only gid 74 155 246 307 418 420 422 556 885 952 954 968 1344-1345 1358 1378 1423 1526 1598-1599 1614-1615 1631 2046 2142 2193 2205
+# 8 mark glyphs have classDef errors
+# cp 0334 (gid 1359) has non-combining-mark glyph class 1 but target (gid 2161) is correct
+# cp 0335 (gid 1360) has non-combining-mark glyph class 1 but target (gid 2162) is correct
+# cp 0336 (gid 1361) has non-combining-mark glyph class 1 but target (gid 2163) is correct
+# cp 0337 (gid 1362) has non-combining-mark glyph class 1 but target (gid 2164) is correct
+# cp 0338 (gid 1363) has non-combining-mark glyph class 1 but target (gid 2165) is correct
+# cp 0340 (gid 1371) has non-combining-mark glyph class 1 but target (gid 2173) is correct
+# cp 0341 (gid 1372) has non-combining-mark glyph class 1 but target (gid 2174) is correct
+# cp 034f (gid 1386) has non-combining-mark glyph class 1 but target (gid 2188) is correct
+enable gdef/classdef/combining_mismatch only cp 0334-0338 0340-0341 034f
+# 10 glyphs have classDef differences
+# cp 0334 (gid 1359) has class 1 but target (gid 2161) has class 3
+# cp 0335 (gid 1360) has class 1 but target (gid 2162) has class 3
+# cp 0336 (gid 1361) has class 1 but target (gid 2163) has class 3
+# cp 0337 (gid 1362) has class 1 but target (gid 2164) has class 3
+# cp 0338 (gid 1363) has class 1 but target (gid 2165) has class 3
+# cp 0340 (gid 1371) has class 1 but target (gid 2173) has class 3
+# cp 0341 (gid 1372) has class 1 but target (gid 2174) has class 3
+# cp 034f (gid 1386) has class 1 but target (gid 2188) has class 3
+# cp 0488 (gid 1489) has class 1 but target (gid 2291) has class 3
+# cp 0489 (gid 1490) has class 1 but target (gid 2292) has class 3
+enable gdef/classdef/not_combining_mismatch only cp 0334-0338 0340-0341 034f 0488-0489
+
+name like Tinos; weight like Italic; version == 1.30
+disable head/hhea
+disable head/os2
+# 28 glyphs have bounds errors
+# glyph bounds limits max 1825, min -443
+# cp 01cd (gid 828) above max (1832) but target (gid 896) is not
+# cp 01cf (gid 830) above max (1832) but target (gid 898) is not
+# cp 01d1 (gid 832) above max (1832) but target (gid 900) is not
+# cp 01d3 (gid 834) above max (1832) but target (gid 902) is not
+# cp 0309 (gid 692) above max (1835) but target (gid 760) is not
+# cp 032c (gid 1351) below min (-444) but target (gid 1423) is not
+# cp 032d (gid 1352) below min (-444) but target (gid 1424) is not
+# cp 03e1 (gid 1423) below min (-446) but target (gid 1495) is not
+# cp 1d68 (gid 2141) below min (-445) but target (gid 2244) is not
+# cp 1d79 (gid 2195) below min (-444) but target (gid 2317) is not
+# cp 1e12 (gid 1616) below min (-444) but target (gid 1719) is not
+# cp 1e13 (gid 1617) below min (-444) but target (gid 1720) is not
+# cp 1e18 (gid 1622) below min (-444) but target (gid 1725) is not
+# cp 1e19 (gid 1623) below min (-444) but target (gid 1726) is not
+# cp 1e31 (gid 1647) above max (1826) but target (gid 1750) is not
+# cp 1e3c (gid 1658) below min (-444) but target (gid 1761) is not
+# cp 1e3d (gid 1659) below min (-444) but target (gid 1762) is not
+# cp 1e4a (gid 1672) below min (-444) but target (gid 1775) is not
+# cp 1e4b (gid 1673) below min (-444) but target (gid 1776) is not
+# cp 1e70 (gid 1710) below min (-444) but target (gid 1813) is not
+# cp 1e71 (gid 1711) below min (-444) but target (gid 1814) is not
+# cp 1e76 (gid 1716) below min (-444) but target (gid 1819) is not
+# cp 1e77 (gid 1717) below min (-444) but target (gid 1820) is not
+# cp 1ec4 (gid 776) above max (1854) but target (gid 844) is not
+# cp 2017 (gid 307) below min (-526) but target (gid 308) is not
+# cp 222b (gid 155) below min (-549) but target (gid 156) is not
+# cp a71b (gid 2405) above max (1910) but target (gid 2527) is not
+# cp a71c (gid 2406) above max (1910) but target (gid 2528) is not
+enable bounds/glyph/ymax only gid 692 776 828 830 832 834 1647 2405-2406
+enable bounds/glyph/ymin only gid 155 307 1351-1352 1423 1616-1617 1622-1623 1658-1659 1672-1673 1710-1711 1716-1717 2141 2195
+# 8 mark glyphs have classDef errors
+# cp 0334 (gid 1359) has non-combining-mark glyph class 1 but target (gid 1431) is correct
+# cp 0335 (gid 1360) has non-combining-mark glyph class 1 but target (gid 1432) is correct
+# cp 0336 (gid 1361) has non-combining-mark glyph class 1 but target (gid 1433) is correct
+# cp 0337 (gid 1362) has non-combining-mark glyph class 1 but target (gid 1434) is correct
+# cp 0338 (gid 1363) has non-combining-mark glyph class 1 but target (gid 1435) is correct
+# cp 0340 (gid 1371) has non-combining-mark glyph class 1 but target (gid 1443) is correct
+# cp 0341 (gid 1372) has non-combining-mark glyph class 1 but target (gid 1444) is correct
+# cp 034f (gid 1386) has non-combining-mark glyph class 1 but target (gid 1458) is correct
+enable gdef/classdef/combining_mismatch only cp 0334-0338 0340-0341 034f
+# 10 glyphs have classDef differences
+# cp 0334 (gid 1359) has class 1 but target (gid 1431) has class 3
+# cp 0335 (gid 1360) has class 1 but target (gid 1432) has class 3
+# cp 0336 (gid 1361) has class 1 but target (gid 1433) has class 3
+# cp 0337 (gid 1362) has class 1 but target (gid 1434) has class 3
+# cp 0338 (gid 1363) has class 1 but target (gid 1435) has class 3
+# cp 0340 (gid 1371) has class 1 but target (gid 1443) has class 3
+# cp 0341 (gid 1372) has class 1 but target (gid 1444) has class 3
+# cp 034f (gid 1386) has class 1 but target (gid 1458) has class 3
+# cp 0488 (gid 1489) has class 1 but target (gid 1561) has class 3
+# cp 0489 (gid 1490) has class 1 but target (gid 1562) has class 3
+enable gdef/classdef/not_combining_mismatch only cp 0334-0338 0340-0341 034f 0488-0489
+
+name like Tinos; weight like Regular; version == 1.30
+disable head/hhea
+disable head/os2
+# 10 glyphs have bounds errors
+# glyph bounds limits max 1825, min -443
+# cp 01f8 (gid 971) above max (1831) but target (gid 1773) is not
+# cp 021f (gid 1004) above max (1833) but target (gid 1806) is not
+# cp 0309 (gid 692) above max (1835) but target (gid 1140) is not
+# cp 1d77 (gid 2193) below min (-528) but target (gid 3194) is not
+# cp 1d79 (gid 2195) below min (-444) but target (gid 3196) is not
+# cp 1ec4 (gid 776) above max (1854) but target (gid 1224) is not
+# cp 2017 (gid 307) below min (-526) but target (gid 308) is not
+# cp 222b (gid 155) below min (-549) but target (gid 156) is not
+# cp a71b (gid 2405) above max (1910) but target (gid 3408) is not
+# cp a71c (gid 2406) above max (1910) but target (gid 3409) is not
+enable bounds/glyph/ymax only gid 692 776 971 1004 2405-2406
+enable bounds/glyph/ymin only gid 155 307 2193 2195
+# 8 mark glyphs have classDef errors
+# cp 0334 (gid 1359) has non-combining-mark glyph class 1 but target (gid 2161) is correct
+# cp 0335 (gid 1360) has non-combining-mark glyph class 1 but target (gid 2162) is correct
+# cp 0336 (gid 1361) has non-combining-mark glyph class 1 but target (gid 2163) is correct
+# cp 0337 (gid 1362) has non-combining-mark glyph class 1 but target (gid 2164) is correct
+# cp 0338 (gid 1363) has non-combining-mark glyph class 1 but target (gid 2165) is correct
+# cp 0340 (gid 1371) has non-combining-mark glyph class 1 but target (gid 2173) is correct
+# cp 0341 (gid 1372) has non-combining-mark glyph class 1 but target (gid 2174) is correct
+# cp 034f (gid 1386) has non-combining-mark glyph class 1 but target (gid 2188) is correct
+enable gdef/classdef/combining_mismatch only cp 0334-0338 0340-0341 034f
+# 10 glyphs have classDef differences
+# cp 0334 (gid 1359) has class 1 but target (gid 2161) has class 3
+# cp 0335 (gid 1360) has class 1 but target (gid 2162) has class 3
+# cp 0336 (gid 1361) has class 1 but target (gid 2163) has class 3
+# cp 0337 (gid 1362) has class 1 but target (gid 2164) has class 3
+# cp 0338 (gid 1363) has class 1 but target (gid 2165) has class 3
+# cp 0340 (gid 1371) has class 1 but target (gid 2173) has class 3
+# cp 0341 (gid 1372) has class 1 but target (gid 2174) has class 3
+# cp 034f (gid 1386) has class 1 but target (gid 2188) has class 3
+# cp 0488 (gid 1489) has class 1 but target (gid 2291) has class 3
+# cp 0489 (gid 1490) has class 1 but target (gid 2292) has class 3
+enable gdef/classdef/not_combining_mismatch only cp 0334-0338 0340-0341 034f 0488-0489

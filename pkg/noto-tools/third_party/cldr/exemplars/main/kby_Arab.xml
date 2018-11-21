@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2014 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
+<ldml>
+	<identity>
+		<version number="$Revision: 11072 $"/>
+		<generation date="$Date: 2014-12-04 15:58:51 -0800 (Thu, 04 Dec 2014) $"/>
+		<language type="kby"/>
+		<script type="Arab"/>
+	</identity>
+	<layout>
+		<orientation>
+			<characterOrder>right-to-left</characterOrder>
+			<lineOrder>top-to-bottom</lineOrder>
+		</orientation>
+	</layout>
+	<characters>
+		<exemplarCharacters draft="unconfirmed">[\u0610\u0611\u0612\u0613\u0614 \u064E \u064F \u0650 \u0651 \u0652 \u065C \u0670 ء آ أ إ ا ب ة ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ڟ ع غ ڡ ڢ ٯ ڧ ك ڪ گ ل م ن ں ه و ى ي ے]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary" draft="unconfirmed">[ـ\u200C\u200D\u200E\u200F 0 1 2 3 4 5 6 7 8 9]</exemplarCharacters>
+		<exemplarCharacters type="punctuation" draft="unconfirmed">[! ( ) * - . / : \ ] ^ « » ؀ ،   ؛ ؞ ؟ ۝]</exemplarCharacters>
+	</characters>
+</ldml>
+

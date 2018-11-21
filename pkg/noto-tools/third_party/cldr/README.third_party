@@ -1,0 +1,10 @@
+URL: http://unicode.org/cldr/trac/export/13725/trunk
+Version: r13725
+License: Unicode
+License File: LICENSE
+
+Description:
+CLDR data files for language and country information.
+
+Local Modifications:
+No Modifications.

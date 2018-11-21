@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2014 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
+<ldml>
+	<identity>
+		<version number="$Revision: 13599 $"/>
+		<language type="mzm"/>
+	</identity>
+	<characters>
+		<exemplarCharacters draft="unconfirmed">[a á à â ǎ ã {ã\u0301} {ã\u0300} {ã\u0302} {ã\u030C} b ɓ c d ɗ e é è ê ě ɛ {ɛ\u0301} {ɛ\u0300} {ɛ\u0302} {ɛ\u030C} {ɛ\u0303} {ɛ\u0303\u0301} {ɛ\u0303\u0300} {ɛ\u0303\u0302} {ɛ\u0303\u030C} f g h i í ì î ǐ ĩ {ĩ\u0301} {ĩ\u0300} {ĩ\u0302} {ĩ\u030C} j k l m {m\u0300} n ǹ ň o ó ò ô ǒ ɔ {ɔ\u0301} {ɔ\u0300} {ɔ\u0302} {ɔ\u030C} {ɔ\u0303} {ɔ\u0303\u0301} {ɔ\u0303\u0302} {ɔ\u0303\u030C} p r s t u ú ù û ǔ ũ ṹ {ũ\u0300} {ũ\u0302} {ũ\u030C} v w y z]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary" draft="unconfirmed">[q x]</exemplarCharacters>
+	</characters>
+</ldml>

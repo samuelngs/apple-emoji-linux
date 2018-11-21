@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--© The Office of the High Commisioner for Human Rights-->
+
+<udhr iso639-3='ces' xml:lang='cs' key='ces' n='Czech' dir='ltr' iso15924='Latn' xmlns="http://www.unhchr.ch/udhr">
+   <title>VŠEOBECNÁ DEKLARACE LIDSKÝCH PRÁV</title>
+   <preamble>
+      <title>Úvod</title>
+      <para>U vědomí toho,</para>
+      <para>že uznání přirozené důstojnosti a rovných a nezcizitelných práv členů lidské rodiny je základem svobody, spravedlnosti a míru ve světě,</para>
+      <para>že zneuznání lidských práv a pohrdání jimi vedlo k barbarským činům, urážejícím svědomí lidstva, a že vybudování světa, ve kterém lidé, zbavení strachu a nouze, se budou těšiti svobodě projevu a přesvědčení, bylo prohlášeno za nejvyšší cíl lidu,</para>
+      <para>že je nutné, aby lidská práva byla chráněna zákonem, nemá-li být člověk donucen uchylovat se, když vše ostatní selhalo, k odboji proti tyranii a útlaku,</para>
+      <para>že je nutné podporovat rozvoj přátelských vztahu mezi národy,</para>
+      <para>že lid Spojených národů zdůraznil v Chartě znovu svou víru v základní lidská práva, v důstojnost a hodnotu lidské osobnosti, v rovná práva mužů i žen a že se rozhodl podporovat sociální pokrok a vytvořit lepší životní podmínky ve větší svobodě,</para>
+      <para>že členské státy převzaly závazek zajistit ve spolupráci s Organizací spojených národů všeobecné uznávání a zachovávání lidských práv a základních svobod a</para>
+      <para>že stejné chápání těchto práv a svobod má nesmírný význam pro dokonalé splnění tohoto závazku,</para>
+      <para>Valné shromáždění</para>
+      <para>vyhlašuje tuto</para>
+      <para>Všeobecnou deklaraci lidských práv</para>
+      <para>jakožto společný cíl pro všechny národy a všechny státy za tím účelem, aby se každý jednotlivec a každý orgán společnosti, maje tuto deklaraci stále na mysli, snažil vyučováním a výchovou rozšířit úctu k těmto právům a svobodám a zajistil postupnými opatřeními vnitrostátními i mezinárodními jejich všeobecné a účinné uznávání a zachovávání jak mezi lidem členských států samých, tak i mezi lidem území, jež jsou pod jejich pravomocí.</para>
+   </preamble>
+   <article number="1">
+      <title>Článek 1</title>
+      <para>Všichni lidé rodí se svobodní a sobě rovní co do důstojnosti a práv. Jsou nadáni rozumem a svědomím a mají spolu jednat v duchu bratrství.</para>
+   </article>
+   <article number="2">
+      <title>Článek 2</title>
+      <para>Každý má všechna práva a všechny svobody, stanovené touto deklarací, bez jakéhokoli rozlišování, zejména podle rasy, barvy, pohlaví, jazyka, náboženství, politického nebo jiného smýšlení, národnostního nebo sociálního původu, majetku, rodu nebo jiného postavení.</para>
+      <para>Žádný rozdíl nebude dále činěn z důvodu politického, právního nebo mezinárodního postavení země nebo území, k nimž určitá osoba přísluší, ať jde o zemi nebo území nezávislé nebo pod poručenstvím, nesamosprávné nebo podrobené jakémukoli jinému omezení suverenity.</para>
+   </article>
+   <article number="3">
+      <title>Článek 3</title>
+      <para>Každý má právo na život, svobodu a osobní bezpečnost.</para>
+   </article>
+   <article number="4">
+      <title>Článek 4</title>
+      <para>Nikdo nesmí být držen v otroctví nebo nevolnictví; všechny formy otroctví a obchodu s otroky jsou zakázány.</para>
+   </article>
+   <article number="5">
+      <title>Článek 5</title>
+      <para>Nikdo nesmí být mučen nebo podrobován krutému, nelidskému nebo ponižujícímu zacházení nebo trestu.</para>
+   </article>
+   <article number="6">
+      <title>Článek 6</title>
+      <para>Každý má právo na to, aby byla všude uznávána jeho právní osobnost.</para>
+   </article>
+   <article number="7">
+      <title>Článek 7</title>
+      <para>Všichni jsou si před zákonem rovni a mají právo na stejnou ochranu zákona bez jakéhokoli rozlišování. Všichni mají právo na stejnou ochranu proti jakékoli diskriminaci, která porušuje tuto deklaraci, a proti každému podněcování k takové diskriminaci.</para>
+   </article>
+   <article number="8">
+      <title>Článek 8</title>
+      <para>Každý má právo, aby mu příslušné vnitrostátní soudy poskytly účinnou ochranu proti činům porušujícím základní práva, která jsou mu přiznána ústavou nebo zákonem.</para>
+   </article>
+   <article number="9">
+      <title>Článek 9</title>
+      <para>Nikdo nesmí být svévolně zatčen, držen ve vazbě nebo vyhoštěn do vyhnanství.</para>
+   </article>
+   <article number="10">
+      <title>Článek 10</title>
+      <para>Každý má úplně stejné právo, aby byl spravedlivě a veřejně vyslechnut nezávislým a nestranným soudem, který rozhoduje buď o jeho právech a povinnostech, nebo o jakémkoli trestním obvinění vzneseném proti němu.</para>
+   </article>
+   <article number="11">
+      <title>Článek 11</title>
+      <orderedlist>
+         <listitem>
+            <para>Každý, kdo je obviněn z trestného činu, považuje se za nevinného, dokud není zákonným postupem prokázána jeho vina ve veřejném řízení, v němž mu byly zajištěny veškeré možnosti obhajoby.</para>
+         </listitem>
+         <listitem>
+            <para>Nikdo nesmí být odsouzen pro čin nebo opomenutí, které v době, kdy byly spáchány, nebyly trestné podle státního nebo mezinárodního práva. Rovněž nesmí být uložen trest těžší, než jakého bylo lze použít v době, kdy byl trestný čin spáchán.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="12">
+      <title>Článek 12</title>
+      <para>Nikdo nesmí být vystaven svévolnému zasahování do soukromého života, do rodiny, domova nebo korespondence, ani útokům na svou čest a pověst. Každý má právo na zákonnou ochranu proti takovým zásahům nebo útokům.</para>
+   </article>
+   <article number="13">
+      <title>Článek 13</title>
+      <orderedlist>
+         <listitem>
+            <para>Každý má právo volně se pohybovat a svobodně si volit bydliště uvnitř určitého státu.</para>
+         </listitem>
+         <listitem>
+            <para>Každý má právo opustit kteroukoli zemi, i svou vlastní, a vrátit se do své země.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="14">
+      <title>Článek 14</title>
+      <orderedlist>
+         <listitem>
+            <para>Každý má právo vyhledat si před pronásledováním útočiště v jiných zemích a požívat tam azylu.</para>
+         </listitem>
+         <listitem>
+            <para>Toto právo nelze uplatnit v případě stíhání skutečně odůvodněného nepolitickými zločiny nebo činy, které jsou v rozporu s cíli a zásadami Spojených národů.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="15">
+      <title>Článek 15</title>
+      <orderedlist>
+         <listitem>
+            <para>Každý má právo na státní příslušnost.</para>
+         </listitem>
+         <listitem>
+            <para>Nikdo nesmí být svévolně zbaven své státní příslušnosti ani práva svou státní příslušnost změnit.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="16">
+      <title>Článek 16</title>
+      <orderedlist>
+         <listitem>
+            <para>Muži a ženy, jakmile dosáhnou plnoletosti, mají právo, bez jakéhokoli omezení z důvodů příslušnosti rasové, národnostní nebo náboženské, uzavřít sňatek a založit rodinu. Pokud jde o manželství, mají za jeho trvání i při jeho rozvázání stejná práva.</para>
+         </listitem>
+         <listitem>
+            <para>Sňatky mohou být uzavřeny jen se svobodným a plným souhlasem nastávajících manželů.</para>
+         </listitem>
+         <listitem>
+            <para>Rodina je přirozenou a základní jednotkou společnosti a má nárok na ochranu ze strany společnosti a státu.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="17">
+      <title>Článek 17</title>
+      <orderedlist>
+         <listitem>
+            <para>Každý má právo vlastnit majetek jak sám, tak spolu s jinými.</para>
+         </listitem>
+         <listitem>
+            <para>Nikdo nesmí být svévolně zbaven svého majetku.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="18">
+      <title>Článek 18</title>
+      <para>Každý má právo na svobodu myšlení, svědomí a náboženství; toto právo zahrnuje v sobě i volnost změnit své náboženství nebo víru, jakož i svobodu projevovat své náboženství nebo víru, sám nebo společně s jinými, ať veřejně nebo soukromě, vyučováním, prováděním náboženských úkonů, bohoslužbou a zachováváním obřadů.</para>
+   </article>
+   <article number="19">
+      <title>Článek 19</title>
+      <para>Každý má právo na svobodu přesvědčení a projevu; toto právo nepřipouští, aby někdo trpěl újmu pro své přesvědčení, a zahrnuje právo vyhledávat, přijímat a rozšiřovat informace a myšlenky jakýmikoli prostředky a bez ohledu na hranice.</para>
+   </article>
+   <article number="20">
+      <title>Článek 20</title>
+      <orderedlist>
+         <listitem>
+            <para>Každému je zaručena svoboda pokojného shromažďování a sdružování.</para>
+         </listitem>
+         <listitem>
+            <para>Nikdo nesmí být nucen, aby byl členem nějakého sdružení.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="21">
+      <title>Článek 21</title>
+      <orderedlist>
+         <listitem>
+            <para>Každý má právo, aby se účastnil vlády své země přímo nebo prostřednictvím svobodně volených zástupců.</para>
+         </listitem>
+         <listitem>
+            <para>Každý má právo vstoupit za rovných podmínek do veřejných služeb své země.</para>
+         </listitem>
+         <listitem>
+            <para>Základem vládní moci budiž vůle lidu; ta musí být vyjádřena správně prováděnými volbami, které se mají konat v pravidelných obdobích na základě všeobecného a rovného hlasovacího práva tajným hlasováním nebo jiným rovnocenným postupem, zabezpečujícím svobodu hlasování.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="22">
+      <title>Článek 22</title>
+      <para>Každý člověk má jako člen společnosti právo na sociální zabezpečení a nárok na to, aby mu byla národním úsilím i mezinárodní součinností a v souladu s organizací a s prostředky příslušného státu zajištěna hospodářská, sociální a kulturní práva, nezbytná k jeho důstojnosti a k svobodnému rozvoji jeho osobnosti.</para>
+   </article>
+   <article number="23">
+      <title>Článek 23</title>
+      <orderedlist>
+         <listitem>
+            <para>Každý má právo na práci, na svobodnou volbu zaměstnání, na spravedlivé a uspokojivé pracovní podmínky a na ochranu proti nezaměstnanosti.</para>
+         </listitem>
+         <listitem>
+            <para>Každý, bez jakéhokoli rozlišování, má nárok na stejný plat za stejnou práci.</para>
+         </listitem>
+         <listitem>
+            <para>Každý pracující má právo na spravedlivou a uspokojivou odměnu, která by zajišťovala jemu samému a jeho rodině živobytí odpovídající lidské důstojnosti a která by byla doplněna, kdyby toho bylo třeba, jinými prostředky sociální ochrany.</para>
+         </listitem>
+         <listitem>
+            <para>Na ochranu svých zájmů má každý právo zakládat s jinými odborové organizace a přistupovat k nim.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="24">
+      <title>Článek 24</title>
+      <para>Každý má právo na odpočinek a na zotavení, zejména také na rozumné vymezení pracovních hodin a na pravidelnou placenou dovolenou.</para>
+   </article>
+   <article number="25">
+      <title>Článek 25</title>
+      <orderedlist>
+         <listitem>
+            <para>Každý má právo na takovou životní úroveň, která by byla s to zajistit jeho zdraví a blahobyt i zdraví a blahobyt jeho rodiny, počítajíc v to zejména výživu, šatstvo, byt a lékařskou péči, jakož i nezbytná sociální opatření; má právo na zabezpečení v nezaměstnanosti, v nemoci, při nezpůsobilosti k práci, při ovdovění, ve stáří nebo v ostatních případech ztráty výdělečných možností, nastalé v důsledku okolností nezávislých na jeho vůli.</para>
+         </listitem>
+         <listitem>
+            <para>Mateřství a dětství mají nárok na zvláštní péči a pomoc. Všechny děti, ať manželské nebo nemanželské, požívají stejné sociální ochrany.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="26">
+      <title>Článek 26</title>
+      <orderedlist>
+         <listitem>
+            <para>Každý má právo na vzdělání. Vzdělání nechť je bezplatné, alespoň v počátečních a základních stupních. Základní vzdělání je povinné. Technické a odborné vzdělání budiž všeobecně přístupné a rovněž vyšší vzdělání má být stejně přístupné všem podle schopností.</para>
+         </listitem>
+         <listitem>
+            <para>Vzdělání má směřovat k plnému rozvoji lidské osobnosti a k posílení úcty k lidským právům a základním svobodám. Má napomáhat k vzájemnému porozumění, snášenlivosti a přátelství mezi všemi národy a všemi skupinami rasovými i náboženskými, jakož i k rozvoji činnosti Spojených národů pro zachování míru.</para>
+         </listitem>
+         <listitem>
+            <para>Rodiče mají přednostní právo volit druh vzdělání pro své děti.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="27">
+      <title>Článek 27</title>
+      <orderedlist>
+         <listitem>
+            <para>Každý má právo svobodně se účastnit kulturního života společnosti, úžívat plodů umění a podílet se na vědeckém pokroku a jeho výtěžcích.</para>
+         </listitem>
+         <listitem>
+            <para>Každý má právo na ochranu morálních a materiálních zájmů, které vyplývají z jeho vědecké, literární nebo umělecké tvorby.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="28">
+      <title>Článek 28</title>
+      <para>Každý má právo na to, aby vládl takový sociální a mezinárodní řád, ve kterém by práva a svobody stanovené v této deklaraci byly plně uplatněny.</para>
+   </article>
+   <article number="29">
+      <title>Článek 29</title>
+      <orderedlist>
+         <listitem>
+            <para>Každý má povinnosti vůči společnosti, v níž jediné může volně a plně rozvinout svou osobnost.</para>
+         </listitem>
+         <listitem>
+            <para>Každý je při výkonu svých práv a svobod podroben jen takovým omezením, která stanoví zákon výhradně za tím účelem, aby bylo zajištěno uznávání a zachovávání práv a svobod ostatních a vyhověno spravedlivým požadavkům morálky, veřejného pořádku a obecného blaha v demokratické společnosti.</para>
+         </listitem>
+         <listitem>
+            <para>Výkon těchto práv a svobod nesmí být v žádném případě v rozporu s cíli a zásadami Spojených národů.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="30">
+      <title>Článek 30</title>
+      <para>Nic v této deklaraci nemůže být vykládáno, jako by dávalo kterémukoli státu, kterékoli skupině nebo osobě jakékoli právo vyvíjet činnost nebo dopouštět se činů, které by směřovaly k potlačení některého z práv nebo některé ze svobod v této deklaraci uvedených.</para>
+   </article>
+</udhr>

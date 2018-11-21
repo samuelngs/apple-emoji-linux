@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2014 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
+<ldml>
+	<identity>
+		<version number="$Revision: 11072 $"/>
+		<generation date="$Date: 2014-12-04 15:58:51 -0800 (Thu, 04 Dec 2014) $"/>
+		<language type="dnj"/>
+		<script type="Latn"/>
+	</identity>
+	<characters>
+		<exemplarCharacters draft="unconfirmed">[a b ɓ d e ə ɛ f g {gb} h i k {kp} {kw} l m n {nw} {ny} ŋ o ɔ ɵ p r s t u ɥ v w x y z]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary" draft="unconfirmed">[c j q]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="unconfirmed">[A B Ɓ D E Ə Ɛ F G {Gb} H I K {Kp} {Kw} L M N {Nw} {Ny} Ŋ O Ɔ Ɵ P R S T U Ɥ V W X Y Z]</exemplarCharacters>
+	</characters>
+</ldml>
+

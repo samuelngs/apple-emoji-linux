@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2014 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
+<ldml>
+	<identity>
+		<version number="$Revision: 10726 $"/>
+		<generation date="$Date: 2014-08-05 10:40:54 -0700 (Tue, 05 Aug 2014) $"/>
+		<language type="sd"/>
+	</identity>
+	<localeDisplayNames>
+		<languages>
+			<language type="sd">سنڌي</language>
+		</languages>
+	</localeDisplayNames>
+	<layout>
+		<orientation>
+			<characterOrder>right-to-left</characterOrder>
+			<lineOrder>top-to-bottom</lineOrder>
+		</orientation>
+	</layout>
+	<characters>
+		<exemplarCharacters>[ا ب ٻ ڀ پ ت ٿ ٽ ٺ ث ج ڄ {جھ} ڃ چ ڇ ح خ د ڌ ڏ ڊ ڍ ذ ر ڙ ڙھ ز س ش ص ض ط ظ ع غ ف ڦ ق ڪ ک گ ڳ {گھ} ڱ ل م ن ڻ و ه ي]</exemplarCharacters>
+		<exemplarCharacters type="index">[ا ب ٻ ڀ پ ت ٿ ٽ ٺ ث ج ڄ {جھ} ڃ چ ڇ ح خ د ڌ ڏ ڊ ڍ ذ ر ڙ ڙھ ز س ش ص ض ط ظ ع غ ف ڦ ق ڪ ک گ ڳ {گھ} ڱ ل م ن ڻ و ه ي]</exemplarCharacters>
+	</characters>
+	<numbers>
+		<defaultNumberingSystem>arab</defaultNumberingSystem>
+		<otherNumberingSystems>
+			<native>arab</native>
+		</otherNumberingSystems>
+		<currencies>
+			<currency type="PKR">
+				<symbol>Rs</symbol>
+			</currency>
+		</currencies>
+	</numbers>
+</ldml>

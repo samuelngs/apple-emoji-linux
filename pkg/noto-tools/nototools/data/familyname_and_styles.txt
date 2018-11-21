@@ -1,0 +1,252 @@
+# See planning spreadsheet for more info.
+# This includes some 'grandfathered' fonts from phase 2,
+# might not want to include them.
+
+-- TRBH/CR/RI --
+NotoSans
+NotoSansDisplay
+NotoSansUI
+-- TRBH/CR --
+NotoSansMonospace
+-- TRBH/CR/RI --
+NotoSerif
+NotoSerifDisplay
+-- TRBH --
+NotoSansSymbols
+-- R --
+NotoSansSymbols2
+NotoSansMath
+-- TRBH --
+NotoSansThai
+NotoSansThaiUI
+-- TRBH/CR --
+NotoSansThaiNew
+NotoSansThaiNewUI
+NotoSerifThai
+-- TRBH/CR --
+NotoSansHebrew
+NotoSansHebrewNew
+NotoSerifHebrew  # no New
+NotoSansDevanagari
+NotoSansDevanagariUI
+NotoSerifDevanagari
+NotoSansArabic
+NotoSansArabicUI
+NotoSerifArabic  # was Naskh
+NotoSansGeorgian
+NotoSerifGeorgian
+NotoSansTamil
+NotoSansTamilUI
+NotoSerifTamil
+NotoSerifTamilSlanted
+NotoSansBengali
+NotoSansBengaliUI
+NotoSerifBengali
+NotoSansArmenian
+NotoSerifArmenian
+NotoSansMyanmar
+NotoSansMyanmarUI
+NotoSerifMyanmar
+NotoSansKhmer
+NotoSansKhmerUI
+NotoSerifKhmer
+NotoSansSinhala
+NotoSansSinhalaUI
+NotoSerifSinhala
+NotoSansLao
+NotoSansLaoUI
+NotoSerifLao
+NotoSansTelugu
+NotoSansTeluguUI
+NotoSerifTelugu
+NotoSansKannada
+NotoSansKannadaUI
+-- TRBH --
+NotoSerifKannada
+-- TRBH/CR --
+NotoSansGujarati
+NotoSansGujaratiUI
+-- TRBH --
+NotoSerifGujarati
+-- TRBH/CR --
+NotoSansGurmukhi
+NotoSansGurmukhiUI
+-- TRBH --
+NotoSerifGurmukhi
+-- TRBH/CR --
+NotoSansMalayalam
+NotoSansMalayalamUI
+-- TRBH --
+NotoSerifMalayalam
+-- TRBH/CR --
+NotoSansEthiopic
+-- TRBH --
+NotoSerifEthiopic
+-- RB --
+NotoNastaliqUrdu
+-- TRBH --
+NotoSansOriya
+NotoSansOriyaUI
+NotoSerifOriya
+NotoSansThaana
+NotoSerifThaana
+NotoSansTibetan
+NotoSerifTibetan
+NotoSansCham
+NotoSansSyriacEastern
+NotoSansSyriacWestern
+NotoSansSyriacEstrangela  # Estrangelo on spreadsheet?
+NotoSansCanadianAboriginal  # CanadianSyllabics on spreadsheet?
+NotoSansCherokee
+-- R --
+NotoSansAdlam
+NotoSansAdlamUnjoined
+NotoSansChakma
+NotoSansMarchen
+NotoSansMendeKikakui
+NotoSansMiao
+NotoSansMro
+NotoSansNewa
+NotoSansOsage
+NotoSansPahawhHmong
+NotoSansSharada
+NotoSansSiddham
+NotoSansSignwriting
+NotoSansTakri
+NotoSansTirhuta
+NotoSansWarangCiti
+NotoSansAhom
+NotoSansAnatolianHieroglyphs
+NotoSansAvestan
+NotoSansBalinese
+NotoSansBamum
+NotoSansBassaVah
+NotoSansBatak
+NotoSansBhaiksuki
+NotoSansBrahmi
+NotoSansBuginese
+NotoSansBuhid
+NotoSansCarian
+NotoSansCaucasianAlbanian
+NotoSansCoptic
+NotoSansCypriot
+NotoSansDeseret
+NotoSansDuployan
+NotoSansElbasan
+NotoSansEgyptianHieroglyphs
+NotoSansGlagolitic
+NotoSansGothic
+NotoSansGrantha
+NotoSansHanunoo
+NotoSansHatran
+NotoSansImperialAramaic
+NotoSansInscriptionalPahlavi
+NotoSansInscriptionalParthian
+NotoSansJavanese
+NotoSansKaithi
+NotoSansKayahLi
+NotoSansKharoshthi
+NotoSansKhojki
+NotoSansKhudawadi
+NotoSansLepcha
+NotoSansLimbu
+NotoSansLinearA
+NotoSansLinearB
+NotoSansLisu
+NotoSansLycian
+NotoSansLydian
+NotoSansMahajani
+NotoSansMandaic
+NotoSansManichaean
+NotoSansMeeteiMayek
+NotoSansMeroiticCursive
+NotoSansMeroiticHieroglyphs
+NotoSansModi
+NotoSansMongolian
+NotoSansMultani
+NotoSansNKo
+NotoSansNabataean
+NotoSansNewTaiLue
+NotoSansOgham
+NotoSansOlChiki
+NotoSansOldHungarian
+NotoSansOldItalic
+NotoSansOldNorthArabian
+NotoSansOldPermic
+NotoSansOldPersian
+NotoSansOldSouthArabian
+NotoSansOldTurkic
+NotoSansOsmanya
+NotoSansPalmyrene
+NotoSansPauCinHau
+NotoSansPhagsPa
+NotoSansPhoenician
+NotoSansPsalterPahlavi
+NotoSansRejang
+NotoSansRunic
+NotoSansSamaritan
+NotoSansSaurashtra
+NotoSansShavian
+# NotoSansShorthandFormatControls (spreadsheet had this, it's Duployan)
+NotoSansSoraSompeng
+NotoSansSundanese
+NotoSansSumeroAkkadianCuneiform
+NotoSansSylotiNagri
+NotoSansTagbanwa
+NotoSansTagalog
+NotoSansTaiLe
+NotoSansTaiTham
+NotoSansTaiViet
+NotoSansTangut
+NotoSansTifinagh
+NotoSansUgaritic
+NotoSansVai
+NotoSansYi
+# NotoSansZanabazarSquare (not in Unicode 9)
+
+#extras
+-- RB/R/RI --
+Arimo
+Cousine
+Tinos
+-- R --
+NotoEmoji
+NotoColorEmoji
+NotoMusic
+-- LB --
+NotoSansMono
+
+# CJK
+-- TRBH --
+noto-cjk/NotoSansCJKjp
+noto-cjk/NotoSansCJKkr
+noto-cjk/NotoSansCJKsc
+noto-cjk/NotoSansCJKtc
+noto-cjk/NotoSansMonoCJKjp
+noto-cjk/NotoSansMonoCJKkr
+noto-cjk/NotoSansMonoCJKsc
+noto-cjk/NotoSansMonoCJKtc
+noto-cjk/NotoSansKR
+noto-cjk/NotoSansJP
+noto-cjk/NotoSansSC
+noto-cjk/NotoSansTC
+noto-cjk/NotoSerifCJKjp
+noto-cjk/NotoSerifCJKkr
+noto-cjk/NotoSerifCJKsc
+noto-cjk/NotoSerifCJKtc
+noto-cjk/NotoSerifMonoCJKjp
+noto-cjk/NotoSerifMonoCJKkr
+noto-cjk/NotoSerifMonoCJKsc
+noto-cjk/NotoSerifMonoCJKtc
+noto-cjk/NotoSerifKR
+noto-cjk/NotoSerifJP
+noto-cjk/NotoSerifSC
+noto-cjk/NotoSerifTC
+
+# legacy fonts
+-- RB --
+NotoKufiArabic
+NotoNaskhArabic
+NotoNaskhArabicUI
+NotoMono
+

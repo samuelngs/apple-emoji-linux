@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2017 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
+<ldml>
+	<identity>
+		<version number="$Revision: 13546 $"/>
+		<language type="kr"/>
+	</identity>
+	<layout>
+		<orientation>
+			<characterOrder>left-to-right</characterOrder>
+			<lineOrder>top-to-bottom</lineOrder>
+		</orientation>
+	</layout>
+	<characters>
+		<exemplarCharacters references="R1">[a b c d e ǝ f g h i j k l m n {ny} o p r ɍ s {sh} t u v w y z]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[q x]</exemplarCharacters>
+	</characters>
+	<references>
+		<reference type="R1" uri="http://pagesperso.lina.univ-nantes.fr/info/perso/permanents/enguehard/recherche/Afrique/alphabet_kanuri.htm">Alphabet Kanuri. Arrété 213-99 de la République du Niger.</reference>
+	</references>
+</ldml>

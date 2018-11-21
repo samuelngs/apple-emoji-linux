@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2014 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
+<ldml>
+	<identity>
+		<version number="$Revision: 11072 $"/>
+		<generation date="$Date: 2014-12-04 15:58:51 -0800 (Thu, 04 Dec 2014) $"/>
+		<language type="bcq"/>
+		<script type="Ethi"/>
+	</identity>
+	<layout>
+		<orientation>
+			<characterOrder>left-to-right</characterOrder>
+			<lineOrder>top-to-bottom</lineOrder>
+		</orientation>
+	</layout>
+	<characters>
+		<exemplarCharacters draft="unconfirmed">[ሁ ሂ ሄ ህ ሆ ሉ ሊ ላ ሌ ል ሎ ሐ ሑ ሒ ሔ ሕ ሖ ሙ ሚ ማ ሜ ም ሞ ሡ ሢ ሣ ሤ ሥ ሦ ሩ ሪ ራ ሬ ር ሮ ሱ ሲ ሳ ሴ ስ ሶ ሹ ሺ ሻ ሼ ሽ ሾ ቁ ቂ ቃ ቄ ቅ ቆ ቡ ቢ ባ ቤ ብ ቦ ቱ ቲ ታ ቴ ት ቶ ቹ ቺ ቻ ቼ ች ቾ ኑ ኒ ና ኔ ን ኖ አ ኡ ኢ ኤ እ ኦ ኩ ኪ ካ ኬ ክ ኮ ዉ ዊ ዋ ዌ ው ዎ ዙ ዚ ዛ ዜ ዝ ዞ ዡ ዢ ዣ ዤ ዥ ዦ ዩ ዪ ያ ዬ ይ ዮ ዱ ዲ ዳ ዴ ድ ዶ ጁ ጂ ጃ ጄ ጅ ጆ ጉ ጊ ጋ ጌ ግ ጎ ጡ ጢ ጣ ጤ ጥ ጦ ጩ ጪ ጫ ጬ ጭ ጮ ጹ ጺ ጻ ጼ ጽ ጾ ፑ ፒ ፓ ፔ ፕ ፖ ⶡ ⶢ ⶣ ⶤ ⶥ ⶦ ⶩ ⶪ ⶫ ⶬ ⶭ ⶮ ⶱ ⶲ ⶳ ⶴ ⶵ ⶶ ⶹ ⶺ ⶻ ⶼ ⶽ ⶾ]</exemplarCharacters>
+		<exemplarCharacters type="punctuation" draft="unconfirmed">[\- ፡ ፣ ፤ ፥ ! ? . ። ‹ › « » ( ) *]</exemplarCharacters>
+	</characters>
+</ldml>
+

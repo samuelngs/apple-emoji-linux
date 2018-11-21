@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2014 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
+<ldml>
+	<identity>
+		<version number="$Revision: 13182 $"/>
+		<language type="bej"/>
+		<script type="Latn"/>
+	</identity>
+	<layout>
+		<orientation>
+			<characterOrder>left-to-right</characterOrder>
+			<lineOrder>top-to-bottom</lineOrder>
+		</orientation>
+	</layout>
+	<characters>
+		<exemplarCharacters references="R1">[a b d {dh} e f g {gh} {gw} h i j k {kh} {kw} l m n o r s {sh} t {th} u w y]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary" draft="unconfirmed">[c p q v x z]</exemplarCharacters>
+	</characters>
+	<references>
+		<reference type="R1" uri="https://www.afrikanistik-aegyptologie-online.de/archiv/2008/1283/beja_pedagogical_grammar_final_links_numbered.pdf#page=7">Klaus Wedekind, Charlotte Wedekind, Abuzeinab Musa: Beja Pedagogical Gramma. Aswan 2004/Asmara 2005. Table 1: Transcriptions and Pronunciations.</reference>
+	</references>
+</ldml>
+

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2017 Unicode, Inc.
+For terms of use, see http://www.unicode.org/copyright.html
+Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+-->
+<ldml>
+	<identity>
+		<version number="$Revision: 13571 $"/>
+		<language type="gaa"/>
+	</identity>
+	<characters>
+		<exemplarCharacters draft="unconfirmed">[a b c d e f g h i j k l m n o p q r s t u v w x y z]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="unconfirmed">[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]</exemplarCharacters>
+	</characters>
+	<delimiters>
+		<quotationStart draft="unconfirmed">‘</quotationStart>
+		<quotationEnd draft="unconfirmed">’</quotationEnd>
+		<alternateQuotationStart draft="unconfirmed">“</alternateQuotationStart>
+		<alternateQuotationEnd draft="unconfirmed">”</alternateQuotationEnd>
+	</delimiters>
+	<dates>
+		<calendars>
+			<calendar type="generic">
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern draft="unconfirmed">EEEE, G y MMMM dd</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern draft="unconfirmed">G y MMMM d</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern draft="unconfirmed">G y MMM d</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern draft="unconfirmed">GGGGG yy/MM/dd</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+			</calendar>
+			<calendar type="gregorian">
+				<months>
+					<monthContext type="format">
+						<monthWidth type="abbreviated">
+							<month type="1" draft="unconfirmed">Aha</month>
+							<month type="2" draft="unconfirmed">Ofl</month>
+							<month type="3" draft="unconfirmed">Och</month>
+							<month type="4" draft="unconfirmed">Abe</month>
+							<month type="5" draft="unconfirmed">Agb</month>
+							<month type="6" draft="unconfirmed">Otu</month>
+							<month type="7" draft="unconfirmed">Maa</month>
+							<month type="8" draft="unconfirmed">Man</month>
+							<month type="9" draft="unconfirmed">Gbo</month>
+							<month type="10" draft="unconfirmed">Ant</month>
+							<month type="11" draft="unconfirmed">Ale</month>
+							<month type="12" draft="unconfirmed">Afu</month>
+						</monthWidth>
+						<monthWidth type="wide">
+							<month type="1" draft="unconfirmed">Aharabata</month>
+							<month type="2" draft="unconfirmed">Oflo</month>
+							<month type="3" draft="unconfirmed">Ochokrikri</month>
+							<month type="4" draft="unconfirmed">Abeibee</month>
+							<month type="5" draft="unconfirmed">Agbeinaa</month>
+							<month type="6" draft="unconfirmed">Otukwadan</month>
+							<month type="7" draft="unconfirmed">Maawe</month>
+							<month type="8" draft="unconfirmed">Manyawale</month>
+							<month type="9" draft="unconfirmed">Gbo</month>
+							<month type="10" draft="unconfirmed">Anton</month>
+							<month type="11" draft="unconfirmed">Alemle</month>
+							<month type="12" draft="unconfirmed">Afuabee</month>
+						</monthWidth>
+					</monthContext>
+				</months>
+				<days>
+					<dayContext type="format">
+						<dayWidth type="abbreviated">
+							<day type="sun" draft="unconfirmed">Hog</day>
+							<day type="mon" draft="unconfirmed">Dzu</day>
+							<day type="tue" draft="unconfirmed">Dzf</day>
+							<day type="wed" draft="unconfirmed">Sho</day>
+							<day type="thu" draft="unconfirmed">Soo</day>
+							<day type="fri" draft="unconfirmed">Soh</day>
+							<day type="sat" draft="unconfirmed">Ho</day>
+						</dayWidth>
+						<dayWidth type="wide">
+							<day type="sun" draft="unconfirmed">Hogbaa</day>
+							<day type="mon" draft="unconfirmed">Dzu</day>
+							<day type="tue" draft="unconfirmed">Dzufo</day>
+							<day type="wed" draft="unconfirmed">Sho</day>
+							<day type="thu" draft="unconfirmed">Soo</day>
+							<day type="fri" draft="unconfirmed">Sohaa</day>
+							<day type="sat" draft="unconfirmed">Ho</day>
+						</dayWidth>
+					</dayContext>
+				</days>
+				<dayPeriods>
+					<dayPeriodContext type="format">
+						<dayPeriodWidth type="abbreviated">
+							<dayPeriod type="am" draft="unconfirmed">LB</dayPeriod>
+							<dayPeriod type="pm" draft="unconfirmed">SN</dayPeriod>
+						</dayPeriodWidth>
+						<dayPeriodWidth type="wide">
+							<dayPeriod type="am" draft="unconfirmed">LB</dayPeriod>
+							<dayPeriod type="pm" draft="unconfirmed">SN</dayPeriod>
+						</dayPeriodWidth>
+					</dayPeriodContext>
+				</dayPeriods>
+				<eras>
+					<eraNames>
+						<era type="0" draft="unconfirmed">Dani Jesu</era>
+						<era type="1" draft="unconfirmed">KJ</era>
+					</eraNames>
+					<eraAbbr>
+						<era type="0" draft="unconfirmed">DJ</era>
+						<era type="1" draft="unconfirmed">KJ</era>
+					</eraAbbr>
+				</eras>
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern draft="unconfirmed">EEEE, y MMMM dd</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern draft="unconfirmed">y MMMM d</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern draft="unconfirmed">y MMM d</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern draft="unconfirmed">yy/MM/dd</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<timeFormats>
+					<timeFormatLength type="full">
+						<timeFormat>
+							<pattern draft="unconfirmed">h:mm:ss a zzzz</pattern>
+						</timeFormat>
+					</timeFormatLength>
+					<timeFormatLength type="long">
+						<timeFormat>
+							<pattern draft="unconfirmed">h:mm:ss a z</pattern>
+						</timeFormat>
+					</timeFormatLength>
+					<timeFormatLength type="medium">
+						<timeFormat>
+							<pattern draft="unconfirmed">h:mm:ss a</pattern>
+						</timeFormat>
+					</timeFormatLength>
+					<timeFormatLength type="short">
+						<timeFormat>
+							<pattern draft="unconfirmed">h:mm a</pattern>
+						</timeFormat>
+					</timeFormatLength>
+				</timeFormats>
+			</calendar>
+		</calendars>
+	</dates>
+	<numbers>
+		<currencies>
+			<currency type="GHC">
+				<displayName draft="unconfirmed">Sidi</displayName>
+			</currency>
+		</currencies>
+	</numbers>
+</ldml>

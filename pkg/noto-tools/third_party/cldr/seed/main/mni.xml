@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2017 Unicode, Inc.
+For terms of use, see http://www.unicode.org/copyright.html
+Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+-->
+<ldml>
+	<identity>
+		<version number="$Revision: 13571 $"/>
+		<language type="mni"/>
+	</identity>
+	<localeDisplayNames>
+		<localeDisplayPattern>
+			<localePattern>{0} ({1})</localePattern>
+			<localeSeparator>{0}, {1}</localeSeparator>
+			<localeKeyTypePattern>{0}: {1}</localeKeyTypePattern>
+		</localeDisplayPattern>
+		<languages>
+			<language type="mni" draft="provisional">মৈতৈলোন্</language>
+		</languages>
+	</localeDisplayNames>
+	<characters>
+		<exemplarCharacters draft="provisional">[\u09BC \u0981 ং ঃ অ আ ই ঈ উ ঊ ঋ এ ঐ ও ঔ ক খ গ ঘ ঙ চ ছ জ ঝ ঞ ট ঠ ড {ড\u09BC} ঢ {ঢ\u09BC} ণ ত থ দ ধ ন প ফ ব ভ ম য {য\u09BC} র ল ৱ শ ষ স হ া ি ী \u09C1 \u09C2 \u09C3 ে ৈ ো ৌ \u09CD]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[\u200C\u200D]</exemplarCharacters>
+	</characters>
+	<dates>
+		<calendars>
+			<calendar type="gregorian">
+				<months>
+					<monthContext type="format">
+						<monthWidth type="abbreviated">
+							<month type="1">জানুয়ারী</month>
+							<month type="2">ফেব্রুয়ারী</month>
+							<month type="3">মার্চ</month>
+							<month type="4">এপ্রিল</month>
+							<month type="5">মে</month>
+							<month type="6">জুন</month>
+							<month type="7">জুলাই</month>
+							<month type="8">আগস্ট</month>
+							<month type="9">সেপ্টেম্বর</month>
+							<month type="10">ওক্টোবর</month>
+							<month type="11">নভেম্বর</month>
+							<month type="12">ডিসেম্বর</month>
+						</monthWidth>
+						<monthWidth type="wide">
+							<month type="1">জানুয়ারী</month>
+							<month type="2">ফেব্রুয়ারী</month>
+							<month type="3">মার্চ</month>
+							<month type="4">এপ্রিল</month>
+							<month type="5">মে</month>
+							<month type="6">জুন</month>
+							<month type="7">জুলাই</month>
+							<month type="8">আগস্ট</month>
+							<month type="9">সেপ্টেম্বর</month>
+							<month type="10">ওক্টোবর</month>
+							<month type="11">নভেম্বর</month>
+							<month type="12">ডিসেম্বর</month>
+						</monthWidth>
+					</monthContext>
+				</months>
+				<days>
+					<dayContext type="format">
+						<dayWidth type="abbreviated">
+							<day type="sun">নোংমাইজিং</day>
+							<day type="mon">নিংথৌকাবা</day>
+							<day type="tue">লৈবাকপোকপা</day>
+							<day type="wed">য়ুমশকৈশা</day>
+							<day type="thu">শগোলশেন</day>
+							<day type="fri">ইরাই</day>
+							<day type="sat">থাংজা</day>
+						</dayWidth>
+						<dayWidth type="wide">
+							<day type="sun">নোংমাইজিং</day>
+							<day type="mon">নিংথৌকাবা</day>
+							<day type="tue">লৈবাকপোকপা</day>
+							<day type="wed">য়ুমশকৈশা</day>
+							<day type="thu">শগোলশেন</day>
+							<day type="fri">ইরাই</day>
+							<day type="sat">থাংজা</day>
+						</dayWidth>
+					</dayContext>
+				</days>
+				<quarters>
+					<quarterContext type="format">
+						<quarterWidth type="abbreviated">
+							<quarter type="1">অহানবা মসুং</quarter>
+							<quarter type="2">অনীশুবা মসুং</quarter>
+							<quarter type="3">অহুমশুবা মসুং</quarter>
+							<quarter type="4">মরীশুবা মসুং</quarter>
+						</quarterWidth>
+						<quarterWidth type="wide">
+							<quarter type="1">অহানবা মসুং</quarter>
+							<quarter type="2">অনীশুবা মসুং</quarter>
+							<quarter type="3">অহুমশুবা মসুং</quarter>
+							<quarter type="4">মরীশুবা মসুং</quarter>
+						</quarterWidth>
+					</quarterContext>
+				</quarters>
+				<dayPeriods>
+					<dayPeriodContext type="format">
+						<dayPeriodWidth type="abbreviated">
+							<dayPeriod type="am">নুমাং</dayPeriod>
+							<dayPeriod type="pm">নুতুং</dayPeriod>
+						</dayPeriodWidth>
+					</dayPeriodContext>
+				</dayPeriods>
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern draft="unconfirmed">EEEE, d MMMM, y</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern draft="unconfirmed">d MMMM, y</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern draft="unconfirmed">dd-MM-y</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern draft="unconfirmed">d-M-y</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<timeFormats>
+					<timeFormatLength type="full">
+						<timeFormat>
+							<pattern draft="unconfirmed">h.mm.ss a zzzz</pattern>
+						</timeFormat>
+					</timeFormatLength>
+					<timeFormatLength type="long">
+						<timeFormat>
+							<pattern draft="unconfirmed">h.mm.ss a z</pattern>
+						</timeFormat>
+					</timeFormatLength>
+					<timeFormatLength type="medium">
+						<timeFormat>
+							<pattern draft="unconfirmed">h.mm.ss a</pattern>
+						</timeFormat>
+					</timeFormatLength>
+					<timeFormatLength type="short">
+						<timeFormat>
+							<pattern draft="unconfirmed">h.mm. a</pattern>
+						</timeFormat>
+					</timeFormatLength>
+				</timeFormats>
+			</calendar>
+		</calendars>
+		<fields>
+			<field type="era">
+				<displayName>চক</displayName>
+			</field>
+			<field type="year">
+				<displayName>চহী</displayName>
+			</field>
+			<field type="month">
+				<displayName>থা</displayName>
+			</field>
+			<field type="week">
+				<displayName>চয়োল</displayName>
+			</field>
+			<field type="day">
+				<displayName>নুমিৎ</displayName>
+			</field>
+			<field type="hour">
+				<displayName>পুং</displayName>
+			</field>
+			<field type="minute">
+				<displayName draft="contributed">মীৎকুপ</displayName>
+			</field>
+			<field type="second">
+				<displayName draft="contributed">সেকেণ্ড</displayName>
+			</field>
+			<field type="zone">
+				<displayName>মতুপ</displayName>
+			</field>
+		</fields>
+	</dates>
+	<numbers>
+		<defaultNumberingSystem>beng</defaultNumberingSystem>
+	</numbers>
+</ldml>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2017 Unicode, Inc.
+For terms of use, see http://www.unicode.org/copyright.html
+Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+-->
+<ldml>
+	<identity>
+		<version number="$Revision: 13237 $"/>
+		<language type="bej"/>
+	</identity>
+	<layout>
+		<orientation>
+			<characterOrder>right-to-left</characterOrder>
+			<lineOrder>top-to-bottom</lineOrder>
+		</orientation>
+	</layout>
+	<characters>
+		<exemplarCharacters references="R1">[\u064B \u064C \u064D \u064E \u064F \u0650 \u0651 \u0652 \u0670 ء أ إ ئ ا ب د {ده} ڈ ێ ف ق غ {قو} ه {إے} {إي} ج ك خ {كه} {كْو} ل م ن ۆ و ر س {سه} ش ت {ته} ٹ أ {أو} و ي]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary" references="R2">[ث ح ز ص ض ط ظ ع]</exemplarCharacters>
+	</characters>
+	<references>
+		<reference type="R1" uri="https://www.afrikanistik-aegyptologie-online.de/archiv/2008/1283/beja_pedagogical_grammar_final_links_numbered.pdf#page=7">Klaus Wedekind, Charlotte Wedekind, Abuzeinab Musa: Beja Pedagogical Gramma. Aswan 2004/Asmara 2005. Table 1: Transcriptions and Pronunciations.</reference>
+		<reference type="R2" uri="https://www.afrikanistik-aegyptologie-online.de/archiv/2008/1283/beja_pedagogical_grammar_final_links_numbered.pdf#page=9">Klaus Wedekind, Charlotte Wedekind, Abuzeinab Musa: Beja Pedagogical Gramma. Aswan 2004/Asmara 2005. Table 2: Foreign Sounds.</reference>
+	</references>
+</ldml>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2017 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
+<ldml>
+	<identity>
+		<version number="$Revision: 13599 $"/>
+		<language type="sav"/>
+	</identity>
+	<layout>
+		<orientation>
+			<characterOrder>left-to-right</characterOrder>
+			<lineOrder>top-to-bottom</lineOrder>
+		</orientation>
+	</layout>
+	<characters>
+		<exemplarCharacters references="R1">[a b ɓ c d ɗ e f g h i j k l m n ñ ŋ o p r s t u w y ƴ]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary" draft="unconfirmed">[q z]</exemplarCharacters>
+	</characters>
+	<references>
+		<reference type="R1" uri="http://www.jo.gouv.sn/spip.php?article4799">Décret n° 2005-989 du 21 octobre 2005 relatif à l’orthographe et la séparation des mots en saafi-saafi. Journal officiel de la République du Sénégal (in French). Dakar, May 27, 2006.</reference>
+	</references>
+</ldml>

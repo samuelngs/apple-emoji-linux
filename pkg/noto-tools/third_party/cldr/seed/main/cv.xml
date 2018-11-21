@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2017 Unicode, Inc.
+For terms of use, see http://www.unicode.org/copyright.html
+Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+-->
+<ldml>
+	<identity>
+		<version number="$Revision: 13571 $"/>
+		<language type="cv"/>
+	</identity>
+	<localeDisplayNames>
+		<languages>
+			<language type="cv">Чӑвашла</language>
+		</languages>
+	</localeDisplayNames>
+	<layout>
+		<orientation>
+			<characterOrder>left-to-right</characterOrder>
+			<lineOrder>top-to-bottom</lineOrder>
+		</orientation>
+	</layout>
+	<characters>
+		<exemplarCharacters>[а ӑ б в г д е ӗ ё ж з и й к л м н о п р с ҫ т у ӳ ф х ц ч ш щ ъ ы ь э ю я]</exemplarCharacters>
+		<exemplarCharacters type="index">[А Ӑ Б В Г Д Е Ӗ Ё Ж З И Й К Л М Н О П Р С Ҫ Т У Ӳ Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ' ‘ ‚ &quot; “ „ « » ( ) \[ \] \{ \} § @ * / \&amp; #]</exemplarCharacters>
+	</characters>
+</ldml>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--© The Office of the High Commisioner for Human Rights-->
+
+<udhr iso639-3='eve' xml:lang='eve' key='eve' n='Even' dir='ltr' iso15924='Cyrl' xmlns="http://www.unhchr.ch/udhr">
+  <title>[missing]</title>
+  <preamble>
+    <para>[missing]</para>
+  </preamble>
+  <article number="1">
+    <title>Статья 1</title>
+    <para>Бэйил бокэтчур омэн хилкич нян урумкэр балдаритно, теми ноҥардук эгдьэн ҥи‐да ачча. Бэйил бөкэтчур мэн долан акагчимур биннэтын.</para>
+  </article>
+  <article number="2">
+    <title>Статья 2</title>
+    <para>Ирэк‐да бэй, ҥи‐да бими, эрэк. Декларацият гапча правалбу гадьин.</para>
+    <para>‐ Ҥунмэрдукуйи, торэндукуйи, аси‐да бидэн ньари‐да бидэн, эҥея‐да бидэн, ян‐да ачча бидэн, ҥидук‐да балдадуҥат.</para>
+    <para>‐ Ноҥан балдача төрэн хо эгдьэн‐да бидэн, хо көчукэн‐да бидэн, эникэн ҥидук‐да ҥэлникэн мээн мэргэнди, ҥиидэ, эникэн этур бэйдьи бидьин.</para>
+  </article>
+  <article number="3">
+    <title>Статья 3</title>
+    <para>Өмэтэл бэйилбу ҥии‐да эсни оһэйры, бэйдьи оон тэгэттин тачин тэгэтчин.</para>
+  </article>
+  <article number="4">
+    <title>Статья 4</title>
+    <para>Бэйилбу ҥи‐да эсни унир, нян хааратта.</para>
+  </article>
+  <article number="5">
+    <title>Статья 5</title>
+    <para>Бэйилбу ҥи‐да эснэн дьавутта. Бэю бэй мэптипи эсни кээлэмэттэ. Бэю бэй ҥингичин эсни хойэтто.</para>
+  </article>
+  <article number="6">
+    <title>Статья 6</title>
+    <para>Бэйилбу бокэтчур, ҥи‐да илэ‐да бидэн закон дысутчин.</para>
+  </article>
+  <article number="7">
+    <title>Статья 7</title>
+    <para>Бэйил кубигыр, Законду өмэн хилкин, нян мээн доливур бинньивутэи биһи Закон бэлэчинди.</para>
+  </article>
+  <article number="8">
+    <title>Статья 8</title>
+    <para>Бэйил Конституцият бөпчэ ныкылгимэн, ҥи‐гол һайрыкан тарак бэй судач, мэн правалби былыгимкэннэн.</para>
+  </article>
+  <article number="9">
+    <title>Статья 9</title>
+    <para>Ҥии‐да, ҥиив‐дэ Ынидьиһэнкиндьи, һиньаһунли эсни нодар, нян балдача тѳрдэкуй и эсни илбэскнэ.</para>
+  </article>
+  <article number="10">
+    <title>Статья 10</title>
+    <para>Суд, бэйэтики хээнвэлиг нээчэ биһикэн, ноҥан тарав, эми айутти угин судла, бокэтчур иһич, нэнмэчиннэн.</para>
+  </article>
+  <article number="11">
+    <title>Статья 11</title>
+    <orderedlist>
+      <listitem>
+	<para>Һымкыличэ бэй, ноҥан кэньсливу ориван, бокэччэн, эливун бакрикатнан‐нюн, бэйдьи эливун кэнеличь нөкчэ гоникэн дьомкучуннан. ‐ тачикан ноҥартакун айич бидэн бэлэчэнди суд бакчин.</para>
+      </listitem>
+      <listitem>
+	<para>Ҥи‐да эсни Һымкымун, нян һилгичшоды, ноҥан мэргэндьи кэнеливу эчу ор гоникэн дьомкөттакан, һилгигинын тала опча Закондук эсни эгдьэн бис.</para>
+      </listitem>
+    </orderedlist>
+  </article>
+  <article number="12">
+    <title>Статья 12</title>
+    <para>Ирэк‐да, омтэл бэй дюван, ҥи‐да эсни оһэйрэ, ноҥан дялву нян бэйдьи тэгэмэн ҥи‐да эсни һуҥдир, эсни дьааргатти, ҥэлукэтти.</para>
+  </article>
+  <article number="13">
+    <title>Статья 13</title>
+    <orderedlist>
+      <listitem>
+	<para>Ирэк‐да бэй мэн төгэтти төрдук, илэ‐да хорридьи мэн дьюи илуридьи төгэчиннэн.</para>
+      </listitem>
+      <listitem>
+	<para>Өмэтэл бэй мэн төрдукуйи хонтэ төрлэ хуриннэн, нян тачин‐да амаски мучумнаан.</para>
+      </listitem>
+    </orderedlist>
+  </article>
+  <article number="14">
+    <title>Статья 14</title>
+    <orderedlist>
+      <listitem>
+	<para>Өмэтэл бэй, ноҥман холото токутэн мэн бугдукуи, хонтэ бугла дириһимнэн.</para>
+      </listitem>
+      <listitem>
+	<para>ООН принсипальди ноҥан гэлэтгэкэтнэн, бэй бугтукий эснэн хоррэ.</para>
+      </listitem>
+    </orderedlist>
+  </article>
+  <article number="15">
+    <title>Статья 15</title>
+    <orderedlist>
+      <listitem>
+	<para>Өмэтэл бэй ями‐да гражданствонкан биннэн.</para>
+      </listitem>
+      <listitem>
+	<para>Тараҥач ҥи‐да эснэн аталды.</para>
+      </listitem>
+    </orderedlist>
+  </article>
+  <article number="16">
+    <title>Статья 16</title>
+    <orderedlist>
+      <listitem>
+	<para>Асинюн, ньари, ҥунмирдукий нян тэдьэтидукун эникэн дьакра мэн долин гаматсир.</para>
+      </listitem>
+      <listitem>
+	<para>Мэн доливур деридюр омэн мэргэлкэн бими гаматчир.</para>
+      </listitem>
+      <listitem>
+	<para>Государство тарак пимэру этуннэн.</para>
+      </listitem>
+    </orderedlist>
+  </article>
+  <article number="17">
+    <title>Статья 17</title>
+    <orderedlist>
+      <listitem>
+	<para>Өмэтэл бэй тэгэлгэндунэн мэн энеелкэн биннэн.</para>
+      </listitem>
+      <listitem>
+	<para>Тараҥман ҥи‐да эснэн тиир.</para>
+      </listitem>
+    </orderedlist>
+  </article>
+  <article number="18">
+    <title>Статья 18</title>
+    <para>Өмэтэл бэй мэн мэргэлкэн, тэдьэнэлкэн биннэн нян тарав хонтэ бэйилтэки тэлэҥдыкын.</para>
+  </article>
+  <article number="19">
+    <title>Статья 19</title>
+    <para>Өмэтэл бэй бэйдьи дьомкучинна нян тарав бэйэлтэки эникэн ҥэлдэ мутуннэн, тарав государство эснэн һайутта.</para>
+  </article>
+  <article number="20">
+    <title>Статья 20</title>
+    <orderedlist>
+      <listitem>
+	<para>Өмэтэл бэй чакабакалду холлечиннэл.</para>
+      </listitem>
+      <listitem>
+	<para>Ҥи‐да як‐та урэчин группала, организацияла бэйю эсни нукэт.</para>
+      </listitem>
+    </orderedlist>
+  </article>
+  <article number="21">
+    <title>Статья 21</title>
+    <orderedlist>
+      <listitem>
+	<para>Өмэтэл бэй мэн государствони дюлэски ҥындинэн горбэттэн бэлэчимэн.</para>
+      </listitem>
+      <listitem>
+	<para>Ноҥан государство нындимэн, тала гургэвчимнэн, нян хонтэ бэйилгэчин өмэн һилкы төгэчимнэн.</para>
+      </listitem>
+      <listitem>
+	<para>Ҥунмир гонивутнэн правительство дьоһуннан. Нян правительство эргыл һиннивунукан обыннан.</para>
+      </listitem>
+    </orderedlist>
+  </article>
+  <article number="22">
+    <title>Статъя 22</title>
+    <para>Өмэтэл бэй тэгэлгэндулэн государство культуралан, экономикалан, нян эҥее одан бэлэннэн.</para>
+  </article>
+  <article number="23">
+    <title>Статья 23</title>
+    <orderedlist>
+      <listitem>
+	<para>Өмэтэл бэй гургэвчимнэн, тарав һайутти як‐та ачча биннэн, ач гургэлэ эдэн биһэ государство бэлэчимҥэн.</para>
+      </listitem>
+      <listitem>
+	<para>Ноҥан гургэвэн аич тамдьиҥавур.</para>
+      </listitem>
+      <listitem>
+	<para>Өмэтэл бэй, гургэвэн аич тамыннатын, тарак ноҥан дялни ибгат тэгэттивэтнэн бэлэннэн.</para>
+      </listitem>
+      <listitem>
+	<para>Ноҥан правалби коэтти нян болэтти профсоюзбан опти нян профсоюз членат бимнэн</para>
+      </listitem>
+    </orderedlist>
+  </article>
+  <article number="24">
+    <title>Статья 24</title>
+    <para>Өмэтэл бэй, дэрэмкэччинэн нян хэбдьэкэннэн, гургэн инэҥин энтэкэйэ эсни гор биннэн.</para>
+  </article>
+  <article number="25">
+    <title>Статья 25</title>
+    <orderedlist>
+      <listitem>
+	<para>Өмэтэл бэй аич тэгэчиннэн, ноҥан дялни нян ибгит төгэчинэт.</para>
+      </listitem>
+      <listitem>
+	<para>Эньинтикий нян ноҥан хутлэн индэттын нян тыгыттии социальнай бэлэчин ями‐да аннатын. Куҥал кубычим. Социальнай бэлэчин ями‐да ганнатын.</para>
+      </listitem>
+    </orderedlist>
+  </article>
+  <article number="26">
+    <title>Статья 26</title>
+    <orderedlist>
+      <listitem>
+	<para>Өмэтэл бэй ями‐дя хупкучиннэн. Начальнай нян средняй хупкучэк, ач эрилэ биннэн.</para>
+      </listitem>
+      <listitem>
+	<para>2. Начальнай хупкучэкиэ, бэй бокэчур ганнан. Средней нян профессиональнай хупкучэкиэ иин ач хилуһиа биннэн.</para>
+      </listitem>
+      <listitem>
+	<para>Куҥа дялни, мэн хуттибэйдюр хинманнаттан.</para>
+      </listitem>
+    </orderedlist>
+  </article>
+  <article number="27">
+    <title>Статья 27</title>
+    <orderedlist>
+      <listitem>
+	<para>Өмэтэл бэй искусствач урынчиннэн, наука дюлэски ҥындэн бэлэчиннэн, нян тарич бэйдьи айюннан.</para>
+      </listitem>
+      <listitem>
+	<para>Өмэтэл бэй художественнай литературнай гургэн авторан биннэн, тали ноҥантаки аич таманаттан.</para>
+      </listitem>
+    </orderedlist>
+  </article>
+  <article number="28">
+    <title>Статья 28</title>
+    <para>Өмэтэл бэй социальнай нян международнай бинилэ, ҥидук‐да эникэн ҥэлдэ тэгэчиннэн.</para>
+  </article>
+  <article number="29">
+    <title>Статья 29</title>
+    <orderedlist>
+      <listitem>
+	<para>Өмэтэл бэй общество дюлдэлэн, мэн бинийи тэлэҥнэн.</para>
+      </listitem>
+      <listitem>
+	<para>Бэй правал хонтэ бэйил тэгэчээнтэн аич бидэн гөникэн бэй правнюн чикибиннан.</para>
+      </listitem>
+    </orderedlist>
+  </article>
+  <article number="30">
+    <title>Статья 30</title>
+    <para>Я‐та эрэв Декларацияу, һаан быйылтыки нян государствалтыни, бый биниуэн нанык тэгэлгэмэн һаайудан гааникэн элэ дунунча Декларация эсни туун, эсни ньуукытты.</para>
+  </article>
+</udhr>

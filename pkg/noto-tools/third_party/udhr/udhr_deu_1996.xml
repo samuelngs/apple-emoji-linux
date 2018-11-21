@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--© The Office of the High Commisioner for Human Rights-->
+
+<udhr iso639-3='deu' xml:lang='de-1996' key='deu_1996' n='German, Standard (1996)' dir='ltr' iso15924='Latn' xmlns="http://www.unhchr.ch/udhr">
+   <title>Die Allgemeine Erklärung der Menschenrechte</title>
+   <note>
+      <para>Resolution 217 A (III) vom 10.12.1948</para>
+   </note>
+   <preamble>
+      <title>Präambel</title>
+      <para>Da die Anerkennung der angeborenen Würde und der gleichen und unveräußerlichen Rechte aller Mitglieder der Gemeinschaft der Menschen die Grundlage von Freiheit, Gerechtigkeit und Frieden in der Welt bildet,</para>
+      <para>da die Nichtanerkennung und Verachtung der Menschenrechte zu Akten der Barbarei geführt haben, die das Gewissen der Menschheit mit Empörung erfüllen, und da verkündet worden ist, dass einer Welt, in der die Menschen Rede- und Glaubensfreiheit und Freiheit von Furcht und Not genießen, das höchste Streben des Menschen gilt,</para>
+      <para>da es notwendig ist, die Menschenrechte durch die Herrschaft des Rechtes zu schützen, damit der Mensch nicht gezwungen wird, als letztes Mittel zum Aufstand gegen Tyrannei und Unterdrückung zu greifen,</para>
+      <para>da es notwendig ist, die Entwicklung freundschaftlicher Beziehungen zwischen den Nationen zu fördern,</para>
+      <para>da die Völker der Vereinten Nationen in der Charta ihren Glauben an die grundlegenden Menschenrechte, an die Würde und den Wert der menschlichen Person und an die Gleichberechtigung von Mann und Frau erneut bekräftigt und beschlossen haben, den sozialen Fortschritt und bessere Lebensbedingungen in größerer Freiheit zu fördern,</para>
+      <para>da die Mitgliedstaaten sich verpflichtet haben, in Zusammenarbeit mit den Vereinten Nationen auf die allgemeine Achtung und Einhaltung der Menschenrechte und Grundfreiheiten hinzuwirken,</para>
+      <para>da ein gemeinsames Verständnis dieser Rechte und Freiheiten von größter Wichtigkeit für die volle Erfüllung dieser Verpflichtung ist,</para>
+      <para>verkündet die Generalversammlung</para>
+      <para>diese Allgemeine Erklärung der Menschenrechte als das von allen Völkern und Nationen zu erreichende gemeinsame Ideal, damit jeder einzelne und alle Organe der Gesellschaft sich diese Erklärung stets gegenwärtig halten und sich bemühen, durch Unterricht und Erziehung die Achtung vor diesen Rechten und Freiheiten zu fördern und durch fortschreitende nationale und internationale Maßnahmen ihre allgemeine und tatsächliche Anerkennung und Einhaltung durch die Bevölkerung der Mitgliedstaaten selbst wie auch durch die Bevölkerung der ihrer Hoheitsgewalt unterstehenden Gebiete zu gewährleisten.</para>
+   </preamble>
+   <article number="1">
+      <title>Artikel 1</title>
+      <para>Alle Menschen sind frei und gleich an Würde und Rechten geboren. Sie sind mit Vernunft und Gewissen begabt und sollen einander im Geist der Brüderlichkeit begegnen.</para>
+   </article>
+   <article number="2">
+      <title>Artikel 2</title>
+      <para>Jeder hat Anspruch auf die in dieser Erklärung verkündeten Rechte und Freiheiten ohne irgendeinen Unterschied, etwa nach Rasse, Hautfarbe, Geschlecht, Sprache, Religion, politischer oder sonstiger Überzeugung, nationaler oder sozialer Herkunft, Vermögen, Geburt oder sonstigem Stand.</para>
+      <para>Des weiteren darf kein Unterschied gemacht werden auf Grund der politischen, rechtlichen oder internationalen Stellung des Landes oder Gebiets, dem eine Person angehört, gleichgültig, ob dieses unabhängig ist, unter Treuhandschaft steht, keine Selbstregierung besitzt oder sonst in seiner Souveränität eingeschränkt ist.</para>
+   </article>
+   <article number="3">
+      <title>Artikel 3</title>
+      <para>Jeder hat das Recht auf Leben, Freiheit und Sicherheit der Person.</para>
+   </article>
+   <article number="4">
+      <title>Artikel 4</title>
+      <para>Niemand darf in Sklaverei oder Leibeigenschaft gehalten werden; Sklaverei und Sklavenhandel sind in allen ihren Formen verboten.</para>
+   </article>
+   <article number="5">
+      <title>Artikel 5</title>
+      <para>Niemand darf der Folter oder grausamer, unmenschlicher oder erniedrigender Behandlung oder Strafe unterworfen werden.</para>
+   </article>
+   <article number="6">
+      <title>Artikel 6</title>
+      <para>Jeder hat das Recht, überall als rechtsfähig anerkannt zu werden.</para>
+   </article>
+   <article number="7">
+      <title>Artikel 7</title>
+      <para>Alle Menschen sind vor dem Gesetz gleich und haben ohne Unterschied Anspruch auf gleichen Schutz durch das Gesetz. Alle haben Anspruch auf gleichen Schutz gegen jede Diskriminierung, die gegen diese Erklärung verstößt, und gegen jede Aufhetzung zu einer derartigen Diskriminierung.</para>
+   </article>
+   <article number="8">
+      <title>Artikel 8</title>
+      <para>Jeder hat Anspruch auf einen wirksamen Rechtsbehelf bei den zuständigen innerstaatlichen Gerichten gegen Handlungen, durch die seine ihm nach der Verfassung oder nach dem Gesetz zustehenden Grundrechte verletzt werden.</para>
+   </article>
+   <article number="9">
+      <title>Artikel 9</title>
+      <para>Niemand darf willkürlich festgenommen, in Haft gehalten oder des Landes verwiesen werden.</para>
+   </article>
+   <article number="10">
+      <title>Artikel 10</title>
+      <para>Jeder hat bei der Feststellung seiner Rechte und Pflichten sowie bei einer gegen ihn erhobenen strafrechtlichen Beschuldigung in voller Gleichheit Anspruch auf ein gerechtes und öffentliches Verfahren vor einem unabhängigen und unparteiischen Gericht.</para>
+   </article>
+   <article number="11">
+      <title>Artikel 11</title>
+      <orderedlist>
+         <listitem>
+            <para>Jeder, der wegen einer strafbaren Handlung beschuldigt wird, hat das Recht, als unschuldig zu gelten, solange seine Schuld nicht in einem öffentlichen Verfahren, in dem er alle für seine Verteidigung notwendigen Garantien gehabt hat, gemäß dem Gesetz nachgewiesen ist.</para>
+         </listitem>
+         <listitem>
+            <para>Niemand darf wegen einer Handlung oder Unterlassung verurteilt werden, die zur Zeit ihrer Begehung nach innerstaatlichem oder internationalem Recht nicht strafbar war. Ebenso darf keine schwerere Strafe als die zum Zeitpunkt der Begehung der strafbaren Handlung angedrohte Strafe verhängt werden.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="12">
+      <title>Artikel 12</title>
+      <para>Niemand darf willkürlichen Eingriffen in sein Privatleben, seine Familie, seine Wohnung und seinen Schriftverkehr oder Beeinträchtigungen seiner Ehre und seines Rufes ausgesetzt werden. Jeder hat Anspruch auf rechtlichen Schutz gegen solche Eingriffe oder Beeinträchtigungen.</para>
+   </article>
+   <article number="13">
+      <title>Artikel 13</title>
+      <orderedlist>
+         <listitem>
+            <para>Jeder hat das Recht, sich innerhalb eines Staates frei zu bewegen und seinen Aufenthaltsort frei zu wählen.</para>
+         </listitem>
+         <listitem>
+            <para>Jeder hat das Recht, jedes Land, einschließlich seines eigenen, zu verlassen und in sein Land zurückzukehren.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="14">
+      <title>Artikel 14</title>
+      <orderedlist>
+         <listitem>
+            <para>Jeder hat das Recht, in anderen Ländern vor Verfolgung Asyl zu suchen und zu genießen.</para>
+         </listitem>
+         <listitem>
+            <para>Dieses Recht kann nicht in Anspruch genommen werden im Falle einer Strafverfolgung, die tatsächlich auf Grund von Verbrechen nichtpolitischer Art oder auf Grund von Handlungen erfolgt, die gegen die Ziele und Grundsätze der Vereinten Nationen verstoßen.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="15">
+      <title>Artikel 15</title>
+      <orderedlist>
+         <listitem>
+            <para>Jeder hat das Recht auf eine Staatsangehörigkeit.</para>
+         </listitem>
+         <listitem>
+            <para>Niemandem darf seine Staatsangehörigkeit willkürlich entzogen noch das Recht versagt werden, seine Staatsangehörigkeit zu wechseln.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="16">
+      <title>Artikel 16</title>
+      <orderedlist>
+         <listitem>
+            <para>Heiratsfähige Frauen und Männer haben ohne Beschränkung auf Grund der Rasse, der Staatsangehörigkeit oder der Religion das Recht, zu heiraten und eine Familie zu gründen. Sie haben bei der Eheschließung, während der Ehe und bei deren Auflösung gleiche Rechte.</para>
+         </listitem>
+         <listitem>
+            <para>Eine Ehe darf nur bei freier und uneingeschränkter Willenseinigung der künftigen Ehegatten geschlossen werden.</para>
+         </listitem>
+         <listitem>
+            <para>Die Familie ist die natürliche Grundeinheit der Gesellschaft und hat Anspruch auf Schutz durch Gesellschaft und Staat.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="17">
+      <title>Artikel 17</title>
+      <orderedlist>
+         <listitem>
+            <para>Jeder hat das Recht, sowohl allein als auch in Gemeinschaft mit anderen Eigentum innezuhaben.</para>
+         </listitem>
+         <listitem>
+            <para>Niemand darf willkürlich seines Eigentums beraubt werden.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="18">
+      <title>Artikel 18</title>
+      <para>Jeder hat das Recht auf Gedanken-, Gewissens- und Religionsfreiheit; dieses Recht schließt die Freiheit ein, seine Religion oder Überzeugung zu wechseln, sowie die Freiheit, seine Religion oder Weltanschauung allein oder in Gemeinschaft mit anderen, öffentlich oder privat durch Lehre, Ausübung, Gottesdienst und Kulthandlungen zu bekennen.</para>
+   </article>
+   <article number="19">
+      <title>Artikel 19</title>
+      <para>Jeder hat das Recht auf Meinungsfreiheit und freie Meinungsäußerung; dieses Recht schließt die Freiheit ein, Meinungen ungehindert anzuhängen sowie über Medien jeder Art und ohne Rücksicht auf Grenzen Informationen und Gedankengut zu suchen, zu empfangen und zu verbreiten.</para>
+   </article>
+   <article number="20">
+      <title>Artikel 20</title>
+      <orderedlist>
+         <listitem>
+            <para>Alle Menschen haben das Recht, sich friedlich zu versammeln und zu Vereinigungen zusammenzuschließen.</para>
+         </listitem>
+         <listitem>
+            <para>Niemand darf gezwungen werden einer Vereinigung anzugehören.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="21">
+      <title>Artikel 21</title>
+      <orderedlist>
+         <listitem>
+            <para>Jeder hat das Recht, an der Gestaltung der öffentlichen Angelegenheiten seines Landes unmittelbar oder durch frei gewählte Vertreter mitzuwirken.</para>
+         </listitem>
+         <listitem>
+            <para>Jeder hat das Recht auf gleichen Zugang zu öffentlichen Ämtern in seinem Lande.</para>
+         </listitem>
+         <listitem>
+            <para>Der Wille des Volkes bildet die Grundlage für die Autorität der öffentlichen Gewalt; dieser Wille muss durch regelmäßige, unverfälschte, allgemeine und gleiche Wahlen mit geheimer Stimmabgabe oder in einem gleichwertigen freien Wahlverfahren zum Ausdruck kommen.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="22">
+      <title>Artikel 22</title>
+      <para>Jeder hat als Mitglied der Gesellschaft das Recht auf soziale Sicherheit und Anspruch darauf, durch innerstaatliche Maßnahmen und internationale Zusammenarbeit sowie unter Berücksichtigung der Organisation und der Mittel jedes Staates in den Genuss der wirtschaftlichen, sozialen und kulturellen Rechte zu gelangen, die für seine Würde und die freie Entwicklung seiner Persönlichkeit unentbehrlich sind.</para>
+   </article>
+   <article number="23">
+      <title>Artikel 23</title>
+      <orderedlist>
+         <listitem>
+            <para>Jeder hat das Recht auf Arbeit, auf freie Berufswahl, auf gerechte und befriedigende Arbeitsbedingungen sowie auf Schutz vor Arbeitslosigkeit.</para>
+         </listitem>
+         <listitem>
+            <para>Jeder, ohne Unterschied, hat das Recht auf gleichen Lohn für gleiche Arbeit.</para>
+         </listitem>
+         <listitem>
+            <para>Jeder, der arbeitet, hat das Recht auf gerechte und befriedigende Entlohnung, die ihm und seiner Familie eine der menschlichen Würde entsprechende Existenz sichert, gegebenenfalls ergänzt durch andere soziale Schutzmaßnahmen.</para>
+         </listitem>
+         <listitem>
+            <para>Jeder hat das Recht, zum Schutz seiner Interessen Gewerkschaften zu bilden und solchen beizutreten.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="24">
+      <title>Artikel 24</title>
+      <para>Jeder hat das Recht auf Erholung und Freizeit und insbesondere auf eine vernünftige Begrenzung der Arbeitszeit und regelmäßigen bezahlten Urlaub.</para>
+   </article>
+   <article number="25">
+      <title>Artikel 25</title>
+      <orderedlist>
+         <listitem>
+            <para>Jeder hat das Recht auf einen Lebensstandard, der seine und seiner Familie Gesundheit und Wohl, einschließlich Nahrung, Kleidung, Wohnung, ärztlicher Versorgung und notwendiger sozialer Leistungen gewährleistet, sowie das Recht auf Sicherheit im Falle von Arbeitslosigkeit, Krankheit, Invalidität oder Verwitwung, im Alter sowie bei anderweitigem Verlust seiner Unterhaltsmittel durch unverschuldete Umstände.</para>
+         </listitem>
+         <listitem>
+            <para>Mütter und Kinder haben Anspruch auf besondere Fürsorge und Unterstützung. Alle Kinder, eheliche wie außereheliche, genießen den gleichen sozialen Schutz.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="26">
+      <title>Artikel 26</title>
+      <orderedlist>
+         <listitem>
+            <para>Jeder hat das Recht auf Bildung. Die Bildung ist unentgeltlich, zum mindesten der Grundschulunterricht und die grundlegende Bildung. Der Grundschulunterricht ist obligatorisch. Fach- und Berufsschulunterricht müssen allgemein verfügbar gemacht werden und der Hochschulunterricht muss allen gleichermaßen entsprechend ihren Fähigkeiten offenstehen.</para>
+         </listitem>
+         <listitem>
+            <para>Die Bildung muss auf die volle Entfaltung der menschlichen Persönlichkeit und auf die Stärkung der Achtung vor den Menschenrechten und Grundfreiheiten gerichtet sein. Sie muss zu Verständnis, Toleranz und Freundschaft zwischen allen Nationen und allen rassischen oder religiösen Gruppen beitragen und der Tätigkeit der Vereinten Nationen für die Wahrung des Friedens förderlich sein.</para>
+         </listitem>
+         <listitem>
+            <para>Die Eltern haben ein vorrangiges Recht, die Art der Bildung zu wählen, die ihren Kindern zuteil werden soll.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="27">
+      <title>Artikel 27</title>
+      <orderedlist>
+         <listitem>
+            <para>Jeder hat das Recht, am kulturellen Leben der Gemeinschaft frei teilzunehmen, sich an den Künsten zu erfreuen und am wissenschaftlichen Fortschritt und dessen Errungenschaften teilzuhaben.</para>
+         </listitem>
+         <listitem>
+            <para>Jeder hat das Recht auf Schutz der geistigen und materiellen Interessen, die ihm als Urheber von Werken der Wissenschaft, Literatur oder Kunst erwachsen.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="28">
+      <title>Artikel 28</title>
+      <para>Jeder hat Anspruch auf eine soziale und internationale Ordnung, in der die in dieser Erklärung verkündeten Rechte und Freiheiten voll verwirklicht werden können.</para>
+   </article>
+   <article number="29">
+      <title>Artikel 29</title>
+      <orderedlist>
+         <listitem>
+            <para>Jeder hat Pflichten gegenüber der Gemeinschaft, in der allein die freie und volle Entfaltung seiner Persönlichkeit möglich ist.</para>
+         </listitem>
+         <listitem>
+            <para>Jeder ist bei der Ausübung seiner Rechte und Freiheiten nur den Beschränkungen unterworfen, die das Gesetz ausschließlich zu dem Zweck vorsieht, die Anerkennung und Achtung der Rechte und Freiheiten anderer zu sichern und den gerechten Anforderungen der Moral, der öffentlichen Ordnung und des allgemeinen Wohles in einer demokratischen Gesellschaft zu genügen.</para>
+         </listitem>
+         <listitem>
+            <para>Diese Rechte und Freiheiten dürfen in keinem Fall im Widerspruch zu den Zielen und Grundsätzen der Vereinten Nationen ausgeübt werden.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="30">
+      <title>Artikel 30</title>
+      <para>Keine Bestimmung dieser Erklärung darf dahin ausgelegt werden, dass sie für einen Staat, eine Gruppe oder eine Person irgendein Recht begründet, eine Tätigkeit auszuüben oder eine Handlung zu begehen, welche die Beseitigung der in dieser Erklärung verkündeten Rechte und Freiheiten zum Ziel hat.</para>
+   </article>
+</udhr>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--© The Office of the High Commisioner for Human Rights-->
+
+<udhr iso639-3='lob' xml:lang='lob' key='lob' n='Lobi' dir='ltr' iso15924='Latn' xmlns="http://www.unhchr.ch/udhr">
+   <title>Tibilii hʋ nɩrɔrɩ dɩɩ fɛʋ rà</title>
+   <note>
+      <para></para>
+   </note>
+   <preamble>
+      <title></title>
+      <para>Dɩ ther jʋʋrpar sɩ sɩ tu a jɩ dɩɩ do samɩnɩ kɛ cɔtoo sʋnɔ na fɛʋ caar rà hananɩ, nà ɛɛ punu kɛ makhanɩ, a doni thɩn pemnaniaʔ, n gbɛwa a do cɩr sɩ deeduur à n ha le baanʔ. Ɛr n gbɛwa a do cɩr sɩ dɩkhan wo cʋʋpa sar nà haarʔyii ha kɛ dɩɩ kɛɛ bʋnɔ,</para>
+      <para>Dɩ ther jʋʋrpar sɩ sɩ tu a jɩ, mɔ wa turoni sɩ a guura Tibilii hʋ kaankɛ a hananɩ hʋɔaʔ, dɩ dor nɔɔ, sɩ ado teehuu kpɩɛr jɩna kpoori kɛ wʋ n kpoo wɔrnɩ, dɩ n jama. Sɩ dɩkhan wo thɩn kontinn kɛ hanɩ tbilii kpɩɛr rà, a tini gbelengbelen nɩna, dɔ dɩɩ kɛ wa thɩɩnɩ a do kaankɛ teehuu sʋnɔ na ná phɩrnɩ nʋɔaʔ; sɩ wʋ hana tuur, wʋ ʔli taarɩ, maar kɛ n kʋ yɛnɩ cillo nà bɔkʋ kontinn ɩn tɔ dɩ hʋnɔ yɛr.</para>
+      <para>Dɩ ther jʋʋrpar sɩ sɩ tu a jɩ dɩ fɩrrɛ, Tibilii hʋ ra ɩn ʔli cɛɛrɩ dɩ the jɔfa sar rà, dɩ ha mɛ thɩɛn ná fɩr wʋ, a kpɩɛr a thʋnɔ sɩ a ɩɩr a jamanɔ pesidan puu sʋnɔ kɛ n kʋʋrnɩ tɩbɩla nà ɛ n hʋɔl yɛrnɩ dɩ n ha na nɩ yɛ koraʔ.</para>
+      <para>Dɩ ther jʋʋrpar sɩ sɩ tu a jɩ dɩ fɩrrɛ dɩ dɩɩ sʋnɔ ná ʔli bulli dɩ nawɛ ná khɔn ɛɛ thinthinn,</para>
+      <para>Dɩ ther jʋʋrpar sɩ sɩ tu a jɩ dɩɩ do le Jɔfa Sɛbɛ bʋnɔ na, dɩɩ sʋnɔ kɛ kpanɩ gbɛʋ, ɛɛ too sʋnɔ burre nɩna gbelengbelen ɛɛ tuur kɛ wʋ hananɩ Tibilii tɔntɔn pununi na, samɩnɩ na nà teehuu dɩfɩ rà, na mɔ kɛ kɔna nà khɛra makhanɩ jɔfa ɩɩrɩ rà. Sɩ dɩkhan wo, wʋ turi khor sɩ wʋ faa hʋɔ tɩbɩla fɛʋ ɩn gal ʔyɛkʋlʋɔ, sɩ wʋ thɩɩnn jɔfa kɛ ná cʋʋnɩ dɩ deeduur ná ha fɩɩʋ nakɛaʔ,</para>
+      <para>Dɩ ther jʋʋrpar sɩ sɩ tu a jɩ sɩ dɩɩ sʋnɔ na gbɛʋnɩkha turina ʋlfɛrɩ wʋ bulkha nà Dɩɩ sʋnɔ kɛ ra gbɛʋnɩɩ Gbulun,waan jʋʋr mɔ dɩɩ sʋnɔ fɛʋ, par rà fɛʋ, ná fʋnɩ sɩ wʋ gbarɔ yʋʋ Tibilii hʋ nà ɛ tɛɛna yɛnɩ dɩ wa sɔl na cʋʋ dɩ deeduur ná ha baanʔ,</para>
+      <para>Dɩ ther jʋʋrpar sɩ gbɛʋkhadara ra tu a jɩ sɩ guurkha jɔfa sʋnɔ le rà ra na mɔ deeduur a hanɩ baanʔ, dʋʋnn thɩn kontinn karoni ɛ fɛʋ rà , wa gbanɩ wʋ cʋʋna ɩrɛ hanɩ ɛɛ kpɩɛr rà, wʋ turonina ʋlfɛrɩ,</para>
+      <para>Jʋʋrpar sʋnɔ kɛ rà ra dɩ the sɩ gbɛʋkhadara ra gba thɩn Nɩrɔrɩ kɛ doni Tibilii hʋ, theni Dɩɩ sʋnɔ kɛ rà kpanɩ gbɛʋʋ kpɩɛr rà, a nɩna dɩ sɔl dɩ do thɩɛn kɛ dɩtoona nà dɩɩ sʋnɔ na fɛʋ n bulni dɩ waan ʔyaal. A dɩ ha mɛ tɩbɩla fɛʋ nà gbuluni sʋnɔ na fɛʋ kɩɛr dɩthɩɩ rà naa kpɩɛra bɔɔ fɛʋ Nɩrɔrɩ le ra, wʋ fɩr ɛɛ bara sɩ waan dɩɩr tɩbɩla, waan dɩɩra bɩsana wʋ punu wʋ khɔn jɔfa le raa dɩfɩ rà sɩ wʋ jɩ deeduur caar ra fɛʋ pɩrɛ. Dɩ mɛ na, gbe gbe, wʋ gba fɩlwɛ, dapa kɛ wʋ hanɩ nà kaankɛ ɛɛ punu khuni, wʋ cʋʋ mɔ wa cʋʋnɩ sɩ tɩbɩla sʋnɔ kɛ hanɩ le dɩɩ sʋnɔ kɛ rà ra kpanɩ gbɛʋʋ thɩnthiinn, wʋ turo sɩ wʋ cʋʋ par rà fɛʋ mɔ dɩ sonina sʋnbɔr.</para>
+   </preamble>
+   <article number="1">
+      <title>Varpar 1</title>
+      <para>Teehuu sʋnɔ n ther ɛɛ nɩɩ bʋnɔ wa n do deeaʔ sɩ wʋ n makha samɩnɩ na nà hʋ tɩnɛpar rà. Thangba ti yɛr à pɛ yɛr jɩɩr nà fɩlwɛ sɩ a teena waan fʋkha omkhaa.</para>
+   </article>
+   <article number="2">
+      <title>Varpar 2</title>
+      <para>Tɩbɩla fɛʋ punune wʋ so jɔfa ra fɛʋ na mɔ deeduur a hanɩ baanʔ, soni kɩɛr Nɩrɔrɩ kɛ rà, ɛr dɩ tɩɩ. Sɩ lee kpini náa harɔ nakɛ dɩ do, caar, teebirduur yaa dabuloduur, kuunduur yaa khɛrduur, ca thɩmɩɩr, ɩ hʋkpapa, mɔ ɩntɛ ɩn kpɩɛrnɩ dɩɩ n gbɛɛsɩnɛ hana yaa ɩntɛ kpɩɛr ha  nà haanɩ da, dɩda dʋʋn ɩntɛ doni yaa ɛ n cʋʋnɩ ɩntɛɛ dʋɔ, ler, kɔnpar yaa thɩn ca dɩkha, dʋɔnn nɔɔaʔ.</para>
+      <para>Dɩ nakɛ wo, leeri náa ha le sɩ a ha fɩɩʋ nakɛaʔ dɩ do ɩntɛɛ dɩ yaa ɔɔ bän gbɛɛnsɩ, sarwɛ tipar, ɛ a doni kaankɛ a n kanɩ, dɔ nɔɔaʔ; a do nakɛ dɩɩ le ra yaa bäänn le ra a hana ɔɔ thɛthɛɛ punuaʔ yoo, aa ha dɩ  nyɔkɔɔ, aà hana hʋɔ a cʋʋ thɩɛanʔ yaa wʋ pɩɛr wɔr thɩn dɩkha rà dɩ aà hana pununi caanʔ, da do nɔɔ dɩ leeri ná haaʔ.</para>
+  </article>
+   <article number="3">
+      <title>Varpar 3</title>
+      <para>Tibil woo tibil tɛɛnanɛ yiri, a tɛɛnanɛ a ná do deeaʔ sɩ aà tɛɛna wʋ fʋʋ pɛɛ ra pɛɛ wʋ khaann kaso rà sɩɩ do wa kɔɔ kʋl ʔyɩɛ guur ɔɔ soaʔ.</para>
+   </article>
+   <article number="4">
+      <title>Varpar 4</title>
+      <para>Tɩbɩl a tɛɛna wʋ tuu deeduur rà yaa waan hʋɔl wɔraʔ; deeduur ra nà deether ra náa ʔla ha le baanʔ sɩɩ do gbe yɩ nakɛaʔ.</para>
+   </article>
+   <article number="5">
+      <title>Varpar 5</title>
+      <para>Tibil a tɛɛna wʋ dɔɔyaaaʔ yaa wʋ pɩɛ pɛbaan yaa wʋ cʋʋ wʋ cʋʋ ca dɩkha kɛ puuroni, a tɛɛnanɩ dɩ cʋʋ tibil làaʔ yaa dɩ phiiaʔ.</para>
+   </article>
+   <article number="6">
+      <title>Varpar 6</title>
+      <para>Tɩbɩla fɛʋ tɛɛnanɩ par fɛʋ kɛ wʋ hanɩ tɩbɩla n hana tuur ɛɛ jɔfa rà.</para>
+   </article>
+   <article number="7">
+      <title>Varpar 7</title>
+      <para>Tɩbila la fɛʋ makhar jɔfɩ raa ʔyɛkʋlʋɔ, sɩ a hana hʋɔ jɔfɩ ra n cɛɛ yɛ cɛɛ bɩɛl sɩ a ná pɛrrɛ pɛlɛ Tɩbɩla fɛʋ hananɛ hʋɔ dɩ wa cɛɛ yɛ cɛɛ bɩɛl thɩn caar fɛʋ kɛ rà n pɛ yɛrnɩ leeri nà cʋʋpa caar fɛʋ kɛ pununi dɩ ɩna yɛr leeri, sɩ dɩɩ n dɩ Nɩrɔrɩ kɛ rà.</para>
+   </article>
+   <article number="8">
+      <title>Varpar 8</title>
+      <para>Tibil woo tibil hananɛ hʋɔ vʋʋn a so soguurpar kɛ rà, le dɩɩ rà,  jɩɩr, ʋnɩ a tu thɩn puu kɛ wʋ cʋʋ nɛrnɩ a dɩna cɛcɛ jɔfa rà sɩ a faana dɩɩ raa hʋ kɛ a ha nɩnɩaʔ yaa cɛɛrɩ kɛ jɔfɩ ra n cɛɛ nɛr nɩaʔ.</para>
+   </article>
+   <article number="9">
+      <title>Varpar 9</title>
+      <para>Tibil ná punu wʋ fʋʋ yaa wʋ khaann wʋ kaso rà yaa wʋ welen wʋ nà fanga wʋ faa dɩ banwɔ daʔbuul làaʔ.</para>
+   </article>
+   <article number="10">
+      <title>Varpar 10</title>
+      <para>Tibil woo tibil hananɛ hʋɔ ʔbilami a makha nà ɛ, dɩ wa guur ɔɔ so tɩbɩ fɛʋʋ ʔyɛkʋlʋɔ, soguurpar rà kɛ hananɩ dapunu, à n kunkuuniaʔ.  ra ná nɛ wɔr ɔɔ jɔfa nà ɛ tɛɛnanɩ dɩɩ ná cʋʋ, sɩ a ná suu, hʋɔ kɛ dɩ kpanɩ sɩ dɩ waan guur wʋ sor, wʋ fʋʋ wʋ khaann.</para>
+   </article>
+   <article number="11">
+      <title>Varpar 11</title>
+      <orderedlist>
+         <listitem>
+            <para>Tibil woo tibil kɛ wʋ n baalɔnɩ dɩɩ n ho ɔr cʋʋ thɩn puu, aà do sopucʋʋrdaar pɩaʔ foo wʋ guur ɔɔ so tɩbɩla fɛʋʋ ʔyɛkʋlʋɔ wʋ yɛɛ dɩ  aà hana hʋɔaʔ. Wa cʋʋrɛ mɔ wa cʋʋnɩ le guurpar rà sɩ wʋ ʔyaal jɔfɩjɩ wʋ haa, a mɩɩ thɩmɩɩr ra a haa sɩ a punu a pɛ wɔr.</para>
+         </listitem>
+         <listitem>
+            <para>Tibili woo tibil ná lon kaso rà sɩɩ do dabɔɔ kɛ a n kɔɔ cʋʋnɩ sopuu le  yaa a kɔɔ dinani thɩn bɔ ca dɩkha cʋʋrɩ, dɩɩ raa jɔfɩ yaa dɩ kpii jɔfɩ à  kɔɔ thera yɛ dɩɩ n do sopuuaʔ. Dɩkhan wo wá khaann tibil yɛ nʋɔ ɩn jɔ ɛ jɔfɩ soni wʋ hana ɩntɛ bɔɔ kɛ sopuu ra kɔɔnɩ cʋʋaʔ.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="12">
+      <title>Varpar 12</title>
+      <para>Tibil woo tibil a tɛɛna wʋ ʔlɔɔ ɔɔ thɛthɛɛ yi rà, ɔɔ cɔtoo rà, wʋ lon ɔɔ cɔaʔ yaa wʋ khɛr ɔɔ lɛtɛrɛ wʋ hiinnaʔ yaa wʋ pɩɛ wer nuuaʔ yaa wʋ phii sɩ  kʋɛ wʋ iri, sɩɩ do hʋɔ a harɔaʔ. Tibil woo tibil tɛɛnanɛ jɔfɩ ra ɩn cɛɛ wɔr ʔlɔɔrɩ rà nà phiir caar caar rà.</para>
+   </article>
+   <article number="13">
+      <title>Varpar 13</title>
+      <orderedlist>
+         <listitem>
+            <para>Tibil woo tibil hananɛ hʋɔ a naa kpaar baʔa sɩ a ʔyaal ɔɔ toopa dɩ ʋkhaa thinthiinn.</para>
+         </listitem>
+         <listitem>
+            <para>Tibil woo tibil hannanɛ hʋɔ a the dɩɩ fɛʋ rà, ɔɔ thɛthɛɛ dʋɔ a bo harɔaʔ, a kpaar, sɩ a bur a cɛr a ɩn.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="14">
+      <title>Varpar 14</title>
+      <orderedlist>
+         <listitem>
+            <para>Bɔɔ kɛ kpoori ɩɩrnɩ, tibil woo tibil hananɛ hʋɔ à ʔyaal wanpar dɩ wa faa wʋ dɩɩ na gal dɩ banwɔ.</para>
+         </listitem>
+         <listitem>
+            <para>A ná punu ná so ʋnɩ hananɛ hʋɔ ʔlo ʋnɩ fuu ʋnɩ lon dɩ kpii rà sɩ  sʋnbɔr a cʋʋrɛ sɔpu kontinn a dɩna tɩbɩla fɛʋ rà, yaa ɛ a cʋʋnɩ n gʋʋ Dɩɩ sʋnɔ kɛ kpanɩ gbɛʋʋ kpɩɛrnɔ rà sɩ a ha kpii nà ɛ wʋ n turoni, dɩ waan ʔyaal wʋ nakɛ juuwei wʋ fʋaʔ.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="15">
+      <title>Varpar 15</title>
+      <orderedlist>
+         <listitem>
+            <para>Tibil woo tibil hananɛ hʋɔ a do dɩdaar.</para>
+         </listitem>
+         <listitem>
+            <para>Tibil woo tibil ná punu wʋ taa wɔr ɔɔ dɩdadoaʔ yaa wʋ kʋɛ hʋɔ kɛ a hananɩ a dɔna dɩda kpiiaʔ.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="16">
+      <title>Varpar 16</title>
+      <orderedlist>
+         <listitem>
+            <para>Bɔɔ kɛ kuunbir ra nà khɛrbir ra nàa valanɩ, wʋ hananɛ hʋɔ wʋ he kha  wʋ kɔnkha bɩsana sɩ dá do caar, dɩdaduur yaa ɩntɛ hʋkpapa dʋʋnn nɔɔ a nyaarɔ nakɛ gbeaʔ. Wʋ tɩnɛnɛ hʋɔ a makha her rà na mɔ her ra ná pʋɔrnɩ a dana ɔɔ kuurpa.</para>
+         </listitem>
+         <listitem>
+            <para>Her ra ná punu ná cʋɔ sɩ ado ʔwɛdara kɛ ná henikha tunena haar fɛʋ sɩɩ do thɩɛn a fɩr yɛaʔ.</para>
+         </listitem>
+         <listitem>
+            <para>Cʋɔr ra dʋɔnn dɩɩ fɛʋ rà thʋɔn kɛ Thangba tini, a dona cɛcɛ thʋɔn, sɩ a hana hʋɔ, a tɛɛna tɩbɩla la fɛʋ nà dɩɩ ra fɛʋ ɩn bɛr wɔr.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="17">
+      <title>Varpar 17</title>
+      <orderedlist>
+         <listitem>
+            <para>Tibil woo tibil, aa ha bɩɛl yaa wʋ jɔɔrɛ, a hananɛ hʋɔ a hana ɔɔ konkonthɩɛn.</para>
+         </listitem>
+         <listitem>
+            <para>Tibil woo tibil ná punu wʋ taa wɔr ɔɔ konkonthɩɛanʔ.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="18">
+      <title>Varpar 18</title>
+      <para>Tibil woo tibil hananɛ hʋɔ a kpɩɛra thɩɛn, a hana fɩlwɛ sɩ a kpa hʋɔ kɛ  pɛnɩ haar, sɩ thɩɛn ná fɩr wʋaʔ; dɩ hʋ ʋrɛ ra n nɩrɔrɛ a punune a fi a kpa hʋ kpii sɩ thɩɛn ná fɩr wʋaʔ; dɩ dɩkhan wo dɩ n nɩrɔrɛ a hananɛ hʋɔ a ʔla  nɩrɔ gbelengbelen ɔɔ hʋ kɛ a kpanɩ yaa thɩɛn kɛ a jɩnɩ, ado dɩbara a  yaa wʋ bulle too, ado nakɛ tee jɔ rà yɩ yaa dɩkhanpa yɩ, dɩ ther dɩɩrɩ rà, cʋʋrpa caar caar rà,fʋɔrɩ rà, nà hʋʔyɩɩr caar caar rà sɩ thɩɛn ná fɩr wʋaʔ.</para>
+   </article>
+   <article number="19">
+      <title>Varpar 19</title>
+      <para>Tibil woo tibil hananɛ hʋɔ a päl bɩnɛ sɩ a mɩɩ ɔɔ bɩnthɩmɩ sɩ thɩɛn ná fɩ wʋaʔ; dɩ n nɩrɔrɛ hʋɔ a harɔ dɩ wa tuu maar bʋnɔ dɩ do ɔɔ kpɩɛrnɔ  nɔɔaʔ; dɩ dɩ n ka nɩrɔrɛ hʋɔ harɔrɛ dɩɩ na ʔyaal a na fʋ thɩn nɩrɔrɩ  kpɩɛrnɔɔ kɛ haanɩ yʋɔ sɩ a na gba ɛ a pununi a na mɩɩna dɩ wa nɩɛ dɩɩ sʋnɔ na fɛʋ sɩ leeri ná harɔ nakɛ gbeaʔ.</para>
+   </article>
+   <article number="20">
+      <title>Varpar 20</title>
+      <orderedlist>
+          <listitem>
+            <para>Tibil woo tibil hananɛ hʋɔ a gbɛʋkha nà tɩbɩla sɩ a ha gbuluni na kaankɛ haarʔyii hanɩ, sɩ thɩɛn ná fɩr wʋaʔ.</para>
+         </listitem>
+         <listitem>
+            <para>Tibil woo tibil ná punu wʋ fɩr wʋ wʋ pɛ gbuluni naaʔ.</para>
+         </listitem>
+     </orderedlist>
+   </article>
+   <article number="21">
+      <title>Varpar 21</title>
+      <orderedlist>
+         <listitem>
+            <para>Tibil woo tibil hananɛ hʋɔ ɔɔ thɛthɛ yaa a ti tibil ɔɔ irir rà wʋ bulkha nà ɔɔ dɩda wʋ jʋʋr thɩɛn kɛ hanɩ le ɔɔ dʋɔ sɩ thɩɛn ná fɩr wʋaʔ.</para>
+         </listitem>
+         <listitem>
+            <para>Tibil woo tibil hananɛ hʋɔ a do thɔma bɩɛl thomadopar rà le ɔɔ dʋɔ nà tɩbɩla fɛʋ.</para>
+         </listitem>
+         <listitem>
+            <para>Thʋɔn kɛ dɩɩ raa too nanɩ dʋɔnn cɛcɛ thɩɛn n ʔbanɩ dɩhiindara jala dɩ wʋ n ʔli pununi. Thʋɔn kɛ ra wʋ nanɩ tɛɛnanɛ dɩ the mɔ tɩbɩla fɛʋ  phiirni, sɩ mʋɔlɩ ná harɔaʔ, dɩhiindara bɔɔ kɛ wʋ ʔlaanɩkha,  kunkuuni ná harɔaʔ; dɩ wá nɩrɔ tibil ɩn jɩ ɩntɛ kɛ wʋ n phiirniaʔ yaa a cʋʋ cʋʋ ca dɩkha dɩɩ ho wʋ n fɩrrɛ tibilaʔ phiirpar ràaʔ.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="22">
+      <title>Varpar 22</title>
+      <para>Tibil woo tibil mɔ a hanɩ tɩbɩlaa thɩnthiinn, a hananɛ hʋɔ waan bɛr wɔthɩn puu náa daan thɔmadopar ràaʔ; wʋ tiire a thɩɩnn a haa hʋɔ dɩ da wɔr a jɩ lenlen thɩɛn a naa fʋ, a hana bɛrrɩ thɩn puu rà le thɔmadopar rà, gbɛʋkha nà ɛ wʋ hananɩkha jɩɩr bɩɛl; ɛr tɛɛna dɩ dɩfɩ wʋ dɩ cʋʋ wʋ a khɔ baʔa dɩ do bʋɔ kɛ ra dɩɩ ra n doni, na mɔ dɩɩ sʋnɔ na bulnikha a do nɔbɩɛ dʋɔnn nɔɔ; dɩ da the mɔ dɩ dʋʋnn n gbɛɛnsɩnɩ ɔɔ thɛthɛ nà lenlen thɩɛn kɛ a hananɩ.</para>
+   </article>
+   <article number="23">
+      <title>Varpar 23</title>
+      <orderedlist>
+         <listitem>
+            <para>Tibil woo tibil hananɛ hʋɔ a do thɔma, a ʔyaal thɔma kɛ a nanɩ sɩ thɩɛ ná fɩr wʋaʔ, a hana nɔbɔr a makhana ɛ thɔma ʔyaalɩ là dɩ da wɔr sɩ wʋ jɩɩl wɔr a hana thɔma a naa do.</para>
+         </listitem>
+         <listitem>
+            <para>Ɛr fɛʋ hananɛ hʋɔ wʋ ʔli ʔlʋmɩnɩ wʋ makha na mɔ wʋ n doni thɔma a makha sɩ dänbäl wer ná harɔ nakɛ sɩɩ do gbe dɩ haaʔ.</para>
+         </listitem>
+         <listitem>
+            <para>Tibil woo tibil kɛ n doni thɔma, a hananɛ hʋɔ ado da punune wʋ ʔ wʋ hʋ kpii puuwe náa daan thɔma dopar rà, a ʔli ʔlʋmɩnɩ a  dɩ bɔrɔkha dɩ tɩɛ nà ɔɔ cɔtoo, dɩkhan a dɩfɩrɔ, ɔɔ teedo ra naa gaala wʋ ʔyɛkʋlʋɔ.</para>
+         </listitem>
+         <listitem>
+            <para>Tibil woo tibil hananɛ hʋɔ a gbɛʋkha nà ɛkha wʋ kur sintika sɩ a makha nà sintika ɛkha waan hiinn ɔɔ hʋ kaankɛ a n doni thɔma.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="24">
+      <title>Varpar 24</title>
+      <para>Tibil woo tibil hananɛ hʋɔ a hiir sɩ a hana bɔɔ a thana jɩɛ sɩ nakɛ wʋ wur bɔɔ rà ɔɔ thɔma do lɩɛr sɩ wʋ ʔlʋmɩ wʋ bɔɔ kɛ a gbanɩ konje.</para>
+   </article>
+   <article number="25">
+      <title>Varpar 25</title>
+      <orderedlist>
+         <listitem>
+            <para>Tibil woo tibil hananɛ hʋɔ a ʔli ʔlʋmɩnɩ kɛ bɔrɔnɩkha a punu a  tonbi bɔɔ kɛ dɩ sɩ wɔrnɩ, a bɛrna yʋʋ sɩ a naa hiina ɔɔ cɔtoo nakɛ wʋ  thɩɛn waan kho, waan to, wʋ yɩ cɔpar rà, wʋ gal dɔtɔrɔcʋɔr wʋ hiinn  mɛ a hana hʋɔ wʋ bul wʋ mɔ tɛɛnanɩ thɩlciir ná ʔlii le thɔmadopar  a hananɛ hʋɔ wʋ jɩɩl wɔr a ná kʋ bʋɔ bɔɔ kɛ aà n doni thɔmaaʔ  thɔma kʋɛnɛ wʋaʔ, a ná kʋ bʋɔ bɔɔ kɛ dɩ n khuuniaʔ, bɔɔ kɛ aà  pununi baanʔ, bɔɔ kɛ a doni khikhɛraʔ yaa bɔɔ kɛ ɔɔ khɛr ʔ tɩn bʋɔaʔ yaa bɔ ʋkha rà mɔ aà hananɩ thɩɛn a tɛna ɔɔ thɛthɛaʔ da doni ɔɔ jɩ sɩ a cʋʋ yɩaʔ.</para>
+         </listitem>
+         <listitem>
+            <para>Khɛr kɛ kɔnɩ bi nà bɩsaann kɛ a khɔnɩ pɩaʔ hananɛ hʋɔ wʋ bul yɛ  sar sɩ wʋ tɛ yɛ tɛ sar. Bɩsana na fɛʋ n hananɛ cɛɛrɩ a  thɔmadopar rà ado nakɛ ɛɛ thɩ nà ɛɛ nɩ herkha sɩ a kɔn yɛ yaa ʔwɛdaarɩ rà wʋ kɔn yɛ.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="26">
+      <title>Varpar 26</title>
+      <orderedlist>
+         <listitem>
+            <para>Tibil woo tibil hananɛ hʋɔ a gal nakol a ʔli dɩɩrɩ. A tɛɛnanɛ dɩ do pɛɛ wʋ dɩɩr wʋ. Bɩsan yɩra kɛɛ nakol wer nakɛ nà cɛcɛ dɩɩrɩ a tɛɛna wʋ ʔlʋ waraʔ. Bɩsana na a tɛɛna wʋ faa yɛ cʋɔr sɩɩ do wa n gal nakolaʔ, dɩ  fanga thɩɛn. Dɩɩrɩ kaankɛ wʋ n dɩɩrnɩ thɔmaduur nà dɩɩrɩ kɛ ra n ʔ thɔma, tɛɛnanɛ dɩ thʋ tɩbɩla fɛʋ dɩ can; nakolcɔ kontin luunn tɛɛnanɩ tɩbɩla fɛʋ ɩn ʔlaa wʋ ʔluru wʋ makha mɔ ɩntɛ tɛɛna yɛnɩ.</para>
+         </listitem>
+         <listitem>
+            <para>Dɩɩrɩ ra tɛɛnanɛ dɩ tɔ teeduur daan pɛrrɛ, daan gaala ʔyɛkʋlʋɔ  sɩ dɩ cʋʋ guurɩ kɛ wʋ n guuranɩ Tibilii hʋ nà mɔ kɛ cɛcɛ rà thɩɛn à  fɩrnɩ tibil dɩ n do deeaʔ, ɩn tɩ. Dɩɩrɩ ra tɛɛnanɛ a gbɛʋ tɩbɩla waan nɩ boboi; ʔyɛɛkha nà kuuni dɩɩ sʋnɔ naa thɩnthiinn, teebira raa thɩ yaa dabulo sʋnɔ naa thɩnthiinn yaa hʋɔ kɛ ɩntɛ kpanɩ, ɩn yɔɔ; sɩ  wo dɩɩrɩ tɛɛnanɛ dɩ cʋʋ, Dɩɩ sʋnɔ kɛ ra kpanɩ gbɛʋ dɩ wʋ n ʔyaal haarʔyii ɩn hana, ɛɛ thɔma kɛ wʋ n doni naa ʔli bääni.</para>
+         </listitem>
+         <listitem>
+            <para>Thɩrɛ nà nɩrɛ sʋnɔ na dʋɔnn cɛcɛ tɩbɩla kɛ hananɩ hʋɔ wʋ ti dɩɩr caar kɛ n gbɛɛnsɩnɩ ɛɛ bɩsan sʋnɔ waan dɩɩra yɛ.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="27">
+      <title>Varpar 27</title>
+      <orderedlist>
+         <listitem>
+            <para>Tibil woo tibil hananɛ hʋɔ, sɩ thɩɛn ná fɩr wʋaʔ, a gbɛʋkha nà ɛ a toonanikha pa bɩɛl waan cʋʋkha ca thɩɛn; a hananɛ hʋɔ a yɩrɔ dɛfɩrɩ ɛ rà wʋ jɩnɩ dɩ wʋ n cʋʋ, wʋ bulkha jɩɩr ra ɩn khɔn daan gal ʔyɛkʋlʋɔ sɩ wʋ tɩnɛkha dɛfɩrɩ kɛ wa ʔlini.</para>
+         </listitem>
+         <listitem>
+            <para>Tɩbɩla fɛʋ hananɛ hʋɔ wʋ cɛɛ yɛr wʋ ʔli dɛfɩrɩ, wá gba yɛ fɩlwɛ nà thɩɛ kɛ wʋ tini dɩɩ the ɛɛ jɩɩr fɛʋ kɛ rà wʋ hananɩ yaa sɛbɛhiini na nà nyɩr rà nà thɩɛn kɛ wʋ jɩnɩ dɩ wʋ n cʋʋaʔ.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="28">
+      <title>Varpar 28</title>
+      <para>Tibil woo tibil hananɛ hʋɔ le ɔɔ dʋɔ nà dɩ kpii rà , a pɩɛr nyanyaanɩ  daaanʔ; mɛ da ha sɩ tɩbɩlaa hʋ kɛ wʋ hananɩ na mɔ deeduur pɩnɩ, soni kɩɛr Nɩrɔrɩ kɛ rà , ɩn punu dɩ hana fanga mɔ tɛɛnanɩ.</para>
+   </article>
+   <article number="29">
+      <title>Varpar 29</title>
+      <orderedlist>
+         <listitem>
+            <para>Tibil hananɛ ɛ tɛɛnanɩ a cʋʋ dapa kɛ a tooni; thɩɛn kɛ pununi dɩ cʋʋ  dapa rà a tooni ha mɔ ɔɔ teedo nàa nyɩrnɩ tɩbila fɛʋʋ ʔyɛkʋlʋɔ na mɔ thɩɛn ná fɩr wʋnɩaʔ.</para>
+         </listitem>
+         <listitem>
+            <para>Mɔ ɩntɛ nàa ɩɩrnɩ ɔɔ hʋ rà, da doni thɩɛn ha le dɩ n fɩr wʋaʔ, aà tɛɛna a cʋʋ thɩɛn a kaansɩna jɔfɩ raaʔ; jɔfɩ ra n sor ʔbilami aa haann ɩn to dɩfa ɔɔ ɔlɔnkha a náa saa nɔɔaʔ, a náa fɩr wʋ sɩ a mʋɔl wʋaʔ yaa a  dänbälaʔ. Dɩ jɔfɩ ra n ʔyaalɛ dɩ do kaankɛ dɩɩ raa too hananɩ pununi  wʋ n phiirna dɩhiindara, thɩɛn ɩn yɔɔ, tɩbɩla ɩn hana cʋʋpa bɔ  tɛɛnanɩ, wá ʔyaal nyanyaanɩ ɩn lɔna tɩbɩlaa thɩnthiinaʔ sɩ wa ka ná na bɔcʋʋrɩ tɩbɩla fɛʋ rà.</para>
+         </listitem>
+         <listitem>
+            <para>Hʋɔ kɛ ra tɩbɩla hananɩ na mɔ thɩɛn à n fɩr yɛnɩaʔ ná punu ná do yɛ,  ha nakɛ gbe, sɩ ado mɔ kɛ Dɩɩ sʋnɔ kɛ kpanɩ gbɛʋ n kpɩɛrnɩ sɩ a pɛ haar dɩ hana yɩaʔ.</para>
+         </listitem>
+      </orderedlist>
+   </article>
+   <article number="30">
+      <title>Varpar 30</title>
+      <para>Tibil náa punu fi jɔfɩ bɩɛl nakɛ kɩɛr Nɩrɔrɩ kɛ rà, a dɩ ha mɔ nakɛ, sɩ a  dɩ ho hʋ dɩkha ʔlaarɛ, a ha gbuluni yaa tibil bɩɛl, a gbuu yʋʋ thɩn dɩ cʋʋrɩ rà yaa a naa cʋʋ thɩn puu kɛ n ʔyaalnɩ dɩ nyanyaann tibilii hʋ kɛ a hananɩ na mɔ thɩɛn à n fɩr wʋnɩaʔ, soni le Nɩrɔrɩ rà raaʔ.</para>
+   </article>
+</udhr>

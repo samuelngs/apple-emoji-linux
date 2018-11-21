@@ -1,0 +1,2012 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2017 Unicode, Inc.
+For terms of use, see http://www.unicode.org/copyright.html
+Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+-->
+<ldml>
+	<identity>
+		<version number="$Revision: 13571 $"/>
+		<language type="und"/>
+	</identity>
+	<localeDisplayNames>
+		<localeDisplayPattern>
+			<localePattern>{0} ({1})</localePattern>
+			<localeSeparator>{0}, {1}</localeSeparator>
+			<localeKeyTypePattern>{0}: {1}</localeKeyTypePattern>
+		</localeDisplayPattern>
+		<languages>
+			<language type="aa">aa</language>
+			<language type="ab">ab</language>
+			<language type="ace">ace</language>
+			<language type="ada">ada</language>
+			<language type="ady">ady</language>
+			<language type="af">af</language>
+			<language type="agq">agq</language>
+			<language type="ain">ain</language>
+			<language type="ak">ak</language>
+			<language type="ale">ale</language>
+			<language type="alt">alt</language>
+			<language type="am">am</language>
+			<language type="an">an</language>
+			<language type="anp">anp</language>
+			<language type="ar">ar</language>
+			<language type="ar_001">ar_001</language>
+			<language type="arn">arn</language>
+			<language type="arp">arp</language>
+			<language type="as">as</language>
+			<language type="asa">asa</language>
+			<language type="ast">ast</language>
+			<language type="av">av</language>
+			<language type="awa">awa</language>
+			<language type="ay">ay</language>
+			<language type="az">az</language>
+			<language type="az" alt="short">az</language>
+			<language type="ba">ba</language>
+			<language type="ban">ban</language>
+			<language type="bas">bas</language>
+			<language type="be">be</language>
+			<language type="bem">bem</language>
+			<language type="bez">bez</language>
+			<language type="bg">bg</language>
+			<language type="bho">bho</language>
+			<language type="bi">bi</language>
+			<language type="bin">bin</language>
+			<language type="bla">bla</language>
+			<language type="bm">bm</language>
+			<language type="bn">bn</language>
+			<language type="bo">bo</language>
+			<language type="br">br</language>
+			<language type="brx">brx</language>
+			<language type="bs">bs</language>
+			<language type="bug">bug</language>
+			<language type="byn">byn</language>
+			<language type="ca">ca</language>
+			<language type="ce">ce</language>
+			<language type="ceb">ceb</language>
+			<language type="cgg">cgg</language>
+			<language type="ch">ch</language>
+			<language type="chk">chk</language>
+			<language type="chm">chm</language>
+			<language type="cho">cho</language>
+			<language type="chr">chr</language>
+			<language type="chy">chy</language>
+			<language type="ckb">ckb</language>
+			<language type="co">co</language>
+			<language type="crs">crs</language>
+			<language type="cs">cs</language>
+			<language type="cu">cu</language>
+			<language type="cv">cv</language>
+			<language type="cy">cy</language>
+			<language type="da">da</language>
+			<language type="dak">dak</language>
+			<language type="dar">dar</language>
+			<language type="dav">dav</language>
+			<language type="de">de</language>
+			<language type="de_AT">de_AT</language>
+			<language type="de_CH">de_CH</language>
+			<language type="dgr">dgr</language>
+			<language type="dje">dje</language>
+			<language type="dsb">dsb</language>
+			<language type="dua">dua</language>
+			<language type="dv">dv</language>
+			<language type="dyo">dyo</language>
+			<language type="dz">dz</language>
+			<language type="dzg">dzg</language>
+			<language type="ebu">ebu</language>
+			<language type="ee">ee</language>
+			<language type="efi">efi</language>
+			<language type="eka">eka</language>
+			<language type="el">el</language>
+			<language type="en">en</language>
+			<language type="en_AU">en_AU</language>
+			<language type="en_CA">en_CA</language>
+			<language type="en_GB">en_GB</language>
+			<language type="en_GB" alt="short">en_GB-short</language>
+			<language type="en_US">en_US</language>
+			<language type="en_US" alt="short">en_US-short</language>
+			<language type="eo">eo</language>
+			<language type="es">es</language>
+			<language type="es_419">es_419</language>
+			<language type="es_ES">es_ES</language>
+			<language type="es_MX">es_MX</language>
+			<language type="et">et</language>
+			<language type="eu">eu</language>
+			<language type="ewo">ewo</language>
+			<language type="fa">fa</language>
+			<language type="ff">ff</language>
+			<language type="fi">fi</language>
+			<language type="fil">fil</language>
+			<language type="fj">fj</language>
+			<language type="fo">fo</language>
+			<language type="fon">fon</language>
+			<language type="fr">fr</language>
+			<language type="fr_CA">fr_CA</language>
+			<language type="fr_CH">fr_CH</language>
+			<language type="frc">frc</language>
+			<language type="fur">fur</language>
+			<language type="fy">fy</language>
+			<language type="ga">ga</language>
+			<language type="gaa">gaa</language>
+			<language type="gd">gd</language>
+			<language type="gez">gez</language>
+			<language type="gil">gil</language>
+			<language type="gl">gl</language>
+			<language type="gn">gn</language>
+			<language type="gor">gor</language>
+			<language type="gsw">gsw</language>
+			<language type="gu">gu</language>
+			<language type="guz">guz</language>
+			<language type="gv">gv</language>
+			<language type="gwi">gwi</language>
+			<language type="ha">ha</language>
+			<language type="haw">haw</language>
+			<language type="he">he</language>
+			<language type="hi">hi</language>
+			<language type="hil">hil</language>
+			<language type="hmn">hmn</language>
+			<language type="hr">hr</language>
+			<language type="hsb">hsb</language>
+			<language type="ht">ht</language>
+			<language type="hu">hu</language>
+			<language type="hup">hup</language>
+			<language type="hy">hy</language>
+			<language type="hz">hz</language>
+			<language type="ia">ia</language>
+			<language type="iba">iba</language>
+			<language type="ibb">ibb</language>
+			<language type="id">id</language>
+			<language type="ig">ig</language>
+			<language type="ii">ii</language>
+			<language type="ilo">ilo</language>
+			<language type="inh">inh</language>
+			<language type="io">io</language>
+			<language type="is">is</language>
+			<language type="it">it</language>
+			<language type="iu">iu</language>
+			<language type="ja">ja</language>
+			<language type="jbo">jbo</language>
+			<language type="jgo">jgo</language>
+			<language type="jmc">jmc</language>
+			<language type="jv">jv</language>
+			<language type="ka">ka</language>
+			<language type="kab">kab</language>
+			<language type="kac">kac</language>
+			<language type="kaj">kaj</language>
+			<language type="kam">kam</language>
+			<language type="kbd">kbd</language>
+			<language type="kcg">kcg</language>
+			<language type="kde">kde</language>
+			<language type="kea">kea</language>
+			<language type="kfo">kfo</language>
+			<language type="kha">kha</language>
+			<language type="khq">khq</language>
+			<language type="ki">ki</language>
+			<language type="kj">kj</language>
+			<language type="kk">kk</language>
+			<language type="kkj">kkj</language>
+			<language type="kl">kl</language>
+			<language type="kln">kln</language>
+			<language type="km">km</language>
+			<language type="kmb">kmb</language>
+			<language type="kn">kn</language>
+			<language type="ko">ko</language>
+			<language type="kok">kok</language>
+			<language type="kpe">kpe</language>
+			<language type="kr">kr</language>
+			<language type="krc">krc</language>
+			<language type="krl">krl</language>
+			<language type="kru">kru</language>
+			<language type="ks">ks</language>
+			<language type="ksb">ksb</language>
+			<language type="ksf">ksf</language>
+			<language type="ksh">ksh</language>
+			<language type="ku">ku</language>
+			<language type="kum">kum</language>
+			<language type="kv">kv</language>
+			<language type="kw">kw</language>
+			<language type="ky">ky</language>
+			<language type="la">la</language>
+			<language type="lad">lad</language>
+			<language type="lag">lag</language>
+			<language type="lb">lb</language>
+			<language type="lez">lez</language>
+			<language type="lg">lg</language>
+			<language type="li">li</language>
+			<language type="lkt">lkt</language>
+			<language type="ln">ln</language>
+			<language type="lo">lo</language>
+			<language type="lou">lou</language>
+			<language type="loz">loz</language>
+			<language type="lrc">lrc</language>
+			<language type="lt">lt</language>
+			<language type="lu">lu</language>
+			<language type="lua">lua</language>
+			<language type="lun">lun</language>
+			<language type="luo">luo</language>
+			<language type="lus">lus</language>
+			<language type="luy">luy</language>
+			<language type="lv">lv</language>
+			<language type="mad">mad</language>
+			<language type="mag">mag</language>
+			<language type="mai">mai</language>
+			<language type="mak">mak</language>
+			<language type="mas">mas</language>
+			<language type="mdf">mdf</language>
+			<language type="men">men</language>
+			<language type="mer">mer</language>
+			<language type="mfe">mfe</language>
+			<language type="mg">mg</language>
+			<language type="mgh">mgh</language>
+			<language type="mgo">mgo</language>
+			<language type="mh">mh</language>
+			<language type="mi">mi</language>
+			<language type="mic">mic</language>
+			<language type="min">min</language>
+			<language type="mk">mk</language>
+			<language type="ml">ml</language>
+			<language type="mn">mn</language>
+			<language type="mni">mni</language>
+			<language type="moh">moh</language>
+			<language type="mos">mos</language>
+			<language type="mr">mr</language>
+			<language type="ms">ms</language>
+			<language type="mt">mt</language>
+			<language type="mua">mua</language>
+			<language type="mul">mul</language>
+			<language type="mus">mus</language>
+			<language type="mwl">mwl</language>
+			<language type="my">my</language>
+			<language type="myv">myv</language>
+			<language type="mzn">mzn</language>
+			<language type="na">na</language>
+			<language type="nap">nap</language>
+			<language type="naq">naq</language>
+			<language type="nb">nb</language>
+			<language type="nd">nd</language>
+			<language type="nds_NL">nds (NL)</language>
+			<language type="ne">ne</language>
+			<language type="new">new</language>
+			<language type="ng">ng</language>
+			<language type="nia">nia</language>
+			<language type="niu">niu</language>
+			<language type="nl">nl</language>
+			<language type="nl_BE">Tiếng Hà Lan (BE)</language>
+			<language type="nmg">nmg</language>
+			<language type="nn">nn</language>
+			<language type="nnh">nnh</language>
+			<language type="nog">nog</language>
+			<language type="nqo">nqo</language>
+			<language type="nr">nr</language>
+			<language type="nso">nso</language>
+			<language type="nus">nus</language>
+			<language type="nv">nv</language>
+			<language type="ny">ny</language>
+			<language type="nyn">nyn</language>
+			<language type="oc">oc</language>
+			<language type="om">om</language>
+			<language type="or">or</language>
+			<language type="os">os</language>
+			<language type="pa">pa</language>
+			<language type="pag">pag</language>
+			<language type="pam">pam</language>
+			<language type="pap">pap</language>
+			<language type="pau">pau</language>
+			<language type="pcm">pcm</language>
+			<language type="pl">pl</language>
+			<language type="prg">prg</language>
+			<language type="ps">ps</language>
+			<language type="pt">pt</language>
+			<language type="pt_BR">pt_BR</language>
+			<language type="pt_PT">pt_PT</language>
+			<language type="qu">qu</language>
+			<language type="quc">quc</language>
+			<language type="rap">rap</language>
+			<language type="rar">rar</language>
+			<language type="rm">rm</language>
+			<language type="rn">rn</language>
+			<language type="ro">ro</language>
+			<language type="ro_MD">ro_MD</language>
+			<language type="rof">rof</language>
+			<language type="root">root</language>
+			<language type="ru">ru</language>
+			<language type="rup">rup</language>
+			<language type="rw">rw</language>
+			<language type="rwk">rwk</language>
+			<language type="sa">sa</language>
+			<language type="sad">sad</language>
+			<language type="sah">sah</language>
+			<language type="saq">saq</language>
+			<language type="sat">sat</language>
+			<language type="sba">sba</language>
+			<language type="sbp">sbp</language>
+			<language type="sc">sc</language>
+			<language type="scn">scn</language>
+			<language type="sco">sco</language>
+			<language type="sd">sd</language>
+			<language type="se">se</language>
+			<language type="seh">seh</language>
+			<language type="ses">ses</language>
+			<language type="sg">sg</language>
+			<language type="shi">shi</language>
+			<language type="shn">shn</language>
+			<language type="si">si</language>
+			<language type="sk">sk</language>
+			<language type="sl">sl</language>
+			<language type="sm">sm</language>
+			<language type="sma">sma</language>
+			<language type="smj">smj</language>
+			<language type="smn">smn</language>
+			<language type="sms">sms</language>
+			<language type="sn">sn</language>
+			<language type="snk">snk</language>
+			<language type="so">so</language>
+			<language type="sq">sq</language>
+			<language type="sr">sr</language>
+			<language type="srn">srn</language>
+			<language type="ss">ss</language>
+			<language type="ssy">ssy</language>
+			<language type="st">st</language>
+			<language type="su">su</language>
+			<language type="suk">suk</language>
+			<language type="sv">sv</language>
+			<language type="sw">sw</language>
+			<language type="sw_CD">sw_CD</language>
+			<language type="swb">swb</language>
+			<language type="syr">syr</language>
+			<language type="ta">ta</language>
+			<language type="te">te</language>
+			<language type="tem">tem</language>
+			<language type="teo">teo</language>
+			<language type="tet">tet</language>
+			<language type="tg">tg</language>
+			<language type="th">th</language>
+			<language type="ti">ti</language>
+			<language type="tig">tig</language>
+			<language type="tk">tk</language>
+			<language type="tlh">tlh</language>
+			<language type="tn">tn</language>
+			<language type="to">to</language>
+			<language type="tpi">tpi</language>
+			<language type="tr">tr</language>
+			<language type="trv">trv</language>
+			<language type="ts">ts</language>
+			<language type="tt">tt</language>
+			<language type="tum">tum</language>
+			<language type="tvl">tvl</language>
+			<language type="twq">twq</language>
+			<language type="ty">ty</language>
+			<language type="tyv">tyv</language>
+			<language type="tzm">tzm</language>
+			<language type="udm">udm</language>
+			<language type="ug">ug</language>
+			<language type="uk">uk</language>
+			<language type="umb">umb</language>
+			<language type="und">und</language>
+			<language type="ur">ur</language>
+			<language type="uz">uz</language>
+			<language type="vai">vai</language>
+			<language type="ve">ve</language>
+			<language type="vi">vi</language>
+			<language type="vo">vo</language>
+			<language type="vun">vun</language>
+			<language type="wa">wa</language>
+			<language type="wae">wae</language>
+			<language type="wal">wal</language>
+			<language type="war">war</language>
+			<language type="wo">wo</language>
+			<language type="xal">xal</language>
+			<language type="xh">xh</language>
+			<language type="xog">xog</language>
+			<language type="yav">yav</language>
+			<language type="ybb">ybb</language>
+			<language type="yi">yi</language>
+			<language type="yo">yo</language>
+			<language type="yue">yue</language>
+			<language type="zgh">zgh</language>
+			<language type="zh">zh</language>
+			<language type="zh_Hans" draft="provisional">zh (Hans)</language>
+			<language type="zh_Hant" draft="provisional">zh (Hant)</language>
+			<language type="zu">zu</language>
+			<language type="zun">zun</language>
+			<language type="zxx">zxx</language>
+			<language type="zza">zza</language>
+		</languages>
+		<scripts>
+			<script type="Arab">Arab</script>
+			<script type="Armn">Armn</script>
+			<script type="Beng">Beng</script>
+			<script type="Bopo">Bopo</script>
+			<script type="Brai">Brai</script>
+			<script type="Cyrl">Cyrl</script>
+			<script type="Deva">Deva</script>
+			<script type="Ethi">Ethi</script>
+			<script type="Geor">Geor</script>
+			<script type="Grek">Grek</script>
+			<script type="Gujr">Gujr</script>
+			<script type="Guru">Guru</script>
+			<script type="Hanb">Hanb</script>
+			<script type="Hang">Hang</script>
+			<script type="Hani">Hani</script>
+			<script type="Hans">Hans</script>
+			<script type="Hans" alt="stand-alone">Hans</script>
+			<script type="Hant">Hant</script>
+			<script type="Hant" alt="stand-alone">Hant</script>
+			<script type="Hebr">Hebr</script>
+			<script type="Hira">Hira</script>
+			<script type="Hrkt">Hrkt</script>
+			<script type="Jamo">Jamo</script>
+			<script type="Jpan">Jpan</script>
+			<script type="Kana">Kana</script>
+			<script type="Khmr">Khmr</script>
+			<script type="Knda">Knda</script>
+			<script type="Kore">Kore</script>
+			<script type="Laoo">Laoo</script>
+			<script type="Latn">Latn</script>
+			<script type="Mlym">Mlym</script>
+			<script type="Mong">Mong</script>
+			<script type="Mymr">Mymr</script>
+			<script type="Orya">Orya</script>
+			<script type="Sinh">Sinh</script>
+			<script type="Taml">Taml</script>
+			<script type="Telu">Telu</script>
+			<script type="Thaa">Thaa</script>
+			<script type="Thai">Thai</script>
+			<script type="Tibt">Tibt</script>
+			<script type="Zmth">Zmth</script>
+			<script type="Zsye">Zsye</script>
+			<script type="Zsym">Zsym</script>
+			<script type="Zxxx">Zxxx</script>
+			<script type="Zyyy">Zyyy</script>
+			<script type="Zzzz">Zzzz</script>
+		</scripts>
+		<territories>
+			<territory type="001">001</territory>
+			<territory type="002">002</territory>
+			<territory type="003">003</territory>
+			<territory type="005">005</territory>
+			<territory type="009">009</territory>
+			<territory type="011">011</territory>
+			<territory type="013">013</territory>
+			<territory type="014">014</territory>
+			<territory type="015">015</territory>
+			<territory type="017">017</territory>
+			<territory type="018">018</territory>
+			<territory type="019">019</territory>
+			<territory type="021">021</territory>
+			<territory type="029">029</territory>
+			<territory type="030">030</territory>
+			<territory type="034">034</territory>
+			<territory type="035">035</territory>
+			<territory type="039">039</territory>
+			<territory type="053">053</territory>
+			<territory type="054">054</territory>
+			<territory type="057">057</territory>
+			<territory type="061">061</territory>
+			<territory type="142">142</territory>
+			<territory type="143">143</territory>
+			<territory type="145">145</territory>
+			<territory type="150">150</territory>
+			<territory type="151">151</territory>
+			<territory type="154">154</territory>
+			<territory type="155">155</territory>
+			<territory type="419">419</territory>
+			<territory type="AC">Isla Ascensión</territory>
+			<territory type="AD">Andorra</territory>
+			<territory type="AE">Emiratos Árabes Unidos</territory>
+			<territory type="AF">Afganistán</territory>
+			<territory type="AG">Antigua y Barbuda</territory>
+			<territory type="AI">Anguila</territory>
+			<territory type="AL">Albania</territory>
+			<territory type="AM">Armenia</territory>
+			<territory type="AO">Angola</territory>
+			<territory type="AQ">Antártida</territory>
+			<territory type="AR">Argentina</territory>
+			<territory type="AS">Samoa Americana</territory>
+			<territory type="AT">Austria</territory>
+			<territory type="AU">Australia</territory>
+			<territory type="AW">Aruba</territory>
+			<territory type="AX">Islas Åland</territory>
+			<territory type="AZ">Azerbaiyán</territory>
+			<territory type="BA">Bosnia y Herzegovina</territory>
+			<territory type="BB">Barbados</territory>
+			<territory type="BD">Bangladesh</territory>
+			<territory type="BE">Bélgica</territory>
+			<territory type="BF">Burkina Faso</territory>
+			<territory type="BG">Bulgaria</territory>
+			<territory type="BH">Baréin</territory>
+			<territory type="BI">Burundi</territory>
+			<territory type="BJ">Benín</territory>
+			<territory type="BL">San Bartolomé</territory>
+			<territory type="BM">Bermudas</territory>
+			<territory type="BN">Brunei</territory>
+			<territory type="BO">Bolivia</territory>
+			<territory type="BQ">Caribe Neerlandés</territory>
+			<territory type="BR">Brasil</territory>
+			<territory type="BS">Bahamas</territory>
+			<territory type="BT">Bután</territory>
+			<territory type="BV">Isla Bouvet</territory>
+			<territory type="BW">Botsuana</territory>
+			<territory type="BY">Belarús</territory>
+			<territory type="BZ">Belice</territory>
+			<territory type="CA">Canadá</territory>
+			<territory type="CC">Islas Cocos</territory>
+			<territory type="CD">Congo - Kinshasa</territory>
+			<territory type="CD" alt="variant">Congo (RDC)</territory>
+			<territory type="CF">República Centroafricana</territory>
+			<territory type="CG">Congo - Brazzaville</territory>
+			<territory type="CG" alt="variant">Congo</territory>
+			<territory type="CH">Suiza</territory>
+			<territory type="CI">Côte d’Ivoire</territory>
+			<territory type="CI" alt="variant">Costa de Marfil</territory>
+			<territory type="CK">Islas Cook</territory>
+			<territory type="CL">Chile</territory>
+			<territory type="CM">Camerún</territory>
+			<territory type="CN">China</territory>
+			<territory type="CO">Colombia</territory>
+			<territory type="CP">Isla Clipperton</territory>
+			<territory type="CR">Costa Rica</territory>
+			<territory type="CU">Cuba</territory>
+			<territory type="CV">Cabo Verde</territory>
+			<territory type="CW">Curazao</territory>
+			<territory type="CX">Isla Christmas</territory>
+			<territory type="CY">Chipre</territory>
+			<territory type="CZ">República Checa</territory>
+			<territory type="DE">Alemania</territory>
+			<territory type="DG">Diego Garcia</territory>
+			<territory type="DJ">Yibuti</territory>
+			<territory type="DK">Dinamarca</territory>
+			<territory type="DM">Dominica</territory>
+			<territory type="DO">República Dominicana</territory>
+			<territory type="DZ">Argelia</territory>
+			<territory type="EA">Ceuta y Melilla</territory>
+			<territory type="EC">Ecuador</territory>
+			<territory type="EE">Estonia</territory>
+			<territory type="EG">Egipto</territory>
+			<territory type="EH">Sahara Occidental</territory>
+			<territory type="ER">Eritrea</territory>
+			<territory type="ES">España</territory>
+			<territory type="ET">Etiopía</territory>
+			<territory type="EU">EU</territory>
+			<territory type="EZ">EZ</territory>
+			<territory type="FI">Finlandia</territory>
+			<territory type="FJ">Fiyi</territory>
+			<territory type="FK">Islas Malvinas</territory>
+			<territory type="FK" alt="variant">Falkland Islands (Islas Malvinas)</territory>
+			<territory type="FM">Micronesia</territory>
+			<territory type="FO">Islas Feroe</territory>
+			<territory type="FR">Francia</territory>
+			<territory type="GA">Gabón</territory>
+			<territory type="GB">Reino Unido</territory>
+			<territory type="GB" alt="short">RU</territory>
+			<territory type="GD">Granada</territory>
+			<territory type="GE">Georgia</territory>
+			<territory type="GF">Guayana Francesa</territory>
+			<territory type="GG">Guernesey</territory>
+			<territory type="GH">Ghana</territory>
+			<territory type="GI">Gibraltar</territory>
+			<territory type="GL">Groenlandia</territory>
+			<territory type="GM">Gambia</territory>
+			<territory type="GN">Guinea</territory>
+			<territory type="GP">Guadalupe</territory>
+			<territory type="GQ">Guinea Ecuatorial</territory>
+			<territory type="GR">Grecia</territory>
+			<territory type="GS">Georgia del Sur e Islas Sandwich del Sur</territory>
+			<territory type="GT">Guatemala</territory>
+			<territory type="GU">Guam</territory>
+			<territory type="GW">Guinea-Bisáu</territory>
+			<territory type="GY">Guyana</territory>
+			<territory type="HK">Hong Kong (RAE)</territory>
+			<territory type="HK" alt="short">Hong Kong</territory>
+			<territory type="HM">Islas Heard y McDonald</territory>
+			<territory type="HN">Honduras</territory>
+			<territory type="HR">Croacia</territory>
+			<territory type="HT">Haití</territory>
+			<territory type="HU">Hungría</territory>
+			<territory type="IC">Islas Canarias</territory>
+			<territory type="ID">Indonesia</territory>
+			<territory type="IE">Irlanda</territory>
+			<territory type="IL">Israel</territory>
+			<territory type="IM">Isle de Man</territory>
+			<territory type="IN">India</territory>
+			<territory type="IO">Territorio Británico del Océano Índico</territory>
+			<territory type="IQ">Irak</territory>
+			<territory type="IR">Irán</territory>
+			<territory type="IS">Islandia</territory>
+			<territory type="IT">Italia</territory>
+			<territory type="JE">Jersey</territory>
+			<territory type="JM">Jamaica</territory>
+			<territory type="JO">Jordania</territory>
+			<territory type="JP">Japón</territory>
+			<territory type="KE">Kenia</territory>
+			<territory type="KG">Kirguistán</territory>
+			<territory type="KH">Camboya</territory>
+			<territory type="KI">Kiribati</territory>
+			<territory type="KM">Comoras</territory>
+			<territory type="KN">San Cristóbal y Nieves</territory>
+			<territory type="KP">Corea del Norte</territory>
+			<territory type="KR">Corea del Sur</territory>
+			<territory type="KW">Kuwait</territory>
+			<territory type="KY">Islas Caimán</territory>
+			<territory type="KZ">Kazajistán</territory>
+			<territory type="LA">Laos</territory>
+			<territory type="LB">Líbano</territory>
+			<territory type="LC">Santa Lucía</territory>
+			<territory type="LI">Liechtenstein</territory>
+			<territory type="LK">Sri Lanka</territory>
+			<territory type="LR">Liberia</territory>
+			<territory type="LS">Lesoto</territory>
+			<territory type="LT">Lituania</territory>
+			<territory type="LU">Luxemburgo</territory>
+			<territory type="LV">Letonia</territory>
+			<territory type="LY">Libia</territory>
+			<territory type="MA">Marruecos</territory>
+			<territory type="MC">Mónaco</territory>
+			<territory type="MD">Moldova</territory>
+			<territory type="ME">Montenegro</territory>
+			<territory type="MF">San Martín</territory>
+			<territory type="MG">Madagascar</territory>
+			<territory type="MH">Islas Marshall</territory>
+			<territory type="MK">Macedonia</territory>
+			<territory type="MK" alt="variant">ERY Macedonia</territory>
+			<territory type="ML">Mali</territory>
+			<territory type="MM">Myanmar (Burma)</territory>
+			<territory type="MN">Mongolia</territory>
+			<territory type="MO">Macao RAE</territory>
+			<territory type="MO" alt="short">Macao</territory>
+			<territory type="MP">Islas Marianas del Norte</territory>
+			<territory type="MQ">Martinica</territory>
+			<territory type="MR">Mauritania</territory>
+			<territory type="MS">Montserrat</territory>
+			<territory type="MT">Malta</territory>
+			<territory type="MU">Mauricio</territory>
+			<territory type="MV">Maldivas</territory>
+			<territory type="MW">Malawi</territory>
+			<territory type="MX">México</territory>
+			<territory type="MY">Malasia</territory>
+			<territory type="MZ">Mozambique</territory>
+			<territory type="NA">Namibia</territory>
+			<territory type="NC">Nueva Caledonia</territory>
+			<territory type="NE">Níger</territory>
+			<territory type="NF">Isla Norfolk</territory>
+			<territory type="NG">Nigeria</territory>
+			<territory type="NI">Nicaragua</territory>
+			<territory type="NL">Países Bajos</territory>
+			<territory type="NO">Noruega</territory>
+			<territory type="NP">Nepal</territory>
+			<territory type="NR">Nauru</territory>
+			<territory type="NU">Niue</territory>
+			<territory type="NZ">Nueva Zelanda</territory>
+			<territory type="OM">Omán</territory>
+			<territory type="PA">Panamá</territory>
+			<territory type="PE">Perú</territory>
+			<territory type="PF">Polinesia Francesa</territory>
+			<territory type="PG">Papúa Nueva Guinea</territory>
+			<territory type="PH">Filipinas</territory>
+			<territory type="PK">Pakistán</territory>
+			<territory type="PL">Polonia</territory>
+			<territory type="PM">San Pedro y Miquelón</territory>
+			<territory type="PN">Islas Pitcairn</territory>
+			<territory type="PR">Puerto Rico</territory>
+			<territory type="PS">Territorios Palestinos</territory>
+			<territory type="PS" alt="short">Palestina</territory>
+			<territory type="PT">Portugal</territory>
+			<territory type="PW">Palau</territory>
+			<territory type="PY">Paraguay</territory>
+			<territory type="QA">Qatar</territory>
+			<territory type="QO">QO</territory>
+			<territory type="RE">Reunión</territory>
+			<territory type="RO">Rumania</territory>
+			<territory type="RS">Serbia</territory>
+			<territory type="RU">Rusia</territory>
+			<territory type="RW">Ruanda</territory>
+			<territory type="SA">Arabia Saudí</territory>
+			<territory type="SB">Islas Salomón</territory>
+			<territory type="SC">Seychelles</territory>
+			<territory type="SD">Sudán</territory>
+			<territory type="SE">Suecia</territory>
+			<territory type="SG">Singapur</territory>
+			<territory type="SH">Santa Elena</territory>
+			<territory type="SI">Eslovenia</territory>
+			<territory type="SJ">Svalbard y Jan Mayen</territory>
+			<territory type="SK">Eslovaquia</territory>
+			<territory type="SL">Sierra Leona</territory>
+			<territory type="SM">San Marino</territory>
+			<territory type="SN">Senegal</territory>
+			<territory type="SO">Somalia</territory>
+			<territory type="SR">Surinam</territory>
+			<territory type="SS">South Sudan</territory>
+			<territory type="ST">Santo Tomé y Príncipe</territory>
+			<territory type="SV">El Salvador</territory>
+			<territory type="SX">Sint Maarten</territory>
+			<territory type="SY">Siria</territory>
+			<territory type="SZ">Swazilandia</territory>
+			<territory type="TA">Tristan da Cunha</territory>
+			<territory type="TC">Islas Turcas y Caicos</territory>
+			<territory type="TD">Chad</territory>
+			<territory type="TF">Tierras Australes y Antárticas Francesas</territory>
+			<territory type="TG">Togo</territory>
+			<territory type="TH">Tailandia</territory>
+			<territory type="TJ">Tayikistán</territory>
+			<territory type="TK">Tokelau</territory>
+			<territory type="TL">Timor-Leste</territory>
+			<territory type="TL" alt="variant">Timor Oriental</territory>
+			<territory type="TM">Turkmenistan</territory>
+			<territory type="TN">Túnez</territory>
+			<territory type="TO">Tonga</territory>
+			<territory type="TR">Turquía</territory>
+			<territory type="TT">Trinidad y Tobago</territory>
+			<territory type="TV">Tuvalu</territory>
+			<territory type="TW">Taiwán</territory>
+			<territory type="TZ">Tanzania</territory>
+			<territory type="UA">Ucrania</territory>
+			<territory type="UG">Uganda</territory>
+			<territory type="UM">Islas menores alejadas de los EE.UU.</territory>
+			<territory type="UN">UN</territory>
+			<territory type="US">Estados Unidos</territory>
+			<territory type="US" alt="short">EE.UU.</territory>
+			<territory type="UY">Uruguay</territory>
+			<territory type="UZ">Uzbekistán</territory>
+			<territory type="VA">Ciudad del Vaticano</territory>
+			<territory type="VC">San Vicente y las Granadinas</territory>
+			<territory type="VE">Venezuela</territory>
+			<territory type="VG">Islas Vírgenes Británicas</territory>
+			<territory type="VI">Islas Vírgenes de los Estados Unidos</territory>
+			<territory type="VN">Vietnam</territory>
+			<territory type="VU">Vanuatu</territory>
+			<territory type="WF">Wallis y Futuna</territory>
+			<territory type="WS">Samoa</territory>
+			<territory type="XK">Kosovo</territory>
+			<territory type="YE">Yemen</territory>
+			<territory type="YT">Mayotte</territory>
+			<territory type="ZA">Sudáfrica</territory>
+			<territory type="ZM">Zambia</territory>
+			<territory type="ZW">Zimbabue</territory>
+			<territory type="ZZ">ZZ</territory>
+		</territories>
+		<codePatterns>
+			<codePattern type="language">{0}</codePattern>
+			<codePattern type="script">{0}</codePattern>
+			<codePattern type="territory">{0}</codePattern>
+		</codePatterns>
+	</localeDisplayNames>
+	<characters>
+		<ellipsis type="final">{0}…</ellipsis>
+		<ellipsis type="initial">…{0}</ellipsis>
+		<ellipsis type="medial">{0}…{1}</ellipsis>
+		<ellipsis type="word-final">{0} …</ellipsis>
+		<ellipsis type="word-initial">… {0}</ellipsis>
+		<ellipsis type="word-medial">{0} … {1}</ellipsis>
+		<moreInformation>?</moreInformation>
+	</characters>
+	<delimiters>
+		<quotationStart>“</quotationStart>
+		<quotationEnd>”</quotationEnd>
+		<alternateQuotationStart>‘</alternateQuotationStart>
+		<alternateQuotationEnd>’</alternateQuotationEnd>
+	</delimiters>
+	<dates>
+		<calendars>
+			<calendar type="gregorian">
+				<months>
+					<monthContext type="format">
+						<monthWidth type="abbreviated">
+							<month type="1">тхс</month>
+							<month type="2">олн</month>
+							<month type="3">клн</month>
+							<month type="4">мсу</month>
+							<month type="5">ыам</month>
+							<month type="6">бэс</month>
+							<month type="7">оты</month>
+							<month type="8">атр</month>
+							<month type="9">блҕ</month>
+							<month type="10">алт</month>
+							<month type="11">сэт</month>
+							<month type="12">ахс</month>
+						</monthWidth>
+						<monthWidth type="narrow">
+							<month type="1">т</month>
+							<month type="2">о</month>
+							<month type="3">к</month>
+							<month type="4">м</month>
+							<month type="5">ы</month>
+							<month type="6">б</month>
+							<month type="7">о</month>
+							<month type="8">а</month>
+							<month type="9">бл</month>
+							<month type="10">ал</month>
+							<month type="11">с</month>
+							<month type="12">а</month>
+						</monthWidth>
+						<monthWidth type="wide">
+							<month type="1">тохсунньу</month>
+							<month type="2">олунньу</month>
+							<month type="3">кулун тутар</month>
+							<month type="4">муус устар</month>
+							<month type="5">ыам ыйын</month>
+							<month type="6">бэс ыйын</month>
+							<month type="7">от ыйын</month>
+							<month type="8">атырдьах ыйын</month>
+							<month type="9">балаҕан ыйын</month>
+							<month type="10">алтынньы</month>
+							<month type="11">сэтинньи</month>
+							<month type="12">ахсынньы</month>
+						</monthWidth>
+					</monthContext>
+					<monthContext type="stand-alone">
+						<monthWidth type="abbreviated">
+							<month type="1">тхс</month>
+							<month type="2">олн</month>
+							<month type="3">клн</month>
+							<month type="4">мсу</month>
+							<month type="5">ыам</month>
+							<month type="6">бэс</month>
+							<month type="7">оты</month>
+							<month type="8">атр</month>
+							<month type="9">блҕ</month>
+							<month type="10">алт</month>
+							<month type="11">сэт</month>
+							<month type="12">ахс</month>
+						</monthWidth>
+						<monthWidth type="narrow">
+							<month type="1">т</month>
+							<month type="2">о</month>
+							<month type="3">к</month>
+							<month type="4">м</month>
+							<month type="5">ы</month>
+							<month type="6">б</month>
+							<month type="7">о</month>
+							<month type="8">а</month>
+							<month type="9">бл</month>
+							<month type="10">ал</month>
+							<month type="11">с</month>
+							<month type="12">а</month>
+						</monthWidth>
+						<monthWidth type="wide">
+							<month type="1">тохсунньу</month>
+							<month type="2">олунньу</month>
+							<month type="3">кулун тутар</month>
+							<month type="4">муус устар</month>
+							<month type="5">ыам ыйын</month>
+							<month type="6">бэс ыйын</month>
+							<month type="7">от ыйын</month>
+							<month type="8">атырдьах ыйын</month>
+							<month type="9">балаҕан ыйын</month>
+							<month type="10">алтынньы</month>
+							<month type="11">сэтинньи</month>
+							<month type="12">ахсынньы</month>
+						</monthWidth>
+					</monthContext>
+				</months>
+				<days>
+					<dayContext type="format">
+						<dayWidth type="abbreviated">
+							<day type="sun">Өр</day>
+							<day type="mon">Бн</day>
+							<day type="tue">Оп</day>
+							<day type="wed">Ср</day>
+							<day type="thu">Чп</day>
+							<day type="fri">Бт</day>
+							<day type="sat">Сб</day>
+						</dayWidth>
+						<dayWidth type="narrow">
+							<day type="sun">Ө</day>
+							<day type="mon">Б</day>
+							<day type="tue">О</day>
+							<day type="wed">С</day>
+							<day type="thu">Ч</day>
+							<day type="fri">Б</day>
+							<day type="sat">С</day>
+						</dayWidth>
+						<dayWidth type="short">
+							<day type="sun">Өр</day>
+							<day type="mon">Бн</day>
+							<day type="tue">Оп</day>
+							<day type="wed">Ср</day>
+							<day type="thu">Чп</day>
+							<day type="fri">Бт</day>
+							<day type="sat">Сб</day>
+						</dayWidth>
+						<dayWidth type="wide">
+							<day type="sun">Өрөбүл</day>
+							<day type="mon">энидиэнньик</day>
+							<day type="tue">Оптуорунньук</day>
+							<day type="wed">Сэрэдээ</day>
+							<day type="thu">Чэппиэр</day>
+							<day type="fri">Бээтинсэ</day>
+							<day type="sat">Субуота</day>
+						</dayWidth>
+					</dayContext>
+					<dayContext type="stand-alone">
+						<dayWidth type="abbreviated">
+							<day type="sun">Өр</day>
+							<day type="mon">Бн</day>
+							<day type="tue">Оп</day>
+							<day type="wed">Ср</day>
+							<day type="thu">Чп</day>
+							<day type="fri">Бт</day>
+							<day type="sat">Сб</day>
+						</dayWidth>
+						<dayWidth type="narrow">
+							<day type="sun">Ө</day>
+							<day type="mon">Б</day>
+							<day type="tue">О</day>
+							<day type="wed">С</day>
+							<day type="thu">Ч</day>
+							<day type="fri">Б</day>
+							<day type="sat">С</day>
+						</dayWidth>
+						<dayWidth type="short">
+							<day type="sun">Өр</day>
+							<day type="mon">Бн</day>
+							<day type="tue">Оп</day>
+							<day type="wed">Ср</day>
+							<day type="thu">Чп</day>
+							<day type="fri">Бт</day>
+							<day type="sat">Сб</day>
+						</dayWidth>
+						<dayWidth type="wide">
+							<day type="sun">Өрөбүл</day>
+							<day type="mon">энидиэнньик</day>
+							<day type="tue">Оптуорунньук</day>
+							<day type="wed">Сэрэдээ</day>
+							<day type="thu">Чэппиэр</day>
+							<day type="fri">Бээтинсэ</day>
+							<day type="sat">Субуота</day>
+						</dayWidth>
+					</dayContext>
+				</days>
+				<quarters>
+					<quarterContext type="format">
+						<quarterWidth type="abbreviated">
+							<quarter type="1">Q1</quarter>
+							<quarter type="2">Q2</quarter>
+							<quarter type="3">Q3</quarter>
+							<quarter type="4">Q4</quarter>
+						</quarterWidth>
+						<quarterWidth type="narrow">
+							<quarter type="1">1</quarter>
+							<quarter type="2">2</quarter>
+							<quarter type="3">3</quarter>
+							<quarter type="4">4</quarter>
+						</quarterWidth>
+						<quarterWidth type="wide">
+							<quarter type="1">1-й квартал</quarter>
+							<quarter type="2">2-й квартал</quarter>
+							<quarter type="3">3-й квартал</quarter>
+							<quarter type="4">4-й квартал</quarter>
+						</quarterWidth>
+					</quarterContext>
+					<quarterContext type="stand-alone">
+						<quarterWidth type="abbreviated">
+							<quarter type="1">Q1</quarter>
+							<quarter type="2">Q2</quarter>
+							<quarter type="3">Q3</quarter>
+							<quarter type="4">Q4</quarter>
+						</quarterWidth>
+						<quarterWidth type="narrow">
+							<quarter type="1">1</quarter>
+							<quarter type="2">2</quarter>
+							<quarter type="3">3</quarter>
+							<quarter type="4">4</quarter>
+						</quarterWidth>
+						<quarterWidth type="wide">
+							<quarter type="1">1-й квартал</quarter>
+							<quarter type="2">2-й квартал</quarter>
+							<quarter type="3">3-й квартал</quarter>
+							<quarter type="4">4-й квартал</quarter>
+						</quarterWidth>
+					</quarterContext>
+				</quarters>
+				<dayPeriods>
+					<dayPeriodContext type="format">
+						<dayPeriodWidth type="abbreviated">
+							<dayPeriod type="am">AM</dayPeriod>
+							<dayPeriod type="pm">PM</dayPeriod>
+						</dayPeriodWidth>
+						<dayPeriodWidth type="narrow">
+							<dayPeriod type="am">a</dayPeriod>
+							<dayPeriod type="pm">p</dayPeriod>
+						</dayPeriodWidth>
+						<dayPeriodWidth type="wide">
+							<dayPeriod type="am">AM</dayPeriod>
+							<dayPeriod type="pm">PM</dayPeriod>
+						</dayPeriodWidth>
+					</dayPeriodContext>
+					<dayPeriodContext type="stand-alone">
+						<dayPeriodWidth type="abbreviated">
+							<dayPeriod type="am">AM</dayPeriod>
+							<dayPeriod type="pm">PM</dayPeriod>
+						</dayPeriodWidth>
+						<dayPeriodWidth type="narrow">
+							<dayPeriod type="am">AM</dayPeriod>
+							<dayPeriod type="pm">PM</dayPeriod>
+						</dayPeriodWidth>
+						<dayPeriodWidth type="wide">
+							<dayPeriod type="am">AM</dayPeriod>
+							<dayPeriod type="pm">PM</dayPeriod>
+						</dayPeriodWidth>
+					</dayPeriodContext>
+				</dayPeriods>
+				<eras>
+					<eraNames>
+						<era type="0">До Рождества Христова</era>
+						<era type="0" alt="variant">До нашей эры</era>
+						<era type="1">нашей эры</era>
+						<era type="1" alt="variant">Наша эра</era>
+					</eraNames>
+					<eraAbbr>
+						<era type="0">BC</era>
+						<era type="0" alt="variant">BCE</era>
+						<era type="1">AD</era>
+						<era type="1" alt="variant">CE</era>
+					</eraAbbr>
+				</eras>
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>EEEE, d MMMM, y</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>d MMMM y</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>y MMM d</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern>dd/M/r</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<timeFormats>
+					<timeFormatLength type="full">
+						<timeFormat>
+							<pattern>HH:mm:ss zzzz</pattern>
+						</timeFormat>
+					</timeFormatLength>
+					<timeFormatLength type="long">
+						<timeFormat>
+							<pattern>HH:mm:ss z</pattern>
+						</timeFormat>
+					</timeFormatLength>
+					<timeFormatLength type="medium">
+						<timeFormat>
+							<pattern>HH:mm:ss</pattern>
+						</timeFormat>
+					</timeFormatLength>
+					<timeFormatLength type="short">
+						<timeFormat>
+							<pattern>HH:mm</pattern>
+						</timeFormat>
+					</timeFormatLength>
+				</timeFormats>
+				<dateTimeFormats>
+					<dateTimeFormatLength type="full">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="long">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="medium">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="short">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<availableFormats>
+						<dateFormatItem id="d">d</dateFormatItem>
+						<dateFormatItem id="E">ccc</dateFormatItem>
+						<dateFormatItem id="Ed">d, E</dateFormatItem>
+						<dateFormatItem id="Ehm">E h:mm a</dateFormatItem>
+						<dateFormatItem id="EHm">E HH:mm</dateFormatItem>
+						<dateFormatItem id="Ehms">E h:mm:ss a</dateFormatItem>
+						<dateFormatItem id="EHms">E HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="Gy">G y</dateFormatItem>
+						<dateFormatItem id="GyMMM">G y MMM</dateFormatItem>
+						<dateFormatItem id="GyMMMd">G y MMM d</dateFormatItem>
+						<dateFormatItem id="GyMMMEd">G y MMM d, E</dateFormatItem>
+						<dateFormatItem id="h">h a</dateFormatItem>
+						<dateFormatItem id="H">HH</dateFormatItem>
+						<dateFormatItem id="hm">h:mm a</dateFormatItem>
+						<dateFormatItem id="Hm">HH:mm</dateFormatItem>
+						<dateFormatItem id="hms">h:mm:ss</dateFormatItem>
+						<dateFormatItem id="Hms">HH:mm:ss</dateFormatItem>
+						<dateFormatItem id="hmsv">h:mm:ss a v</dateFormatItem>
+						<dateFormatItem id="Hmsv">HH:mm:ss v</dateFormatItem>
+						<dateFormatItem id="hmv">h:mm a v</dateFormatItem>
+						<dateFormatItem id="Hmv">HH:mm v</dateFormatItem>
+						<dateFormatItem id="M">L</dateFormatItem>
+						<dateFormatItem id="Md">MM-dd</dateFormatItem>
+						<dateFormatItem id="MEd">MM-dd, E</dateFormatItem>
+						<dateFormatItem id="MMM">LLL</dateFormatItem>
+						<dateFormatItem id="MMMd">d MMM</dateFormatItem>
+						<dateFormatItem id="MMMEd">MMM d, E</dateFormatItem>
+						<dateFormatItem id="MMMMd">MMMM d</dateFormatItem>
+						<dateFormatItem id="MMMMW" count="other">'week' W 'of' MMM</dateFormatItem>
+						<dateFormatItem id="ms">mm:ss</dateFormatItem>
+						<dateFormatItem id="y">y</dateFormatItem>
+						<dateFormatItem id="yM">y-MM</dateFormatItem>
+						<dateFormatItem id="yMd">y-MM-dd</dateFormatItem>
+						<dateFormatItem id="yMEd">y-MM-dd, E</dateFormatItem>
+						<dateFormatItem id="yMMM">MMM.y</dateFormatItem>
+						<dateFormatItem id="yMMMd">y MMM d</dateFormatItem>
+						<dateFormatItem id="yMMMEd">y MMM d, E</dateFormatItem>
+						<dateFormatItem id="yMMMM">y MMMM</dateFormatItem>
+						<dateFormatItem id="yQQQ">y QQQ</dateFormatItem>
+						<dateFormatItem id="yQQQQ">y QQQQ</dateFormatItem>
+						<dateFormatItem id="yw" count="other">'week' w 'of' Y</dateFormatItem>
+					</availableFormats>
+					<appendItems>
+						<appendItem request="Timezone">{0} {1}</appendItem>
+					</appendItems>
+					<intervalFormats>
+						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
+						<intervalFormatItem id="d">
+							<greatestDifference id="d">d–d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="h">
+							<greatestDifference id="a">h a – h a</greatestDifference>
+							<greatestDifference id="h">h–h a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="H">
+							<greatestDifference id="H">HH–HH</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hm">
+							<greatestDifference id="a">h:mm a – h:mm a</greatestDifference>
+							<greatestDifference id="h">h:mm–h:mm a</greatestDifference>
+							<greatestDifference id="m">h:mm–h:mm a</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hm">
+							<greatestDifference id="H">HH:mm–HH:mm</greatestDifference>
+							<greatestDifference id="m">HH:mm–HH:mm</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hmv">
+							<greatestDifference id="a">h:mm a – h:mm a v</greatestDifference>
+							<greatestDifference id="h">h:mm–h:mm a v</greatestDifference>
+							<greatestDifference id="m">h:mm–h:mm a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hmv">
+							<greatestDifference id="H">HH:mm–HH:mm v</greatestDifference>
+							<greatestDifference id="m">HH:mm–HH:mm v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="hv">
+							<greatestDifference id="a">h a – h a v</greatestDifference>
+							<greatestDifference id="h">h–h a v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Hv">
+							<greatestDifference id="H">HH–HH v</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M">MM–MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d">MM-dd – MM-dd</greatestDifference>
+							<greatestDifference id="M">MM-dd – MM-dd</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">MM-dd, E – MM-dd, E</greatestDifference>
+							<greatestDifference id="M">MM-dd, E – MM-dd, E</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMM">
+							<greatestDifference id="M">LLL–LLL</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMd">
+							<greatestDifference id="d">MMM d–d</greatestDifference>
+							<greatestDifference id="M">MMM d – MMM d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMEd">
+							<greatestDifference id="d">MMM d, E – MMM d, E</greatestDifference>
+							<greatestDifference id="M">MMM d, E – MMM d, E</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="y">
+							<greatestDifference id="y">y–y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">y-MM – y-MM</greatestDifference>
+							<greatestDifference id="y">y-MM – y-MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">y-MM-dd – y-MM-dd</greatestDifference>
+							<greatestDifference id="M">y-MM-dd – y-MM-dd</greatestDifference>
+							<greatestDifference id="y">y-MM-dd – y-MM-dd</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">y-MM-dd, E – y-MM-dd, E</greatestDifference>
+							<greatestDifference id="M">y-MM-dd, E – y-MM-dd, E</greatestDifference>
+							<greatestDifference id="y">y-MM-dd, E – y-MM-dd, E</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">y MMM–MMM</greatestDifference>
+							<greatestDifference id="y">y MMM – y MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="d">y MMM d–d</greatestDifference>
+							<greatestDifference id="M">y MMM d – MMM d</greatestDifference>
+							<greatestDifference id="y">y MMM d – y MMM d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d">y MMM d, E – MMM d, E</greatestDifference>
+							<greatestDifference id="M">y MMM d, E – MMM d, E</greatestDifference>
+							<greatestDifference id="y">y MMM d, E – y MMM d, E</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMM">
+							<greatestDifference id="M">y MMMM–MMMM</greatestDifference>
+							<greatestDifference id="y">y MMMM – y MMMM</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
+				</dateTimeFormats>
+			</calendar>
+		</calendars>
+		<timeZoneNames>
+			<hourFormat>+HH:mm;-HH:mm</hourFormat>
+			<gmtFormat>GMT{0}</gmtFormat>
+			<gmtZeroFormat>GMT</gmtZeroFormat>
+			<regionFormat>Giờ {0}</regionFormat>
+			<regionFormat type="daylight">{0} (+1)</regionFormat>
+			<regionFormat type="standard">{0} (+0)</regionFormat>
+			<fallbackFormat>{1} ({0})</fallbackFormat>
+			<zone type="Pacific/Johnston">
+				<exemplarCity>Johnston</exemplarCity>
+			</zone>
+			<zone type="Etc/Unknown">
+				<exemplarCity>Thành phố không rõ</exemplarCity>
+			</zone>
+			<zone type="Asia/Dubai">
+				<exemplarCity>Dubai</exemplarCity>
+			</zone>
+			<zone type="Asia/Kabul">
+				<exemplarCity>Kabul</exemplarCity>
+			</zone>
+			<zone type="Asia/Yerevan">
+				<exemplarCity>Yerevan</exemplarCity>
+			</zone>
+			<zone type="Antarctica/Rothera">
+				<exemplarCity>Rothera</exemplarCity>
+			</zone>
+			<zone type="Antarctica/Palmer">
+				<exemplarCity>Palmer</exemplarCity>
+			</zone>
+			<zone type="Antarctica/Troll">
+				<exemplarCity>Troll</exemplarCity>
+			</zone>
+			<zone type="Antarctica/Syowa">
+				<exemplarCity>Syowa</exemplarCity>
+			</zone>
+			<zone type="Antarctica/Mawson">
+				<exemplarCity>Mawson</exemplarCity>
+			</zone>
+			<zone type="Antarctica/Davis">
+				<exemplarCity>Davis</exemplarCity>
+			</zone>
+			<zone type="Antarctica/Vostok">
+				<exemplarCity>Vostok</exemplarCity>
+			</zone>
+			<zone type="Antarctica/Casey">
+				<exemplarCity>Casey</exemplarCity>
+			</zone>
+			<zone type="Antarctica/DumontDUrville">
+				<exemplarCity>Dumont d’Urville</exemplarCity>
+			</zone>
+			<zone type="Antarctica/McMurdo">
+				<exemplarCity>McMurdo</exemplarCity>
+			</zone>
+			<zone type="America/Cordoba">
+				<exemplarCity>Cordoba</exemplarCity>
+			</zone>
+			<zone type="Pacific/Pago_Pago">
+				<exemplarCity>Pago Pago</exemplarCity>
+			</zone>
+			<zone type="Australia/Perth">
+				<exemplarCity>Perth</exemplarCity>
+			</zone>
+			<zone type="Australia/Eucla">
+				<exemplarCity>Eucla</exemplarCity>
+			</zone>
+			<zone type="Australia/Darwin">
+				<exemplarCity>Darwin</exemplarCity>
+			</zone>
+			<zone type="Australia/Adelaide">
+				<exemplarCity>Adelaide</exemplarCity>
+			</zone>
+			<zone type="Australia/Broken_Hill">
+				<exemplarCity>Broken Hill</exemplarCity>
+			</zone>
+			<zone type="Australia/Currie">
+				<exemplarCity>Currie</exemplarCity>
+			</zone>
+			<zone type="Australia/Melbourne">
+				<exemplarCity>Melbourne</exemplarCity>
+			</zone>
+			<zone type="Australia/Hobart">
+				<exemplarCity>Hobart</exemplarCity>
+			</zone>
+			<zone type="Australia/Lindeman">
+				<exemplarCity>Lindeman</exemplarCity>
+			</zone>
+			<zone type="Australia/Sydney">
+				<exemplarCity>Sydney</exemplarCity>
+			</zone>
+			<zone type="Australia/Brisbane">
+				<exemplarCity>Brisbane</exemplarCity>
+			</zone>
+			<zone type="Antarctica/Macquarie">
+				<exemplarCity>Macquarie</exemplarCity>
+			</zone>
+			<zone type="Australia/Lord_Howe">
+				<exemplarCity>Lord Howe</exemplarCity>
+			</zone>
+			<zone type="Asia/Baku">
+				<exemplarCity>Baku</exemplarCity>
+			</zone>
+			<zone type="Asia/Dhaka">
+				<exemplarCity>Dhaka</exemplarCity>
+			</zone>
+			<zone type="Asia/Bahrain">
+				<exemplarCity>Bahrain</exemplarCity>
+			</zone>
+			<zone type="Asia/Brunei">
+				<exemplarCity>Brunei</exemplarCity>
+			</zone>
+			<zone type="Asia/Thimphu">
+				<exemplarCity>Thimphu</exemplarCity>
+			</zone>
+			<zone type="Indian/Cocos">
+				<exemplarCity>Cocos</exemplarCity>
+			</zone>
+			<zone type="Pacific/Rarotonga">
+				<exemplarCity>Rarotonga</exemplarCity>
+			</zone>
+			<zone type="Asia/Urumqi">
+				<exemplarCity>Urumqi</exemplarCity>
+			</zone>
+			<zone type="Asia/Shanghai">
+				<exemplarCity>Shanghai</exemplarCity>
+			</zone>
+			<zone type="Indian/Christmas">
+				<exemplarCity>Christmas</exemplarCity>
+			</zone>
+			<zone type="Asia/Nicosia">
+				<exemplarCity>Nicosia</exemplarCity>
+			</zone>
+			<zone type="Pacific/Fiji">
+				<exemplarCity>Fiji</exemplarCity>
+			</zone>
+			<zone type="Pacific/Truk">
+				<exemplarCity>Chuuk</exemplarCity>
+			</zone>
+			<zone type="Pacific/Ponape">
+				<exemplarCity>Pohnpei</exemplarCity>
+			</zone>
+			<zone type="Pacific/Kosrae">
+				<exemplarCity>Kosrae</exemplarCity>
+			</zone>
+			<zone type="Asia/Tbilisi">
+				<exemplarCity>Tbilisi</exemplarCity>
+			</zone>
+			<zone type="Atlantic/South_Georgia">
+				<exemplarCity>South Georgia</exemplarCity>
+			</zone>
+			<zone type="Pacific/Guam">
+				<exemplarCity>Guam</exemplarCity>
+			</zone>
+			<zone type="Asia/Hong_Kong">
+				<exemplarCity>Hong Kong</exemplarCity>
+			</zone>
+			<zone type="Asia/Jakarta">
+				<exemplarCity>Jakarta</exemplarCity>
+			</zone>
+			<zone type="Asia/Pontianak">
+				<exemplarCity>Pontianak</exemplarCity>
+			</zone>
+			<zone type="Asia/Makassar">
+				<exemplarCity>Makassar</exemplarCity>
+			</zone>
+			<zone type="Asia/Jayapura">
+				<exemplarCity>Jayapura</exemplarCity>
+			</zone>
+			<zone type="Asia/Jerusalem">
+				<exemplarCity>Jerusalem</exemplarCity>
+			</zone>
+			<zone type="Asia/Calcutta">
+				<exemplarCity>Kolkata</exemplarCity>
+			</zone>
+			<zone type="Indian/Chagos">
+				<exemplarCity>Chagos</exemplarCity>
+			</zone>
+			<zone type="Asia/Baghdad">
+				<exemplarCity>Baghdad</exemplarCity>
+			</zone>
+			<zone type="Asia/Tehran">
+				<exemplarCity>Tehran</exemplarCity>
+			</zone>
+			<zone type="Asia/Amman">
+				<exemplarCity>Amman</exemplarCity>
+			</zone>
+			<zone type="Asia/Tokyo">
+				<exemplarCity>Tokyo</exemplarCity>
+			</zone>
+			<zone type="Asia/Phnom_Penh">
+				<exemplarCity>Phnom Penh</exemplarCity>
+			</zone>
+			<zone type="Pacific/Enderbury">
+				<exemplarCity>Enderbury</exemplarCity>
+			</zone>
+			<zone type="Pacific/Kiritimati">
+				<exemplarCity>Kiritimati</exemplarCity>
+			</zone>
+			<zone type="Pacific/Tarawa">
+				<exemplarCity>Tarawa</exemplarCity>
+			</zone>
+			<zone type="Asia/Pyongyang">
+				<exemplarCity>Pyongyang</exemplarCity>
+			</zone>
+			<zone type="Asia/Seoul">
+				<exemplarCity>Seoul</exemplarCity>
+			</zone>
+			<zone type="Asia/Kuwait">
+				<exemplarCity>Kuwait</exemplarCity>
+			</zone>
+			<zone type="Asia/Vientiane">
+				<exemplarCity>Vientiane</exemplarCity>
+			</zone>
+			<zone type="Asia/Beirut">
+				<exemplarCity>Beirut</exemplarCity>
+			</zone>
+			<zone type="Asia/Colombo">
+				<exemplarCity>Colombo</exemplarCity>
+			</zone>
+			<zone type="Pacific/Kwajalein">
+				<exemplarCity>Kwajalein</exemplarCity>
+			</zone>
+			<zone type="Pacific/Majuro">
+				<exemplarCity>Majuro</exemplarCity>
+			</zone>
+			<zone type="Asia/Rangoon">
+				<exemplarCity>Rangoon</exemplarCity>
+			</zone>
+			<zone type="Asia/Hovd">
+				<exemplarCity>Hovd</exemplarCity>
+			</zone>
+			<zone type="Asia/Ulaanbaatar">
+				<exemplarCity>Ulaanbaatar</exemplarCity>
+			</zone>
+			<zone type="Asia/Choibalsan">
+				<exemplarCity>Choibalsan</exemplarCity>
+			</zone>
+			<zone type="Asia/Macau">
+				<exemplarCity>Macau</exemplarCity>
+			</zone>
+			<zone type="Pacific/Saipan">
+				<exemplarCity>Saipan</exemplarCity>
+			</zone>
+			<zone type="Indian/Maldives">
+				<exemplarCity>Maldives</exemplarCity>
+			</zone>
+			<zone type="Asia/Kuala_Lumpur">
+				<exemplarCity>Kuala Lumpur</exemplarCity>
+			</zone>
+			<zone type="Asia/Kuching">
+				<exemplarCity>Kuching</exemplarCity>
+			</zone>
+			<zone type="Pacific/Noumea">
+				<exemplarCity>Noumea</exemplarCity>
+			</zone>
+			<zone type="Pacific/Norfolk">
+				<exemplarCity>Norfolk</exemplarCity>
+			</zone>
+			<zone type="Asia/Katmandu">
+				<exemplarCity>Kathmandu</exemplarCity>
+			</zone>
+			<zone type="Pacific/Nauru">
+				<exemplarCity>Nauru</exemplarCity>
+			</zone>
+			<zone type="Pacific/Niue">
+				<exemplarCity>Niue</exemplarCity>
+			</zone>
+			<zone type="Pacific/Chatham">
+				<exemplarCity>Chatham</exemplarCity>
+			</zone>
+			<zone type="Pacific/Auckland">
+				<exemplarCity>Auckland</exemplarCity>
+			</zone>
+			<zone type="Asia/Muscat">
+				<exemplarCity>Muscat</exemplarCity>
+			</zone>
+			<zone type="Pacific/Tahiti">
+				<exemplarCity>Tahiti</exemplarCity>
+			</zone>
+			<zone type="Pacific/Marquesas">
+				<exemplarCity>Marquesas</exemplarCity>
+			</zone>
+			<zone type="Pacific/Gambier">
+				<exemplarCity>Gambier</exemplarCity>
+			</zone>
+			<zone type="Pacific/Port_Moresby">
+				<exemplarCity>Port Moresby</exemplarCity>
+			</zone>
+			<zone type="Pacific/Bougainville">
+				<exemplarCity>Bougainville</exemplarCity>
+			</zone>
+			<zone type="Asia/Manila">
+				<exemplarCity>Manila</exemplarCity>
+			</zone>
+			<zone type="Asia/Karachi">
+				<exemplarCity>Karachi</exemplarCity>
+			</zone>
+			<zone type="Pacific/Pitcairn">
+				<exemplarCity>Pitcairn</exemplarCity>
+			</zone>
+			<zone type="Asia/Gaza">
+				<exemplarCity>Gaza</exemplarCity>
+			</zone>
+			<zone type="Asia/Hebron">
+				<exemplarCity>Hebron</exemplarCity>
+			</zone>
+			<zone type="Pacific/Palau">
+				<exemplarCity>Palau</exemplarCity>
+			</zone>
+			<zone type="Asia/Qatar">
+				<exemplarCity>Qatar</exemplarCity>
+			</zone>
+			<zone type="Europe/Kaliningrad">
+				<exemplarCity>Kaliningrad</exemplarCity>
+			</zone>
+			<zone type="Europe/Simferopol">
+				<exemplarCity>Simferopol</exemplarCity>
+			</zone>
+			<zone type="Europe/Moscow">
+				<exemplarCity>Moscow</exemplarCity>
+			</zone>
+			<zone type="Europe/Volgograd">
+				<exemplarCity>Volgograd</exemplarCity>
+			</zone>
+			<zone type="Europe/Samara">
+				<exemplarCity>Samara</exemplarCity>
+			</zone>
+			<zone type="Asia/Yekaterinburg">
+				<exemplarCity>Yekaterinburg</exemplarCity>
+			</zone>
+			<zone type="Asia/Omsk">
+				<exemplarCity>Omsk</exemplarCity>
+			</zone>
+			<zone type="Asia/Novosibirsk">
+				<exemplarCity>Novosibirsk</exemplarCity>
+			</zone>
+			<zone type="Asia/Novokuznetsk">
+				<exemplarCity>Novokuznetsk</exemplarCity>
+			</zone>
+			<zone type="Asia/Krasnoyarsk">
+				<exemplarCity>Krasnoyarsk</exemplarCity>
+			</zone>
+			<zone type="Asia/Irkutsk">
+				<exemplarCity>Irkutsk</exemplarCity>
+			</zone>
+			<zone type="Asia/Chita">
+				<exemplarCity>Chita</exemplarCity>
+			</zone>
+			<zone type="Asia/Yakutsk">
+				<exemplarCity>Yakutsk</exemplarCity>
+			</zone>
+			<zone type="Asia/Vladivostok">
+				<exemplarCity>Vladivostok</exemplarCity>
+			</zone>
+			<zone type="Asia/Khandyga">
+				<exemplarCity>Khandyga</exemplarCity>
+			</zone>
+			<zone type="Asia/Sakhalin">
+				<exemplarCity>Sakhalin</exemplarCity>
+			</zone>
+			<zone type="Asia/Ust-Nera">
+				<exemplarCity>Ust-Nera</exemplarCity>
+			</zone>
+			<zone type="Asia/Magadan">
+				<exemplarCity>Magadan</exemplarCity>
+			</zone>
+			<zone type="Asia/Srednekolymsk">
+				<exemplarCity>Srednekolymsk</exemplarCity>
+			</zone>
+			<zone type="Asia/Kamchatka">
+				<exemplarCity>Kamchatka</exemplarCity>
+			</zone>
+			<zone type="Asia/Anadyr">
+				<exemplarCity>Anadyr</exemplarCity>
+			</zone>
+			<zone type="Asia/Riyadh">
+				<exemplarCity>Riyadh</exemplarCity>
+			</zone>
+			<zone type="Pacific/Guadalcanal">
+				<exemplarCity>Guadalcanal</exemplarCity>
+			</zone>
+			<zone type="Asia/Singapore">
+				<exemplarCity>Singapore</exemplarCity>
+			</zone>
+			<zone type="Asia/Damascus">
+				<exemplarCity>Damascus</exemplarCity>
+			</zone>
+			<zone type="Indian/Kerguelen">
+				<exemplarCity>Kerguelen</exemplarCity>
+			</zone>
+			<zone type="Pacific/Fakaofo">
+				<exemplarCity>Fakaofo</exemplarCity>
+			</zone>
+			<zone type="Asia/Dili">
+				<exemplarCity>Dili</exemplarCity>
+			</zone>
+			<zone type="Pacific/Tongatapu">
+				<exemplarCity>Tongatapu</exemplarCity>
+			</zone>
+			<zone type="Europe/Istanbul">
+				<exemplarCity>Istanbul</exemplarCity>
+			</zone>
+			<zone type="Pacific/Funafuti">
+				<exemplarCity>Funafuti</exemplarCity>
+			</zone>
+			<zone type="Asia/Taipei">
+				<exemplarCity>Taipei</exemplarCity>
+			</zone>
+			<zone type="Pacific/Midway">
+				<exemplarCity>Midway</exemplarCity>
+			</zone>
+			<zone type="Pacific/Wake">
+				<exemplarCity>Wake</exemplarCity>
+			</zone>
+			<zone type="Asia/Saigon">
+				<exemplarCity>Thành phố Hồ Chí Minh</exemplarCity>
+			</zone>
+			<zone type="Pacific/Efate">
+				<exemplarCity>Efate</exemplarCity>
+			</zone>
+			<zone type="Pacific/Wallis">
+				<exemplarCity>Wallis</exemplarCity>
+			</zone>
+			<zone type="Pacific/Apia">
+				<exemplarCity>Apia</exemplarCity>
+			</zone>
+			<zone type="Asia/Aden">
+				<exemplarCity>Aden</exemplarCity>
+			</zone>
+		</timeZoneNames>
+	</dates>
+	<numbers>
+		<defaultNumberingSystem draft="contributed">latn</defaultNumberingSystem>
+		<otherNumberingSystems>
+			<native>thai</native>
+		</otherNumberingSystems>
+		<minimumGroupingDigits draft="contributed">1</minimumGroupingDigits>
+		<symbols numberSystem="latn">
+			<decimal>.</decimal>
+			<group>,</group>
+			<percentSign>%</percentSign>
+			<plusSign>+</plusSign>
+			<minusSign>-</minusSign>
+			<exponential>E</exponential>
+			<superscriptingExponent>×</superscriptingExponent>
+			<perMille>‰</perMille>
+			<infinity>∞</infinity>
+			<nan>NaN</nan>
+			<timeSeparator draft="contributed">:</timeSeparator>
+		</symbols>
+		<decimalFormats numberSystem="latn">
+			<decimalFormatLength>
+				<decimalFormat>
+					<pattern>#,##0.###</pattern>
+				</decimalFormat>
+			</decimalFormatLength>
+		</decimalFormats>
+		<scientificFormats numberSystem="latn">
+			<scientificFormatLength>
+				<scientificFormat>
+					<pattern>#E0</pattern>
+				</scientificFormat>
+			</scientificFormatLength>
+		</scientificFormats>
+		<percentFormats numberSystem="latn">
+			<percentFormatLength>
+				<percentFormat>
+					<pattern>#,##0%</pattern>
+				</percentFormat>
+			</percentFormatLength>
+		</percentFormats>
+		<currencyFormats numberSystem="latn">
+			<currencyFormatLength>
+				<currencyFormat type="standard">
+					<pattern>¤ #,##0.00</pattern>
+				</currencyFormat>
+				<currencyFormat type="accounting">
+					<pattern>¤ #,##0.00</pattern>
+				</currencyFormat>
+			</currencyFormatLength>
+			<unitPattern count="other">{0} {1}</unitPattern>
+		</currencyFormats>
+		<currencies>
+			<currency type="LYD">
+				<displayName>Dinar Libya</displayName>
+				<displayName count="other">dinar Libya</displayName>
+			</currency>
+		</currencies>
+		<miscPatterns numberSystem="latn">
+			<pattern type="atLeast">⩾{0}</pattern>
+			<pattern type="range">{0}–{1}</pattern>
+		</miscPatterns>
+	</numbers>
+	<units>
+		<unitLength type="long">
+			<compoundUnit type="per">
+				<compoundUnitPattern>{0}/{1}</compoundUnitPattern>
+			</compoundUnit>
+			<unit type="angle-revolution">
+				<unitPattern count="other">{0} rev</unitPattern>
+			</unit>
+			<unit type="angle-radian">
+				<displayName>rad</displayName>
+				<unitPattern count="other">{0} rad</unitPattern>
+			</unit>
+			<unit type="angle-degree">
+				<displayName>deg</displayName>
+				<unitPattern count="other">{0}°</unitPattern>
+			</unit>
+			<unit type="angle-arc-minute">
+				<displayName>arcmin</displayName>
+				<unitPattern count="other">{0}′</unitPattern>
+			</unit>
+			<unit type="angle-arc-second">
+				<displayName>arcsec</displayName>
+				<unitPattern count="other">{0}″</unitPattern>
+			</unit>
+			<unit type="area-square-kilometer">
+				<displayName>km²</displayName>
+				<unitPattern count="other">{0} km²</unitPattern>
+				<perUnitPattern>{0}/km²</perUnitPattern>
+			</unit>
+			<unit type="area-hectare">
+				<displayName>hectare</displayName>
+				<unitPattern count="other">{0} ha</unitPattern>
+			</unit>
+			<unit type="area-square-meter">
+				<displayName>m²</displayName>
+				<unitPattern count="other">{0} m²</unitPattern>
+				<perUnitPattern>{0}/m²</perUnitPattern>
+			</unit>
+			<unit type="area-square-centimeter">
+				<displayName>cm²</displayName>
+				<unitPattern count="other">{0} cm²</unitPattern>
+				<perUnitPattern>{0}/cm²</perUnitPattern>
+			</unit>
+			<unit type="area-square-mile">
+				<displayName>mi²</displayName>
+				<unitPattern count="other">{0} mi²</unitPattern>
+				<perUnitPattern>{0}/mi²</perUnitPattern>
+			</unit>
+			<unit type="area-acre">
+				<displayName>acre</displayName>
+				<unitPattern count="other">{0} ac</unitPattern>
+			</unit>
+			<unit type="area-square-yard">
+				<displayName>yd²</displayName>
+				<unitPattern count="other">{0} yd²</unitPattern>
+			</unit>
+			<unit type="area-square-foot">
+				<unitPattern count="other">{0} ft²</unitPattern>
+			</unit>
+			<unit type="area-square-inch">
+				<displayName>in²</displayName>
+				<unitPattern count="other">{0} in²</unitPattern>
+				<perUnitPattern>{0}/in²</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>kt</displayName>
+				<unitPattern count="other">{0} kt</unitPattern>
+			</unit>
+			<unit type="concentr-milligram-per-deciliter">
+				<displayName>mg/dL</displayName>
+			</unit>
+			<unit type="concentr-millimole-per-liter">
+				<displayName>mmol/L</displayName>
+				<unitPattern count="other">{0} mmol/L</unitPattern>
+			</unit>
+			<unit type="concentr-part-per-million">
+				<displayName>ppm</displayName>
+				<unitPattern count="other">{0} ppm</unitPattern>
+			</unit>
+			<unit type="consumption-liter-per-kilometer">
+				<displayName>L/km</displayName>
+				<unitPattern count="other">{0} L/km</unitPattern>
+			</unit>
+			<unit type="consumption-liter-per-100kilometers">
+				<displayName>L/100km</displayName>
+				<unitPattern count="other">{0} L/100km</unitPattern>
+			</unit>
+			<unit type="consumption-mile-per-gallon">
+				<displayName>mpg US</displayName>
+				<unitPattern count="other">{0} mpg US</unitPattern>
+			</unit>
+			<unit type="consumption-mile-per-gallon-imperial">
+				<displayName>mpg Imp.</displayName>
+				<unitPattern count="other">{0} mpg Imp.</unitPattern>
+			</unit>
+			<unit type="light-lux">
+				<displayName>lx</displayName>
+				<unitPattern count="other">{0} lx</unitPattern>
+			</unit>
+		</unitLength>
+		<unitLength type="short">
+			<compoundUnit type="per">
+				<compoundUnitPattern>{0}/{1}</compoundUnitPattern>
+			</compoundUnit>
+			<unit type="angle-revolution">
+				<displayName>rev</displayName>
+				<unitPattern count="other">{0} rev</unitPattern>
+			</unit>
+			<unit type="angle-radian">
+				<displayName>rad</displayName>
+				<unitPattern count="other">{0} rad</unitPattern>
+			</unit>
+			<unit type="angle-degree">
+				<displayName>deg</displayName>
+				<unitPattern count="other">{0}°</unitPattern>
+			</unit>
+			<unit type="angle-arc-minute">
+				<displayName>arcmin</displayName>
+				<unitPattern count="other">{0}′</unitPattern>
+			</unit>
+			<unit type="angle-arc-second">
+				<displayName>arcsec</displayName>
+				<unitPattern count="other">{0}″</unitPattern>
+			</unit>
+			<unit type="area-square-kilometer">
+				<displayName>km²</displayName>
+				<unitPattern count="other">{0} km²</unitPattern>
+				<perUnitPattern>{0}/km²</perUnitPattern>
+			</unit>
+			<unit type="area-hectare">
+				<displayName>hectare</displayName>
+				<unitPattern count="other">{0} ha</unitPattern>
+			</unit>
+			<unit type="area-square-meter">
+				<displayName>m²</displayName>
+				<unitPattern count="other">{0} m²</unitPattern>
+				<perUnitPattern>{0}/m²</perUnitPattern>
+			</unit>
+			<unit type="area-square-centimeter">
+				<displayName>cm²</displayName>
+				<unitPattern count="other">{0} cm²</unitPattern>
+				<perUnitPattern>{0}/cm²</perUnitPattern>
+			</unit>
+			<unit type="area-square-mile">
+				<displayName>mi²</displayName>
+				<unitPattern count="other">{0} mi²</unitPattern>
+				<perUnitPattern>{0}/mi²</perUnitPattern>
+			</unit>
+			<unit type="area-acre">
+				<displayName>acre</displayName>
+				<unitPattern count="other">{0} ac</unitPattern>
+			</unit>
+			<unit type="area-square-yard">
+				<displayName>yd²</displayName>
+				<unitPattern count="other">{0} yd²</unitPattern>
+			</unit>
+			<unit type="area-square-foot">
+				<displayName>ft²</displayName>
+				<unitPattern count="other">{0} ft²</unitPattern>
+			</unit>
+			<unit type="area-square-inch">
+				<displayName>in²</displayName>
+				<unitPattern count="other">{0} in²</unitPattern>
+				<perUnitPattern>{0}/in²</perUnitPattern>
+			</unit>
+			<unit type="concentr-karat">
+				<displayName>kt</displayName>
+				<unitPattern count="other">{0} kt</unitPattern>
+			</unit>
+			<unit type="concentr-millimole-per-liter">
+				<displayName>mmol/L</displayName>
+				<unitPattern count="other">{0} mmol/L</unitPattern>
+			</unit>
+			<unit type="concentr-part-per-million">
+				<displayName>ppm</displayName>
+				<unitPattern count="other">{0} ppm</unitPattern>
+			</unit>
+			<unit type="consumption-liter-per-kilometer">
+				<displayName>L/km</displayName>
+				<unitPattern count="other">{0} L/km</unitPattern>
+			</unit>
+			<unit type="consumption-liter-per-100kilometers">
+				<displayName>L/100km</displayName>
+				<unitPattern count="other">{0} L/100km</unitPattern>
+			</unit>
+			<unit type="consumption-mile-per-gallon">
+				<displayName>mpg US</displayName>
+				<unitPattern count="other">{0} mpg US</unitPattern>
+			</unit>
+			<unit type="consumption-mile-per-gallon-imperial">
+				<displayName>mpg Imp.</displayName>
+				<unitPattern count="other">{0} mpg Imp.</unitPattern>
+			</unit>
+			<unit type="light-lux">
+				<displayName>lx</displayName>
+				<unitPattern count="other">{0} lx</unitPattern>
+			</unit>
+		</unitLength>
+		<unitLength type="narrow">
+			<compoundUnit type="per">
+				<compoundUnitPattern>{0}/{1}</compoundUnitPattern>
+			</compoundUnit>
+			<unit type="consumption-liter-per-100kilometers">
+				<displayName>L/100km</displayName>
+				<unitPattern count="other">{0} L/100km</unitPattern>
+			</unit>
+		</unitLength>
+		<durationUnit type="hms">
+			<durationUnitPattern>h:mm:ss</durationUnitPattern>
+		</durationUnit>
+	</units>
+	<posix>
+		<messages>
+			<yesstr>yes:y</yesstr>
+			<nostr>no:n</nostr>
+		</messages>
+	</posix>
+	<characterLabels>
+		<characterLabelPattern type="all">{0} — All</characterLabelPattern>
+		<characterLabelPattern type="compatibility">{0} — Compatibility</characterLabelPattern>
+		<characterLabelPattern type="enclosed">{0} — Enclosed</characterLabelPattern>
+		<characterLabelPattern type="extended">{0} — Extended</characterLabelPattern>
+		<characterLabelPattern type="historic">{0} — Historic</characterLabelPattern>
+		<characterLabelPattern type="miscellaneous">{0} — Miscellaneous</characterLabelPattern>
+		<characterLabelPattern type="other">{0} — Other</characterLabelPattern>
+		<characterLabelPattern type="scripts">Scripts — {0}</characterLabelPattern>
+		<characterLabelPattern type="strokes" count="other">{0} Strokes</characterLabelPattern>
+		<characterLabel type="activities">Activities</characterLabel>
+		<characterLabel type="african_scripts">African Scripts</characterLabel>
+		<characterLabel type="american_scripts">American Scripts</characterLabel>
+		<characterLabel type="animals_nature">Animals &amp; Nature</characterLabel>
+		<characterLabel type="arrows">Arrows</characterLabel>
+		<characterLabel type="box_drawing">Box Drawing</characterLabel>
+		<characterLabel type="braille">Braille</characterLabel>
+		<characterLabel type="bullets_stars">Bullets/Stars</characterLabel>
+		<characterLabel type="consonantal_jamo">Consonantal Jamo</characterLabel>
+		<characterLabel type="currency_symbols">Currency Symbols</characterLabel>
+		<characterLabel type="dash_connector">Dash/Connector</characterLabel>
+		<characterLabel type="digits">Digits</characterLabel>
+		<characterLabel type="dingbats">Dingbats</characterLabel>
+		<characterLabel type="divination_symbols">Divination Symbols</characterLabel>
+		<characterLabel type="downwards_arrows">Downwards Arrows</characterLabel>
+		<characterLabel type="downwards_upwards_arrows">Downwards Upwards Arrows</characterLabel>
+		<characterLabel type="east_asian_scripts">East Asian Scripts</characterLabel>
+		<characterLabel type="nonspacing">Nonspacing</characterLabel>
+		<characterLabel type="phonetic_alphabet">Phonetic Alphabet</characterLabel>
+		<characterLabel type="pictographs">Pictographs</characterLabel>
+		<characterLabel type="punctuation">Punctuation</characterLabel>
+		<characterLabel type="rightwards_arrows">Rightwards Arrows</characterLabel>
+		<characterLabel type="sign_standard_symbols">Sign/Standard Symbols</characterLabel>
+		<characterLabel type="small_form_variant">Small Form Variants</characterLabel>
+		<characterLabel type="smileys_people">Smileys &amp; People</characterLabel>
+		<characterLabel type="south_asian_scripts">South Asian Scripts</characterLabel>
+		<characterLabel type="southeast_asian_scripts">Southeast Asian Scripts</characterLabel>
+		<characterLabel type="spacing">Spacing</characterLabel>
+		<characterLabel type="symbols">Symbols</characterLabel>
+		<characterLabel type="technical_symbols">Technical Symbols</characterLabel>
+		<characterLabel type="tone_marks">Tone Marks</characterLabel>
+		<characterLabel type="travel_places">Travel &amp; Places</characterLabel>
+		<characterLabel type="upwards_arrows">Upwards Arrows</characterLabel>
+		<characterLabel type="variant_forms">Variant Forms</characterLabel>
+		<characterLabel type="vocalic_jamo">Vocalic Jamo</characterLabel>
+		<characterLabel type="western_asian_scripts">Western Asian Scripts</characterLabel>
+		<characterLabel type="whitespace">Whitespace</characterLabel>
+	</characterLabels>
+</ldml>

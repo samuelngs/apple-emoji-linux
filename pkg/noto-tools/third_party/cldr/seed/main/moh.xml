@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2017 Unicode, Inc.
+For terms of use, see http://www.unicode.org/copyright.html
+Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+-->
+<ldml>
+	<identity>
+		<version number="$Revision: 13571 $"/>
+		<language type="moh"/>
+	</identity>
+	<localeDisplayNames>
+		<languages>
+			<language type="moh">Kanienʼkéha</language>
+		</languages>
+	</localeDisplayNames>
+	<layout>
+		<orientation>
+			<characterOrder>left-to-right</characterOrder>
+			<lineOrder>top-to-bottom</lineOrder>
+		</orientation>
+	</layout>
+	<characters>
+		<exemplarCharacters>[a á à {a\:} {á\:} {à\:} e é è {e\:} {é\:} {è\:} h i í ì {i\:} {í\:} {ì\:} k n o ó ò {o\:} {ó\:} {ò\:} r s t w y ʼ]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[b c d f g j l m p q u v x z]</exemplarCharacters>
+		<exemplarCharacters type="index">[A E H I K N O R S T W Y]</exemplarCharacters>
+	</characters>
+</ldml>

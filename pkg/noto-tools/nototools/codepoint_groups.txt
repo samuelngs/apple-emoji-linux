@@ -1,0 +1,358 @@
+# group data plus allocations
+# three columns, plus comments
+# 1) 'script' codes separated by space
+# 2) group name
+# 3) list of char ranges (note, this is ordered but should not duplicate)
+# comments these were additional 'reference' chars used when presenting the
+# images, not sure what to do with this data at the moment.
+
+# Most non-decorative arrows end up in math, basic ones also in symbols
+Zsym Zmth;arrows;2190-2199 23af 23d0 2921 2922
+Zmth -SYM2;arrows, to bar;2912-2913 21e4-21e5 21b9
+Zmth -SYM2;arrows, from bar;21a4-21a7
+Zmth -SYM2;arrows, long;27f5-27f7 2b33
+Zmth -SYM2;arrows, long, from bar;27fb-27fe
+Zmth -SYM2;arrows, two-headed;219e-21a1 2900-2901 2905 2910 2916-2918 2b34-2b37
+Zmth -SYM2;arrows, with stroke;219a 219b 21ae
+Zmth -SYM2;arrows, with perpendicular stroke;21f7-21f9 2908-2909
+Zmth -SYM2;arrows, with two perpendicular strokes;21fa-21fc 21de-21df
+SYM2;arrows, with two perpendicular strokes, triangle-headed (ref only);2b7a-2b7d
+Zmth -SYM2;arrows, bent;21b0-21b3 2b0e-2b11
+Zmth -SYM2;arrows, keyboard;21b4 21b5 21b8 21b9 21de 21df 21e4 21e5
+Zmth -SYM2;arrows, circular;21ba-21bb 27f2-27f3 2940-2941 (2b6e-2b6f 1f5d8) 21b6-21b7 2938-293f
+Zmth -SYM2;arrows, harpoon;21bc-21c3
+Zmth -SYM2;arrows, harpoon, two barbs;294a-2951
+Zmth -SYM2;arrows, harpoon, to bar; 2952-2959
+Zmth -SYM2;arrows, harpoon, from bar; 295a-2961
+Zmth -SYM2;arrows, harpoon, paired;2962-296f 21cb 21cc
+Zmth -SYM2;arrows, paired;21c4-21c6 21f5 21c7-21ca
+SYM2;arrows, paired, triangle-headed;2b80-2b87
+Zmth -SYM2;arrows, double;21d0-21d9 21cd-21cf
+Zmth -SYM2;arrows, double, with perpendicular stroke;2902-2904
+Zmth -SYM2;arrows, double, from bar;2906-2907
+Zmth -SYM2;arrows, double, long;27f8-27fa
+Zmth -SYM2;arrows, double, long, from bar;27fd-27fe
+Zmth -SYM2;arrows, triple;21da 21db 290a 290b
+Zmth -SYM2;arrows, quadruple;27f0-27f1 2b45-2b46
+Zmth -SYM2;arrows, crossed;2927-2932
+Zmth -SYM2;arrows, squiggle;21dc 21dd 27ff 2b33
+Zmth -SYM2;arrows, dashed;21e0-21e3 290c-2911 2b38
+Zmth -SYM2;arrows, to corner;21f1 21f2
+Zmth -SYM2;arrows, with circle;21f4 2b30 2948
+Zmth -SYM2;arrows, with circled plus;27f4 2b32
+Zmth -SYM2;arrows, three, horizontal;21f6 2b31
+Zmth -SYM2;arrows, open-headed;21fd-21ff
+Zmth -SYM2;arrows, with tail;21a2-21a3 2914 2915 2919-291c 2b37 2b39-2b3d
+Zmth -SYM2;arrows, to diamond;291d-2920
+Zmth -SYM2;arrows, with hook;2923-2926 21a9-21aa
+Zmth -SYM2;arrows, curved;2934-2937
+Zmth -SYM2;arrows, wave;219c-219d 21ad
+Zmth -SYM2;arrows, through x;2b3e 2947
+Zmth -SYM2;arrows, through gt/lt;2977 2b43
+Zmth -SYM2;arrows, through subset;297a 2b44
+Zmth -SYM2;arrows, half wave;2933 2b3f
+Zmth -SYM2;arrows, with loop;21ab-21ac
+Zmth -SYM2;arrows, long and short;2942-2944
+Zmth -SYM2;arrows, with equals;2971 2b40
+Zmth -SYM2;arrows, with plus;2945-2946
+Zmth -SYM2;arrows, with tilde;2972-2975 2b41-2b42 2b47-2b4c
+Zmth -SYM2;arrows, long;27f5-27ff
+Zmth -SYM2;math symbols;2949 2970 2976 2978-2979 297b-297f 21a8 21af 237c
+
+# most other symbols appearing in running text are in symbols, but some things
+# are basically 'terminal graphics' symbols so end up in Mono.
+Zsym;tech, misc;2300-2307 2311-2315 2317
+Zsym Zmth;tech, math;2308-230b
+Zsym; tech, crop marks;230c-230f
+Zsym Zmth;tech, quine corners;231c-231f
+Zmth MONO -Zsym;tech, math/bracket pieces;2320-2321 23b2-23b3 239b-23ad 23ae 23b0-23b1
+Zsym;tech, frown and smile;2322-2323
+Zsym;tech, cjk angles;2329-232a
+Zsym;tech, chemistry;232c 23e3
+Zsym;tech, drafting;232d-2335 23cd
+SYM2 -Zsym;tech, control codes;237b 237d-237f
+Zsym;tech, keyboard ISO 9995-7;2380-238c 2396-239a
+Zsym;tech, electrotechnical;238d-2394
+Zmth MONO -Zsym;tech, brackets, horizontal; 23b4-23b6
+MONO -Zsym -SYM2;tech, terminal graphics; 23b7-23b9
+MONO -Zsym -SYM2;tech, scan lines;23ba-23bd
+Zsym;tech, dentistry;23be-23cc
+Zsym;tech, metrical;23d1-23d9
+Zsym;tech, electric;23da 23db 23e6
+Zmth MONO -Zsym;tech, math, horizontal brackets;23dc-23e1
+Zsym;tech, misc;23e2 23e4-23e5 23e7-23e8
+
+# APL is in mono for sure, but probably nowhere else
+MONO -SYM2 -Zsym;apl;2336-237a 2395
+# this is the 'apl order'
+# apl full;2212 2223 003d 002b 00d7 00f7 2261 2336 25af 2337 22c4 2338-233c 2218 25cb 2296 233d 233e 002f 005c 22a2 22a3 233f 2340 003c 003e 005b 005d 2264 2265 2341-2344 2190 2192 2345-2348 2282 2283 0028 0029 007b 007d 2286 2287 2205 2349 00af 230a 2227 22a5 234a 2206 234b-234d 2229 234e 2191 234f 2350 005f 2308 2228 22a4 2351 2207 2352-2354 222a 2355 2193 2356 2357 002e 0027 003a 2358-235e 22c6 235f 2360 00a8 2235 2361-2367 002c 003b 003f 0021 223c 2260 2262 0024 2368-2372 237a 220a 2373-2379
+Zsym;turned digits;218a 218b
+Zsym;misc symbols;267e 269c 269d
+SYM2 -Zsym;weather;2600-2602 2614 2603 2607-2609 263c
+Zsym;alchemy;260a-260d
+SYM2 -Zsym;emoji-like;260e-260f 2618-2619
+Zsym;saltire;2613
+Zsym;medical;2624-2625 2695
+Zsym;religious;2626-262f 2638 2670-2671
+Zsym;emoticons;2639-263b 1f610
+Zsym;astrological;263d-2644 26e2 2645-2647 26e3
+Zsym;zodiac;2648-264f 26ce 2650-2653
+SYM2 -Zsym;chess;2654-265f
+SYM2 -Zsym;playing cards symbols;2660-2667
+Zsym MUSIC;music symbols;2669-266f
+Zsym;recycling;2672-267d
+SYM2 -Zsym;dice;2680-2685
+Zsym;dictionary and map symbols;2690-269b
+SYM2 -Zsym;misc signs;26a0-26a1
+Zsym;gender;2640 2642 26a2-26a9 26b2
+Zsym;genealogical;26ad-26b1
+Zsym;astrological;26b3-26bc
+SYM2 -Zsym;traffic signs;26cc-26cd 26cf 26d0-26e1
+Zsym;pentagrams;26e4-26e7
+Zsym;map symbols;26e3 26e8-26ff
+Zsym;alchemical symbols;1f700-1f773
+Zsym;composed, circled, numbers;24ea 2460-2473
+Zsym;composed, circled, numbers, dingbat;1f10b 2780-2789
+Zsym;composed, circled, numbers, negative;24ff 24eb-24f4
+Zsym;composed, circled, numbers, negative, dingbat;1f10c 2776-277f
+Zsym;composed, circled, numbers, negative, dingbat, sans-serif;278a-2793
+Zsym;composed, circled, numbers, doubled;24f5-24fe
+Zsym;composed, circled, letters, uppercase;24b6-24cf
+Zsym;composed, circled, letters, lowercase;24d0-24e9
+Zsym;composed, circled, letters, italic;1f12b-1f12c
+Zsym;composed, circled, letters, negative;1f150-1f169
+Zsym;composed, circled, text;1f12d-1f12e
+Zsym;composed, squared, letters;1f130-1f149
+Zsym;composed, squared, letters, negative;1f170-1f189
+Zsym;composed, squared, text;1f14a-1f14f 1f190 1f19b-1f1ac
+Zsym;composed, squared, text, negative;1f18a-1f18f 1f170-1f171 1f17e 1f17f
+Zsym;composed, parenthesized, numbers;2474-2487
+Zsym;composed, parenthesized, letters, uppercase;1f110-1f122 1f12a 1f123-1f129
+Zsym;composed, parenthesized, letters, lowercase;249c-24b5
+Zsym;composed, with full stop, numbers;1f100 2488-249b
+Zsym;composed, with comma, digits;1f101-1f10a
+Zsym;raised signs;1f16a-1f16b
+Zsym;roman numerals;2160-2183 2185-2188
+
+# most dingbats are in symbols2, also most geometric shapes
+SYM2;snowflakes;2744-2746
+SYM2;sparkles;2747-2748
+SYM2;asterisks;2731-2732 273b-273d 2743 2749
+SYM2;asterisks, 4-spoked;2722-2725
+SYM2;asterisks, 5-spoked, weights;1f7af-1f7b4
+SYM2;asterisks, 6-spoked, weights;1f7b5-1f7ba
+SYM2;asterisks, 8-spoked;274a-274b
+SYM2;asterisks, 8-spoked, weights;2733 1f7bb-1f7bf
+SYM2;asterisks, 16-spoked;273a
+SYM2;geom, triangles, black white, small;25b4 25b5 25b8 25b9 25be 25bf 25c2 25c3
+SYM2;geom, triangles, black medium centered;2bc5-2bc8
+SYM2;geom, triangles, black white;25b2 25b3 25bc 25bd 25c0 25c1 25b6 25b7
+SYM2;geom, triangles, black webdings;23f4-23f7
+SYM2;geom, triangles, isosceles right;1f780 1f781 1f782 1f783
+SYM2;geom, triangles, lower upper;25e2-25e5 25f8-25fa 25ff
+Zmth;geom, triangles, math;25ec-25ee
+SYM2;geom, circles, black;22c5 2219 1f784 (2022) 2981 26ab 25cf 2b24
+SYM2;geom, circles, white;25e6 26ac 26aa 25cb 25ef 2b55
+SYM2;geom, circles, half;25cf 25d6-25d7 2bca-2bcb
+SYM2;geom, circles, partly-filled;25cf 25d0-25d5
+SYM2;geom, circles, dotted;2299 1f78a 29bf 1f78b 25c9 25ce 2b57
+SYM2;geom, circles, white weights;25cb 2b58 1f785-1f789
+SYM2;geom, circles, other;25cf 25cc 25cd 25d9-25e1
+SYM2;geom, circles, medium small;26ac 25d8
+SYM2;geom, shadowed;274f-2752 274d 1f53e-1f53f
+SYM2;geom, squares, black;1f78c 2b1d 1f78d 25aa 25fe 2bc0 25fc 25a0 2b1b
+SYM2;geom, squares, white;2b1e 25ab 25fd 25fb 25a1 2b1c
+SYM2 Zmth;geom, squares, halfs;2b12 2b13 25e7 25e8 2b14 2b15 25e9 25ea 25eb 26cb
+SYM2;geom, squares, other;25a1-25a9
+SYM2;geom, squares, white dotted;1f794 25a3 1f795 1f796
+SYM2;geom, squares, white weights;25a1 1f78e-1f793
+SYM2;geom, diamonds, black;1f797 1f798 2b29 1f799 2bc1 2b25 25c6 2756
+SYM2;geom, diamonds, half;2b16-2b19
+SYM2;geom, diamonds, white;2b26 25c7 1f79a 25c8 1f79b 1f79c
+SYM2;geom, lozenges;1f79d 1f79e 2b2a 2b2b 1f79f 2b27 2b28 29eb 25ca 1f7a0
+SYM2;geom, ovals;2b2c-2b2f 2b56
+SYM2;geom, greek cross;1f7a1-1f7a7
+SYM2;geom, other crosses;2719-271c
+SYM2;geom, saltire;1f7a8-1f7ae
+SYM2;geom, sizes 1 tiny;1f78c 1f797 1f79d 22c5
+SYM2;geom, sizes 2 very small;2b1d 2b1e 1f798 1f79e 2219 2218
+SYM2;geom, sizes 3 small;25c2 25c3 25b8 25b9 25b4 25b5 25be 25bf 25aa 25ab 2b29 22c4 2b2a 2b2b 2b51 2b52 2022 25e6
+SYM2;geom, sizes 4 slightly small;1f78d 1f784
+SYM2;geom, sizes 5 medium small;25fe 25fd 1f799 1f79f 22c6 2981 26ac 2b50
+Zmth;geom, centered;2bc0-2bc8
+SYM2;geom, sizes 6 medium;25fc 25fb 2b25 2b26 2b27 2b28 26ab 26aa 2b1f 2b20 2b53 2b54 2bc2 2b23 2394 2b22 2b21 2bc3 2bc4 2605 2606 2729 2b2c 2b2d 2b2e 2b2f
+SYM2;geom, sizes 7 regular;25c0 25c1 25b6 25b7 25b2 25b3 25bc 25bd 25a0 25a1 25c6 25c7 29eb 25ca 25cf 25cb 2b1a
+SYM2;geom, sizes, large;2b1b 2b1c 25ef 2b24
+SYM2 MONO;geom, tiles;1f67c-1f67f
+SYM2 MONO;geom, parallelograms;25ac-25b1
+SYM2 MONO;geom, vertical bars;2758-275a
+SYM2;four-pointed cusps;2bcc-2bcf
+SYM2;stars, 3-pointed;1f7c0-1f7c3
+SYM2;stars, 4-pointed;2bcc 2bce 2726-2727 1f7c4-1f7c8
+SYM2;stars, 5-pointed;1f7ca 2605 2606 2729 2b50-2b52 1f7c9 272b-272f 272a 2730
+SYM2;stars, 6-pointed;2736 1f7cb-1f7cd
+SYM2;stars, 8-pointed;2734-2735 2737-2738 2742 1f7ce-1f7d1
+SYM2;stars, 12-pointed;1f7d2 2739 1f7d3 1f7d4
+SYM2;arrowheads;27a2-27a4
+SYM2;arrowheads, equilateral;2b98-2b9f
+SYM2;arrowheads, pointers;25ba-25bb 25c4-25c5
+SYM2;arrowheads, nested;1f894-1f897
+SYM2;arrowheads, triangle;1f890-1f893
+SYM2;arrows, barb, weights;1f860-1f887
+SYM2;arrows, bent, triangle-headed;2ba0-2ba7
+SYM2;arrows, black;2b05 2b95 2b06 2b07 2b0c 2b0d 2b08 2b09 2b0a 2b0b
+SYM2 -Zmth;arrows, white;21e6 1f8ac 1f8ad 21e8 21e7 21e9 21f3 2b04 2b00-2b03 21ea-21f0 2bb8
+SYM2;arrows, white circled;27b2 2b88-2b8b
+SYM2;arrows, compressed, weights;1f83c-1f843
+SYM2;arrows, curved;27a5-27a6 2ba9 2baa 2bab 2ba8 2bac-2baf
+SYM2;arrows, circles, triangle-headed;(238b) 2b6e-2b6f
+Zmth -SYM2 -Zsym;arrows, circles;21ba-21bb
+SYM2;arrows, circular; 1f5d8 1f503 2b94
+SYM2;arrows, double;2b80-2b87
+SYM2;arrows, equilateral head, weights;1f810-1f81b
+SYM2;arrows, equilateral head, large head;1f81c-1f81f
+SYM2;arrows, finger-post;1f834-1f837
+SYM2;arrows, heavy;1f844-1f847
+SYM2;arrows, heavy shaft;1f82c 1f89c 1f89d 1f89e 1f89f 1f82e 1f82d 1f82f
+Zmth -SYM2 -Zsym;arrows, math;21f4 2b30-2b4c
+SYM2;arrows, zapf;2794 2798-27a1 27a7-27a8 27b3-27be
+SYM2;arrows, notched;1f898-1f89b
+SYM2;arrows, ribbon;2bb0-2bb7
+SYM2;arrows, sans-serif;1f850 1f851 1f852 1f853 1f858 1f859 1f854-1f857
+SYM2;arrows, shaded;1f8a0-1f8ab 27a9-27aa 27ab-27af 27b1
+SYM2;arrows, squared;1f838-1f83b
+SYM2;arrows, triangle-headed;2b60-2b6d 2b4d
+SYM2;arrows, triangle-headed to bar;2b70-2b73 2b76-2b79 2b7e-2b7f
+SYM2;arrows, triangle-headed with double stroke;2b7a-2b7d
+SYM2;arrows, triangle-headed, shaft weights;1f820-1f833
+SYM2;arrows, two-headed;2bec-2bef
+SYM2;arrows, u-shaped;2b8c-2b8f
+SYM2;arrows, zig-zag; 21af 2b4d
+SYM2;arrows, head sizes;1f800-1f80b
+# no allocation based on the following, should all be in other groups
+;arrows, horizontal;27a2-27a4 2b9a 2b98 2b9e 2b9c 1f894 1f896 1f890 1f892 1f862 1f860 1f86a 1f868 1f872 1f870 1f87a 1f878 1f882 1f880 2b95 2b0c 2b05 2b8a 2b88 27b2 1f83e 1f83c 1f842 1f840 27a6 27a5 2ba9 2baa 2bab 2ba8 1f812 1f810 1f816 1f814 1f81a 1f818 1f81e 1f81c 1f836 1f834 1f846 1f844 1f82e 1f82c 1f89a 1f898 1f83a 1f838 2b62 2b64 2b60 2b6c 2b6a 2b72 2b70 2b7c 2b7a 1f822 1f820 1f826 1f824 1f82a 1f828 1f82e 1f82c 1f832 1f820 2bee 2bec 1f802 1f800 1f806 1f804 1f80a 1f808 21e8 2b04 21e6
+SYM2;embellishments, three lines;269e-269f
+SYM2;embellishments, three rays;1f5e4-1f5e7
+SYM2;ornaments, bracket;2768-2775
+SYM2;ornaments, florettes;273e-2741
+SYM2;ornaments, ligature;1f670-1f675
+SYM2;ornaments, symbols;1f676-1f678 275b-2767
+SYM2;ornaments, quilt;1f668-1f66b
+SYM2;ornaments, leaves, pointing buds;1f660-1f667
+SYM2;ornaments, leaves, pointing;1f650-1f657
+SYM2;ornaments, leaves, pointing vine;1f658-1f65f
+SYM2;hands;270b 1f590 1f591 270c 1f594 270d 1f58e 1f44c 1f58f 1f44d 1f592 1f44e 1f593
+SYM2;hands, pointing indexes;261a 261b 261c 261e 261d 261f 1f597
+SYM2;hands, pointing indexes, backhand;1f448 1f59c 1f449 1f59d 1f446 1f5a2 1f447 1f5a3
+SYM2;hands, pointing indexes, sideways;1f598 1f59a 1f599 1f59b 1f59e 1f5a0 1f59f 1f5a1
+SYM2;UI, power symbols;23fb-23fe 2b58
+SYM2;UI, record controls;23ea 23e9 23ee 23ed 23ef 23f8 23f9 23fa 23cf
+SYM2;UI, speakers;1f507 1f508 1f509 1f50a 1f568 1f569 1f56a
+SYM2 -Zsym;UI, position indicators;2316 2bd0
+SYM2;UI, computer;231a 1f4e4-1f4e5 1f50d 1f5d5-1f5d7 1f5da-1f5db
+SYM2;UI, keyboard, ja;25f0-25f7
+SYM2;UI, keyboard symbols;2423 237d 2325 2324 232b 2326 2327 2318 2bb9 23ce 2328 2b90-2b93 2425
+SYM2;UI, icons;1f5b6-1f5bb 1f5bf-1f5c1 1f5c4-1f5d3
+SYM2;checkmark and x's;1f5f8 2713-2718 1f5d9 1f5f4 1f5f6
+SYM2;ballot box;2610 2611 1f5f9 1f5f5 1f5f7 2612 2bbd 2bbe 2bbf 2717-2718 1f5f4 1f5f6 1f5f8 1f5d9
+SYM2;emoji-like;2615 2668 26bd-26bf 2700-2704 2707 2711-2712
+SYM2;emoji-like, caution;1f571 2620-2623 26a1
+SYM2;emoji-like, charts;1f4b9 1f4c8 1f4c9 1f5e0 1f4ca
+SYM2;emoji-like, envelopes;2709 1f582-1f586
+SYM2;emoji-like, hourglass;231b 23f3
+SYM2;emoji-like, pencils;270e-2710
+SYM2;emoji-like, sun moon;1f315 2609 (263d 263e)
+SYM2;emoji-like, telephone;260e-260f 1f57e-1f580
+SYM2 -Zsym;emoji-like, weather;2600 2602 2614 2604 2607-2608 26c4 2603 26c7 1f323-1f324 26c5 1f325-1f326 2601 1f327 26c8 26c6 1f328-1f32b
+SYM2;misc, notched semicircle;1f543-1f544
+SYM2;misc, pommee;1f540-1f542
+Zsym -SYM2;misc, pharmacy;2695 1f54f
+SYM2;emoji;1f30d-1f30f 1f31c 1f321-1f322 1f32c 1f336 1f378 1f37d 1f393-1f39f 1f3a7 1f3ac-1f3ae (1f3b8-1f3b9)1f3c6 1f3cd-1f3ce 1f3f1-1f3f3 1f3f5-1f3f7 1f408 1f415 1f41f 1f426 1f43f 1f441-1f442 1f453 1f47d 1f4a3 1f4b0 1f4b3 1f4bb 1f4bf 1f4cb 1f4da 1f4df 1f4e6 1f4ea-1f4ed 1f4f7 1f4f9-1f4fb 1f4fd-1f4fe 1f512-1f513 1f54a 1f56b-1f579 1f57b-1f57d 1f581 1f587-1f588 1f589-1f58d 1f5a5-1f5b5 1f5bc-1f5be 1f5c2-1f5c3 1f5d4 1f5dc-1f5df 1f5e1-1f5e3 1f5f3 1f5fa 1f6cb 1f6cd-1f6cf 1f6e0-1f6e2 1f6e5-1f6ea 2708 1f6f0 1f93b 1f946
+SYM2;emoji, building and map symbols;1f3d7-1f3da 1f3dc 1f3ed 1f3db 1f3e0 1f3d6 1f3dd 1f6e3 1f3d4 1f3de 1f3d5 1f6e4 1f3df 1f6f3 1f6f2
+SYM2;emoji, clocks, wall;23f1-23f2 1f550-1f567
+SYM2;emoji, vehicles;1f687 1f68d 1f691 1f694 1f698 1f6f1
+SYM2;emoji, rockets;1f66c-1f66f
+SYM2;emoji, speech/mood bubbles;1f5e8-1f5f2
+SYM2;emoji, signs;267f 2706 1f6ad 1f6b2 1f6c6-1f6c8
+SYM2;emoji, people;1f46a 1f6b9-1f6ba 1f6bc 1f6c9-1f6ca 1f3c2 1f3c4 1f3ca-1f3cc
+# text, ascii;0020 00a0 0023 002a 0030-0039
+Zsym -SYM2;text, religious symbols;1f546 271e 271d 271f 1f547 1f548 2626 2720 2721 2627-262f 2638 1f549
+SYM2;text, letterlike;2422 2426 2753 2757 (203d) 1f679-1f67b 1f545 2b59 2bd1
+SYM2;text, lithuanian dialectology;2b4e-2b4f 2b5a-2b5f
+SYM2;text, symbols for controls;2400-2421 2424
+SYM2;text, format char symbols;fff9-fffb
+SYM2;text, braille;2800-28ff
+SYM2;text, counting rod digits;1d360-1d371
+SYM2;text, coptic epact numbers;102e0-102fb
+SYM2;text, greek;10140-1018e
+SYM2;text, roman;10190-1019b 101a0
+SYM2;text, rumi numbers;10e60-10e7e
+SYM2;text, phaistos disc;101d0-101fd
+SYM2;text, optical char;2440-244a
+SYM2;divination 1;268a-268b 1d300
+SYM2;divination 2;268c-268f 1d301-1d305
+SYM2;divination 3;2630-2637
+SYM2;divination 4;1d306-1d356
+SYM2;divination 6;4dc0-4dff
+SYM2;games, checkers;26c0-26c3
+SYM2;games, domino tiles, horizontal;1f030-1f061
+SYM2;games, domino tiles, vertical;1f062-1f093
+SYM2;games, go;2686-2689
+SYM2;games, mahjong tiles;1f000-1f02b
+SYM2;games, playing cards;1f0a0-1f0ae 1f0b1-1f0bf 1f0c1-1f0cf 1f0d1-1f0f5
+SYM2;games, shogi;2616-2617 26c9-26ca
+
+# other groups
+Zmth;ascii, punct;0020-002f 003a-0040 005b-0060 007b-007e
+Zmth;ascii, digits;0030-0039
+Zmth;ascii, letters, upper case;0041-005a
+Zmth;ascii, letters, lower case;0061-007a
+Zmth;math alphanumerics, letters, bold, upper case;1d400-1d419
+Zmth;math alphanumerics, letters, bold, lower case;1d41a-1d433
+Zmth;math alphanumerics, letters, italic, upper case;1d434-1d44d
+Zmth;math alphanumerics, letters, italic, lower case;1d44e-1d454 210e 1d456-1d467
+Zmth;math alphanumerics, letters, bold italic, upper case;1d468-1d481
+Zmth;math alphanumerics, letters, bold italic, lower case;1d482-1d49b
+Zmth;math alphanumerics, letters, script, upper case, script;1d49c 212c 1d49e-1d49f 2130 2131 1d4a2 210b 2110 1d4a5-1d4a6 2112 2133 1d4a9-1d4ac 211b 1d4ae-1d4b5
+Zmth;math alphanumerics, letters, script, lower case;1d4b6-1d4b9 212f 1d4bb 210a 1d4bd-1d4c3 2134 1d4c5-1d4cf
+Zmth;math alphanumerics, letters, script, bold, upper case;1d4d0-1d4e9
+Zmth;math alphanumerics, letters, script, bold, lower case;1d4ea-1d503
+Zmth;math alphanumerics, letters, fraktur, upper case;1d504-1d505 212d 1d507-1d50a 210c 2111 1d50d-1d514 211c 1d516-1d51c 2128
+Zmth;math alphanumerics, letters, fraktur, lower case;1d51e-1d537
+Zmth;math alphanumerics, letters, fraktur, bold, upper case;1d56c-1d585
+Zmth;math alphanumerics, letters, fraktur, bold, lower case;1d586-1d59f
+Zmth;math alphanumerics, letters, double-struck, upper case;1d538-1d539 2102 1d53b-1d53e 210d 1d540-1d544 2115 1d546 2119 211a 211d 1d54a-1d550 2124
+Zmth;math alphanumerics, letters, double-struck, lower case;1d552-1d56b
+Zmth;math alphanumerics, letters, sans-serif, upper case;1d5a0-1d5b9
+Zmth;math alphanumerics, letters, sans-serif, lower case;1d5ba-1d5d3
+Zmth;math alphanumerics, letters, sans-serif, bold, upper case;1d5d4-1d5ed
+Zmth;math alphanumerics, letters, sans-serif, bold, lower case;1d5ee-1d607
+Zmth;math alphanumerics, letters, sans-serif, italic, upper case;1d608-1d621
+Zmth;math alphanumerics, letters, sans-serif, italic, lower case;1d622-1d63b
+Zmth;math alphanumerics, letters, sans-serif, bold italic, upper case;1d63c-1d655
+Zmth;math alphanumerics, letters, sans-serif, bold italic, lower case;1d656-1d66f
+Zmth;math alphanumerics, letters, typewriter, upper case;1d670-1d689  # monospace
+Zmth;math alphanumerics, letters, typewriter, lower case;1d68a-1d6a3  # monospace
+Zmth;math alphanumerics, greek letters, bold, upper case;1d6a8-1d6c1
+Zmth;math alphanumerics, greek letters, bold, lower case;1d6c2-1d6da
+Zmth;math alphanumerics, greek symbols, bold;1d6db-1d6e1 1d7ca-1d7cb
+Zmth;math alphanumerics, greek letters, italic, upper case;1d6e2-1d6fb
+Zmth;math alphanumerics, greek letters, italic, lower case;1d6fc-1d714
+Zmth;math alphanumerics, greek symbols, italic;1d715-1d71b
+Zmth;math alphanumerics, greek letters, bold italic, upper case;1d71c-1d735
+Zmth;math alphanumerics, greek letters, bold italic, lower case;1d736-1d74e
+Zmth;math alphanumerics, greek symbols, bold italic;1d74f-1d755
+Zmth;math alphanumerics, greek letters, sans-serif, bold, upper case;1d756-1d76f
+Zmth;math alphanumerics, greek letters, sans-serif, bold, lower case;1d770-1d788
+Zmth;math alphanumerics, greek symbols, sans-serif, bold;1d789-1d78f
+Zmth;math alphanumerics, greek letters, sans-serif, bold italic, upper case;1d790-1d7a9
+Zmth;math alphanumerics, greek letters, sans-serif, bold italic, lower case;1d7aa-1d7c2
+Zmth;math alphanumerics, greek symbols, sans-serif, bold italic;1d7c3-1d7c9
+Zmth;math alphanumerics, digits, bold;1d7ce-1d7d7
+Zmth;math alphanumerics, digits, double-struck;1d7d8-1d7e1
+Zmth;math alphanumerics, digits, sans-serif;1d7e2-1d7eb
+Zmth;math alphanumerics, digits, sans-serif, bold;1d7ec-1d7f5
+Zmth;math alphanumerics, digits, typewriter;1d7f6-1d7ff
+Zmth -Zsym;combining marks, math;20d0-20dc 20e1 20e5-20f0
+Zsym;combining marks, symbols;20dd-20e0 20e4
+SYM2;combining marks, other symbols;20e2 20e3

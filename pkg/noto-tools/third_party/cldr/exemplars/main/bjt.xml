@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2017 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
+<ldml>
+	<identity>
+		<version number="$Revision: 13237 $"/>
+		<language type="bjt"/>
+	</identity>
+	<layout>
+		<orientation>
+			<characterOrder>left-to-right</characterOrder>
+			<lineOrder>top-to-bottom</lineOrder>
+		</orientation>
+	</layout>
+	<characters>
+		<exemplarCharacters references="R1">[a b ɓ d e f g h i j l m n ñ ŋ o r s t ŧ u w y]</exemplarCharacters>
+	</characters>
+	<references>
+		<reference type="R1" uri="https://en.wikipedia.org/wiki/Balanta_language#Writing">Gouvernement du Sénégal, Décret n° 2005-979. The Government of Senegal has published an HTML version of this decree at http://www.jo.gouv.sn/spip.php?article3073, but unfortunately it is in US-ASCII encoding. Any non-ASCII characters have been lost from the document.</reference>
+	</references>
+</ldml>

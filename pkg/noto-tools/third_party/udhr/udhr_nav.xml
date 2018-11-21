@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--© The Office of the High Commisioner for Human Rights-->
+
+<udhr iso639-3='nav' xml:lang='nv' key='nav' n='Navajo' dir='ltr' iso15924='Latn' xmlns="http://www.unhchr.ch/udhr">
+  <title>Beehazą́ą Ił Chʼétʼaah</title>
+
+  <preamble>
+    <title>[preamble]</title>
+
+    <para>Kótʼéego Hazʼaah: Baá akohwiindzingo éí ílį́go adaanisįikéesgo nihiisílá. Áadóó aheełtʼéego dóó bee niháʼahootʼiʼígíí doo handitʼáago. Bílaʼ ashdlaʼii éí tʼááʼ áłtsoni bée hółdziłgo beehwiidooʼaał tʼáá nííkʼeh dóó aheełtʼéego bee ahaanitsáhakeesgo éí bee ahihodíneʼenah nahasdzaan bikáagí.</para>
+    <para>Kótʼéego Hazʼaah: Diné doo ílį́įgo baa nitsahakeesgo adeesdeeʼ éí biniinaa tʼáá naʼníleʼdii ábiʼdilʼí. Biniinaa diné biniʼ dazlį́į́ʼ dóó nahasdzáán tʼáá níítʼéé bílaʼ bee hideeznáá ashdlaʼii tʼáá bíniikʼeh hadeesdzih nízingo bee bá hazʼą́ą́ doo dóó yoodlą́nígíí dóó doo yináldzidgo dóó doo biniʼ siʼą́ągo tʼáá ałtsoní niʼhookááʼ dineʼé aláahdi bee baʼakohwiidzin doo.</para>
+    <para>Kótʼéego Hazʼaah: Tsíʼdó doo tʼáágéédda bílaʼ ashdlaʼiiʼ áchʼaaʼ hadeesdzih nizingo tʼáadoo leʼé bee bidiljishgo biniinaa éí bilaʼ ashdlaʼii tʼáá ałtsoní bee baahoochįʼgo beehazáanii bá alyaa.</para>
+    <para>Kótʼéego Hazʼaah: Tsída aláahdi achʼįholʼį́ kʼé wolyé hígíí dine ałąą atʼéhígíí kéyah yee daʼahootą doo biniiyé.</para>
+    <para>Kótʼéego Hazʼaah: Bílaʼ ashdlaʼii kéyah dahnidahaazʼą́ągo yee daʼahótą́ʼígíí yikʼéhgo deiyíłnííshígíí yee háádaashzííh bílaʼ ashdlaʼii bee baa ákohwiiniidzinígíí binahjįʼ bilaʼ ashdlaʼii ílį́įgo baanitsínáhoodeeskééz. Diné dóó sáanii tʼáá łaʼí nízínígo aheełtéego bá adahazłʼį éé bina;hjįʼ diné beeiinaʼ náás noosééł dóó iiná yáʼátʼéehii néididooléełgo bá bichąʼ hwíidóoneʼ.</para>
+    <para>Kótʼéego Hazʼaah: Kéyah yá nídaazínígíí yee ádáhadaasdzííh kodóó nídidoolyééł ahił nideiilnishgo kéyah nidahazʼą́ągo yee doʼahóótąʼígíí bił náhásdzáán tʼáá níítʼéé bidineʼé yee hodísin doo. Bílaʼ ashdlaʼii bee baa hóchʼįʼígíí doo tʼáá bí bíniʼ kʼehgo hiinánánígíí.</para>
+    <para>Kótʼéego Hazʼaah: Tʼáá ałtsoní yaa akonídzin díí bee baa hóchįʼígíí dóó tʼáá yíníkʼeh iináago áláah áníłtsohgo baa nitsáʼhákeesgo binahjjįʼ baa ákohwiinidzinígíí bee haʼoodzííh.</para>
+    <para>Kʼad Kótʼe Áłahʼ Azlį́į́ʼígíí Yee Ákʼihadaasdzíí</para>
+    <para>Díí nahasdzáán bee bá haʼadziih bílaʼ ashdlaʼii bee baa hóchįʼígíí bikʼehgo óʼoolʼííłdoo biniiyé, bílaʼ ashdlaaʼii tʼáá ałtso bá áté dóó kéyah tʼáá átʼé sinilígíí báʼatʼé, tʼaałáʼíjinízínígo dóó bíla ashdlaʼii ninánílʼą́ąjįʼ ádííyóltąʼ dooleeł díí haʼoodziiʼígíí. Bilaʼ ashdlaaʼii áłahjįʼ biniʼnilíidoo dóó yee náásgóó anootįįłdoo. Áádóó bee óʼhooʼąąhdoo neeʼniʼjįʼ bee hodílzindoo díí beeʼaahóchįʼígíí dóó yíníkʼehgo bee náás ʼiiná yidiłdoo díí kéyah hazʼą́ądoo dóó tówónanígóó be hołdzildoo tʼáá ałtsohjigo dóó bikʼeh ʼééhozin doo dóó dilyindoo naatʼą́ąnii kéyah yándaazínígíí bitahgo aadóó diné yił kééhatʼį́į́nii yásizínígíí bił hazʼą́ąji.</para>
+  </preamble>
+
+  <article number="1">
+    <title>Łáaʼii Góneʼ Biyiʼ Yisdzohígíí</title>
+    <para>Bilaʼashdaʼii tʼáá ałtsoh yiníkʼehgo bidizhchįh dóó aheełtʼeego ílį́į́go bee baahóchįʼ. Eíí háníʼ dóó hánítshakees hwiihdaasyaʼ eíí binahjį́ʼ ahidiníłnáhgo álíleekʼehgo kʼé bee ahił niidlį́.</para>
+  </article>
+
+  <article number="2">
+    <title>Naaki Góneʼ Biyiʼ Yisdzohígíí</title>
+    <para>Tsídí tʼáá ájítʼé beeháhazʼąʼ haahóchįʼgo dóó yiníkʼehgo nijigháo kodóó bee hooʼaʼígíí bikʼehgo tʼáadoo beeʼ ałʼą́ąʼátʼéhégóó. Jó díí dóoneʼé idlínígíí, hakágí anoolninígíí, asdzání dóó diné ídlį́hígíí dóó nihizaad áádóó niheʼoodlaʼ áádóó nihiwááshindoon baa nitsiikeesígíí áádóó bee ndahsiidzinígíí, dóó nihikéyah dóó nihiʼdizhchį́įhjį́ʼ bee nihaahóchiʼ.</para>
+    <para>Kodóó nasgóó doohaadeetʼéégodah bee ahantsiikeesda doolééł nihiwááshindoon átʼéhą́gíí dóó nihił hazʼánígíí doodaiiʼ tówánáanígóó kéyah adahootʼéhígíí doodaiiʼ kéyah nijigháádę́ę́ʼ azaáshį́į́ tʼáásahdii biłhazą́ąndi, áádóó nanáłaʼbígó bikááʼ kéhojitʼį́įgo azhą́shį́į́ doo tʼáá bi adahnahatʼáada ndi doodaiíʼ tʼááhó ádahnahwiijitʼáhígíí tʼáábiʼoh ndi.</para>
+  </article>
+
+  <article number="3">
+    <title>Táá Góneʼ Biyiʼ Yisdzohígíí</title>
+    <para>Tsídí tʼáá ájítʼé bee háhazʼą́ iináʼázhdoolííłgo áádóó ʼałdó tʼáá yiní kʼehgo hołdzilgo hołhazʼą́ądoo.</para>
+  </article>
+
+  <article number="4">
+    <title>Dį́į́ Góneʼ Biyiʼ Yisdzohígíí</title>
+    <para>Łaʼdah éí doo naalteehʼé dooleełda dóó dooháida yá naal aʼí dooleeł da dóó doo naaltehʼé adoolniiłgo doo bee hazʼą́ąda.</para>
+  </article>
+
+  <article number="5">
+    <title>Ashdlaʼ Góneʼ Biyiʼ Yisdzohígíí</title>
+    <para>Tʼáá heíída éí doo atídoolníiłda áádóó ʼałdóʼ doo tʼáá naʼníleʼdii diné doo ídlį́į́go baa tsehodidookosda.</para>
+  </article>
+
+  <article number="6">
+    <title>Hastą́ą́ Góneʼ Biyiʼ Yisdzohígíí</title>
+    <para>Tsiʼdí Tʼáá ájítʼe há bee haazʼą́ haaʼakowhiindzingo tʼáá ałtsohjįʼ bílaʼashdlaʼii jílį́įgo bee hazʼáánii yeehasʼą́.</para>
+  </article>
+
+  <article number="7">
+    <title>Tsostsʼid Góneʼ Yisdzohígíí</title>
+    <para>Tsíʼdí tʼáá ájítʼe ahejíłtʼé bee hazʼaanii binahjį́ʼ dóó doo hoʼdoolchʼį́į́h da dooleeł aheełtʼéego haahóchįʼ bee hazʼáanii binahjįʼ tʼáá ajiłtsoh éí hakʼéstiʼ haahóchįʼgo binahjį́ doo hodoolchʼį́į́ da díí doo bił adodzih da. Kweʼé bee haʼoodzíhígíí doo oochʼį́į́d habizhdiyooł łaał da.</para>
+  </article>
+
+  <article number="8">
+    <title>Tseebíí Góneʼ Yisdzohígíí</title>
+    <para>Tsíʼdí tʼáá ájíłtsoh bee háhazʼą́ tʼáa dooleʼé há hashtʼe doolníiłgo wááshindoon áájí yá ʼééhósinígíí ákótʼéego bee hazʼáanii bee háʼahootʼíʼ yę́ę biłaszihgo.</para>
+  </article>
+
+  <article number="9">
+    <title>Náhástʼéí Góneʼ Yisdzohígíí</title>
+    <para>Tʼáá háida éí biniinaanii ádingo doo biʼdidool tsoołda dóó doo yahʼadooltʼeeł da dóó doo chʼi dinóol cheeł da.</para>
+  </article>
+
+  <article number="10">
+    <title>Neeznáá Góneʼ Yisdzohígíí</title>
+    <para>Tʼáá ájíłtsoh bee háʼahóótʼíʼ tʼáá aheeł tʼéego diné binááł há baahwinitʼį́įgo doo háájída achʼíhjí nilíígíí binááł éí há yaa nídáastʼįįdgo yee nidahodooʼááł bee há ahootʼígíí dóó bee hóholnígíí dóó haʼátʼííshį́į́ awáalyahjí bee hakʼehástʼahígíí.</para>
+  </article>
+
+  <article number="11">
+    <title>Łaʼ Tsʼáadah Góneʼ Yisdzohígíí</title>
+    <orderedlist>
+      <listitem tag="Tʼááłáʼí.">
+        <para>Tsídí tʼááʼ ajiłtsoh hakʼihodiitʼánígíí doo ajitʼį́į́go hanitsáhákees nléí bee hasáanii bee hahwinistʼiin doo indah tʼááʼ aanííʼ aájítʼį́į́go beehwééhozingo bee achʼaah hazhdoodzihígíí áłtso ájíílaago.</para>
+      </listitem>
+      <listitem tag="Naaki.">
+        <para>Tʼáá háiidah doo tʼááʼanííájítʼį́įgo bee hakʼiho dootʼah da doo ájítʼį́į́go. Tʼáá doo ajiitʼį́į́go bee hakʼéhestʼahgo kéyah tʼáá nahwiizʼáandę́ę́ʼ dóó tówonanidí bibeehazáanii kʼizhnítiʼ hoʼdiʼníigo áhoodzaa yę́ędą́ą́ʼ. Áádóó ałdóʼ bee hazʼáanii yee nihodooʼáałígíí doo biláahgo yee há niʼhodooʼááł da.</para>
+      </listitem>
+    </orderedlist>
+  </article>
+
+  <article number="12">
+    <title>Naakitsʼáadah Góneʼ Biyiʼ Yisdzohígíí</title>
+    <para>Tʼáá héiida bił hazʼánígíí báʼ áłchínííní dah bighan dah doo háii tʼáaodah éíí baa tį́į́ʼdoodáałdah. Tʼáá ajiłtsoh bee hazʼą́ąnii bikʼehgo bee háhóchį́.</para>
+  </article>
+
+  <article number="13">
+    <title>Taaʼtsʼadah Góneʼ Biyiʼ Yisdzohígíí</title>
+    <orderedlist>
+      <listitem tag="Łáaʼii.">
+        <para>Tʼáá ajiłtoh éí tʼáá hozhnizingóó nijigháago dóó haghan azhoolííłgo bee há hazą́.</para>
+      </listitem>
+      <listitem tag="Naaki.">
+        <para>Tʼáá ajiłtsoh éí kéyah biiʼ hájinéehgo bee há hazą́ áádóó tʼáá hohakéyah bííʼ yahʼaníjíneehgo ałdóʼ beeháhazą́.</para>
+      </listitem>
+    </orderedlist>
+  </article>
+
+  <article number="14">
+    <title>Dį́į́tsʼáadah Góneʼ Biyiʼ Yisdzohígíí</title>
+    <orderedlist>
+      <listitem tag="Łáaʼii.">
+        <para>Tʼáá ajiłtsoh náánałahjį́ kéyah biish dínóochéełgo doo atihodooníiłgo bee há hazą́.</para>
+      </listitem>
+      <listitem tag="Naaki.">
+        <para>Ákondi díí béehazą́ąnígíí éí doo choidooʼį́į́ł da awáalyahji naaztʼiʼígíí bikʼeezhoochééłgo. Áádóó áłdoʼ kéyah tʼaasiʼą́ą́ndę́ę́ beheehazą́ąnii biłiisihgo éí doo choiiʼ dooʼį́į́łda.</para>
+      </listitem>
+    </orderedlist>
+  </article>
+
+  <article number="15">
+    <title>Ashdlaʼtsʼáadah Góneʼ Biyiʼ Yisdzohígíí</title>
+    <orderedlist>
+      <listitem tag="Łáaʼii.">
+        <para>Tʼáá ajiłtsǫh dooneʼé jílínígíí bee háhazʼą́.</para>
+      </listitem>
+      <listitem tag="Naaki.">
+        <para>Héíídah éíí dóoneʼé nilínígíí doo bąąh dootʼį́į́łdah.</para>
+      </listitem>
+    </orderedlist>
+  </article>
+
+  <article number="16">
+    <title>Hastąątsʼáadah Góneʼ Biyiʼ Yisdzohígíí</title>
+    <orderedlist>
+      <listitem tag="Łáaʼíí.">
+        <para>Diné dóó sáanii neeyánígíí ádóoneʼé nilígíí dóó beʼoodląʼ ęíí doo bichʼą́ąhgo adooyehgo báhazą́. Ałtsʼą́ą́jí aheełtʼéego áhéʼeskeh beehazʼą́ą́nii bikʼéstiʼ áádóó baʼáłchiní hoodoołeelgo bee báhazą́ áádóó áłtsʼáʼítʼaashgo bee bá ahootʼįʼʼ.</para>
+      </listitem>
+      <listitem tag="Naaki.">
+        <para>Ahidiiʼ aashígíí áłtsʼąąji tʼáábiniikʼehgo áłhaadootʼash.</para>
+      </listitem>
+      <listitem tag="Tááʼ.">
+        <para>Hooghan hazą́ą́doo éí iiná hadahaaztʼiʼ dinétahjį́ dóó beehazą́ąnii baanchįʼ.</para>
+      </listitem>
+    </orderedlist>
+  </article>
+
+  <article number="17">
+    <title>Tsostsʼidtsʼáadah Góneʼ Biyiʼ Yisdzohígíí</title>
+    <orderedlist>
+      <listitem tag="Łáaʼii.">
+        <para>Tʼáá ájíłtsoh kéyah tʼáá adiighahágó hweehodooleełgo bee háhazʼą́ doodaiiʼ díkwíjíltʼéegodah kéyah dajótąʼgo beeháhazʼą́.</para>
+      </listitem>
+      <listitem tag="Naaki.">
+        <para>Hę́íídah éí tʼáadoo biniinaanígó kéyah doo bighah dootʼááł dah.</para>
+      </listitem>
+    </orderedlist>
+  </article>
+
+  <article number="18">
+    <title>Tseebíítsʼáadah Góneʼ Biyiʼ Yisdzohígíí</title>
+    <para>Tʼáá ájíłtsoh bee baʼahóótʼiʼ tʼáá hó adahnahojitʼáago dóó nitsijikeesgo dóó hweʼoodląʼ hólóogo díí bee háʼahootʼiʼígíí naanáłahjį́ʼ hweʼoodląʼígíí beeʼizhdidooʼgáałgo bee hazʼą́. Dinétahjį́ hweʼoodląʼígíí bee hwééhozín doo áádóó bee nazhnitin doo. Áádóó ałdóʼ áájį́ bá hozhdísin doo.</para>
+  </article>
+
+  <article number="19">
+    <title>Nahastʼéítsʼáadah Góneʼ Biyiʼ Yisdzohígíí</title>
+    <para>Tʼáá ájíłtsoh tʼáadooleʼé baa ntsíjíkeesgo bee hazdoodzihgo bee háhazʼą́. Díí baa ntsíjíkeesígíí éí héídah doo hániʼ iidoolííłda. Áádóó bikah nazhnitáago dóó nízhdiiláago bee hadeesdzih jinizingo béésh halneʼé, naalkidídah doodaiiʼ naaltsoos biyiʼjį́ʼ bee hazdoodzihgo bee háhazʼą́.</para>
+  </article>
+
+  <article number="20">
+    <title>Naadíín Góneʼ Biyiʼ Yisdzohígíí</title>
+    <orderedlist>
+      <listitem tag="Łáaʼii.">
+        <para>Tʼáá ájíłtsoh ałah nijídleehgo dóó áłhiłdajidlį́į́go bee háhazʼą́.</para>
+      </listitem>
+      <listitem tag="Naakí.">
+        <para>Tʼáá héídah éí doo íínízingo doo atah dooltʼeełdah.</para>
+      </listitem>
+    </orderedlist>
+  </article>
+
+  <article number="21">
+    <title>Naadiin Łaʼ Góneʼ Biyiʼ Yisdohígíí</title>
+    <orderedlist>
+      <listitem tag="Łáaʼii.">
+        <para>Tʼáá ajiłtsoh bee háʼahóótʼį́ʼ hakéyah biwááshindoon atahjílį́į́go doodaiiʼ naatʼáanii ninádajiʼniłgo.</para>
+      </listitem>
+      <listitem tag="Naaki.">
+        <para>Tʼáá ajiłtsoh aheełtʼéego háʼahóótʼiʼ hakáh anaʼáwʼoʼ dooleeł hakéyah biʼyiʼdi.</para>
+      </listitem>
+      <listitem tag="Tʼááʼ.">
+        <para>Diné áyisį́ beebóholnííh biwááshindoon yee yáhwiidoolʼaałígíí. Díí bee hoʼaʼígíí bee hadoodzih dóó tʼáá bá náhooʼaa góneʼ éí anáʼáʼah dooleeł. Áádóó tʼáá ałtsoh aheełtʼéego ánídaʼjiʼah dooleeł tʼaadoo łaʼ bił ííshjáná ájósinį́ áádóó tʼaahójinízingo ánájiʼah doo.</para>
+      </listitem>
+    </orderedlist>
+  </article>
+
+  <article number="22">
+    <title>Naadiin Naakí Góneʼ Biyiʼ Yisdzohígíí</title>
+    <para>Tʼáá ajiłtsoh diné bitah jílínígíí bee há ahóótʼíʼ bee haaʼahayą́ą dooleełígíí díí tʼáá átʼé kéyah dahsiʼánígíí doo nahasdzáán yee áłkáh ánájahígíí bá bóhoneedzánígíí háʼatʼííshį́į́ bee hólonígíí yee adoolwoł béeso dah, áádóó bee aʼdooníłígíí binahjį́ʼ yee ílį́į́go ádaantsíkees dooleeł tʼáá bi sizínígíí yee hádidooʼnííł.</para>
+  </article>
+
+  <article number="23">
+    <title>Naadiin Tááʼ Góné Biyiʼ Yisdzohígíí</title>
+    <orderedlist>
+      <listitem tag="Łáaʼíí.">
+        <para>Tʼáá ajiłtsoh ndazhdoolnishgo bee hahazʼą́, tʼáá hó naanish jinízínígíí, tʼáá hó naanish hoł yáʼátʼę́ehéígíí díí naanish adinígíí bitsʼąą áhátʼį́.</para>
+      </listitem>
+      <listitem tag="Naaki.">
+        <para>Tʼáá ajiłtsho tʼáadoo hoʼdool chiʼį́dį́ aheełtʼéego hachʼįʼníʼiilyéedoo naanishígíí bííghahgo.</para>
+      </listitem>
+      <listitem tag="Tááʼ.">
+        <para>Tʼáá ajiłtsoh ndajilnishígíí bee há ahootʼi beełtʼeego hachʼįʼ niʼiilyʼéego binahjiʼ tʼááhó dóó há áłchini yee hináadoo biláʼ ashdlaʼii bąąh ilinígíʼ átʼáo áádóó biʼóhjinéelánígíí há biidootʼááł áhótʼéédąąʼ diné bee bíkáh anáʼáwoʼ adę́ę́ʼ.</para>
+      </listitem>
+      <listitem tag="Dį́į́ʼ.">
+        <para>Tʼáá ajiłtsoh éí bee há ahóótʼiʼ naanish yee daʼahótąʼígíí atah hazhdidooliiłgo dóó bee atah jidooghááłgo tʼááhó jizinígíí bee adaaʼáhojilyą́ą doo biniyé.</para>
+      </listitem>
+    </orderedlist>
+  </article>
+
+  <article number="24">
+    <title>Naadiin Dííʼ Góneʼ Biyiʼ Yisdzohígíí</title>
+    <para>Tʼáá ajiłtsoh bee há ahóótʼiʼ haazhdoolyįhgo dóó nííkʼeh njigháadoo áádóó naanish aheeʼiikeedígíí bee haʼhazáánígíí átʼáo nijiłnishdoo dóó łaʼ ajį́dah doo naʼanishgo bee hooʼ aahgo tʼáá biniyé hachʼį́ʼ azláadooleeł.</para>
+  </article>
+
+  <article number="25">
+    <title>Naadiin Ashdlaʼ Góneʼ Biyiʼ Yisdzohígíí</title>
+    <orderedlist>
+      <listitem tag="Łáaʼii.">
+        <para>Tʼáá ájiłtsoh bee há ahóotʼiʼ bikʼehgoʼ iiná azhdoołííłígíí tʼáá hó hatsʼíís yineelą́nígíí dóó haʼáłchinį́ tʼáá hooltąʼgo. Jó éí chʼiyáán lá, ééʼ lá, hooghan lá, dóó azeeʼ álʼį́į́jí bee aaʼáháyánígíí lá dóó diné bee bíkaʼánawoʼ dę́ę́ áádóó bee há ahootʼiʼ háadidah naanish ásdiingo nátʼą́ą́ bee aaʼ áháyánígíí tʼáá hólóodoo, azhą́shį́į́ dajitsaah ndi dóó hachʼįʼanáhootʼiʼ ndi, bił hijiináanii hąą ʼádin silį́į́goda áádóó są́ jizhlįįgo doodaiiʼ hweʼiinaʼ biʼoh silį́į́go tʼáadooleʼé bitsʼą́ą́doo tʼáá hó hweʼiinaʼ doo bee hóhólnįįh da silįįgo dah.</para>
+      </listitem>
+      <listitem tag="Naaki.">
+        <para>Amá jilį́į́go dóó áłchíní jilį́į́go bee há ahootʼiʼ haaʼ ahayą́ą́doo áádóó háká anaʼáwoʼdoo. Áłchíní tʼáá ajiłtsoh bimá dóó bizhéʼé aheeskéego biʼdizhchínígíí doodai bimá dóó bizhéʼé doo aheeskéego biʼdzhchínígíí da tʼáá ajiłtsoh éí dinétahgí haa hastihgo bee ákʼi hozhdoodlį́į́ł.</para>
+      </listitem>
+    </orderedlist>
+  </article>
+
+  <article number="26">
+    <title>Naadiin Hastąą Góneʼ Biyiʼ Yisdzohígíí</title>
+    <orderedlist>
+      <listitem tag="Łaaʼii.">
+        <para>Tʼáá ajiłtsoh íízhdoołtahgo bee haʼahootʼiʼ. Ałchíní tʼóó haʼ ałtáádoo tʼáájiikʼe ʼíidoołtah. Ałchíní yázhí éí tʼáá íyisí tʼáá íídoołtah. Naanish bóhooʼaah baa daʼóltaʼ dahólǫǫ doo áádóó hódahgo daʼołtaʼígíí dahólǫǫ doo tʼáá ałtsoníbá áádóó hodahgo óltaígíí ałdoʼ bizhneelą́ nígi átʼáo iizhdoołtah.</para>
+      </listitem>
+      <listitem tag="Naaki.">
+        <para>Oltaʼ éí hólǫ́ǫ́doo bilaʼ asdlaʼii yee hadidooníłíjiʼ áádóó yee bidziildoo binahjíʼ bee há adahaztʼíʼígíí yá hodisin doo. Díí éí yee akʼiʼdiitą́ą́doo bee haʼjólníídoo tʼaa áłtsojíʼ kʼeh bijiníí doo náánáłaʼ dóoneʼé dóó óodlání danilinígíí. Díí binahjį́ tʼéí yá kéyah áłhiiʼ sinilígíí tʼáadoo iitsʼáʼí ałyił dandlį́į́ doo.</para>
+      </listitem>
+      <listitem tag="Tááʼ.">
+        <para>Ámá dóó ázhéʼé éí áłtsé alą́ą́jį́ʼ bee bá ahootʼiʼ báʼ áłchíní yaa iidoołtahígíí yee yáh hadoozih.</para>
+      </listitem>
+    </orderedlist>
+  </article>
+
+  <article number="27">
+    <title>Naadiin Tsostsid Góneʼ Biyiʼ Yisdzohígíí</title>
+    <orderedlist>
+      <listitem tag="Łaaʼii.">
+        <para>Tʼáá ajiłtsoh bee háʼáhootʼiʼ tʼáá hózhnizinjį́ʼ atah biłkeehojitʼį́inígíí bił iiná azhdoolííł, binaʼ achʼąąh dóó łahdóó bee ázhdoolwoł bee naas bee idahwiidooʼ áłígíí bee ákʼihwiizhdoodlííł</para>
+      </listitem>
+      <listitem tag="Naaki.">
+        <para>Tʼáá ajiłtsoh bee há áhootʼiʼ doo álį́į́nii dóó áʼłʼinígíí bee aaʼáhyąągo éí heishíí iłííshjání ííyiilaaígíí bizhiʼ bikáadoo.</para>
+      </listitem>
+    </orderedlist>
+  </article>
+
+  <article number="28">
+    <title>Naadiin Tseebíí Góneʼ Biyiʼ Yisdzohígíí</title>
+    <para>Tʼáá ajiłtsoh beehá áhootʼiʼ diné áłą́ą́ átʼégo dóó nahasdzáán tʼáá siʼáándéé bibeehazą́ díí kwéʼé bee haʼoodzíʼígíí tʼáá átʼé bee baaʼ ákohoniidzíí doo.</para>
+  </article>
+
+  <article number="29">
+    <title>Naadiin Náhastʼéí Góneʼ Biyiʼ Yisdzohígíí</title>
+    <orderedlist>
+      <listitem tag="Łaaʼii.">
+        <para>Tʼáá ajiłtsoh biłkééhojitʼínígíí éí łahdóó naanish beeʼaká azhdoolwoł tʼáá hwozhnízíngo. Díí binahjį́ tʼááʼ hójizínígí bee hazhdidooniił.</para>
+      </listitem>
+      <listitem tag="Naaki.">
+        <para>Díí bee há ahóótʼiʼígíí dóó tʼáá hwozhnizinjį́ bee ndooʼnishgo éí tʼáá łaʼí jínítínígo bee hóholnííh beehaząąnii yee hasáníjíʼ átʼehígíí, éí binahjįʼ baa ʼákóhwiindzin dóó dilzin, náánáłaʼ bee bá áhootʼiʼígíí dóó tʼáá binizinjįʼ átʼéhígíí, éí bikʼehgo ádaʼ adaʼ alį́nígíí tʼáa ałtsoní diné bá átʼé.</para>
+      </listitem>
+      <listitem tag="Tááʼ.">
+        <para>Díí adahaztʼiʼígíí dóó tʼáániikʼeh naʼadáhígíí éí díí kéyah ałhiiʼsiníłígíí binyé ályaa éí bibehazą́ą́nii doo bee ałʼąąʼ áʼtéedah dooleeł.</para>
+      </listitem>
+    </orderedlist>
+  </article>
+
+  <article number="30">
+    <title>Tádíín Góneʼ Biyiʼ Yisdzohígíí</title>
+    <para>Díí kweʼé haʼ oodziʼígíí éí heitʼáo dah nááná łaʼ kéyah da siʼą́níígíí doodaííʼ dahjookahígíí doodaiiʼ łaʼjizį́ éí doo heitʼáo dah haʼoodzígíí jidoołchǫǫłda.</para>
+  </article>
+</udhr>

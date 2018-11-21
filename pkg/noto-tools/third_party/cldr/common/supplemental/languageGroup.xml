@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE supplementalData SYSTEM "../../common/dtd/ldmlSupplemental.dtd">
+<!-- Copyright © 1991-2017 Unicode, Inc.
+For terms of use, see http://www.unicode.org/copyright.html
+Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+-->
+<supplementalData>
+	<version number="$Revision$"/>
+	<languageGroups>
+		<languageGroup parent="aav">caq crv irr kdt mkh mun ncb nyl sii sss tef tth</languageGroup>
+		<languageGroup parent="afa">ber bxe cdc cop cus egy omv sem wal</languageGroup>
+		<languageGroup parent="alg">alq arp atj ats bla chy ciw cr del kic mez mia mic mjy moe nnt oj ojs ojw otw pim pot qyp sac sjw unm wam xlo xnt xpq</languageGroup>
+		<languageGroup parent="alv">aba abi abr abu ada adj ajg ak anw ati avi ayb azo bad bai bax bba bce bci beh bfd bfl bgj bim bin bju bkc bkm blo bmq bnt dag dai dop dur ebr ee efi ff fod fon gaa gba gej gjn gkn goy gur gux ig ijo jab kbp kcj kdh keu kia kma kqs kro kss kzc kzr ldm lee lmp lob mdd mfq mgo mnh mor mos mql mua myk mzm mzv mzw naj nfr nga nie nku ntm nza nzi ogc oku otr ozm pil pny pug sev shz soy spp srr tbz tem tfi tik tiv tkq tui tuz urh wci wo wwa xsm xwe yky yo</languageGroup>
+		<languageGroup parent="apa">apj apk apl apw nv</languageGroup>
+		<languageGroup parent="aqa">alc</languageGroup>
+		<languageGroup parent="aql">alg wiy yur</languageGroup>
+		<languageGroup parent="ath">aht apa bcr bea chp clc den dgr gwi haa hup ing kkz koy kuu srs tau tcb tgx tht tol</languageGroup>
+		<languageGroup parent="auf">aru cul dny pad swx</languageGroup>
+		<languageGroup parent="aus">bck dbl ddj gbu gni kdd kjn kld mep nha nuy piu pkn vma vmb wbp wmt xbp xrg yii yij</languageGroup>
+		<languageGroup parent="awd">aca ame apu bae brg ccc guc ign inp kpc not pbg pib pio plu tae trn ycn</languageGroup>
+		<languageGroup parent="azc">chl com cup hop lui mfy mnr ntp ood opt pao par pia ser shh stp tac tar tla tub var xaw xgf yaq</languageGroup>
+		<languageGroup parent="bai">bbj bko byv fmp jgo nla nnh nnz nwe xmg ybb</languageGroup>
+		<languageGroup parent="bat">lt ltg lv ndf prg sgs svx sxl xcu xgl xsv xzm</languageGroup>
+		<languageGroup parent="ber">cnu grr jbe jbn kab mzb nxm oua rif sds shi shy siz taq thv tmh tzm zen</languageGroup>
+		<languageGroup parent="bnt">abb auh bas beb bem beq bip bja bkh bkw bng bni bqz brf btb bum bvb bwt bxg cjk cwe dav dez dma dua eko eto ewo fan fip guz haq heh hke hoo hz kam kck kcv kde kg ki kj kkj kmb koo koq kqn ksf kws kzo lch lg lik ln lol loz lu lua lue lun luy lyn mbo mdw mhb mhw mye nba nd ndc ng ngc ngl njx nnb nr nse nso ny nyf nym nyn pic rn rng rw rwm shr sn snq sop ss st suk sw swb tll tn toi ts tum umb ve vif vmk wdd wlc wni xh yao zdj zmw zu</languageGroup>
+		<languageGroup parent="btk">akb bbc btd btm bts btx btz</languageGroup>
+		<languageGroup parent="cau">ccn ccs</languageGroup>
+		<languageGroup parent="cba">bzd cbg chb kog mbp mot tuf</languageGroup>
+		<languageGroup parent="ccn">ab abq ady agx akv ani aqc av bbl bdk bph ce cji dar ddo gdo gin huz inh kap kbd khv kjj kpt kry kva lbe lez rut tab tin tkr uby udi</languageGroup>
+		<languageGroup parent="ccs">ka lzz sva xmf</languageGroup>
+		<languageGroup parent="cdc">anc ank bid daa ha hed lme maf mcn mmy mpi mse mug nnc nnn pip sor tmc zim</languageGroup>
+		<languageGroup parent="cdd">ari cad kii paw wic</languageGroup>
+		<languageGroup parent="cel">br cy ga gd gv kw mga nrc obt owl sga wlm xbm xcb xce xga</languageGroup>
+		<languageGroup parent="cmc">ace cje cjm hro huq jra rad rog</languageGroup>
+		<languageGroup parent="cpe">bi bzj djk gul hwc jam kri kww ngm pih pis rop tpi wes</languageGroup>
+		<languageGroup parent="cpf">acf cks crs gcf gcr ht kmv lou mfe rcf</languageGroup>
+		<languageGroup parent="cpp">aoa cri fab kea pov pre</languageGroup>
+		<languageGroup parent="crp">chn ho ktu pml sg tas</languageGroup>
+		<languageGroup parent="csu">avu bdh bex bot kcm led mdi mdj mhi mwm myb niy sba</languageGroup>
+		<languageGroup parent="cus">aa arv bej bji byn dal irk om orc sid so ssn ssy</languageGroup>
+		<languageGroup parent="day">bth lra sdo sne</languageGroup>
+		<languageGroup parent="dmn">bib bm bqc dnj dyu goa kao knk kno knu kpe lom man men mlq moa mwk rkm snk sus vai xkg yal</languageGroup>
+		<languageGroup parent="dra">brh gon iru kfa kfc kff kmj kn kru kxl kxu kxv mjt mjv ml muv ta tcx tcy te</languageGroup>
+		<languageGroup parent="esx">ale ik iu kl ypk ysr</languageGroup>
+		<languageGroup parent="fiu">chm et fi fit fkv hu izh kca koi krl kv liv mdf mns mrj myv smi udm vep vot vro</languageGroup>
+		<languageGroup parent="fox">bnn bzg ckv dru fos pwn pyu ssf sxr tay trv tsu uun xnb xsy</languageGroup>
+		<languageGroup parent="gem">gme gmq gmw</languageGroup>
+		<languageGroup parent="gme">got xvn</languageGroup>
+		<languageGroup parent="gmq">da fo is nb nn non nrn ovd sv</languageGroup>
+		<languageGroup parent="gmw">af ang cim de drt dum en enm frk frr fy gct gmh gml goh gos gsw lb li lng mhn nds nl odt ofs osx pdc pfl sco stq swg wep wym yec yi zea</languageGroup>
+		<languageGroup parent="grk">cpg pnt tsd yej</languageGroup>
+		<languageGroup parent="hmx">bje bpn buh bwn cqd hmd hml hmn hnj ium mji mmr mww pha pnu shx</languageGroup>
+		<languageGroup parent="iir">ask bsh inc ira prn wbk xvi</languageGroup>
+		<languageGroup parent="inc">as awa bgc bhb bho bjj bkk bn bns bpy bra ccp ctg dml doi dv emx gu gwc gwt hi hif hne khw kls kok ks lah mag mai mr mvy mwr ne or pa phl pra raj rmg rml rmq rmt rom scl sd sdg si skr syl ur</languageGroup>
+		<languageGroup parent="ine">aln anp bat cel cms el gem gmy grc hit hy iir imy itc plq scx sdt sla sq txb txh xcl xcr xdc xlc xld xlg xls xlu xmk xpg xps xsd xto xve</languageGroup>
+		<languageGroup parent="ira">ae bal bsg ckb fa glk hac haz isk jdt jpr kho ku lsa mzn oru os pal peo prc ps sgh sgl sgy siy smy sog sqo srh tg tly ttt wbl xbc xco xpr xsc yai zum zza</languageGroup>
+		<languageGroup parent="iro">cay chr lre moh ntw one ono see sqn tus wya</languageGroup>
+		<languageGroup parent="itc">la osc roa spx xfa xum</languageGroup>
+		<languageGroup parent="kar">kvq</languageGroup>
+		<languageGroup parent="khi">hts ktz kwz naq sad</languageGroup>
+		<languageGroup parent="kro">bsq dic grb gud gxx ney nwb wec</languageGroup>
+		<languageGroup parent="map">end fox poz</languageGroup>
+		<languageGroup parent="mkh">bbh bgk blr cbn cwg huo jah jhi kha kjg kxm lbn mhe mlf mml mnw mqt mra mtq oyb ply prk pry rka scb sea tnz tpu tyh uuu vi vwa wbm xao xnh zng</languageGroup>
+		<languageGroup parent="mul">aav afa aqa aql auf aus awd azc cau cba cdd cpe cpf cpp crp dra esx grk hmx ine iro khi map myn nic omq paa sal sgn sio sit ssa tup tut und urj wak xnd</languageGroup>
+		<languageGroup parent="mun">hoc pcj sat unr</languageGroup>
+		<languageGroup parent="myn">acr agu caa cac cak ctu hus itz ixl jac kek kjb knj mam mhc mop poc poh quc qum quv toj ttc tzh tzj tzo usp yua</languageGroup>
+		<languageGroup parent="ngf">bjz ekg uhn</languageGroup>
+		<languageGroup parent="nic">alv dmn eka kdo lam nqo nyo tog znd</languageGroup>
+		<languageGroup parent="nub">fia onw</languageGroup>
+		<languageGroup parent="omq">cco coz czn ixc maj maq miz mxb oto pbs pmq pmz trs zap zaw ztq zty</languageGroup>
+		<languageGroup parent="omv">aiw bcq bwo dim doz jnj mdx noz she zay</languageGroup>
+		<languageGroup parent="oto">otm</languageGroup>
+		<languageGroup parent="paa">aau anz ddg gak kmo kup lvk mok nas ngf pgu saj tcm tft tif tlb tqu waj wli yee</languageGroup>
+		<languageGroup parent="phi">akl bik blf bno bnq ceb cps fil gor hil ibg ibl ify ilk ilo kak krj kyj kyk loc mdh mno mog mrw msb pag pam rth sgd snl sxn tao tbl tdn tne tnt tnw tom txs war</languageGroup>
+		<languageGroup parent="plf">alo amv bhp gal hbu hvn kei kje kvh lti mhs mqy nxe ple szn tet tlv txn wha xbr xxk</languageGroup>
+		<languageGroup parent="poz">goq plf pqe pqw ski</languageGroup>
+		<languageGroup parent="pqe">agw ahb aia aie aji akr alu ane anx apb app apr asz aty aua aud aul auq aut baa bch bcm bcu bgt bhc bhw biq bjk blp blq bnk bnr bpa brr btr buk bvc bvd bwd bxa bxf bzh bzq cal cam chk crc ddi dgg dhv dob dor drr erg erk etn faf far fj frt fud fut fwa gdd gei gfk gga ggt ghn gil gli gmb goo gri grz gzn hah hao haw hiw hla hoa iai irh jae jaj jaz kbm kdk khl kij kji kkk klv koa kos kpg kqw krf ksd ksg ktm kvc kwd kwf kxr kzk kzu lbb lbv lcm lek ler leu lga lgb lgk lgl lgr lgu lht lib lid lkn lle llf llp llu llx lmg lml lmu lmv loj los lpa lrv lrz lww mee mek met meu mft mgl mh mi mkj mkv mky mla mln mlu mlv mme mmg mmt mmw mmx mna mnv mox mpr mpy mqa mqm mrb mrl mrm mrn mrq mrv msq mte mtt mvo mwc mwh mwi mwo mxe na nal ncc ncf ncn nee nem nen nfl ngr niu nke nkr nlg nmb nmk nms nmt nnd npn nsn nss nsw nua nuw nwi olr omb onu ora pek pex pfa pgk pif piv piz pkg pma pme pmt pnh pon pop ppn pri pss psw ptp ptv puw pwg rai rak rap rar ray roe rri rro rug sax sbb sbc sbe sbh sgz sij sjr sku slz sm sns sob sol sov sps ssg stn stw swp szw tbc tbe tbf tbj tgc tgg tgi tgp tgs tio tkl tkp tkw tlm tlr tlx tmb tmi tmy tnk tnl tnn tnp tnx to tox tpv tpz tql tqp tsr ttu ttv tuc tva tvk tvl twp ty ubr uge uli upv urr urv utp uve uvl vao vmg vnk vnm vra vrs vrt wiv wls woe wuv wwo wyy xsi yap yly zgr</languageGroup>
+		<languageGroup parent="pqw">abl abs abx ban bdg bdl bdr beg bew bjn bkz bsu btk buc bug ch cia cmc day dbj drg dtr dun dup duq duw eno gay iba id jv kaw kge kjc kjk kqr ktq kvr kxd kyi kys lbw lbx lce lcf ley liw ljp llk mad mak mdr mfa mfb mg mhy min mkm mqn ms mtd mui mwv mxr myl mzq nia nij nrm otd pau pdo pel phi pku pse raz ree rej sas sda sjm skh slm sml smr smw snv ssb sse su sya tdi tdu tdx tjg tkg tlk twy txy ulu vkl vko wow wru xkq xmv xmw xmz yka zbc zbe zbw</languageGroup>
+		<languageGroup parent="pra">pi sa</languageGroup>
+		<languageGroup parent="roa">ast co dlm egl es ext fax fur gl ist it lad lij lld lmo mwl mxi nap osp pms pt rgn rm ro ruo rup ruq sc scn sdc sdn vec</languageGroup>
+		<languageGroup parent="sal">cjh clm col coo cow crd fla hur lil nok oka qun shs spo squ str thp</languageGroup>
+		<languageGroup parent="sdv">ach alz anu bfa ddd din enb eyo kdj keo kln kpz lky lot lpx luo mas mqu muz niq nsg nub nus sgc shk tec teo toq tuv tuy</languageGroup>
+		<languageGroup parent="sem">aao acy aeb afb ajt akk am amw apc ar arq ary arz ayl gdq gez har he jrb mey mt phn sam shu smp sqr syr ti tig tmr uga xaa xeb xpu</languageGroup>
+		<languageGroup parent="sgn">ase csn fcs fsl ils isg rsl</languageGroup>
+		<languageGroup parent="sio">asb bll cro dak hid iow ksk lkt mhq ofo oma osa qua sto tta win xwc</languageGroup>
+		<languageGroup parent="sit">dz ero grt hmr hni ii jkr kac kar lbj lhu lus mni my new njh njm nmy nxq qvy tbq tsj txg xsr zhx</languageGroup>
+		<languageGroup parent="sla">cu zle zls zlw</languageGroup>
+		<languageGroup parent="smi">se sia sjd sje sjt sma smj smn sms</languageGroup>
+		<languageGroup parent="son">ddn dje kcy ses twq</languageGroup>
+		<languageGroup parent="ssa">csu dzg gly guk kbl kie kmq kr lgn mde mls rou sdv son tuq udu wti xom</languageGroup>
+		<languageGroup parent="syd">mtm nio sel xas yrk</languageGroup>
+		<languageGroup parent="tbq">bqh brx njo nun trp</languageGroup>
+		<languageGroup parent="trk">aib alt az ba chg cjs clw crh cv dlg gag ili jct kaa kdr kim kjh kk klj kmz krc kum ky ota otk qwm qxq sah slr tk tr tt tyv ug uz uzs xpc ybe</languageGroup>
+		<languageGroup parent="tup">eme gn gui guq gyr kay kgk kpn ktn kyr mpu myu nhd psm skf srq tpj tpn tpr twt wyr yrl</languageGroup>
+		<languageGroup parent="tut">nog trk tuw xgn</languageGroup>
+		<languageGroup parent="tuw">eve evn gld juc mnc neg oaa oac orh sjo ude ulc</languageGroup>
+		<languageGroup parent="urj">fiu syd</languageGroup>
+		<languageGroup parent="wak">dtd has hei kwk myh nuk</languageGroup>
+		<languageGroup parent="wen">dsb hsb</languageGroup>
+		<languageGroup parent="xgn">bua dta kxs mhj mjg mn mvf peh sce xal xwo yuy</languageGroup>
+		<languageGroup parent="xnd">ath eya tli</languageGroup>
+		<languageGroup parent="ypk">ems ess esu ynk</languageGroup>
+		<languageGroup parent="zhx">cdo cjy cpx czh czo dng gan hak hsn ltc mnp nan och wuu wxa yue zh</languageGroup>
+		<languageGroup parent="zle">be orv ru rue uk</languageGroup>
+		<languageGroup parent="zls">bg bs cu hr mk sl sr</languageGroup>
+		<languageGroup parent="zlw">cs csb czk pl pox sk szl wen</languageGroup>
+		<languageGroup parent="znd">zne</languageGroup>
+	</languageGroups>
+</supplementalData>

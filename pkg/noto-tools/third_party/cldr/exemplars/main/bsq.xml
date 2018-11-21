@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2017 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
+<ldml>
+	<identity>
+		<version number="$Revision: 13599 $"/>
+		<language type="bsq"/>
+	</identity>
+	<layout>
+		<orientation>
+			<characterOrder>left-to-right</characterOrder>
+			<lineOrder>top-to-bottom</lineOrder>
+		</orientation>
+	</layout>
+	<characters>
+		<exemplarCharacters references="R1">[𖫐-𖫦 {𖫧𖫰} {𖫧𖫱} {𖫧𖫲} {𖫧𖫳} {𖫧𖫴} {𖫨𖫰} {𖫨𖫱} {𖫨𖫲} {𖫨𖫳} {𖫨𖫴} {𖫩𖫰} {𖫩𖫱} {𖫩𖫲} {𖫩𖫳} {𖫩𖫴} {𖫪𖫰} {𖫪𖫱} {𖫪𖫲} {𖫪𖫳} {𖫪𖫴} {𖫫𖫰} {𖫫𖫱} {𖫫𖫲} {𖫫𖫳} {𖫫𖫴} {𖫬𖫰} {𖫬𖫱} {𖫬𖫲} {𖫬𖫳} {𖫬𖫴} {𖫭𖫰} {𖫭𖫱} {𖫭𖫲} {𖫭𖫳} {𖫭𖫴}]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary" references="R2">[𖫧-𖫭]</exemplarCharacters>
+		<exemplarCharacters type="punctuation" references="R3">[𖫵 \- ‐ – — , ; \: ! ? . … ' ‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
+	</characters>
+	<references>
+		<reference type="R1" uri="http://www.unicode.org/L2/L2010/10217-n3847-bassavah.pdf#page=1">Michael Everson and Charles Riley: Revised proposal for encoding the Bassa Vah script in the SMP of the UCS. ISO/IEC JTC1/SC2/WG2 N3847 L2/10-217. July 31, 2010. Page 1: “Vowels in Bassa Vah are written as letters with obligatory diacritical marks which indicate the tone of the vowel. [...] the tone is obligatory (a Bassa word is misspelled without it)“</reference>
+		<reference type="R2" uri="http://www.unicode.org/L2/L2010/10217-n3847-bassavah.pdf#page=1">Michael Everson and Charles Riley: Revised proposal for encoding the Bassa Vah script in the SMP of the UCS. ISO/IEC JTC1/SC2/WG2 N3847 L2/10-217. July 31, 2010. Page 1: “[T]he un-marked vowels are never used alone, except in discussions of the alphabet itself.“</reference>
+		<reference type="R3" uri="http://www.unicode.org/L2/L2010/10217-n3847-bassavah.pdf#page=2">Michael Everson and Charles Riley: Revised proposal for encoding the Bassa Vah script in the SMP of the UCS. ISO/IEC JTC1/SC2/WG2 N3847 L2/10-217. July 31, 2010. Page 2: “The Latin FULL STOP may be used, but a Bassa Vah COMMA and FULL STOP are both found in fonts.“</reference>
+	</references>
+</ldml>

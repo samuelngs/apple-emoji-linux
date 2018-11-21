@@ -1,0 +1,10 @@
+URL: http://dspl.googlecode.com/archive/9416f88e6dd209a0d5651ee025d3af335adf3e39.zip
+Version: 9416f88e6dd209a0d5651ee025d3af335adf3e39
+License: BSD
+License File: LICENSE
+
+Description:
+Country lattitude and longitude data from the DSPL project.
+
+Local Modifications:
+Just the single file countries.csv is used.

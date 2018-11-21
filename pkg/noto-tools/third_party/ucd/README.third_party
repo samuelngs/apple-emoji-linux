@@ -1,0 +1,14 @@
+URL: http://www.unicode.org/Public/8.0.0/ucd/
+Version: 11.0.0d
+License: Unicode
+License File: LICENSE
+
+Description:
+Unicode data files.
+
+Local Modifications:
+1. Unicode 11.0 alpha files have been pulled from
+   http://www.unicode.org/Public/11.0.0/ucd/
+
+3. emoji-data files are from (copied on 2010-03-06)
+   http://www.unicode.org/Public/emoji/11.0

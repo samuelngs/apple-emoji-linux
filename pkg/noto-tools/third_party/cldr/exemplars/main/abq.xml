@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2017 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
+<ldml>
+	<identity>
+		<version number="$Revision: 13237 $"/>
+		<language type="abq"/>
+	</identity>
+	<localeDisplayNames>
+		<languages>
+			<language type="abq" references="R1 R2 R3">абаза бызшва</language>
+		</languages>
+	</localeDisplayNames>
+	<layout>
+		<orientation>
+			<characterOrder>left-to-right</characterOrder>
+			<lineOrder>top-to-bottom</lineOrder>
+		</orientation>
+	</layout>
+	<characters>
+		<exemplarCharacters references="R1">[а б г {гв} {гъ} {гъв} {гъь} {гь} {гӏ} {гӏв} д {дж} {джв} {джь} {дз} е ж {жв} {жь} з и й к {кв} {къ} {къв} {къь} {кь} {кӏ} {кӏв} {кӏь} л {ль} м н о п {пӏ} р с т {тл} {тш} {тӏ} у х {хв} {хъ} {хъв} {хь} {хӏ} {хӏв} ц {цӏ} ч {чв} {чӏ} {чӏв} ш {шв} {шӏ} щ ъ ы э]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary" references="R1">[в ё ф ь ю я]</exemplarCharacters>
+	</characters>
+	<references>
+		<reference type="R1" uri="https://eki.ee/knab/lat/kblabq.pdf">Institute of the Estonian Language, Place Name Database, Abaza. 2003-04-20.</reference>
+		<reference type="R2" uri="http://omniglot.com/writing/abaza.htm">Omniglot: Abaza. Retrieved 2017-01-19.</reference>
+		<reference type="R3" uri="https://en.wikipedia.org/wiki/Abaza_language">Wikipedia: Abaza language. Retrieved 2017-01-19.</reference>
+	</references>
+</ldml>

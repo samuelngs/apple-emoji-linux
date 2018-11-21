@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
+<!-- Copyright © 1991-2017 Unicode, Inc.
+For terms of use, see http://www.unicode.org/copyright.html
+Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+-->
+<ldml>
+	<identity>
+		<version number="$Revision: 13571 $"/>
+		<language type="mi"/>
+	</identity>
+	<characters>
+		<exemplarCharacters>[a ā e ē h i ī k m n {ng} o ō p r t u ū w {wh}]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[b c d f g j l q s v x y z]</exemplarCharacters>
+		<exemplarCharacters type="index">[A E H I K M N O P R T U W]</exemplarCharacters>
+	</characters>
+	<dates>
+		<calendars>
+			<calendar type="generic">
+				<days>
+					<dayContext type="format">
+						<dayWidth type="wide">
+							<day type="sun" draft="provisional">Rātapu</day>
+							<day type="mon" draft="provisional">Mane</day>
+							<day type="tue" draft="provisional">Tūrei</day>
+							<day type="wed" draft="provisional">Wenerei</day>
+							<day type="thu" draft="provisional">Tāite</day>
+							<day type="fri" draft="provisional">Paraire</day>
+							<day type="sat" draft="provisional">Hātarei</day>
+						</dayWidth>
+					</dayContext>
+				</days>
+				<dateFormats>
+					<dateFormatLength type="full">
+						<dateFormat>
+							<pattern>G y MMMM d, EEEE</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="long">
+						<dateFormat>
+							<pattern>G y MMMM d</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="medium">
+						<dateFormat>
+							<pattern>G y MMM d</pattern>
+						</dateFormat>
+					</dateFormatLength>
+					<dateFormatLength type="short">
+						<dateFormat>
+							<pattern>GGGGG y-MM-dd</pattern>
+						</dateFormat>
+					</dateFormatLength>
+				</dateFormats>
+				<dateTimeFormats>
+					<dateTimeFormatLength type="full">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="long">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="medium">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<dateTimeFormatLength type="short">
+						<dateTimeFormat>
+							<pattern>{1} {0}</pattern>
+						</dateTimeFormat>
+					</dateTimeFormatLength>
+					<intervalFormats>
+						<intervalFormatFallback>{0} – {1}</intervalFormatFallback>
+						<intervalFormatItem id="d">
+							<greatestDifference id="d">d–d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="M">
+							<greatestDifference id="M">MM–MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="Md">
+							<greatestDifference id="d">MM-dd – MM-dd</greatestDifference>
+							<greatestDifference id="M">MM-dd – MM-dd</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MEd">
+							<greatestDifference id="d">MM-dd, E – MM-dd, E</greatestDifference>
+							<greatestDifference id="M">MM-dd, E – MM-dd, E</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMM">
+							<greatestDifference id="M">LLL–LLL</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMd">
+							<greatestDifference id="d">MMM d–d</greatestDifference>
+							<greatestDifference id="M">MMM d – MMM d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="MMMEd">
+							<greatestDifference id="d">MMM d, E – MMM d, E</greatestDifference>
+							<greatestDifference id="M">MMM d, E – MMM d, E</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="y">
+							<greatestDifference id="y">G y–y</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yM">
+							<greatestDifference id="M">GGGGG y-MM – y-MM</greatestDifference>
+							<greatestDifference id="y">GGGGG y-MM – y-MM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMd">
+							<greatestDifference id="d">GGGGG y-MM-dd – y-MM-dd</greatestDifference>
+							<greatestDifference id="M">GGGGG y-MM-dd – y-MM-dd</greatestDifference>
+							<greatestDifference id="y">GGGGG y-MM-dd – y-MM-dd</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMEd">
+							<greatestDifference id="d">GGGGG y-MM-dd, E – y-MM-dd, E</greatestDifference>
+							<greatestDifference id="M">GGGGG y-MM-dd, E – y-MM-dd, E</greatestDifference>
+							<greatestDifference id="y">GGGGG y-MM-dd, E – y-MM-dd, E</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMM">
+							<greatestDifference id="M">G y MMM–MMM</greatestDifference>
+							<greatestDifference id="y">G y MMM – y MMM</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMd">
+							<greatestDifference id="d">G y MMM d–d</greatestDifference>
+							<greatestDifference id="M">G y MMM d – MMM d</greatestDifference>
+							<greatestDifference id="y">G y MMM d – y MMM d</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMEd">
+							<greatestDifference id="d">G y MMM d, E – MMM d, E</greatestDifference>
+							<greatestDifference id="M">G y MMM d, E – MMM d, E</greatestDifference>
+							<greatestDifference id="y">G y MMM d, E – y MMM d, E</greatestDifference>
+						</intervalFormatItem>
+						<intervalFormatItem id="yMMMM">
+							<greatestDifference id="M">G y MMMM–MMMM</greatestDifference>
+							<greatestDifference id="y">G y MMMM – y MMMM</greatestDifference>
+						</intervalFormatItem>
+					</intervalFormats>
+				</dateTimeFormats>
+			</calendar>
+			<calendar type="gregorian">
+				<months>
+					<monthContext type="format">
+						<monthWidth type="wide">
+							<month type="1" draft="provisional">Hānuere</month>
+							<month type="2" draft="provisional">Pēpuere</month>
+							<month type="3" draft="provisional">Māehe</month>
+							<month type="4" draft="provisional">Āperira</month>
+							<month type="5" draft="provisional">Mei</month>
+							<month type="6" draft="provisional">Hune</month>
+							<month type="7" draft="provisional">Hūrae</month>
+							<month type="8" draft="provisional">Ākuhata</month>
+							<month type="9" draft="provisional">Hepetema</month>
+							<month type="10" draft="provisional">Oketopa</month>
+							<month type="11" draft="provisional">Noema</month>
+							<month type="12" draft="provisional">Tīhema</month>
+						</monthWidth>
+					</monthContext>
+				</months>
+				<days>
+					<dayContext type="format">
+						<dayWidth type="wide">
+							<day type="sun" draft="provisional">Rātapu</day>
+							<day type="mon" draft="provisional">Mane</day>
+							<day type="tue" draft="provisional">Tūrei</day>
+							<day type="wed" draft="provisional">Wenerei</day>
+							<day type="thu" draft="provisional">Tāite</day>
+							<day type="fri" draft="provisional">Paraire</day>
+							<day type="sat" draft="provisional">Hātarei</day>
+						</dayWidth>
+					</dayContext>
+				</days>
+				<eras>
+					<eraNames>
+						<era type="0">BCE</era>
+						<era type="1">CE</era>
+					</eraNames>
+					<eraAbbr>
+						<era type="0">BCE</era>
+						<era type="1">CE</era>
+					</eraAbbr>
+				</eras>
+			</calendar>
+		</calendars>
+		<timeZoneNames>
+			<hourFormat>+HH:mm;-HH:mm</hourFormat>
+			<gmtFormat>GMT{0}</gmtFormat>
+			<gmtZeroFormat>GMT</gmtZeroFormat>
+			<regionFormat>{0}</regionFormat>
+			<regionFormat type="daylight">{0} (+1)</regionFormat>
+			<regionFormat type="standard">{0} (+0)</regionFormat>
+			<fallbackFormat>{1} ({0})</fallbackFormat>
+			<zone type="America/Argentina/Rio_Gallegos">
+				<exemplarCity>Rio Gallegos</exemplarCity>
+			</zone>
+			<zone type="America/Mendoza">
+				<exemplarCity>Mendoza</exemplarCity>
+			</zone>
+			<zone type="America/Argentina/San_Juan">
+				<exemplarCity>San Juan</exemplarCity>
+			</zone>
+			<zone type="America/Argentina/Ushuaia">
+				<exemplarCity>Ushuaia</exemplarCity>
+			</zone>
+			<zone type="America/Argentina/La_Rioja">
+				<exemplarCity>La Rioja</exemplarCity>
+			</zone>
+			<zone type="America/Argentina/San_Luis">
+				<exemplarCity>San Luis</exemplarCity>
+			</zone>
+			<zone type="America/Catamarca">
+				<exemplarCity>Catamarca</exemplarCity>
+			</zone>
+			<zone type="America/Argentina/Salta">
+				<exemplarCity>Salta</exemplarCity>
+			</zone>
+			<zone type="America/Jujuy">
+				<exemplarCity>Jujuy</exemplarCity>
+			</zone>
+			<zone type="America/Argentina/Tucuman">
+				<exemplarCity>Tucuman</exemplarCity>
+			</zone>
+			<zone type="America/Cordoba">
+				<exemplarCity>Cordoba</exemplarCity>
+			</zone>
+			<zone type="America/Buenos_Aires">
+				<exemplarCity>Buenos Aires</exemplarCity>
+			</zone>
+			<zone type="America/La_Paz">
+				<exemplarCity>La Paz</exemplarCity>
+			</zone>
+			<zone type="America/Eirunepe">
+				<exemplarCity>Eirunepe</exemplarCity>
+			</zone>
+			<zone type="America/Rio_Branco">
+				<exemplarCity>Rio Branco</exemplarCity>
+			</zone>
+			<zone type="America/Porto_Velho">
+				<exemplarCity>Porto Velho</exemplarCity>
+			</zone>
+			<zone type="America/Boa_Vista">
+				<exemplarCity>Boa Vista</exemplarCity>
+			</zone>
+			<zone type="America/Manaus">
+				<exemplarCity>Manaus</exemplarCity>
+			</zone>
+			<zone type="America/Cuiaba">
+				<exemplarCity>Cuiaba</exemplarCity>
+			</zone>
+			<zone type="America/Santarem">
+				<exemplarCity>Santarem</exemplarCity>
+			</zone>
+			<zone type="America/Campo_Grande">
+				<exemplarCity>Campo Grande</exemplarCity>
+			</zone>
+			<zone type="America/Belem">
+				<exemplarCity>Belem</exemplarCity>
+			</zone>
+			<zone type="America/Araguaina">
+				<exemplarCity>Araguaina</exemplarCity>
+			</zone>
+			<zone type="America/Sao_Paulo">
+				<exemplarCity>Sao Paulo</exemplarCity>
+			</zone>
+			<zone type="America/Bahia">
+				<exemplarCity>Bahia</exemplarCity>
+			</zone>
+			<zone type="America/Fortaleza">
+				<exemplarCity>Fortaleza</exemplarCity>
+			</zone>
+			<zone type="America/Maceio">
+				<exemplarCity>Maceio</exemplarCity>
+			</zone>
+			<zone type="America/Recife">
+				<exemplarCity>Recife</exemplarCity>
+			</zone>
+			<zone type="America/Noronha">
+				<exemplarCity>Noronha</exemplarCity>
+			</zone>
+			<zone type="Pacific/Easter">
+				<exemplarCity>Easter</exemplarCity>
+			</zone>
+			<zone type="America/Santiago">
+				<exemplarCity>Santiago</exemplarCity>
+			</zone>
+			<zone type="America/Bogota">
+				<exemplarCity>Bogota</exemplarCity>
+			</zone>
+			<zone type="Pacific/Galapagos">
+				<exemplarCity>Galapagos</exemplarCity>
+			</zone>
+			<zone type="America/Guayaquil">
+				<exemplarCity>Guayaquil</exemplarCity>
+			</zone>
+			<zone type="Atlantic/Stanley">
+				<exemplarCity>Stanley</exemplarCity>
+			</zone>
+			<zone type="America/Cayenne">
+				<exemplarCity>Cayenne</exemplarCity>
+			</zone>
+			<zone type="America/Guyana">
+				<exemplarCity>Guyana</exemplarCity>
+			</zone>
+			<zone type="America/Lima">
+				<exemplarCity>Lima</exemplarCity>
+			</zone>
+			<zone type="America/Asuncion">
+				<exemplarCity>Asuncion</exemplarCity>
+			</zone>
+			<zone type="America/Paramaribo">
+				<exemplarCity>Paramaribo</exemplarCity>
+			</zone>
+			<zone type="America/Montevideo">
+				<exemplarCity>Montevideo</exemplarCity>
+			</zone>
+			<zone type="America/Caracas">
+				<exemplarCity>Caracas</exemplarCity>
+			</zone>
+		</timeZoneNames>
+	</dates>
+	<numbers>
+		<minimumGroupingDigits draft="contributed">1</minimumGroupingDigits>
+		<symbols numberSystem="latn">
+			<decimal>.</decimal>
+			<group>,</group>
+			<percentSign>%</percentSign>
+			<plusSign>+</plusSign>
+			<minusSign>-</minusSign>
+			<exponential>E</exponential>
+			<superscriptingExponent>×</superscriptingExponent>
+			<perMille>‰</perMille>
+			<infinity>∞</infinity>
+			<nan>NaN</nan>
+		</symbols>
+		<decimalFormats numberSystem="latn">
+			<decimalFormatLength>
+				<decimalFormat>
+					<pattern>#,##0.###</pattern>
+				</decimalFormat>
+			</decimalFormatLength>
+			<decimalFormatLength type="long">
+				<decimalFormat>
+					<pattern type="1000" count="other">0K</pattern>
+					<pattern type="10000" count="other">00K</pattern>
+					<pattern type="100000" count="other">000K</pattern>
+					<pattern type="1000000" count="other">0M</pattern>
+					<pattern type="10000000" count="other">00M</pattern>
+					<pattern type="100000000" count="other">000M</pattern>
+					<pattern type="1000000000" count="other">0G</pattern>
+					<pattern type="10000000000" count="other">00G</pattern>
+					<pattern type="100000000000" count="other">000G</pattern>
+					<pattern type="1000000000000" count="other">0T</pattern>
+					<pattern type="10000000000000" count="other">00T</pattern>
+					<pattern type="100000000000000" count="other">000T</pattern>
+				</decimalFormat>
+			</decimalFormatLength>
+			<decimalFormatLength type="short">
+				<decimalFormat>
+					<pattern type="1000" count="other">0K</pattern>
+					<pattern type="10000" count="other">00K</pattern>
+					<pattern type="100000" count="other">000K</pattern>
+					<pattern type="1000000" count="other">0M</pattern>
+					<pattern type="10000000" count="other">00M</pattern>
+					<pattern type="100000000" count="other">000M</pattern>
+					<pattern type="1000000000" count="other">0G</pattern>
+					<pattern type="10000000000" count="other">00G</pattern>
+					<pattern type="100000000000" count="other">000G</pattern>
+					<pattern type="1000000000000" count="other">0T</pattern>
+					<pattern type="10000000000000" count="other">00T</pattern>
+					<pattern type="100000000000000" count="other">000T</pattern>
+				</decimalFormat>
+			</decimalFormatLength>
+		</decimalFormats>
+		<scientificFormats numberSystem="latn">
+			<scientificFormatLength>
+				<scientificFormat>
+					<pattern>#E0</pattern>
+				</scientificFormat>
+			</scientificFormatLength>
+		</scientificFormats>
+		<percentFormats numberSystem="latn">
+			<percentFormatLength>
+				<percentFormat>
+					<pattern>#,##0%</pattern>
+				</percentFormat>
+			</percentFormatLength>
+		</percentFormats>
+		<currencyFormats numberSystem="latn">
+			<currencyFormatLength>
+				<currencyFormat type="standard">
+					<pattern>¤ #,##0.00</pattern>
+				</currencyFormat>
+				<currencyFormat type="accounting">
+					<pattern>¤ #,##0.00</pattern>
+				</currencyFormat>
+			</currencyFormatLength>
+			<currencyFormatLength type="short">
+				<currencyFormat type="standard">
+					<pattern type="1000" count="other">¤ 0K</pattern>
+					<pattern type="10000" count="other">¤ 00K</pattern>
+					<pattern type="100000" count="other">¤ 000K</pattern>
+					<pattern type="1000000" count="other">¤ 0M</pattern>
+					<pattern type="10000000" count="other">¤ 00M</pattern>
+					<pattern type="100000000" count="other">¤ 000M</pattern>
+					<pattern type="1000000000" count="other">¤ 0G</pattern>
+					<pattern type="10000000000" count="other">¤ 00G</pattern>
+					<pattern type="100000000000" count="other">¤ 000G</pattern>
+					<pattern type="1000000000000" count="other">¤ 0T</pattern>
+					<pattern type="10000000000000" count="other">¤ 00T</pattern>
+					<pattern type="100000000000000" count="other">¤ 000T</pattern>
+				</currencyFormat>
+			</currencyFormatLength>
+			<unitPattern count="other">{0} {1}</unitPattern>
+		</currencyFormats>
+		<currencies>
+			<currency type="ANG">
+				<displayName>ANG</displayName>
+				<displayName count="other">ANG</displayName>
+				<symbol draft="contributed">ANG</symbol>
+			</currency>
+			<currency type="ARS">
+				<displayName>ARS</displayName>
+				<displayName count="other">ARS</displayName>
+				<symbol draft="contributed">ARS</symbol>
+				<symbol alt="narrow" draft="contributed">$</symbol>
+			</currency>
+			<currency type="AWG">
+				<displayName>AWG</displayName>
+				<displayName count="other">AWG</displayName>
+				<symbol draft="contributed">AWG</symbol>
+			</currency>
+			<currency type="BBD">
+				<displayName>BBD</displayName>
+				<displayName count="other">BBD</displayName>
+				<symbol draft="contributed">BBD</symbol>
+				<symbol alt="narrow" draft="contributed">$</symbol>
+			</currency>
+			<currency type="BMD">
+				<displayName>BMD</displayName>
+				<displayName count="other">BMD</displayName>
+				<symbol draft="contributed">BMD</symbol>
+				<symbol alt="narrow" draft="contributed">$</symbol>
+			</currency>
+			<currency type="BSD">
+				<displayName>BSD</displayName>
+				<displayName count="other">BSD</displayName>
+				<symbol draft="contributed">BSD</symbol>
+				<symbol alt="narrow" draft="contributed">$</symbol>
+			</currency>
+			<currency type="BZD">
+				<displayName>BZD</displayName>
+				<displayName count="other">BZD</displayName>
+				<symbol draft="contributed">BZD</symbol>
+				<symbol alt="narrow" draft="contributed">$</symbol>
+			</currency>
+			<currency type="CAD">
+				<displayName>CAD</displayName>
+				<displayName count="other">CAD</displayName>
+				<symbol draft="contributed">CA$</symbol>
+				<symbol alt="narrow" draft="contributed">$</symbol>
+			</currency>
+			<currency type="CRC">
+				<displayName>CRC</displayName>
+				<displayName count="other">CRC</displayName>
+				<symbol draft="contributed">CRC</symbol>
+				<symbol alt="narrow" draft="contributed">₡</symbol>
+			</currency>
+			<currency type="CUC">
+				<displayName>CUC</displayName>
+				<displayName count="other">CUC</displayName>
+				<symbol draft="contributed">CUC</symbol>
+				<symbol alt="narrow" draft="contributed">$</symbol>
+			</currency>
+			<currency type="CUP">
+				<displayName>CUP</displayName>
+				<displayName count="other">CUP</displayName>
+				<symbol draft="contributed">CUP</symbol>
+				<symbol alt="narrow" draft="contributed">$</symbol>
+			</currency>
+			<currency type="DOP">
+				<displayName>DOP</displayName>
+				<displayName count="other">DOP</displayName>
+				<symbol draft="contributed">DOP</symbol>
+				<symbol alt="narrow" draft="contributed">$</symbol>
+			</currency>
+			<currency type="GTQ">
+				<displayName>GTQ</displayName>
+				<displayName count="other">GTQ</displayName>
+				<symbol draft="contributed">GTQ</symbol>
+				<symbol alt="narrow" draft="contributed">Q</symbol>
+			</currency>
+			<currency type="HNL">
+				<displayName>HNL</displayName>
+				<displayName count="other">HNL</displayName>
+				<symbol draft="contributed">HNL</symbol>
+				<symbol alt="narrow" draft="contributed">L</symbol>
+			</currency>
+			<currency type="HTG">
+				<displayName>HTG</displayName>
+				<displayName count="other">HTG</displayName>
+				<symbol draft="contributed">HTG</symbol>
+			</currency>
+			<currency type="JMD">
+				<displayName>JMD</displayName>
+				<displayName count="other">JMD</displayName>
+				<symbol draft="contributed">JMD</symbol>
+				<symbol alt="narrow" draft="contributed">$</symbol>
+			</currency>
+			<currency type="KYD">
+				<displayName>KYD</displayName>
+				<displayName count="other">KYD</displayName>
+				<symbol draft="contributed">KYD</symbol>
+				<symbol alt="narrow" draft="contributed">$</symbol>
+			</currency>
+			<currency type="MXN">
+				<displayName>MXN</displayName>
+				<displayName count="other">MXN</displayName>
+				<symbol draft="contributed">MX$</symbol>
+				<symbol alt="narrow" draft="contributed">$</symbol>
+			</currency>
+			<currency type="NIO">
+				<displayName>NIO</displayName>
+				<displayName count="other">NIO</displayName>
+				<symbol draft="contributed">NIO</symbol>
+				<symbol alt="narrow" draft="contributed">C$</symbol>
+			</currency>
+			<currency type="PAB">
+				<displayName>PAB</displayName>
+				<displayName count="other">PAB</displayName>
+				<symbol draft="contributed">PAB</symbol>
+			</currency>
+			<currency type="TTD">
+				<displayName>TTD</displayName>
+				<displayName count="other">TTD</displayName>
+				<symbol draft="contributed">TTD</symbol>
+				<symbol alt="narrow" draft="contributed">$</symbol>
+			</currency>
+			<currency type="USD">
+				<displayName>USD</displayName>
+				<displayName count="other">USD</displayName>
+				<symbol draft="contributed">US$</symbol>
+				<symbol alt="narrow" draft="contributed">$</symbol>
+			</currency>
+			<currency type="XCD">
+				<displayName>XCD</displayName>
+				<displayName count="other">XCD</displayName>
+				<symbol draft="contributed">EC$</symbol>
+				<symbol alt="narrow" draft="contributed">$</symbol>
+			</currency>
+		</currencies>
+		<miscPatterns numberSystem="latn">
+			<pattern type="atLeast">⩾{0}</pattern>
+			<pattern type="range">{0}–{1}</pattern>
+		</miscPatterns>
+	</numbers>
+</ldml>

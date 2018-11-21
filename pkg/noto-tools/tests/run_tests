@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for f in *_test.py; do
+    python "$f"
+    if [[ "$?" != 0 ]]; then
+        exit 1
+    fi
+done
