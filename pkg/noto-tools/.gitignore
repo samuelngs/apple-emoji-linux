@@ -1,7 +1,0 @@
-*.pyc
-*~
-color_emoji/waveflag
-packages
-build
-dist
-nototools.egg-info/
