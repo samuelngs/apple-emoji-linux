@@ -29,7 +29,6 @@ IMOPS := -size $(BODY_DIMENSIONS) canvas:none -compose copy -gravity center
 ZOPFLIPNG = zopflipng
 OPTIPNG = optipng
 
-EMOJI_DUMP=emoji_extractor.rb
 EMOJI_BUILDER = third_party/color_emoji/emoji_builder.py
 # flag for emoji builder.  Default to legacy small metrics for the time being.
 SMALL_METRICS := -S
@@ -151,14 +150,6 @@ endif
 $(EMOJI_DIR) $(EMOJI_SRC_DIR) $(FLAGS_DIR) $(RESIZED_FLAGS_DIR) $(RENAMED_FLAGS_DIR) $(QUANTIZED_DIR) $(COMPRESSED_DIR):
 	mkdir -p "$@"
 
-$(EMOJI_DUMP): $(EMOJI_SRC_DIR)
-	@ruby -e " \
-		require './emoji_extractor.rb'; \
-		unicode_version = 11; \
-		emoji_extractor = EmojiExtractor.new(unicode_version); \
-		emoji_extractor.download_sequences; \
-		emoji_extractor.extract"
-
 $(PNGQUANT):
 	$(MAKE) -C $(PNGQUANTDIR)
 
@@ -223,7 +214,15 @@ endif
 	@rm -f "$@"
 	ttx "$<"
 
-$(EMOJI).ttf: $(EMOJI).tmpl.ttf $(EMOJI_DUMP) $(EMOJI_BUILDER) $(PUA_ADDER) \
+%.dump: $(EMOJI_SRC_DIR)
+	@ruby -e " \
+		require './emoji_extractor.rb'; \
+		unicode_version = 11; \
+		emoji_extractor = EmojiExtractor.new(unicode_version); \
+		emoji_extractor.download_sequences; \
+		emoji_extractor.extract"
+
+$(EMOJI).ttf: $(EMOJI).dump $(EMOJI).tmpl.ttf $(EMOJI_BUILDER) $(PUA_ADDER) \
 	$(ALL_COMPRESSED_FILES) | check_vs_adder
 	@python $(EMOJI_BUILDER) $(SMALL_METRICS) -V $< "$@" "$(COMPRESSED_DIR)/emoji_u"
 	@python $(PUA_ADDER) "$@" "$@-with-pua"
