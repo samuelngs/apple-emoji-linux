@@ -1,0 +1,11 @@
+# alias table
+# from;to
+# the 'from' sequence should be represented by the image for the 'to' sequence
+# these are flags we explicitly omit
+
+# flag aliases
+1f1e7_1f1f1;fe82b # BL
+1f1e7_1f1f6;fe82b # BQ
+1f1f2_1f1f6;fe82b # MQ
+1f1f7_1f1ea;fe82b # RE
+1f1f9_1f1eb;fe82b # TF
