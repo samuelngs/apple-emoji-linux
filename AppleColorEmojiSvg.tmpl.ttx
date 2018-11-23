@@ -130,28 +130,28 @@
 
   <name>
     <namerecord nameID="0" platformID="3" platEncID="1" langID="0x409">
-      Copyright 2015 Google Inc.
+      Copyright 2015 Apple Inc.
     </namerecord>
     <namerecord nameID="1" platformID="3" platEncID="1" langID="0x409">
-      Noto Color Emoji SVG
+      Apple Color Emoji SVG
     </namerecord>
     <namerecord nameID="2" platformID="3" platEncID="1" langID="0x409">
       Regular
     </namerecord>
     <namerecord nameID="3" platformID="3" platEncID="1" langID="0x409">
-      Noto Color Emoji SVG
+      Apple Color Emoji SVG
     </namerecord>
     <namerecord nameID="4" platformID="3" platEncID="1" langID="0x409">
-      Noto Color Emoji SVG
+      Apple Color Emoji SVG
     </namerecord>
     <namerecord nameID="5" platformID="3" platEncID="1" langID="0x409">
       Version 1.22
     </namerecord>
     <namerecord nameID="6" platformID="3" platEncID="1" langID="0x409">
-      NotoColorEmojiSVG
+      AppleColorEmojiSVG
     </namerecord>
     <namerecord nameID="7" platformID="3" platEncID="1" langID="0x409">
-      Noto is a trademark of Google Inc. and may be registered in certain jurisdictions.
+      Apple is a trademark of Apple Inc. and may be registered in certain jurisdictions.
     </namerecord>
     <namerecord nameID="11" platformID="3" platEncID="1" langID="0x409">
       http://code.google.com/p/noto/
