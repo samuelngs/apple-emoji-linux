@@ -17,7 +17,9 @@ $ git clone git@github.com:samuelngs/apple-emoji-linux.git
 $ bundle install
 ```
 
-3.  Build `AppleColorEmoji.ttf`
+3.  Now, go to your Mac. Find the font `Apple Color Emoji.ttc` under `/System/Library/Fonts` or `/Library/Fonts` and make a copy of the file to the `source` folder.
+
+4.  Build `AppleColorEmoji.ttf`
 
 ```sh
 $ make -j
@@ -32,4 +34,4 @@ $ make -j
 
 ### Disclaimer
 
-The code provided is for educational purposes only. Apple & Apple Color Emoji is a trademark of Apple Inc., registered in the U.S. and other countries.
+The code provided is for educational purposes only. Apple is a trademark of Apple Inc., registered in the U.S. and other countries.
