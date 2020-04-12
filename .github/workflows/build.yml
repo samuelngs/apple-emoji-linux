@@ -27,13 +27,16 @@ jobs:
         python -m pip install https://github.com/googlefonts/nototools/archive/v0.2.1.tar.gz
         sudo apt-get update
         sudo apt-get install --yes optipng zopfli pngquant
-    - name: Build Apple color emoji font
-      run: |
-        make -j
-        make install
+#   - name: Build Apple color emoji font
+#     run: |
+#       make -j
+#       make install
     - name: Create release
-      uses: softprops/action-gh-release@v1
+      uses: marvinpinto/action-automatic-releases@latest
       with:
-        files: AppleColorEmoji.ttf
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        automatic_release_tag: "latest"
+        prerelease: true
+        title: "Latest Build"
+        files: |
+          LICENSE
