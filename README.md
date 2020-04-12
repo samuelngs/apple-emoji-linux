@@ -19,11 +19,13 @@ $ bundle install
 
 3.  Now, go to your Mac. Find the font `Apple Color Emoji.ttc` under `/System/Library/Fonts` or `/Library/Fonts` and make a copy of the file to the `source` folder.
 
-4.  Build `AppleColorEmoji.ttf`
+4.  Build `fonts/AppleColorEmoji.ttf` and `fonts/AppleEmoji-Regular.ttf`
 
 ```sh
 $ make -j
 ```
+
+5.  Copy `fonts/AppleColorEmoji.ttf` and `fonts/AppleEmoji-Regular.ttf` to `~/.local/share/fonts`
 
 ### Credits
 
