@@ -17,8 +17,9 @@ font: $(EMOJI).ttf
 
 CFLAGS = -std=c99 -Wall -Wextra `pkg-config --cflags --libs cairo`
 LDFLAGS = -lm `pkg-config --libs cairo`
-PNGQUANTDIR := third_party/pngquant
-PNGQUANT := $(PNGQUANTDIR)/pngquant
+
+PNGQUANT = pngquant
+PYTHON = python3
 PNGQUANTFLAGS = --speed 1 --skip-if-larger --quality 85-95 --force
 BODY_DIMENSIONS = 136x128
 IMOPS := -size $(BODY_DIMENSIONS) canvas:none -compose copy -gravity center
@@ -37,65 +38,17 @@ ADD_GLYPHS_FLAGS = -a emoji_aliases.txt
 PUA_ADDER = map_pua_emoji.py
 VS_ADDER = add_vs_cmap.py # from nototools
 
-EMOJI_SRC_DIR := build/dump/unicode
-FLAGS_SRC_DIR := third_party/region-flags/png
+EMOJI_SRC_DIR ?= png/128
 
 BUILD_DIR := build
 EMOJI_DIR := $(BUILD_DIR)/emoji
-FLAGS_DIR := $(BUILD_DIR)/flags
-RESIZED_FLAGS_DIR := $(BUILD_DIR)/resized_flags
-RENAMED_FLAGS_DIR := $(BUILD_DIR)/renamed_flags
 QUANTIZED_DIR := $(BUILD_DIR)/quantized_pngs
 COMPRESSED_DIR := $(BUILD_DIR)/compressed_pngs
-
-# Unknown flag is PUA fe82b
-# Note, we omit some flags below that we support via aliasing instead.
-
-LIMITED_FLAGS = CN DE ES FR GB IT JP KR RU US
-SELECTED_FLAGS = AC AD AE AF AG AI AL AM AO AQ AR AS AT AU AW AX AZ \
-	BA BB BD BE BF BG BH BI BJ BM BN BO BR BS BT BW BY BZ \
-	CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CW CX CY CZ \
-	DE DJ DK DM DO DZ \
-	EC EE EG EH ER ES ET EU \
-	FI FJ FK FM FO FR \
-	GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY \
-	HK HN HR HT HU \
-	IC ID IE IL IM IN IO IQ IR IS IT \
-	JE JM JO JP \
-	KE KG KH KI KM KN KP KR KW KY KZ \
-	LA LB LC LI LK LR LS LT LU LV LY \
-	MA MC MD ME MG MH MK ML MM MN MO MP MR MS MT MU MV MW MX MY MZ \
-	NA NC NE NF NG NI NL NO NP NR NU NZ \
-	OM \
-	PA PE PF PG PH PK PL PM PN PR PS PT PW PY \
-	QA \
-	RO RS RU RW \
-	SA SB SC SD SE SG SH SI SK SL SM SN SO SR SS ST SV SX SY SZ \
-	TA TC TD TG TH TJ TK TL TM TN TO TR TT TV TW TZ \
-	UA UG UN US UY UZ \
-	VA VC VE VG VI VN VU \
-	WF WS \
-	XK \
-	YE YT \
-	ZA ZM ZW \
-        GB-ENG GB-SCT GB-WLS
-
-ALL_FLAGS = $(basename $(notdir $(wildcard $(FLAGS_SRC_DIR)/*.png)))
-
-FLAGS = $(SELECTED_FLAGS)
-
-FLAG_NAMES = $(FLAGS:%=%.png)
-FLAG_FILES = $(addprefix $(FLAGS_DIR)/, $(FLAG_NAMES))
-RESIZED_FLAG_FILES = $(addprefix $(RESIZED_FLAGS_DIR)/, $(FLAG_NAMES))
-
-FLAG_GLYPH_NAMES = $(shell ./flag_glyph_name.py $(FLAGS))
-RENAMED_FLAG_NAMES = $(FLAG_GLYPH_NAMES:%=emoji_%.png)
-RENAMED_FLAG_FILES = $(addprefix $(RENAMED_FLAGS_DIR)/, $(RENAMED_FLAG_NAMES))
 
 EMOJI_NAMES = $(notdir $(wildcard $(EMOJI_SRC_DIR)/emoji_u*.png))
 EMOJI_FILES= $(addprefix $(EMOJI_DIR)/,$(EMOJI_NAMES)))
 
-ALL_NAMES = $(EMOJI_NAMES) $(RENAMED_FLAG_NAMES)
+ALL_NAMES = $(EMOJI_NAMES)
 
 ALL_QUANTIZED_FILES = $(addprefix $(QUANTIZED_DIR)/, $(ALL_NAMES))
 ALL_COMPRESSED_FILES = $(addprefix $(COMPRESSED_DIR)/, $(ALL_NAMES))
@@ -120,12 +73,6 @@ endif
 
 emoji: $(EMOJI_FILES)
 
-flags: $(FLAG_FILES)
-
-resized_flags: $(RESIZED_FLAG_FILES)
-
-renamed_flags: $(RENAMED_FLAG_FILES)
-
 quantized: $(ALL_QUANTIZED_FILES)
 
 compressed: $(ALL_COMPRESSED_FILES)
@@ -147,14 +94,9 @@ ifdef MISSING_ADDER
 endif
 
 
-$(EMOJI_DIR) $(EMOJI_SRC_DIR) $(FLAGS_DIR) $(RESIZED_FLAGS_DIR) $(RENAMED_FLAGS_DIR) $(QUANTIZED_DIR) $(COMPRESSED_DIR):
+$(EMOJI_DIR) $(QUANTIZED_DIR) $(COMPRESSED_DIR):
 	mkdir -p "$@"
 
-$(PNGQUANT):
-	$(MAKE) -C $(PNGQUANTDIR)
-
-waveflag: waveflag.c
-	$(CC) $< -o $@ $(CFLAGS) $(LDFLAGS)
 
 # imagemagick's -extent operator munges the grayscale images in such a fashion
 # that while it can display them correctly using libpng12, chrome and gimp using
@@ -168,26 +110,7 @@ waveflag: waveflag.c
 $(EMOJI_DIR)/%.png: $(EMOJI_SRC_DIR)/%.png | $(EMOJI_DIR)
 	@convert $(IMOPS) "$<" -composite "PNG32:$@"
 
-$(FLAGS_DIR)/%.png: $(FLAGS_SRC_DIR)/%.png ./waveflag $(PNGQUANT) | $(FLAGS_DIR)
-	@./waveflag $(FLAGS_DIR)/ "$<"
-
-$(RESIZED_FLAGS_DIR)/%.png: $(FLAGS_DIR)/%.png | $(RESIZED_FLAGS_DIR)
-	@convert $(IMOPS) "$<" -composite "PNG32:$@"
-
-flag-symlinks: $(RESIZED_FLAG_FILES) | $(RENAMED_FLAGS_DIR)
-	@$(subst ^, ,                                  \
-	  $(join                                       \
-	    $(FLAGS:%=ln^-fs^../resized_flags/%.png^), \
-	    $(RENAMED_FLAG_FILES:%=%; )                \
-	   )                                           \
-	 )
-
-$(RENAMED_FLAG_FILES): | flag-symlinks
-
-$(QUANTIZED_DIR)/%.png: $(RENAMED_FLAGS_DIR)/%.png $(PNGQUANT) | $(QUANTIZED_DIR)
-	@($(PNGQUANT) $(PNGQUANTFLAGS) -o "$@" "$<"; case "$$?" in "98"|"99") echo "reuse $<"; cp $< $@;; *) exit "$$?";; esac)
-
-$(QUANTIZED_DIR)/%.png: $(EMOJI_DIR)/%.png $(PNGQUANT) | $(QUANTIZED_DIR)
+$(QUANTIZED_DIR)/%.png: $(EMOJI_DIR)/%.png | $(QUANTIZED_DIR)
 	@($(PNGQUANT) $(PNGQUANTFLAGS) -o "$@" "$<"; case "$$?" in "98"|"99") echo "reuse $<";cp $< $@;; *) exit "$$?";; esac)
 
 $(COMPRESSED_DIR)/%.png: $(QUANTIZED_DIR)/%.png | check_compress_tool $(COMPRESSED_DIR)
@@ -201,41 +124,35 @@ endif
 # Make 3.81 can endless loop here if the target is missing but no
 # prerequisite is updated and make has been invoked with -j, e.g.:
 # File `font' does not exist.
-#      File `NotoColorEmoji.tmpl.ttx' does not exist.
+#      File `AppleColorEmoji.tmpl.ttx' does not exist.
 # File `font' does not exist.
-#      File `NotoColorEmoji.tmpl.ttx' does not exist.
+#      File `AppleColorEmoji.tmpl.ttx' does not exist.
 # ...
 # Run make without -j if this happens.
 
 %.ttx: %.ttx.tmpl $(ADD_GLYPHS) $(ALL_COMPRESSED_FILES)
-	@python $(ADD_GLYPHS) -f "$<" -o "$@" -d "$(COMPRESSED_DIR)" $(ADD_GLYPHS_FLAGS)
+	@$(PYTHON) $(ADD_GLYPHS) -f "$<" -o "$@" -d "$(COMPRESSED_DIR)" $(ADD_GLYPHS_FLAGS)
 
 %.ttf: %.ttx
 	@rm -f "$@"
 	ttx "$<"
 
-%.dump: $(EMOJI_SRC_DIR)
-	@ruby -e " \
-		require './emoji_extractor.rb'; \
-		unicode_version = 11; \
-		emoji_extractor = EmojiExtractor.new(unicode_version); \
-		emoji_extractor.download_sequences; \
-		emoji_extractor.extract"
-
-$(EMOJI).ttf: $(EMOJI).dump $(EMOJI).tmpl.ttf $(EMOJI_BUILDER) $(PUA_ADDER) \
+$(EMOJI).ttf: $(EMOJI).tmpl.ttf $(EMOJI_BUILDER) $(PUA_ADDER) \
 	$(ALL_COMPRESSED_FILES) | check_vs_adder
-	@python $(EMOJI_BUILDER) $(SMALL_METRICS) -V $< "$@" "$(COMPRESSED_DIR)/emoji_u"
-	@python $(PUA_ADDER) "$@" "$@-with-pua"
+	@$(PYTHON) $(EMOJI_BUILDER) $(SMALL_METRICS) -V $< "$@" "$(COMPRESSED_DIR)/emoji_u"
+	@$(PYTHON) $(PUA_ADDER) "$@" "$@-with-pua"
 	@$(VS_ADDER) -vs 2640 2642 2695 --dstdir '.' -o "$@-with-pua-varsel" "$@-with-pua"
 	@mv "$@-with-pua-varsel" "$@"
 	@rm "$@-with-pua"
 
+install: font
+	mkdir -p $$HOME/.local/share/fonts
+	cp -f AppleColorEmoji.ttf $$HOME/.local/share/fonts/
+
 clean:
 	rm -f $(EMOJI).ttf $(EMOJI).tmpl.ttf $(EMOJI).tmpl.ttx
-	rm -f waveflag
 	rm -rf $(BUILD_DIR)
 
-.SECONDARY: $(EMOJI_FILES) $(FLAG_FILES) $(RESIZED_FLAG_FILES) $(RENAMED_FLAG_FILES) \
-  $(ALL_QUANTIZED_FILES) $(ALL_COMPRESSED_FILES)
+.SECONDARY: $(EMOJI_FILES) $(ALL_QUANTIZED_FILES) $(ALL_COMPRESSED_FILES)
 
-.PHONY:	clean flags emoji renamed_flags quantized compressed check_compress_tool
+.PHONY:	clean compressed check_compress_tool emoji install quantized

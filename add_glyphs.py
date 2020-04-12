@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 """Extend a ttx file with additional data.
 
@@ -66,7 +66,7 @@ def collect_seq_to_file(image_dirs, prefix, suffix):
 
 
 def remap_values(seq_to_file, map_fn):
-  return {k: map_fn(v) for k, v in seq_to_file.iteritems()}
+  return {k: map_fn(v) for k, v in seq_to_file.items()}
 
 
 def get_png_file_to_advance_mapper(lineheight):
@@ -214,21 +214,22 @@ def get_rtl_seq(seq):
   """Return the rtl variant of the sequence, if it has one, else the empty
   sequence.
   """
-  # Sequences with ZWJ or TAG_END in them will reflect.  Fitzpatrick modifiers
+  # Sequences with ZWJ in them will reflect.  Fitzpatrick modifiers
   # however do not, so if we reflect we make a pass to swap them back into their
   # logical order.
+  # Used to check for TAG_END 0xe007f as well but Android fontchain_lint
+  # dislikes the resulting mangling of flags for England, Scotland, Wales.
 
   ZWJ = 0x200d
-  TAG_END = 0xe007f
   def is_fitzpatrick(cp):
     return 0x1f3fb <= cp <= 0x1f3ff
 
-  if not (ZWJ in seq or TAG_END in seq):
+  if ZWJ not in seq:
     return ()
 
   rev_seq = list(seq)
   rev_seq.reverse()
-  for i in xrange(1, len(rev_seq)):
+  for i in range(1, len(rev_seq)):
     if is_fitzpatrick(rev_seq[i-1]):
       tmp = rev_seq[i]
       rev_seq[i] = rev_seq[i-1]
@@ -282,7 +283,7 @@ def add_ligature_sequences(font, seqs, aliases):
     return
 
   rtl_seq_to_target_name = {
-      get_rtl_seq(seq): name for seq, name in seq_to_target_name.iteritems()}
+      get_rtl_seq(seq): name for seq, name in seq_to_target_name.items()}
   seq_to_target_name.update(rtl_seq_to_target_name)
   # sequences that don't have rtl variants get mapped to the empty sequence,
   # delete it.
@@ -291,7 +292,7 @@ def add_ligature_sequences(font, seqs, aliases):
 
   # organize by first codepoint in sequence
   keyed_ligatures = collections.defaultdict(list)
-  for t in seq_to_target_name.iteritems():
+  for t in seq_to_target_name.items():
     first_cp = t[0][0]
     keyed_ligatures[first_cp].append(t)
 
@@ -341,7 +342,7 @@ def apply_aliases(seq_dict, aliases):
   source is a key in the dictionary, we can delete it.  This updates the
   dictionary and returns the usable aliases."""
   usable_aliases = {}
-  for k, v in aliases.iteritems():
+  for k, v in aliases.items():
     if v in seq_dict:
       usable_aliases[k] = v
       if k in seq_dict:

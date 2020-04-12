@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # Copyright 2015 Google Inc. All rights reserved.
 #
@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Generate version string for NotoColorEmoji.
+"""Generate version string for AppleColorEmoji.
 
 This parses the color emoji template file and updates the lines
 containing version string info, writing a new file.

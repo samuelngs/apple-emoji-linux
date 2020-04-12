@@ -1,39 +1,52 @@
-# apple-emoji-linux
-Apple Color Emoji for Linux
+![AppleColorEmojiLinux](images/screenshot.png)
+# Apple Color Emoji for Linux
+Color and Black-and-White Apple color emoji fonts, and tools for working with them.
 
-![Screenshot](preview.png)
+## Disclaimer
 
-### Getting Started
+The code provided is for educational purposes only. Apple is a trademark of Apple Inc., registered in the U.S. and other countries.
 
-1.  Clone this repo
+## Building AppleColorEmoji
 
-```sh
-$ git clone git@github.com:samuelngs/apple-emoji-linux.git
-```
+Building AppleColorEmoji currently requires a Python 2.x wide build.  To build
+the emoji font you will require a few files from nototools.  Clone a copy from
+https://github.com/googlei18n/nototools and either put it in your PYTHONPATH or
+use 'python setup.py develop' ('install' currently won't fully install all the
+data used by nototools).  You will also need fontTools, get it from
+https://github.com/behdad/fonttools.git.
 
-2.  Install build dependencies
+Then run `make` and `make install`.  AppleColorEmoji is the default target.
+It's suggested to use -j, especially if you are using zopflipng for compression.
+Intermediate products (compressed image files, for example) will be put into a
+build subdirectory; the font will be at the top level.
 
-```sh
-$ bundle install
-```
+## Using AppleColorEmoji
 
-3.  Now, go to your Mac. Find the font `Apple Color Emoji.ttc` under `/System/Library/Fonts` or `/Library/Fonts` and make a copy of the file to the `source` folder.
+AppleColorEmoji uses the CBDT/CBLC color font format, which is supported by Android
+and Chrome/Chromium OS.  Windows supports it starting with Windows 10 Anniversary
+Update in Chome and Edge.  On macOS, only Chrome supports it, while on Linux it will
+support it with some fontconfig tweaking.
 
-4.  Build `fonts/AppleColorEmoji.ttf` and `fonts/AppleEmoji-Regular.ttf`
+## Color emoji assets
 
-```sh
-$ make -j
-```
+The assets provided in the repo are all those used to build the AppleColorEmoji
+font.  Note however that AppleColorEmoji often uses the same assets to represent
+different character sequences-- notably, most gender-neutral characters or
+sequences are represented using assets named after one of the gendered
+sequences.  This means that some sequences appear to be missing.  Definitions of
+the aliasing used appear in the `emoji_aliases.txt` file.
 
-5.  Copy `fonts/AppleColorEmoji.ttf` and `fonts/AppleEmoji-Regular.ttf` to `~/.local/share/fonts`
+Also note that the images in the font might differ from the original assets.  In
+particular the flag images in the font are PNG images to which transforms have
+been applied to standardize the size and generate the wave and border shadow.  We
+do not have SVG versions that reflect these transforms.
 
-### Credits
+## Credits
 
-- https://github.com/github/gemoji
-- https://github.com/mattermost/mattermost-webapp
 - https://github.com/googlei18n/noto-emoji
 - https://github.com/googlei18n/nototools
 
-### Disclaimer
+## License
 
-The code provided is for educational purposes only. Apple is a trademark of Apple Inc., registered in the U.S. and other countries.
+- Emoji fonts (under the fonts subdirectory) are under the [SIL Open Font License, version 1.1](fonts/LICENSE).
+- Tools and some image resources are under the [Apache license, version 2.0](./LICENSE).
