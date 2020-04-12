@@ -41,6 +41,9 @@ particular the flag images in the font are PNG images to which transforms have
 been applied to standardize the size and generate the wave and border shadow.  We
 do not have SVG versions that reflect these transforms.
 
+## Related
+- [Apple Color Emoji for Slack on Linux](https://github.com/samuelngs/slack-apple-emoji-linux)
+
 ## Credits
 
 - https://github.com/googlei18n/noto-emoji

@@ -145,7 +145,7 @@ $(EMOJI).ttf: $(EMOJI).tmpl.ttf $(EMOJI_BUILDER) $(PUA_ADDER) \
 	@mv "$@-with-pua-varsel" "$@"
 	@rm "$@-with-pua"
 
-install: font
+install:
 	mkdir -p $$HOME/.local/share/fonts
 	cp -f AppleColorEmoji.ttf $$HOME/.local/share/fonts/
 
