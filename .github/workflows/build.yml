@@ -3,11 +3,11 @@
 
 name: Build Apple Color Emoji font
 
-# on:
-#   push:
-#     branches: [ master ]
-#   pull_request:
-#     branches: [ master ]
+on:
+  push:
+    branches: [ master, easy_install ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
   build:
