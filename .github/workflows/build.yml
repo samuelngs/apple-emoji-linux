@@ -25,6 +25,8 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install fonttools
         python -m pip install https://github.com/googlefonts/nototools/archive/v0.2.1.tar.gz
+        apt-get update
+        apt-get install --yes optipng zopfli
     - name: Build Apple color emoji font
       run: |
         make -j
