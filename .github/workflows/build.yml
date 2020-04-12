@@ -5,7 +5,7 @@ name: Build Apple Color Emoji font
 
 on:
   push:
-    branches: [ master, easy_install ]
+    branches: [ master ]
   pull_request:
     branches: [ master ]
 
@@ -27,10 +27,10 @@ jobs:
         python -m pip install https://github.com/googlefonts/nototools/archive/v0.2.1.tar.gz
         sudo apt-get update
         sudo apt-get install --yes optipng zopfli pngquant
-#   - name: Build Apple color emoji font
-#     run: |
-#       make -j
-#       make install
+    - name: Build Apple color emoji font
+      run: |
+        make -j
+        make install
     - name: Create release
       uses: marvinpinto/action-automatic-releases@latest
       with:
@@ -40,3 +40,4 @@ jobs:
         title: "Latest Build"
         files: |
           LICENSE
+          AppleColorEmoji.ttf
