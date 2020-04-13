@@ -8,7 +8,7 @@ The code provided is for educational purposes only. Apple is a trademark of Appl
 
 ## Installing prebuilt AppleColorEmoji font
 
-- Download the latest release of `AppleColorEmoji.ttf` at the [Release Page](https://github.com/samuelngs/apple-emoji-linux/releases)
+- Download the [latest release](https://github.com/samuelngs/apple-emoji-linux/releases/download/latest/AppleColorEmoji.ttf) of `AppleColorEmoji.ttf` at the [Release Page](https://github.com/samuelngs/apple-emoji-linux/releases)
 - Copy `AppleColorEmoji.ttf` to `~/.local/share/fonts`.
 - Rebuild the font cache with `fc-cache -f -v`.
 - Now you are set!
