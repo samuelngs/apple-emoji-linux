@@ -24,7 +24,8 @@ The code provided is for educational purposes only. Apple is a trademark of Appl
     develop` ('install' currently won't fully install all the data used by nototools).
 - Install [Optipng](http://optipng.sourceforge.net/), [Zopfli](https://github.com/google/zopfli) and [Pngquant](https://pngquant.org/).
   - On RedHat based systems, run `yum install optipng zopfli pngquant`
-  - Or on Debian or Ubuntu, you may run `apt-get install optipng zopfli pngquant` at the command line.
+  - Or on Fedora, run `dnf install optipng zopfli pngquant`
+  - If you're using Debian or Ubuntu, you may run `apt-get install optipng zopfli pngquant` at the command line.
 - Clone the [source repository](https://github.com/samuelngs/apple-emoji-linux) from Github
 - Open a terminal or console prompt, change to the directory where you cloned `apple-emoji-linux`, and type `make -j` to build `AppleColorEmoji.ttf` from source.
 - If you wish to install the built `AppleColorEmoji.ttf` to your system, execute `make install`,
