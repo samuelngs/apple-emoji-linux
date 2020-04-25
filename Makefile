@@ -147,7 +147,7 @@ $(EMOJI).ttf: $(EMOJI).tmpl.ttf $(EMOJI_BUILDER) $(PUA_ADDER) \
 
 install:
 	mkdir -p $$HOME/.local/share/fonts
-	cp -f AppleColorEmoji.ttf $$HOME/.local/share/fonts/
+	cp -f $(EMOJI).ttf $$HOME/.local/share/fonts/
 
 clean:
 	rm -f $(EMOJI).ttf $(EMOJI).tmpl.ttf $(EMOJI).tmpl.ttx
