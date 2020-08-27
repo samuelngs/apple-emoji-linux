@@ -24,6 +24,8 @@ PNGQUANTFLAGS = --speed 1 --skip-if-larger --quality 85-95 --force
 BODY_DIMENSIONS = 136x128
 IMOPS := -size $(BODY_DIMENSIONS) canvas:none -compose copy -gravity center
 
+PREFIX ?= $$HOME/.local
+
 # zopflipng is better (about 5-10%) but much slower.  it will be used if
 # present.  pass ZOPFLIPNG= as an arg to make to use optipng instead.
 
@@ -146,8 +148,8 @@ $(EMOJI).ttf: $(EMOJI).tmpl.ttf $(EMOJI_BUILDER) $(PUA_ADDER) \
 	@rm "$@-with-pua"
 
 install:
-	mkdir -p $$HOME/.local/share/fonts
-	cp -f $(EMOJI).ttf $$HOME/.local/share/fonts/
+	mkdir -p $(PREFIX)/share/fonts
+	cp -f $(EMOJI).ttf $(PREFIX)/share/fonts/
 
 clean:
 	rm -f $(EMOJI).ttf $(EMOJI).tmpl.ttf $(EMOJI).tmpl.ttx
