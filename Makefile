@@ -21,7 +21,7 @@ LDFLAGS = -lm `pkg-config --libs cairo`
 PNGQUANT = pngquant
 PYTHON = python3
 PNGQUANTFLAGS = --speed 1 --skip-if-larger --quality 85-95 --force
-BODY_DIMENSIONS = 136x128
+BODY_DIMENSIONS = 160x160
 IMOPS := -size $(BODY_DIMENSIONS) canvas:none -compose copy -gravity center
 
 PREFIX ?= $$HOME/.local
@@ -40,7 +40,7 @@ ADD_GLYPHS_FLAGS = -a emoji_aliases.txt
 PUA_ADDER = map_pua_emoji.py
 VS_ADDER = add_vs_cmap.py # from nototools
 
-EMOJI_SRC_DIR ?= png/128
+EMOJI_SRC_DIR ?= png/160
 
 BUILD_DIR := build
 EMOJI_DIR := $(BUILD_DIR)/emoji
