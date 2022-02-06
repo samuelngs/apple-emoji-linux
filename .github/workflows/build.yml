@@ -31,13 +31,8 @@ jobs:
       run: |
         make -j
         make install
-    - name: Create release
-      uses: marvinpinto/action-automatic-releases@latest
+    - name: Archive build artifacts
+      uses: actions/upload-artifact@v2
       with:
-        repo_token: "${{ secrets.GITHUB_TOKEN }}"
-        automatic_release_tag: "latest"
-        prerelease: false
-        title: "Latest Build"
-        files: |
-          LICENSE
-          AppleColorEmoji.ttf
+        name: apple-color-emoji-font
+        path: AppleColorEmoji.ttf
