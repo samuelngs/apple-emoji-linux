@@ -19,7 +19,7 @@ CFLAGS = -std=c99 -Wall -Wextra `pkg-config --cflags --libs cairo`
 LDFLAGS = -lm `pkg-config --libs cairo`
 
 PNGQUANT = pngquant
-PYTHON = python3
+PYTHON = python2
 PNGQUANTFLAGS = --speed 1 --skip-if-larger --quality 85-95 --force
 BODY_DIMENSIONS = 160x160
 IMOPS := -size $(BODY_DIMENSIONS) canvas:none -compose copy -gravity center
