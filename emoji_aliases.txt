@@ -13,3 +13,16 @@ fe82b;unknown_flag # no name -> no name
 1f1f2_1f1eb;1f1eb_1f1f7 # MF -> FR
 1f1f8_1f1ef;1f1f3_1f1f4 # SJ -> NO
 1f1fa_1f1f2;1f1fa_1f1f8 # UM -> US
+
+# no skin showing
+1f3c2_1f3fb; 1f3c2 # snowboarder: light skin tone
+1f3c2_1f3fc; 1f3c2 # snowboarder: medium-light skin tone
+1f3c2_1f3fd; 1f3c2 # snowboarder: medium skin tone
+1f3c2_1f3fe; 1f3c2 # snowboarder: medium-dark skin tone
+1f3c2_1f3ff; 1f3c2 # snowboarder: dark skin tone
+
+1f6cc_1f3fb; 1f6cc # person in bed: light skin tone
+1f6cc_1f3fc; 1f6cc # person in bed: medium-light skin tone
+1f6cc_1f3fd; 1f6cc # person in bed: medium skin tone
+1f6cc_1f3fe; 1f6cc # person in bed: medium-dark skin tone
+1f6cc_1f3ff; 1f6cc # person in bed: dark skin tone
