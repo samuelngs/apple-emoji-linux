@@ -16,7 +16,7 @@
 
 """Modify an emoji font to map legacy PUA characters to standard ligatures."""
 
-__author__ = 'roozbeh@google.com (Roozbeh Pournader)'
+__author__ = "roozbeh@google.com (Roozbeh Pournader)"
 
 import sys
 import itertools
@@ -29,8 +29,7 @@ import add_emoji_gsub
 
 
 def get_glyph_name_from_gsub(char_seq, font):
-    """Find the glyph name for ligature of a given character sequence from GSUB.
-    """
+    """Find the glyph name for ligature of a given character sequence from GSUB."""
     cmap = font_data.get_cmap(font)
     # FIXME: So many assumptions are made here.
     try:
@@ -39,7 +38,7 @@ def get_glyph_name_from_gsub(char_seq, font):
     except KeyError:
         return None
 
-    for lookup in font['GSUB'].table.LookupList.Lookup:
+    for lookup in font["GSUB"].table.LookupList.Lookup:
         ligatures = lookup.SubTable[0].ligatures
         try:
             for ligature in ligatures[first_glyph]:
@@ -69,6 +68,5 @@ def main(argv):
     add_pua_cmap(argv[1], argv[2])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main(sys.argv)
-

@@ -28,7 +28,7 @@ from fontTools.ttLib.tables import otTables
 from nototools import font_data
 
 
-def create_script_list(script_tag='DFLT'):
+def create_script_list(script_tag="DFLT"):
     """Create a ScriptList for the GSUB table."""
     def_lang_sys = otTables.DefaultLangSys()
     def_lang_sys.ReqFeatureIndex = 0xFFFF
@@ -84,13 +84,14 @@ def get_glyph_name_or_create(char, font):
     glyph_name = agl.UV2AGL[char]
     assert glyph_name not in font.glyphOrder
 
-    font['hmtx'].metrics[glyph_name] = [0, 0]
+    font["hmtx"].metrics[glyph_name] = [0, 0]
     cmap[char] = glyph_name
 
-    if 'glyf' in font:
+    if "glyf" in font:
         from fontTools.ttLib.tables import _g_l_y_f
+
         empty_glyph = _g_l_y_f.Glyph()
-        font['glyf'].glyphs[glyph_name] = empty_glyph
+        font["glyf"].glyphs[glyph_name] = empty_glyph
 
     font.glyphOrder.append(glyph_name)
     return glyph_name
@@ -128,10 +129,10 @@ def create_lookup(table, font, flag=0):
     return lookup
 
 
-def create_simple_gsub(lookups, script='DFLT', feature='ccmp'):
+def create_simple_gsub(lookups, script="DFLT", feature="ccmp"):
     """Create a simple GSUB table."""
-    gsub_class = ttLib.getTableClass('GSUB')
-    gsub = gsub_class('GSUB')
+    gsub_class = ttLib.getTableClass("GSUB")
+    gsub = gsub_class("GSUB")
 
     gsub.table = otTables.GSUB()
     gsub.table.Version = 1.0
@@ -142,54 +143,54 @@ def create_simple_gsub(lookups, script='DFLT', feature='ccmp'):
 
 
 def reg_indicator(letter):
-    """Return a regional indicator charater from corresponing capital letter.
-    """
-    return 0x1F1E6 + ord(letter) - ord('A')
+    """Return a regional indicator charater from corresponing capital letter."""
+    return 0x1F1E6 + ord(letter) - ord("A")
 
 
 EMOJI_FLAGS = {
-    0xFE4E5: (reg_indicator('J'), reg_indicator('P')),  # Japan
-    0xFE4E6: (reg_indicator('U'), reg_indicator('S')),  # United States
-    0xFE4E7: (reg_indicator('F'), reg_indicator('R')),  # France
-    0xFE4E8: (reg_indicator('D'), reg_indicator('E')),  # Germany
-    0xFE4E9: (reg_indicator('I'), reg_indicator('T')),  # Italy
-    0xFE4EA: (reg_indicator('G'), reg_indicator('B')),  # United Kingdom
-    0xFE4EB: (reg_indicator('E'), reg_indicator('S')),  # Spain
-    0xFE4EC: (reg_indicator('R'), reg_indicator('U')),  # Russia
-    0xFE4ED: (reg_indicator('C'), reg_indicator('N')),  # China
-    0xFE4EE: (reg_indicator('K'), reg_indicator('R')),  # Korea
+    0xFE4E5: (reg_indicator("J"), reg_indicator("P")),  # Japan
+    0xFE4E6: (reg_indicator("U"), reg_indicator("S")),  # United States
+    0xFE4E7: (reg_indicator("F"), reg_indicator("R")),  # France
+    0xFE4E8: (reg_indicator("D"), reg_indicator("E")),  # Germany
+    0xFE4E9: (reg_indicator("I"), reg_indicator("T")),  # Italy
+    0xFE4EA: (reg_indicator("G"), reg_indicator("B")),  # United Kingdom
+    0xFE4EB: (reg_indicator("E"), reg_indicator("S")),  # Spain
+    0xFE4EC: (reg_indicator("R"), reg_indicator("U")),  # Russia
+    0xFE4ED: (reg_indicator("C"), reg_indicator("N")),  # China
+    0xFE4EE: (reg_indicator("K"), reg_indicator("R")),  # Korea
 }
 
 KEYCAP = 0x20E3
 
 EMOJI_KEYCAPS = {
-    0xFE82C: (ord('#'), KEYCAP),
-    0xFE82E: (ord('1'), KEYCAP),
-    0xFE82F: (ord('2'), KEYCAP),
-    0xFE830: (ord('3'), KEYCAP),
-    0xFE831: (ord('4'), KEYCAP),
-    0xFE832: (ord('5'), KEYCAP),
-    0xFE833: (ord('6'), KEYCAP),
-    0xFE834: (ord('7'), KEYCAP),
-    0xFE835: (ord('8'), KEYCAP),
-    0xFE836: (ord('9'), KEYCAP),
-    0xFE837: (ord('0'), KEYCAP),
+    0xFE82C: (ord("#"), KEYCAP),
+    0xFE82E: (ord("1"), KEYCAP),
+    0xFE82F: (ord("2"), KEYCAP),
+    0xFE830: (ord("3"), KEYCAP),
+    0xFE831: (ord("4"), KEYCAP),
+    0xFE832: (ord("5"), KEYCAP),
+    0xFE833: (ord("6"), KEYCAP),
+    0xFE834: (ord("7"), KEYCAP),
+    0xFE835: (ord("8"), KEYCAP),
+    0xFE836: (ord("9"), KEYCAP),
+    0xFE837: (ord("0"), KEYCAP),
 }
+
 
 def main(argv):
     """Modify all the fonts given in the command line."""
     for font_name in argv[1:]:
         font = ttLib.TTFont(font_name)
 
-        assert 'GSUB' not in font
-        font['GSUB'] = create_simple_gsub([
-            create_lookup(EMOJI_KEYCAPS, font),
-            create_lookup(EMOJI_FLAGS, font)])
+        assert "GSUB" not in font
+        font["GSUB"] = create_simple_gsub(
+            [create_lookup(EMOJI_KEYCAPS, font), create_lookup(EMOJI_FLAGS, font)]
+        )
 
-        font_data.delete_from_cmap(
-            font, EMOJI_FLAGS.keys() + EMOJI_KEYCAPS.keys())
+        font_data.delete_from_cmap(font, EMOJI_FLAGS.keys() + EMOJI_KEYCAPS.keys())
 
-        font.save(font_name+'-fixed')
+        font.save(font_name + "-fixed")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main(sys.argv)
