@@ -2,7 +2,7 @@
 
 # Apple Color Emoji for Linux
 
-Welcome to the world of colorful emojis on your Linux system! 🌈 This project brings Apple's vibrant emojis to your Linux experience. 
+Welcome to the world of colorful emojis on your Linux system! 🌈 This project brings Apple's vibrant emojis to your Linux experience.
 
 ## Disclaimer
 
@@ -15,19 +15,30 @@ Welcome to the world of colorful emojis on your Linux system! 🌈 This project 
 - 🔄 Rebuild the font cache with `fc-cache -f -v`.
 - 🎉 Voila! You're all set to embrace the world of expressive emojis!
 
-## 🛠 Building AppleColorEmoji from Source
+## 🛠 Building AppleColorEmoji from source
 
-- 🐍 Install Python 2; the process currently requires a Python 2.x wide build.
+You can decide to use the provided [flake.nix](./flake.nix) to automatically get the dependencies, or install the dependencies manually on your system and build from source:
+
+### Manually installing dependencies
+
+- 🐍 Install Python 3; the process currently requires a Python 3.x wide build.
 - 📦 Install the [fonttools Python package](https://github.com/fonttools/fonttools): `python -m pip install fonttools`
 - 📦 Install the [nototools Python package](https://github.com/googlei18n/nototools): `python -m pip install https://github.com/googlefonts/nototools/archive/v0.2.1.tar.gz`, or clone from [here](https://github.com/googlei18n/nototools) and follow the instructions.
-- 🛠 Install image optimization tools: [Optipng](http://optipng.sourceforge.net/), [Zopfli](https://github.com/google/zopfli), and [Pngquant](https://pngquant.org/).
-  - On RedHat-based systems: `yum install optipng zopfli pngquant`
-  - On Fedora: `dnf install optipng zopfli pngquant`
-  - On Debian or Ubuntu: `apt-get install optipng zopfli pngquant`
-- 🔄 Clone the [source repository](https://github.com/samuelngs/apple-emoji-linux) from Github.
+- 🛠 Install image optimization tools: [Optipng](http://optipng.sourceforge.net/), [Zopfli](https://github.com/google/zopfli), [Pngquant](https://pngquant.org/), and [ImageMagick](https://www.imagemagick.org/).
+  - On RedHat-based systems: `yum install optipng zopfli pngquant imagemagick`
+  - On Fedora: `dnf install optipng zopfli pngquant imagemagick`
+  - On Debian or Ubuntu: `apt-get install optipng zopfli pngquant imagemagick`
+- 🔄 Clone the [source repository](https://github.com/samuelngs/apple-emoji-linux) from GitHub.
 - 🖥 Open a terminal, navigate to the directory, and type `make -j` to build `AppleColorEmoji.ttf` from source.
 - ⚙️ To install the built `AppleColorEmoji.ttf` to your system, run `make install`.
 - 🔄 Rebuild your system font cache with `fc-cache -f -v`.
+
+### Using Nix
+
+- Install Nix and ensure flakes are enabled (look for `experimental-features = nix-command flakes` in your `nix.conf`). You can use the [Lix installer](https://lix.systems/install/) if you do not already have a working Nix install.
+- Clone the [source repository](https://github.com/samuelngs/apple-emoji-linux) from GitHub.
+- Navigate to the directory in a terminal and run `nix build` to start the build.
+- The built `AppleColorEmoji.ttf` will be in the `./result/share/fonts/truetype` folder.
 
 ## 🌟 Using AppleColorEmoji
 
