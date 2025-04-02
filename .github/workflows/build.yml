@@ -6,24 +6,25 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Set up Python 3.9
-        uses: actions/setup-python@v2
+      - uses: actions/checkout@v4 # https://github.com/actions/checkout
+      - name: Set up Python
+        uses: actions/setup-python@v5 # https://github.com/actions/setup-python
         with:
-          python-version: 3.9
+          python-version: '3.13'
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           python -m pip install fonttools
           python -m pip install notofonttools
-          sudo apt-get update
-          sudo apt-get install --yes optipng zopfli pngquant
+          sudo apt update
+          sudo apt install --yes optipng zopfli pngquant imagemagick
       - name: Build Apple color emoji font
         run: |
           make -j
           make install
       - name: Archive build artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4 # https://github.com/actions/upload-artifact
         with:
           name: apple-color-emoji-font
           path: AppleColorEmoji.ttf
+
