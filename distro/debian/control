@@ -1,0 +1,14 @@
+Source: fonts-apple-color-emoji
+Section: fonts
+Priority: optional
+Maintainer: samuelngs <samuelngs@users.noreply.github.com>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.2
+
+Package: fonts-apple-color-emoji
+Architecture: all
+Depends: fontconfig
+Description: Apple Color Emoji as CBDT/CBLC TTF for Linux
+ Brings Apple's vibrant color emojis to Linux. Installs the font
+ and a fontconfig snippet (50-apple-color-emoji.conf) so Apple Color
+ Emoji is preferred for emoji, serif, sans-serif, and monospace.

@@ -72,6 +72,37 @@ jobs:
           from="${{ steps.download.outputs.download-path }}"
           find "$from" -name '*.ttf' -exec cp {} . \;
 
+      - name: Build Debian package
+        id: deb
+        env:
+          VERSION: "2.0.0+${{ steps.date.outputs.date }}.${{ steps.sha.outputs.short_sha }}"
+        run: |
+          mkdir -p deb-build
+          cp -r distro/debian deb-build/debian
+          cp AppleColorEmoji-Linux.ttf deb-build/AppleColorEmoji.ttf
+          cp distro/debian/50-apple-color-emoji.conf deb-build/
+          sed -i "s/(1.0.0)/(${VERSION})/" deb-build/debian/changelog
+          docker run --rm -v "$PWD:/work" -w /work/deb-build ubuntu:latest bash -c \
+            'apt-get update -qq && apt-get install -y -qq dpkg-dev debhelper && dpkg-buildpackage -b -uc -us'
+          cp fonts-apple-color-emoji_*_all.deb fonts-apple-color-emoji.deb
+
+      - name: Build AUR package
+        id: aur
+        env:
+          # pkgver cannot contain hyphens; use dots (release tag stays macos-26-date-sha for GitHub)
+          AUR_PKGVER: "2.0.0.${{ steps.date.outputs.date }}.${{ steps.sha.outputs.short_sha }}"
+        run: |
+          mkdir -p aur-build
+          cp distro/aur/PKGBUILD distro/aur/75-apple-color-emoji.conf aur-build/
+          cp AppleColorEmoji-Linux.ttf aur-build/
+          cd aur-build
+          sed -i "s|^pkgver=.*|pkgver=${AUR_PKGVER}|" PKGBUILD
+          sed -i 's|"AppleColorEmoji-Linux.ttf::${url}/releases/download/${pkgver}/AppleColorEmoji-Linux.ttf"|"AppleColorEmoji-Linux.ttf"|' PKGBUILD
+          docker run --rm -v "$PWD:/build" -w /build archlinux:latest bash -c \
+            'pacman -Syu --noconfirm base-devel && useradd -m builder && chown -R builder:builder /build && su builder -c "cd /build && makepkg -sf --noconfirm"'
+          cp ttf-apple-emoji-*.pkg.tar.zst ../ttf-apple-emoji.pkg.tar.zst
+          cd ..
+
       - name: Create release
         uses: softprops/action-gh-release@v2
         with:
@@ -82,5 +113,7 @@ jobs:
           files: |
             AppleColorEmoji-Linux.ttf
             AppleColorEmoji-Windows.ttf
+            fonts-apple-color-emoji.deb
+            ttf-apple-emoji.pkg.tar.zst
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
