@@ -1,0 +1,86 @@
+name: Build macOS fonts
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: macos-26
+    outputs:
+      macos_version: ${{ steps.macos_version.outputs.macos_version }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set macOS version output
+        id: macos_version
+        run: echo "macos_version=$(sw_vers -productVersion | cut -d. -f1)" >> $GITHUB_OUTPUT
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build Linux font
+        run: python convert.py --target linux --output output/AppleColorEmoji-Linux.ttf
+
+      - name: Build Windows font
+        run: python convert.py --target windows --output output/AppleColorEmoji-Windows.ttf
+
+      - name: Upload font artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: fonts
+          path: |
+            output/AppleColorEmoji-Linux.ttf
+            output/AppleColorEmoji-Windows.ttf
+
+  release:
+    needs: build
+    if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get short SHA
+        id: sha
+        run: echo "short_sha=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+
+      - name: Get date
+        id: date
+        run: echo "date=$(date -u +%Y%m%d)" >> $GITHUB_OUTPUT
+
+      - name: Download font artifacts
+        id: download
+        uses: actions/download-artifact@v4
+        with:
+          name: fonts
+
+      - name: Prepare release assets
+        run: |
+          from="${{ steps.download.outputs.download-path }}"
+          find "$from" -name '*.ttf' -exec cp {} . \;
+
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: macos-${{ needs.build.outputs.macos_version }}-${{ steps.date.outputs.date }}-${{ steps.sha.outputs.short_sha }}
+          name: macOS ${{ needs.build.outputs.macos_version }} (${{ steps.date.outputs.date }}) [${{ steps.sha.outputs.short_sha }}]
+          make_latest: true
+          generate_release_notes: true
+          files: |
+            AppleColorEmoji-Linux.ttf
+            AppleColorEmoji-Windows.ttf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

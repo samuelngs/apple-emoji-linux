@@ -1,0 +1,47 @@
+name: 'Build from "Apple Color Emoji.ttc"'
+
+on:
+  workflow_dispatch:
+    inputs:
+      ttc_url:
+        description: "URL to download the .ttc file (e.g. https://example.com/Apple Color Emoji.ttc)"
+        required: true
+  push:
+    branches: [master]
+    paths:
+      - ".github/workflows/build-custom-ttc.yml"
+
+jobs:
+  build:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download .ttc file
+        run: |
+          mkdir -p input
+          curl -fL -o "input/Apple Color Emoji.ttc" "${{ inputs.ttc_url }}"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build Linux font
+        run: python convert.py --input "input/Apple Color Emoji.ttc" --target linux --output output/AppleColorEmoji-Linux.ttf
+
+      - name: Build Windows font
+        run: python convert.py --input "input/Apple Color Emoji.ttc" --target windows --output output/AppleColorEmoji-Windows.ttf
+
+      - name: Upload font artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: fonts-custom
+          path: |
+            output/AppleColorEmoji-Linux.ttf
+            output/AppleColorEmoji-Windows.ttf
