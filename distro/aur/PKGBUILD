@@ -1,0 +1,37 @@
+# Maintainer: samuelngs <samuelngs@users.noreply.github.com>
+# Upstream: https://github.com/samuelngs/apple-emoji-ttf
+
+pkgname=ttf-apple-emoji
+# Update pkgver to match a release tag from https://github.com/samuelngs/apple-emoji-ttf/releases
+pkgver=macos-26-20250217-abc1234
+pkgrel=1
+pkgdesc="Apple Color Emoji is a color typeface used by iOS and macOS to display emoji"
+url='https://github.com/samuelngs/apple-emoji-ttf'
+license=('custom')
+arch=('any')
+provides=('emoji-font')
+conflicts=(
+  'noto-fonts-emoji'
+  'ttf-symbola'
+  'ttf-joypixels'
+  'ttf-twemoji-color'
+  'ttf-whatsapp-emoji'
+)
+source=(
+  "AppleColorEmoji-Linux.ttf::${url}/releases/download/${pkgver}/AppleColorEmoji-Linux.ttf"
+  '75-apple-color-emoji.conf'
+)
+sha256sums=(
+  'SKIP'
+  'SKIP'
+)
+
+package() {
+  install -Dm644 "$srcdir/AppleColorEmoji-Linux.ttf" \
+    "${pkgdir}/usr/share/fonts/apple-color-emoji/apple-color-emoji.ttf"
+  install -Dm644 -t "${pkgdir}/usr/share/fontconfig/conf.avail" \
+    "$srcdir/75-apple-color-emoji.conf"
+  install -d "${pkgdir}/etc/fonts/conf.d"
+  ln -s "/usr/share/fontconfig/conf.avail/75-apple-color-emoji.conf" \
+    "${pkgdir}/etc/fonts/conf.d/"
+}

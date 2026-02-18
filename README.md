@@ -8,16 +8,33 @@ Brings Apple’s vibrant color emojis to Linux and Windows.
 
 This project and all its source code, information, and instructions are for educational purposes only. All Apple Color Emoji assets and designs belong to Apple. Apple is a registered trademark of Apple Inc. in the U.S. and other countries.
 
----
-
 ## Known or potential issues
 
 1. **Firefox** — May not display the font correctly due to limited support for CBDT/CBLC color bitmap fonts (Linux and Windows).
 2. **Windows** — In testing the font works with Notepad, PowerShell, and Edge, but there is no guarantee it will work in all applications.
 
----
 
 ## Putting the font on Linux
+
+### Ubuntu / Debian
+
+Download the `.deb` from [Releases](https://github.com/samuelngs/apple-emoji-ttf/releases) and install it:
+
+```bash
+sudo dpkg -i fonts-apple-color-emoji.deb
+# or
+sudo apt install ./fonts-apple-color-emoji.deb
+```
+
+### Arch Linux
+
+Download the `.pkg.tar.zst` from [Releases](https://github.com/samuelngs/apple-emoji-ttf/releases) and install it:
+
+```bash
+sudo pacman -U ttf-apple-emoji.pkg.tar.zst
+```
+
+### Manual install
 
 Grab `AppleColorEmoji-Linux.ttf` from the repo’s releases (or build it yourself). Put it in your user font folder:
 
@@ -33,10 +50,6 @@ So that apps actually use it for emoji, fontconfig has to prefer Apple Color Emo
 2. **Your own config** — Create `~/.config/fontconfig/fonts.conf` (create the directory if it doesn’t exist). You can copy the repo’s `fonts.conf` into that path. It tells fontconfig to prefer Apple Color Emoji for serif, sans-serif, and monospace, and to use it when an app asks for Noto Color Emoji.
 
 Then clear the font cache: `fc-cache -fv`.
-
-On Arch Linux you can also install from the AUR: [ttf-apple-emoji](https://aur.archlinux.org/packages/ttf-apple-emoji).
-
----
 
 ## Putting the font on Windows
 
@@ -54,8 +67,6 @@ copy "AppleColorEmoji-Windows.ttf" "C:\Windows\Fonts\seguiemj.ttf"
 Then restart so all apps pick up the new font.
 
 Keep in mind using a font from a different OS may have licensing implications; that’s on you.
-
----
 
 ## Build the font yourself
 
@@ -77,14 +88,12 @@ python convert.py
 If your TTC is somewhere else, or you’re on Linux and copied the file over:
 
 ```bash
-python convert.py /path/to/Apple\ Color\ Emoji.ttc output/AppleColorEmoji.ttf
+python convert.py --input "/path/to/Apple Color Emoji.ttc" --output output/AppleColorEmoji.ttf
 ```
 
-Input and output are optional: first arg is the TTC path, second is the TTF path. Defaults are the macOS path and `output/AppleColorEmoji.ttf`.
+`--input` and `--output` are optional; defaults are the macOS path and `output/AppleColorEmoji.ttf`.
 
 Use `--target windows` if you’re building for Windows (Segoe UI Emoji replacement). Other options: `--ppem` (strike size, default 96), `-v` for verbose logs.
-
----
 
 ## Building with Nix
 
@@ -103,13 +112,12 @@ nix build --input ttc /path/to/Apple\ Color\ Emoji.ttc
 
 The built fonts will be in `./result/share/fonts/truetype/` (`AppleColorEmoji-Linux.ttf` and `AppleColorEmoji-Windows.ttf`).
 
----
-
 ## Acknowledgments
 
-This project would not be possible without the help and information from the people listed below.
+This project would not be possible without the help, contributions, and knowledge sharing from the people listed below.
 
-- [@dmlls](https://github.com/dmlls) and [@lnking81](https://github.com/lnking81) — Updating fonts with the latest emojis 
-- [@win0err](https://github.com/win0err) — [Linux installation instructions](https://gist.github.com/win0err/9d8c7f0feabdfe8a4c9787b02c79ac51).
-- [@jjjuk](https://github.com/jjjuk) — [Information on changes needed for TTF to render correctly on Windows and on Windows font installation](https://github.com/jjjuk/emoji-win/).
+- [@dmlls](https://github.com/dmlls) — Multiple font updates and help with the community
+- [@lnking81](https://github.com/lnking81) — Updating font with the latest emojis
+- [@win0err](https://github.com/win0err) — Linux installation instructions [(gist)](https://gist.github.com/win0err/9d8c7f0feabdfe8a4c9787b02c79ac51).
+- [@jjjuk](https://github.com/jjjuk) — Changes needed for TTF to render correctly on Windows and Windows font installation instructions [(emoji-win)](https://github.com/jjjuk/emoji-win/).
 - [@dibenzepin](https://github.com/dibenzepin) and [@typedrat](https://github.com/typedrat) — Nix build support.
