@@ -7,7 +7,7 @@ on:
         description: "URL to download the .ttc file (e.g. https://example.com/Apple Color Emoji.ttc)"
         required: true
   push:
-    branches: [master]
+    branches: [v2]
     paths:
       - ".github/workflows/build-custom-ttc.yml"
 
