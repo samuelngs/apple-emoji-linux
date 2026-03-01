@@ -2,7 +2,7 @@ name: Test font render
 
 on:
   push:
-  pull_request:
+  # pull_request:
   workflow_dispatch:
 
 jobs:

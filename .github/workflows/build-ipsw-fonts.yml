@@ -1,0 +1,86 @@
+name: Build from IPSW
+
+on:
+  workflow_dispatch:
+    inputs:
+      ios_version:
+        description: "iOS version (e.g. 18.0, 17.2.1)"
+        required: true
+        type: string
+  push:
+    branches: [v2]
+    paths:
+      - ".github/workflows/build-ipsw-fonts.yml"
+
+jobs:
+  build:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: macos-26
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install ipsw
+        run: brew install blacktop/tap/ipsw
+
+      - name: Get latest iPhone device ID
+        id: get_device
+        run: |
+          # PRODUCT is first data column; filter iPhone, extract ID, sort numerically, take last
+          DEVICE=$(ipsw device-list | awk -F'|' '/\| iPhone[0-9]+,/ {
+            gsub(/^ +| +$/, "", $2)
+            if ($2 ~ /^iPhone[0-9]+,[0-9]+$/) print $2
+          }' | sort -t',' -k1n -k2n | tail -1)
+          if [ -z "$DEVICE" ]; then
+            echo "Fallback to iPhone16,2"
+            DEVICE=iPhone16,2
+          fi
+          echo "device_id=$DEVICE" >> $GITHUB_OUTPUT
+          echo "Using device: $DEVICE"
+
+      - name: Get IPSW URL
+        id: get_url
+        run: |
+          URL=$(ipsw download ipsw --device "${{ steps.get_device.outputs.device_id }}" --version "${{ inputs.ios_version }}" --urls 2>/dev/null | head -1 | tr -d '\n\r ')
+          if [ -z "$URL" ]; then
+            echo "::error::No IPSW URL for device ${{ steps.get_device.outputs.device_id }} and version ${{ inputs.ios_version }}"
+            exit 1
+          fi
+          echo "ipsw_url=$URL" >> $GITHUB_OUTPUT
+          echo "IPSW URL: $URL"
+
+      - name: Extract Apple Color Emoji font from IPSW
+        id: extract
+        run: |
+          mkdir -p input
+          ipsw extract --files --pattern '.*AppleColorEmoji-160px\.ttc$' --remote "${{ steps.get_url.outputs.ipsw_url }}" -o input
+          TTC=$(find input -name 'AppleColorEmoji-160px.ttc' | head -1)
+          if [ -z "$TTC" ] || [ ! -f "$TTC" ]; then
+            echo "::error::Extract did not produce AppleColorEmoji-160px.ttc under input/"
+            find input -type f || true
+            exit 1
+          fi
+          echo "ttc_path=$TTC" >> $GITHUB_OUTPUT
+          echo "Extracted $TTC"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build Linux font
+        run: python convert.py --input "${{ steps.extract.outputs.ttc_path }}" --target linux --output output/AppleColorEmoji-Linux.ttf
+
+      - name: Build Windows font
+        run: python convert.py --input "${{ steps.extract.outputs.ttc_path }}" --target windows --output output/AppleColorEmoji-Windows.ttf
+
+      - name: Upload font artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: fonts-ios-ipsw
+          path: |
+            output/AppleColorEmoji-Linux.ttf
+            output/AppleColorEmoji-Windows.ttf

@@ -1,0 +1,102 @@
+name: Bug Report
+description: Report a bug with Apple Color Emoji on Linux or Windows
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Please fill out the form below completely.
+        **Issues that do not complete all required fields and checkboxes will be automatically closed.**
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please confirm the following before submitting.
+      options:
+        - label: I have read the [README.md](https://github.com/samuelngs/apple-emoji-ttf/blob/v2/README.md) and followed the installation instructions
+          required: true
+        - label: I am using the latest release from the [Releases](https://github.com/samuelngs/apple-emoji-ttf/releases) page
+          required: true
+        - label: I have searched [existing issues](https://github.com/samuelngs/apple-emoji-ttf/issues) to make sure this hasn't been reported already
+          required: true
+        - label: I understand this project is for educational purposes only and Apple Color Emoji assets belong to Apple
+          required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating System / Distribution
+      description: e.g. Ubuntu 24.04, Arch Linux, Windows 11, Fedora 41
+      placeholder: Ubuntu 24.04
+    validations:
+      required: true
+
+  - type: dropdown
+    id: install-method
+    attributes:
+      label: Installation Method
+      description: How did you install the font?
+      options:
+        - .deb package (Ubuntu / Debian)
+        - .rpm package (Fedora / RHEL)
+        - .pkg.tar.zst (Arch Linux)
+        - Manual install (copied TTF + fontconfig)
+        - Windows (replaced seguiemj.ttf)
+        - Nix build
+        - Built from source
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Describe the bug...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Install the font using ...
+        2. Open ...
+        3. See error / incorrect rendering
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened.
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain the problem.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other information that might be helpful (fontconfig output, application version, etc.).
+    validations:
+      required: false

@@ -1,0 +1,133 @@
+name: Close incomplete issues
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  issues: write
+
+jobs:
+  check-completeness:
+    if: contains(github.event.issue.body, 'Prerequisites')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check bug report completeness
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.issue.body || '';
+            const issueNumber = context.payload.issue.number;
+            const action = context.payload.action;
+
+            // Detect issue type
+            const isBugReport = body.includes('### Bug Description');
+            const isFeatureRequest = body.includes('### Proposed Solution');
+
+            if (!isBugReport && !isFeatureRequest) return;
+
+            // Shared checkboxes (present in both templates)
+            const sharedCheckboxes = [
+              'I have read the',
+              'I have searched',
+              'I understand this project is for educational purposes',
+            ];
+
+            // Bug-report-only checkbox
+            const bugCheckboxes = isBugReport
+              ? ['I am using the latest release']
+              : [];
+
+            const requiredCheckboxes = [...sharedCheckboxes, ...bugCheckboxes];
+
+            // Required fields per template
+            const requiredFields = isBugReport
+              ? [
+                  { id: 'Operating System / Distribution', heading: '### Operating System / Distribution' },
+                  { id: 'Installation Method', heading: '### Installation Method' },
+                  { id: 'Bug Description', heading: '### Bug Description' },
+                  { id: 'Steps to Reproduce', heading: '### Steps to Reproduce' },
+                  { id: 'Expected Behavior', heading: '### Expected Behavior' },
+                  { id: 'Actual Behavior', heading: '### Actual Behavior' },
+                ]
+              : [
+                  { id: 'Problem', heading: '### Problem' },
+                  { id: 'Proposed Solution', heading: '### Proposed Solution' },
+                ];
+
+            const issueType = isBugReport ? 'bug report' : 'feature request';
+            const missing = [];
+
+            // Check checkboxes
+            for (const label of requiredCheckboxes) {
+              const checked = new RegExp(`\\[x\\]\\s.*${label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`, 'i');
+              const unchecked = new RegExp(`\\[ \\]\\s.*${label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`, 'i');
+              if (unchecked.test(body) || !checked.test(body)) {
+                missing.push(`- [ ] Checkbox: "${label}..." is not checked`);
+              }
+            }
+
+            // Check required fields are not empty
+            for (const field of requiredFields) {
+              const headingEscaped = field.heading.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+              const sectionMatch = body.match(new RegExp(`${headingEscaped}\\s*\\n([\\s\\S]*?)(?=###|$)`));
+              if (!sectionMatch || !sectionMatch[1].trim() || sectionMatch[1].trim() === '_No response_') {
+                missing.push(`- [ ] Field: "${field.id}" is empty`);
+              }
+            }
+
+            if (missing.length > 0) {
+              const comment = [
+                `Thank you for opening this issue. Unfortunately, your ${issueType} is **incomplete**.\n`,
+                `The following required items are missing or not filled in:\n`,
+                ...missing,
+                `\nPlease edit your issue to complete all required fields and checkboxes. ` +
+                `The issue will be automatically reopened once all requirements are met.\n`,
+                `If you need help, please read the [README.md](https://github.com/samuelngs/apple-emoji-ttf/blob/v2/README.md) first.`,
+              ].join('\n');
+
+              await github.rest.issues.createComment({
+                ...context.repo,
+                issue_number: issueNumber,
+                body: comment,
+              });
+
+              await github.rest.issues.addLabels({
+                ...context.repo,
+                issue_number: issueNumber,
+                labels: ['incomplete'],
+              });
+
+              await github.rest.issues.update({
+                ...context.repo,
+                issue_number: issueNumber,
+                state: 'closed',
+                state_reason: 'not_planned',
+              });
+            } else if (action === 'edited') {
+              // If the issue was edited and is now complete, reopen it
+              const issue = context.payload.issue;
+              if (issue.state === 'closed' && issue.labels.some(l => l.name === 'incomplete')) {
+                await github.rest.issues.update({
+                  ...context.repo,
+                  issue_number: issueNumber,
+                  state: 'open',
+                });
+
+                try {
+                  await github.rest.issues.removeLabel({
+                    ...context.repo,
+                    issue_number: issueNumber,
+                    name: 'incomplete',
+                  });
+                } catch (e) {
+                  // Label may have already been removed
+                }
+
+                await github.rest.issues.createComment({
+                  ...context.repo,
+                  issue_number: issueNumber,
+                  body: 'All required fields are now complete. This issue has been reopened. Thank you!',
+                });
+              }
+            }

@@ -6,13 +6,13 @@ Brings Apple’s vibrant color emojis to Linux and Windows.
 
 ## Disclaimer
 
-This project and all its source code, information, and instructions are for educational purposes only. All Apple Color Emoji assets and designs belong to Apple. Apple is a registered trademark of Apple Inc. in the U.S. and other countries.
+This project is for educational purposes only. All Apple Color Emoji assets and designs belong to Apple Inc., and Apple is a registered trademark of Apple Inc. in the U.S. and other countries. Using a font from a different operating system may have licensing implications; that responsibility is on you.
 
 ## Known or potential issues
 
-1. **Firefox** — May not display the font correctly due to limited support for CBDT/CBLC color bitmap fonts (Linux and Windows).
-2. **Windows** — In testing the font works with Notepad, PowerShell, and Edge, but there is no guarantee it will work in all applications.
-
+1. **Smaller emoji in some Linux apps** — Certain applications may render emoji at a smaller size than expected. This may be related to how the font is built or how specific toolkits handle color fonts. We're still investigating a fix.
+2. **Qt applications** — Some Qt-based apps may not render the emoji correctly or at all due to how Qt handles color font tables.
+3. **Not usable as a web font (`@font-face`)** — The font uses Apple's `morx` table for shaping instead of the standard `GSUB` table. Browsers that require `GSUB` (or reject CBDT/CBLC-only fonts) will not load it as a web font.
 
 ## Putting the font on Linux
 
@@ -50,7 +50,7 @@ Grab `AppleColorEmoji-Linux.ttf` from the repo’s releases (or build it yoursel
 
 ```bash
 mkdir -p ~/.local/share/fonts
-# Put AppleColorEmoji-Linux.ttf in that folder (from releases or from your build output).
+cp AppleColorEmoji-Linux.ttf ~/.local/share/fonts/
 ```
 
 So that apps actually use it for emoji, fontconfig has to prefer Apple Color Emoji. Two things help:
@@ -65,7 +65,9 @@ Then clear the font cache: `fc-cache -fv`.
 
 Download the Windows build from releases or build with `--target windows`. The font is set up to replace Segoe UI Emoji.
 
-The file to replace is exactly `C:\Windows\Fonts\seguiemj.ttf`. Back up the original first if you want to keep it. From an elevated Command Prompt you can try a direct copy; if Windows has the file locked, use this instead:
+**Important:** The font file cannot be installed by double-clicking, and Windows font viewer cannot preview it. This is expected. You must replace the system font file manually using the steps below.
+
+Back up the original `C:\Windows\Fonts\seguiemj.ttf` first, then replace it. From an elevated Command Prompt you can try a direct copy; if Windows has the file locked, use this instead:
 
 ```cmd
 takeown /f "C:\Windows\Fonts\seguiemj.ttf"
@@ -75,8 +77,6 @@ copy "AppleColorEmoji-Windows.ttf" "C:\Windows\Fonts\seguiemj.ttf"
 ```
 
 Then restart so all apps pick up the new font.
-
-Keep in mind using a font from a different OS may have licensing implications; that’s on you.
 
 ## Build the font yourself
 
