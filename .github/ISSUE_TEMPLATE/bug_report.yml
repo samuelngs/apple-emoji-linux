@@ -2,26 +2,18 @@ name: Bug Report
 description: Report a bug with Apple Color Emoji on Linux or Windows
 labels: []
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to report a bug. Please fill out the form below completely.
-        **Issues that do not complete all required fields and checkboxes will be automatically closed.**
-
   - type: checkboxes
     id: prerequisites
     attributes:
-      label: Prerequisites
-      description: Please confirm the following before submitting.
+      label: Before you start
+      description: These help us triage your issue faster.
       options:
         - label: I have read the [README.md](https://github.com/samuelngs/apple-emoji-ttf/blob/v2/README.md) and followed the installation instructions
-          required: true
+          required: false
         - label: I am using the latest release from the [Releases](https://github.com/samuelngs/apple-emoji-ttf/releases) page
-          required: true
+          required: false
         - label: I have searched [existing issues](https://github.com/samuelngs/apple-emoji-ttf/issues) to make sure this hasn't been reported already
-          required: true
-        - label: I understand this project is for educational purposes only and Apple Color Emoji assets belong to Apple
-          required: true
+          required: false
 
   - type: input
     id: os
@@ -52,7 +44,7 @@ body:
     id: description
     attributes:
       label: Bug Description
-      description: A clear and concise description of what the bug is.
+      description: Describe what's happening and what you expected instead.
       placeholder: Describe the bug...
     validations:
       required: true
@@ -61,29 +53,13 @@ body:
     id: steps
     attributes:
       label: Steps to Reproduce
-      description: Steps to reproduce the behavior.
+      description: Steps to reproduce the behavior (optional, but helpful for debugging).
       placeholder: |
         1. Install the font using ...
         2. Open ...
         3. See error / incorrect rendering
     validations:
-      required: true
-
-  - type: textarea
-    id: expected
-    attributes:
-      label: Expected Behavior
-      description: What you expected to happen.
-    validations:
-      required: true
-
-  - type: textarea
-    id: actual
-    attributes:
-      label: Actual Behavior
-      description: What actually happened.
-    validations:
-      required: true
+      required: false
 
   - type: textarea
     id: screenshots

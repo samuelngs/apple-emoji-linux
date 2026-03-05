@@ -13,11 +13,89 @@ permissions:
 
 jobs:
   triage-new-issue:
-    if: github.event_name == 'issues' && contains(github.event.issue.body, 'Prerequisites')
+    if: github.event_name == 'issues' && contains(github.event.issue.body, 'Before you start')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Read README
+        id: readme
+        run: |
+          {
+            echo 'content<<READMEEOF'
+            cat README.md
+            echo 'READMEEOF'
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Pre-checks
+        id: prechecks
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.issue.body || '';
+            const title = context.payload.issue.title || '';
+            const issueNumber = context.payload.issue.number;
+
+            // --- OS / Installation Method mismatch detection ---
+            const osMatch = body.match(/### Operating System \/ Distribution\s*\n\s*(.+)/);
+            const methodMatch = body.match(/### Installation Method\s*\n\s*(.+)/);
+            const os = osMatch ? osMatch[1].trim().toLowerCase() : '';
+            const method = methodMatch ? methodMatch[1].trim() : '';
+
+            const linuxMethods = [
+              '.deb package (Ubuntu / Debian)',
+              '.rpm package (Fedora / RHEL)',
+              '.pkg.tar.zst (Arch Linux)',
+              'Manual install (copied TTF + fontconfig)',
+              'Nix build',
+            ];
+            const windowsMethod = 'Windows (replaced seguiemj.ttf)';
+
+            let mismatch = '';
+            const isWindowsOS = /windows/i.test(os);
+            const isLinuxOS = /ubuntu|debian|fedora|rhel|centos|arch|manjaro|linux|mint|pop|endeavour|nixos|gentoo|opensuse|suse/i.test(os);
+
+            if (isWindowsOS && linuxMethods.includes(method)) {
+              mismatch = `OS is "${osMatch[1].trim()}" but installation method is "${method}" which is a Linux-only method. The Windows installation instructions are in a separate section of the README and require replacing seguiemj.ttf.`;
+            } else if (isLinuxOS && method === windowsMethod) {
+              mismatch = `OS is "${osMatch[1].trim()}" but installation method is "${method}" which is Windows-only. They should use the Linux installation instructions from the README.`;
+            }
+
+            // --- Search for related existing issues ---
+            const keywords = title
+              .toLowerCase()
+              .replace(/[^\w\s]/g, ' ')
+              .split(/\s+/)
+              .filter(w => w.length > 3 && !['with', 'from', 'that', 'this', 'have', 'been', 'does', 'dont', 'cant', 'wont', 'into', 'when', 'font', 'emoji', 'apple', 'color', 'install'].includes(w));
+
+            let relatedIssues = '';
+            if (keywords.length > 0) {
+              const query = keywords.slice(0, 4).join(' ');
+              try {
+                const results = await github.rest.search.issuesAndPullRequests({
+                  q: `repo:${context.repo.owner}/${context.repo.repo} is:issue ${query}`,
+                  per_page: 6,
+                  sort: 'updated',
+                  order: 'desc',
+                });
+
+                const related = results.data.items
+                  .filter(i => i.number !== issueNumber)
+                  .slice(0, 5);
+
+                if (related.length > 0) {
+                  relatedIssues = related.map(i =>
+                    `#${i.number} [${i.state}] "${i.title}"`
+                  ).join('\n');
+                }
+              } catch (e) {
+                console.log('Issue search failed:', e.message);
+              }
+            }
+
+            core.setOutput('mismatch', mismatch);
+            core.setOutput('related_issues', relatedIssues);
 
       - name: Analyze issue with AI
         id: ai
@@ -46,76 +124,85 @@ jobs:
             - Don't say "feel free to", just tell them what to do
             - Don't sign off with "cheers", "best regards", etc.
 
-            Keep it to 1-3 short sentences max. Get to the point.
+            Keep it to 2-4 short sentences max. Get to the point.
 
             Your job is to analyze a new GitHub issue and determine what kind of issue it is.
 
-            The issue may be a bug report or a feature request. Analyze accordingly:
+            Below is the project's full README.md. Use this as your knowledge base to
+            answer questions and identify user errors vs real bugs. When directing users
+            to specific instructions, refer to the relevant section of the README.
 
-            For bug reports:
-            1. Is this a genuine bug, or is the user reporting something that is already
-               covered in the README / installation instructions?
-            2. If it is a genuine bug, respond with LABEL:bug on a line by itself.
-            3. If it is NOT a bug (user error, didn't follow instructions, already a known
-               issue), do NOT output LABEL:bug.
+            <readme>
+            ${{ steps.readme.outputs.content }}
+            </readme>
 
-            For feature requests:
-            1. Is this a genuine, actionable feature request relevant to this project?
-            2. If it is a genuine feature request, respond with LABEL:enhancement on a
-               line by itself.
-            3. If it is not relevant or is a duplicate of existing functionality, do NOT
-               output LABEL:enhancement.
+            ANALYSIS STEPS:
 
-            Examples of good responses (match this vibe):
-            - "Hey, this is actually expected. The Windows TTF can't be installed by double-clicking. You gotta replace seguiemj.ttf manually using the commands in the README's Windows section."
-            - "Oh yeah this looks like a real bug, I'll take a look when I get a chance."
-            - "Ah this is a known limitation, the font uses morx instead of GSUB so it can't be loaded as a web font. Browsers just won't accept it via @font-face."
-            - "Cool idea, I'll think about it."
-            - "Hmm looks like fontconfig might not be set up right. Did you copy the fonts.conf and run fc-cache -fv after installing?"
-            - "Yep that's expected on Windows unfortunately. The font viewer can't preview it either, but it works fine once you replace seguiemj.ttf and restart."
+            1. Check if there is an OS/method mismatch flagged below. If so, the user
+               picked the wrong installation method for their OS. This means they didn't
+               read the README properly.
 
-            Known issues from the README:
-            - Emoji may appear smaller in some Linux apps (still investigating a fix).
-            - Some Qt-based apps may not render the emoji correctly or at all.
-            - The font uses morx (not GSUB) for shaping, so it can't be used as a web
-              font via @font-face. Browsers that require GSUB will reject it.
+            2. Read the issue carefully. Pay close attention to the EXACT steps the
+               user describes. Compare those specific steps against the README's
+               instructions for their OS. Did they follow the correct process?
+               DO NOT assume or guess what the user did. Only respond to what they
+               actually wrote. If they say they used Settings > Fonts, don't say
+               they double-clicked. If they say they copied the file, don't say
+               they used a package manager. Be precise about their situation.
 
-            CRITICAL — Windows "invalid font" / "not a valid font file" reports:
-            These are NOT bugs. NEVER output LABEL:bug for these. The Windows TTF:
-            - CANNOT be installed by double-clicking
-            - CANNOT be previewed in the Windows font viewer
-            This is expected. The user must replace C:\Windows\Fonts\seguiemj.ttf manually
-            using the takeown/icacls/del/copy commands in the README, then restart.
-            Any issue mentioning "invalid", "not valid", "can't open", "can't install",
-            "can't preview", "corrupt", "broken file" on Windows = NOT a bug. Point them
-            to the Windows installation section of the README.
+            3. If you're confident the user didn't read or follow the README instructions,
+               output ACTION:close on its own line. In your comment:
+               - Briefly explain what they should actually do (based on the README)
+               - End with a friendly nudge encouraging them to read through the README
+                 instructions before trying again. Make them feel a little silly for
+                 not reading, but in a warm way, not mean. Think "friendly ribbing
+                 from a teammate" not "customer support apology". Examples of the
+                 vibe (don't copy these verbatim, write your own):
+                 "Give the README a read first, it covers exactly this."
+                 "The README walks through the whole process, worth a look before diving in."
+               - Mention related issues if any are listed below
 
-            Common user mistakes (also NOT bugs):
-            - Not configuring fontconfig (60-generic.conf and ~/.config/fontconfig/fonts.conf)
-            - Not running fc-cache -fv after installing the font
-            - Not using the correct installation method for their distro
-            - Not restarting after installing on Windows
-            - Trying to use the font as a webfont in Firefox
-            - Trying to install the Windows font by double-clicking (this does not work)
-            - Trying to preview the Windows font file (this does not work)
+            4. If this IS a genuine bug (something not covered by the README, actual
+               unexpected behavior after correctly following instructions), output
+               LABEL:bug on its own line. Do NOT output ACTION:close for genuine bugs.
+
+            5. If this is a genuine feature request, output LABEL:enhancement on its
+               own line.
+
+            NEVER output LABEL:bug together with ACTION:close.
+            NEVER output LABEL:bug if your comment explains it's expected behavior or user error.
 
             RESPONSE FORMAT — you MUST follow this exactly:
             Line 1: COMMENT: followed by your reply text
-            Line 2 (optional): LABEL:bug OR LABEL:enhancement
+            Line 2 (optional, pick ONE): LABEL:bug OR LABEL:enhancement OR ACTION:close
 
-            Example of correct format:
-            COMMENT: Hey, this is expected. You can't double-click to install on Windows. Check the Windows section in the README for the manual steps.
+            Below are format-only examples showing the structure. DO NOT copy or
+            paraphrase these. Write your own original response based on the actual
+            issue content. Vary your phrasing every time.
 
-            Another example with a label:
-            COMMENT: Oh yeah this looks like a real bug, I'll take a look.
+            Example 1 (user error — close):
+            COMMENT: [your original reply explaining what went wrong and what to do]
+            ACTION:close
+
+            Example 2 (real bug):
+            COMMENT: [your original reply acknowledging the bug]
             LABEL:bug
 
-            NEVER output LABEL:bug if your comment explains it's expected behavior or user error.
+            Example 3 (feature request):
+            COMMENT: [your original reply about the feature idea]
+            LABEL:enhancement
           prompt: |
             Issue title: ${{ github.event.issue.title }}
 
             Issue body:
             ${{ github.event.issue.body }}
+
+            --- Pre-check results ---
+
+            OS / Installation method mismatch: ${{ steps.prechecks.outputs.mismatch || 'none' }}
+
+            Related existing issues:
+            ${{ steps.prechecks.outputs.related_issues || 'none found' }}
 
       - name: Parse AI response and apply
         uses: actions/github-script@v7
@@ -130,19 +217,19 @@ jobs:
             const body = (issue.body || '').toLowerCase();
             const title = (issue.title || '').toLowerCase();
 
-            // Extract comment — try COMMENT: prefix first, fall back to full response
-            const commentMatch = response.match(/COMMENT:\s*([\s\S]*?)(?=\nLABEL:|$)/);
+            // Extract comment
+            const commentMatch = response.match(/COMMENT:\s*([\s\S]*?)(?=\n(?:LABEL|ACTION):|$)/);
             let comment = commentMatch ? commentMatch[1].trim() : '';
 
-            // If model didn't use COMMENT: prefix, use everything before LABEL: as the comment
             if (!comment) {
-              const fallback = response.replace(/\n?LABEL:\s*\w+/gi, '').trim();
+              const fallback = response.replace(/\n?(?:LABEL|ACTION):\s*\w[\w-]*/gi, '').trim();
               if (fallback) comment = fallback;
             }
 
-            // Check for labels
+            // Check for signals
             let isBug = /LABEL:\s*bug/i.test(response);
             const isEnhancement = /LABEL:\s*enhancement/i.test(response);
+            const shouldClose = /ACTION:\s*close/i.test(response);
 
             // Safeguard: override bug label for known Windows non-bugs
             const windowsKeywords = /invalid|not.{0,5}valid|can.?t.{0,10}(install|open|preview)|corrupt|broken.{0,5}file|not.{0,5}a.{0,5}valid.{0,5}font/i;
@@ -158,6 +245,13 @@ jobs:
               isBug = false;
             }
 
+            // Safeguard: never label bug AND close
+            if (isBug && shouldClose) {
+              console.log('Safeguard: stripping bug label — ACTION:close takes precedence');
+              isBug = false;
+            }
+
+            // Post comment
             if (comment) {
               comment = `@${username} ${comment}`;
               await github.rest.issues.createComment({
@@ -167,6 +261,7 @@ jobs:
               });
             }
 
+            // Apply labels
             const labels = [];
             if (isBug) labels.push('bug');
             if (isEnhancement) labels.push('enhancement');
@@ -179,6 +274,22 @@ jobs:
               });
             }
 
+            // Close if AI determined user didn't follow instructions
+            if (shouldClose) {
+              await github.rest.issues.addLabels({
+                ...context.repo,
+                issue_number: issueNumber,
+                labels: ['invalid'],
+              });
+
+              await github.rest.issues.update({
+                ...context.repo,
+                issue_number: issueNumber,
+                state: 'closed',
+                state_reason: 'not_planned',
+              });
+            }
+
   reply-to-comment:
     if: >-
       github.event_name == 'issue_comment' &&
@@ -188,31 +299,100 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Fetch conversation
-        id: conversation
+      - name: Read README
+        id: readme
+        run: |
+          {
+            echo 'content<<READMEEOF'
+            cat README.md
+            echo 'READMEEOF'
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Check if reply is needed
+        id: should-reply
         uses: actions/github-script@v7
         with:
           script: |
             const issue = context.payload.issue;
+            const comment = context.payload.comment;
+            const commenter = comment.user.login;
+
+            // Fetch all comments
             const comments = await github.rest.issues.listComments({
               ...context.repo,
               issue_number: issue.number,
-              per_page: 20,
+              per_page: 50,
             });
 
-            const thread = comments.data.map(c =>
+            const allComments = comments.data;
+            const thisComment = comment.body || '';
+
+            // --- Determine if the comment is part of a user-to-user conversation ---
+
+            // Get unique human participants (exclude bot)
+            const humanParticipants = new Set();
+            humanParticipants.add(issue.user.login); // issue author
+            for (const c of allComments) {
+              if (c.user.login !== 'github-actions[bot]') {
+                humanParticipants.add(c.user.login);
+              }
+            }
+
+            // Check if comment explicitly mentions another human user
+            const mentionedUsers = (thisComment.match(/@[\w-]+/g) || [])
+              .map(m => m.slice(1));
+            const mentionsHuman = mentionedUsers.some(u =>
+              u !== 'github-actions[bot]' && humanParticipants.has(u)
+            );
+
+            // Check if this looks like a reply to a previous human comment
+            const humanComments = allComments.filter(c =>
+              c.user.login !== 'github-actions[bot]'
+            );
+            const otherHumanComments = humanComments.filter(c =>
+              c.user.login !== commenter
+            );
+
+            // If someone @mentions another human, it's a conversation — skip
+            if (mentionsHuman) {
+              core.setOutput('skip', 'true');
+              core.setOutput('reason', 'Comment mentions another user');
+              return;
+            }
+
+            // If there are other human participants who have commented, and this
+            // commenter is replying (not the issue author, or there are replies
+            // from non-authors), check if it looks conversational
+            if (otherHumanComments.length > 0) {
+              const isShort = thisComment.length < 200;
+              const hasQuestion = thisComment.includes('?');
+              const looksConversational = isShort && !hasQuestion;
+
+              if (looksConversational) {
+                core.setOutput('skip', 'true');
+                core.setOutput('reason', 'Looks like a conversational reply between users');
+                return;
+              }
+            }
+
+            // Build thread for AI
+            const thread = allComments.map(c =>
               `[${c.user.login}]: ${c.body}`
             ).join('\n---\n');
 
             const result = [
               `Issue title: ${issue.title}`,
+              `Issue author: ${issue.user.login}`,
               `Issue body:\n${issue.body}`,
               `\nConversation so far:\n${thread}`,
+              `\nNew comment by ${commenter}:\n${thisComment}`,
             ].join('\n\n');
 
+            core.setOutput('skip', 'false');
             core.setOutput('thread', result);
 
       - name: Analyze follow-up with AI
+        if: steps.should-reply.outputs.skip != 'true'
         id: ai
         uses: actions/ai-inference@v1
         with:
@@ -222,15 +402,39 @@ jobs:
             Apple Color Emoji to TTF format for Linux and Windows.
 
             A user has left a follow-up comment on an issue. You have the full issue body
-            and conversation history. Reply helpfully if you can, answer their question,
-            clarify something, or point them to the right docs.
+            and conversation history.
 
-            Write like a real human maintainer, casual, friendly, and concise. You're a
-            chill dev who genuinely wants to help but keeps it brief. Think of how you'd
-            reply to a friend on slack, not a customer on a support ticket.
+            Below is the project's full README.md. Use this as your primary knowledge
+            base when answering questions. When directing users to instructions, refer
+            to the relevant section of the README.
+
+            <readme>
+            ${{ steps.readme.outputs.content }}
+            </readme>
+
+            IMPORTANT — Deciding whether to reply:
+
+            You must figure out WHO the commenter is talking to based on context:
+
+            1. If the comment is replying to or continuing a conversation with another
+               human user (not the bot), respond with NO_REPLY. Users talk to each other
+               in issues. Don't butt in.
+            2. If the comment is answering a question that was asked by someone else
+               earlier in the thread, respond with NO_REPLY.
+            3. If the comment is a general question that isn't directed at anyone specific,
+               and you can answer it using the README, go ahead and answer.
+            4. If you're not confident in the answer, or it requires maintainer judgement
+               (e.g. design decisions, timeline questions, whether something will be
+               supported), respond with NO_REPLY.
+
+            Also respond with NO_REPLY for:
+            - "thanks", "+1", "same here", acknowledgements, reactions, emoji-only
+            - Comments where the user confirms the fix worked or says the issue is resolved
+
+            Write like a real human maintainer — casual, friendly, and concise.
 
             Rules for tone:
-            - Always capitalize the first letter of each sentence, proper grammar matters
+            - Always capitalize the first letter of each sentence — proper grammar matters
             - Use contractions (can't, doesn't, won't, it's)
             - NEVER use em dashes (—). Use commas, periods, or just start a new sentence
             - It's okay to start with "Hey", "Ah", "Oh", "Hmm", "Yep", "Nah", etc.
@@ -243,37 +447,15 @@ jobs:
 
             Keep it to 1-3 short sentences max. Get to the point.
 
-            Respond with exactly NO_REPLY in any of these cases:
-            - The comment is directed at another user (starts with @someone or mentions
-              another user by name and is clearly talking to them, not asking a general
-              question). Users often talk to each other in issues — don't butt in.
-            - The comment doesn't need a response (e.g. "thanks", "+1", "same here",
-              or the question was already answered)
-            - You're not confident in the answer or it requires maintainer judgement
-            - The comment is just a reaction, emoji, or acknowledgement
-
-            Known issues:
-            - Emoji may appear smaller in some Linux apps (still investigating a fix).
-            - Some Qt-based apps may not render the emoji correctly or at all.
-            - Font uses morx (not GSUB), so it can't be used as a web font via @font-face.
-            - Windows font can't be installed by double-clicking or previewed. Must replace
-              seguiemj.ttf manually via elevated Command Prompt. See README.
-
-            Common user mistakes:
-            - Not configuring fontconfig on Linux
-            - Not running fc-cache -fv
-            - Not restarting after Windows install
-            - Trying to double-click install on Windows
-            - Using the font as a webfont in Firefox
-
             Format your response as:
             COMMENT:<your comment here>
             or
             NO_REPLY
           prompt: |
-            ${{ steps.conversation.outputs.thread }}
+            ${{ steps.should-reply.outputs.thread }}
 
       - name: Post reply if needed
+        if: steps.should-reply.outputs.skip != 'true'
         uses: actions/github-script@v7
         env:
           AI_RESPONSE: ${{ steps.ai.outputs.response }}

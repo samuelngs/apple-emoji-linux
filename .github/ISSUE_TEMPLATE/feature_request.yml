@@ -2,24 +2,16 @@ name: Feature Request
 description: Suggest a new feature or improvement
 labels: []
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for suggesting a feature! Please fill out the form below.
-        **Issues that do not complete all required fields and checkboxes will be automatically closed.**
-
   - type: checkboxes
     id: prerequisites
     attributes:
-      label: Prerequisites
-      description: Please confirm the following before submitting.
+      label: Before you start
+      description: These help us triage your request faster.
       options:
         - label: I have read the [README.md](https://github.com/samuelngs/apple-emoji-ttf/blob/v2/README.md)
-          required: true
+          required: false
         - label: I have searched [existing issues](https://github.com/samuelngs/apple-emoji-ttf/issues) to make sure this hasn't been requested already
-          required: true
-        - label: I understand this project is for educational purposes only and Apple Color Emoji assets belong to Apple
-          required: true
+          required: false
 
   - type: textarea
     id: problem
