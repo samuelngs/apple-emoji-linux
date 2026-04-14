@@ -1,4 +1,4 @@
-![AppleColorEmojiLinux](https://repository-images.githubusercontent.com/158348890/3f2bca4c-f858-47b9-bade-1f87a4a313da)
+todos❤️![AppleColorEmojiLinux](https://repository-images.githubusercontent.com/158348890/3f2bca4c-f858-47b9-bade-1f87a4a313da)
 
 # apple-emoji-ttf
 
