@@ -2,29 +2,22 @@
 # Upstream: https://github.com/samuelngs/apple-emoji-ttf
 
 pkgname=ttf-apple-emoji
-# Update pkgver to match a release tag from https://github.com/samuelngs/apple-emoji-ttf/releases
-pkgver=macos-26-20250217-abc1234
+# Update _pkgver to match a release tag from https://github.com/samuelngs/apple-emoji-ttf/releases
+pkgver=2026.02.19
+_pkgver=macos-26-20260219-2aa12422
 pkgrel=1
-pkgdesc="Apple Color Emoji is a color typeface used by iOS and macOS to display emoji"
+pkgdesc="Brings Apple's vibrant color emojis to Linux."
 url='https://github.com/samuelngs/apple-emoji-ttf'
 license=('custom')
 arch=('any')
 provides=('emoji-font')
-conflicts=(
-  'noto-fonts-emoji'
-  'ttf-symbola'
-  'ttf-joypixels'
-  'ttf-twemoji-color'
-  'ttf-whatsapp-emoji'
-)
 source=(
-  "AppleColorEmoji-Linux.ttf::${url}/releases/download/${pkgver}/AppleColorEmoji-Linux.ttf"
+  "AppleColorEmoji-Linux.ttf::${url}/releases/download/${_pkgver}/AppleColorEmoji-Linux.ttf"
   '75-apple-color-emoji.conf'
 )
-sha256sums=(
-  'SKIP'
-  'SKIP'
-)
+
+sha256sums=('535a043af04706d24471059e64745bfc80d6617ada2eea3435dc5620dc0f5318'
+            'f72154069e808e26f1ed800a33cfaba87c268e7e927a3d5987fde0159e341160')
 
 package() {
   install -Dm644 "$srcdir/AppleColorEmoji-Linux.ttf" \
