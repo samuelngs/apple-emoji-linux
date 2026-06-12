@@ -1,0 +1,347 @@
+version: 1
+names:
+  records:
+    - name_id: 0
+      platform_id: 1
+      platform_encoding_id: 0
+      language_id: 0
+      value: © 2025 Microsoft Corporation. All Rights Reserved.
+    - name_id: 1
+      platform_id: 1
+      platform_encoding_id: 0
+      language_id: 0
+      value: Segoe UI Emoji
+    - name_id: 2
+      platform_id: 1
+      platform_encoding_id: 0
+      language_id: 0
+      value: Regular
+    - name_id: 3
+      platform_id: 1
+      platform_encoding_id: 0
+      language_id: 0
+      value: Segoe UI Emoji
+    - name_id: 4
+      platform_id: 1
+      platform_encoding_id: 0
+      language_id: 0
+      value: Segoe UI Emoji
+    - name_id: 5
+      platform_id: 1
+      platform_encoding_id: 0
+      language_id: 0
+      value: Version 1.60
+    - name_id: 6
+      platform_id: 1
+      platform_encoding_id: 0
+      language_id: 0
+      value: SegoeUIEmoji
+    - name_id: 7
+      platform_id: 1
+      platform_encoding_id: 0
+      language_id: 0
+      value: Segoe is a trademark of the Microsoft group of companies.
+    - name_id: 8
+      platform_id: 1
+      platform_encoding_id: 0
+      language_id: 0
+      value: Microsoft Corporation
+    - name_id: 11
+      platform_id: 1
+      platform_encoding_id: 0
+      language_id: 0
+      value: http://www.microsoft.com/typography/fonts/
+    - name_id: 13
+      platform_id: 1
+      platform_encoding_id: 0
+      language_id: 0
+      value: Microsoft supplied font. You may use this font to create, display and print content as permitted by the license terms, or terms of use, of the Microsoft product, service or content in which this font was included. You may only (i) embed this font in content as permitted by the embedding restrictions included in this font; and (ii) temporarily download this font to a printer or other output device to help print content. Any other use is prohibited.
+    - name_id: 14
+      platform_id: 1
+      platform_encoding_id: 0
+      language_id: 0
+      value: http://www.microsoft.com/typography/fonts/
+    - name_id: 2
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1027
+      value: Normal
+    - name_id: 2
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1029
+      value: obyčejné
+    - name_id: 2
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1030
+      value: Normal
+    - name_id: 2
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1031
+      value: Standard
+    - name_id: 2
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1032
+      value: Κανονικά
+    - name_id: 0
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1033
+      value: © 2025 Microsoft Corporation. All Rights Reserved.
+    - name_id: 1
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1033
+      value: Segoe UI Emoji
+    - name_id: 2
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1033
+      value: Regular
+    - name_id: 3
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1033
+      value: Segoe UI Emoji
+    - name_id: 4
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1033
+      value: Segoe UI Emoji
+    - name_id: 5
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1033
+      value: Version 1.60
+    - name_id: 6
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1033
+      value: SegoeUIEmoji
+    - name_id: 7
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1033
+      value: Segoe is a trademark of the Microsoft group of companies.
+    - name_id: 8
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1033
+      value: Microsoft Corporation
+    - name_id: 11
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1033
+      value: http://www.microsoft.com/typography/fonts/
+    - name_id: 13
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1033
+      value: Microsoft supplied font. You may use this font to create, display and print content as permitted by the license terms, or terms of use, of the Microsoft product, service or content in which this font was included. You may only (i) embed this font in content as permitted by the embedding restrictions included in this font; and (ii) temporarily download this font to a printer or other output device to help print content. Any other use is prohibited.
+    - name_id: 14
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1033
+      value: http://www.microsoft.com/typography/fonts/
+    - name_id: 19
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1033
+      value: 😂😍😭💁👍💋🐱🦉🌺🌲🍓🍕🎂🏰🏠🚄🚒🛫🛍
+    - name_id: 2
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1034
+      value: Normal
+    - name_id: 2
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1035
+      value: Normaali
+    - name_id: 2
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1036
+      value: Normal
+    - name_id: 2
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1038
+      value: Normál
+    - name_id: 2
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1040
+      value: Normale
+    - name_id: 2
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1043
+      value: Standaard
+    - name_id: 2
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1044
+      value: Normal
+    - name_id: 2
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1045
+      value: Normalny
+    - name_id: 2
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1046
+      value: Normal
+    - name_id: 2
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1049
+      value: Обычный
+    - name_id: 2
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1051
+      value: Normálne
+    - name_id: 2
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1053
+      value: Normal
+    - name_id: 2
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1055
+      value: Normal
+    - name_id: 2
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1060
+      value: Navadno
+    - name_id: 2
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 1069
+      value: Arrunta
+    - name_id: 2
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 2058
+      value: Normal
+    - name_id: 2
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 2070
+      value: Normal
+    - name_id: 2
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 3082
+      value: Normal
+    - name_id: 2
+      platform_id: 3
+      platform_encoding_id: 1
+      language_id: 3084
+      value: Normal
+bitmap:
+  format: cbdt_cblc
+  strikes:
+    - 20
+    - 26
+    - 32
+    - 40
+    - 48
+    - 52
+    - 64
+    - 96
+  generated_strikes:
+    source: 160
+    sizes:
+      - 56
+      - 72
+      - 80
+      - 88
+  transforms:
+    merge_lr_halves:
+      cache: ../.ligatures-multi.json
+      include_skin_tone_variants: false
+  metrics:
+    y_bearing: line_center
+    line_source: os2_win
+tables:
+  drop:
+    source_tables: true
+    outlines: false
+    dsig: true
+  cmap:
+    bmp: true
+    ucs4: true
+    entries:
+      - codepoint: 13
+        glyph: .controlCR
+  metrics:
+    hhea:
+      ascent: 1491
+      descent: -431
+      line_gap: 269
+    os2:
+      version: 4
+      x_avg_char_width: 2785
+      us_weight_class: 400
+      us_width_class: 5
+      fs_type: 8
+      y_subscript_x_size: 1434
+      y_subscript_y_size: 1331
+      y_subscript_x_offset: 0
+      y_subscript_y_offset: 283
+      y_superscript_x_size: 1434
+      y_superscript_y_size: 1331
+      y_superscript_x_offset: 0
+      y_superscript_y_offset: 977
+      y_strikeout_size: 102
+      y_strikeout_position: 530
+      s_family_class: 2053
+      s_typo_ascender: 1491
+      s_typo_descender: -431
+      s_typo_line_gap: 269
+      us_win_ascent: 2210
+      us_win_descent: 514
+      fs_selection: 64
+      us_first_char_index: 13
+      us_last_char_index: 65535
+      s_cap_height: 1434
+      sx_height: 1024
+      us_max_context: 7
+      unicode_range_1: 1
+      unicode_range_2: 33554432
+      unicode_range_3: 134217728
+      unicode_range_4: 0
+      code_page_range_1: 1
+      code_page_range_2: 0
+      vendor_id: 'MS  '
+      panose:
+        family_type: 2
+        serif_style: 11
+        weight: 5
+        proportion: 2
+        contrast: 4
+        stroke_variation: 2
+        arm_style: 4
+        letter_form: 2
+        midline: 2
+        x_height: 3
+  head:
+    units_per_em: 2048
+    mac_style: 0
+  post:
+    format: 3
+shaping:
+  gsub:
+    enabled: true
+    ligatures_cache: ../.ligatures.json
+    recompute: false
+    delete_vs16: false
+    replace_morx: false

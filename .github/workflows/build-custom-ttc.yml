@@ -33,10 +33,10 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Build Linux font
-        run: python convert.py --input "input/Apple Color Emoji.ttc" --target linux --output output/AppleColorEmoji-Linux.ttf
+        run: python cli.py -c configs/linux.yaml --input "input/Apple Color Emoji.ttc" --output output/AppleColorEmoji-Linux.ttf
 
       - name: Build Windows font
-        run: python convert.py --input "input/Apple Color Emoji.ttc" --target windows --output output/AppleColorEmoji-Windows.ttf
+        run: python cli.py -c configs/windows.yaml --input "input/Apple Color Emoji.ttc" --output output/AppleColorEmoji-Windows.ttf
 
       - name: Upload font artifacts
         uses: actions/upload-artifact@v4

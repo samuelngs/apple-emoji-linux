@@ -1,13 +1,5 @@
 #!/usr/bin/env python3
-"""
-Extract a single emoji as PNG from Apple Color Emoji TTC at a given ppem.
-Use this to build fixture PNGs for the font render test (same expected image on Linux and Windows).
-Use ppem=96 to match the default build (convert.py); then the test compares at the same resolution.
-
-Example:
-  python extract.py --emoji 1F600 --ppem 96 --output tests/fixtures/1f600.png
-  python extract.py --emoji 1F389 --ppem 96 --output tests/fixtures/1f389.png
-"""
+"""Extract one emoji PNG from an sbix font."""
 
 from __future__ import annotations
 
@@ -15,7 +7,8 @@ import argparse
 import sys
 from pathlib import Path
 
-from sbix_reader import get_emoji_png, load_font
+from source.font_loader import load_font
+from source.sbix import get_emoji_png
 
 
 def main() -> int:
@@ -33,7 +26,7 @@ def main() -> int:
         "-p",
         type=int,
         default=96,
-        help="Sbix strike ppem (default: 96, to match convert.py and test fixtures). Uses closest if not available.",
+        help="Sbix strike ppem (default: 96, to match test fixtures). Uses closest if not available.",
     )
     parser.add_argument(
         "--input",

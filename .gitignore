@@ -8,9 +8,5 @@ __pycache__/
 input/
 output/
 
-# Nix build outputs
-result
-result-*
-
 # Debug screenshots from font render test
 tests/results/

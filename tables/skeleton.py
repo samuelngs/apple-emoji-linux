@@ -1,11 +1,10 @@
-"""Clone the font, drop CFF/sbix (and optionally glyf/loca), then add CBDT/CBLC."""
+"""Build the output font skeleton."""
 
 from __future__ import annotations
 
 from fontTools.ttLib import TTFont
-from fontTools.ttLib.tables import DefaultTable
+from tables.raw import add_raw_table
 
-# CFF, sbix, etc. We keep glyf/loca for Windows and morx for ZWJ/sequences.
 TABLES_TO_DROP = [
     "cvt ",
     "fpgm",
@@ -20,9 +19,10 @@ def drop_tables(
     font: TTFont,
     extra: list[str] | None = None,
     *,
+    source_tables: bool = True,
     keep_outlines: bool = True,
 ) -> None:
-    tags = list(TABLES_TO_DROP)
+    tags = list(TABLES_TO_DROP) if source_tables else []
     if not keep_outlines:
         tags = tags + ["glyf", "loca"]
     if extra:
@@ -32,13 +32,6 @@ def drop_tables(
             del font[tag]
 
 
-def add_raw_table(font: TTFont, tag: str, data: bytes) -> None:
-    """Stick a raw table in the font (e.g. CBDT, CBLC)."""
-    table = DefaultTable.DefaultTable(tag)
-    table.data = data
-    font[tag] = table
-
-
 def build_skeleton(
     font: TTFont,
     cbdt_bytes: bytes,
@@ -46,10 +39,14 @@ def build_skeleton(
     *,
     drop_vertical: bool = False,
     keep_outlines: bool = True,
+    drop_source_tables: bool = True,
     add_bitmap_tables: bool = True,
 ) -> None:
-    """Drop tables, optionally strip vertical, then add CBDT/CBLC if requested."""
-    drop_tables(font, keep_outlines=keep_outlines)
+    drop_tables(
+        font,
+        source_tables=drop_source_tables,
+        keep_outlines=keep_outlines,
+    )
     if drop_vertical:
         for tag in ("vhea", "vmtx"):
             if tag in font:

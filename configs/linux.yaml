@@ -1,0 +1,21 @@
+version: 1
+names:
+  family: Apple Color Emoji
+bitmap:
+  format: cbdt_cblc
+  strikes:
+    - 20
+    - 26
+    - 32
+    - 40
+    - 48
+    - 52
+    - 64
+    - 96
+tables:
+  drop:
+    source_tables: true
+    outlines: true
+  cmap:
+    bmp: true
+    ucs4: true

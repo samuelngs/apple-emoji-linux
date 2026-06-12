@@ -1,4 +1,4 @@
-name: AI issue triage
+name: Issue triage
 
 on:
   issues:
@@ -37,7 +37,7 @@ jobs:
             const title = context.payload.issue.title || '';
             const issueNumber = context.payload.issue.number;
 
-            // --- OS / Installation Method mismatch detection ---
+            // OS / installation method mismatch detection.
             const osMatch = body.match(/### Operating System \/ Distribution\s*\n\s*(.+)/);
             const methodMatch = body.match(/### Installation Method\s*\n\s*(.+)/);
             const os = osMatch ? osMatch[1].trim().toLowerCase() : '';
@@ -48,13 +48,12 @@ jobs:
               '.rpm package (Fedora / RHEL)',
               '.pkg.tar.zst (Arch Linux)',
               'Manual install (copied TTF + fontconfig)',
-              'Nix build',
             ];
             const windowsMethod = 'Windows (replaced seguiemj.ttf)';
 
             let mismatch = '';
             const isWindowsOS = /windows/i.test(os);
-            const isLinuxOS = /ubuntu|debian|fedora|rhel|centos|arch|manjaro|linux|mint|pop|endeavour|nixos|gentoo|opensuse|suse/i.test(os);
+            const isLinuxOS = /ubuntu|debian|fedora|rhel|centos|arch|manjaro|linux|mint|pop|endeavour|gentoo|opensuse|suse/i.test(os);
 
             if (isWindowsOS && linuxMethods.includes(method)) {
               mismatch = `OS is "${osMatch[1].trim()}" but installation method is "${method}" which is a Linux-only method. The Windows installation instructions are in a separate section of the README and require replacing seguiemj.ttf.`;
@@ -62,7 +61,7 @@ jobs:
               mismatch = `OS is "${osMatch[1].trim()}" but installation method is "${method}" which is Windows-only. They should use the Linux installation instructions from the README.`;
             }
 
-            // --- Search for related existing issues ---
+            // Search for related existing issues.
             const keywords = title
               .toLowerCase()
               .replace(/[^\w\s]/g, ' ')
@@ -97,7 +96,7 @@ jobs:
             core.setOutput('mismatch', mismatch);
             core.setOutput('related_issues', relatedIssues);
 
-      - name: Analyze issue with AI
+      - name: Analyze issue
         id: ai
         uses: actions/ai-inference@v1
         with:
@@ -106,23 +105,11 @@ jobs:
             You are a maintainer of the apple-emoji-ttf project. This project converts
             Apple Color Emoji to TTF format for Linux and Windows.
 
-            Write like a real human maintainer — casual, friendly, and concise. You're a
-            chill dev who genuinely wants to help but keeps it brief. Think of how you'd
-            reply to a friend on slack, not a customer on a support ticket.
-
-            Rules for tone:
-            - Always capitalize the first letter of each sentence — proper grammar matters
-            - Use contractions (can't, doesn't, won't, it's)
-            - NEVER use em dashes (—). Use commas, periods, or just start a new sentence
-            - It's okay to start with "Hey", "Ah", "Oh", "Hmm", "Yep", "Nah", etc.
-            - Keep it warm but not over-the-top. No exclamation marks spam
-            - NEVER use corporate/support phrases like: "Thank you for reaching out",
-              "I understand your frustration", "I appreciate you filing this",
-              "We apologize for the inconvenience", "Please don't hesitate to",
-              "Happy to help", "Great question"
-            - NEVER use bullet points or numbered lists in your reply
-            - Don't say "feel free to", just tell them what to do
-            - Don't sign off with "cheers", "best regards", etc.
+            Tone:
+            - Write like a concise project maintainer.
+            - Use contractions where they sound natural.
+            - Do not use em dashes, bullet lists, signoffs, or corporate support phrases.
+            - Keep the reply warm, plain, and brief.
 
             Keep it to 2-4 short sentences max. Get to the point.
 
@@ -139,8 +126,7 @@ jobs:
             ANALYSIS STEPS:
 
             1. Check if there is an OS/method mismatch flagged below. If so, the user
-               picked the wrong installation method for their OS. This means they didn't
-               read the README properly.
+               picked the wrong installation method for their OS.
 
             2. Read the issue carefully. Pay close attention to the EXACT steps the
                user describes. Compare those specific steps against the README's
@@ -153,11 +139,7 @@ jobs:
             3. If you're confident the user didn't read or follow the README instructions,
                output ACTION:close on its own line. In your comment:
                - Briefly explain what they should actually do (based on the README)
-               - End with a friendly nudge encouraging them to read through the README
-                 instructions before trying again. Make them feel a little silly for
-                 not reading, but in a warm way, not mean. Think "friendly ribbing
-                 from a teammate" not "customer support apology". Examples of the
-                 vibe (don't copy these verbatim, write your own):
+               - Point them to the README instructions before trying again. Examples:
                  "Give the README a read first, it covers exactly this."
                  "The README walks through the whole process, worth a look before diving in."
                - Mention related issues if any are listed below
@@ -172,7 +154,7 @@ jobs:
             NEVER output LABEL:bug together with ACTION:close.
             NEVER output LABEL:bug if your comment explains it's expected behavior or user error.
 
-            RESPONSE FORMAT — you MUST follow this exactly:
+            RESPONSE FORMAT:
             Line 1: COMMENT: followed by your reply text
             Line 2 (optional, pick ONE): LABEL:bug OR LABEL:enhancement OR ACTION:close
 
@@ -180,7 +162,7 @@ jobs:
             paraphrase these. Write your own original response based on the actual
             issue content. Vary your phrasing every time.
 
-            Example 1 (user error — close):
+            Example 1 (user error, close):
             COMMENT: [your original reply explaining what went wrong and what to do]
             ACTION:close
 
@@ -204,13 +186,13 @@ jobs:
             Related existing issues:
             ${{ steps.prechecks.outputs.related_issues || 'none found' }}
 
-      - name: Parse AI response and apply
+      - name: Parse response and apply
         uses: actions/github-script@v7
         env:
-          AI_RESPONSE: ${{ steps.ai.outputs.response }}
+          RESPONSE: ${{ steps.ai.outputs.response }}
         with:
           script: |
-            const response = process.env.AI_RESPONSE || '';
+            const response = process.env.RESPONSE || '';
             const issue = context.payload.issue;
             const issueNumber = issue.number;
             const username = issue.user.login;
@@ -235,19 +217,19 @@ jobs:
             const windowsKeywords = /invalid|not.{0,5}valid|can.?t.{0,10}(install|open|preview)|corrupt|broken.{0,5}file|not.{0,5}a.{0,5}valid.{0,5}font/i;
             const isWindows = /windows/i.test(body) || /windows/i.test(title);
             if (isBug && isWindows && windowsKeywords.test(body + ' ' + title)) {
-              console.log('Safeguard: stripping bug label — Windows invalid font is expected behavior');
+              console.log('Safeguard: stripping bug label, Windows invalid font is expected behavior');
               isBug = false;
             }
 
             // Safeguard: if the comment itself says "expected", don't label as bug
             if (isBug && /expected|not a bug|known (issue|limitation)|user error/i.test(comment)) {
-              console.log('Safeguard: stripping bug label — comment indicates expected behavior');
+              console.log('Safeguard: stripping bug label, comment indicates expected behavior');
               isBug = false;
             }
 
             // Safeguard: never label bug AND close
             if (isBug && shouldClose) {
-              console.log('Safeguard: stripping bug label — ACTION:close takes precedence');
+              console.log('Safeguard: stripping bug label, ACTION:close takes precedence');
               isBug = false;
             }
 
@@ -274,7 +256,7 @@ jobs:
               });
             }
 
-            // Close if AI determined user didn't follow instructions
+            // Close invalid reports.
             if (shouldClose) {
               await github.rest.issues.addLabels({
                 ...context.repo,
@@ -327,9 +309,9 @@ jobs:
             const allComments = comments.data;
             const thisComment = comment.body || '';
 
-            // --- Determine if the comment is part of a user-to-user conversation ---
+            // Determine if the comment is part of a user-to-user conversation.
 
-            // Get unique human participants (exclude bot)
+            // Get unique human participants.
             const humanParticipants = new Set();
             humanParticipants.add(issue.user.login); // issue author
             for (const c of allComments) {
@@ -338,14 +320,14 @@ jobs:
               }
             }
 
-            // Check if comment explicitly mentions another human user
+            // Check explicit mentions.
             const mentionedUsers = (thisComment.match(/@[\w-]+/g) || [])
               .map(m => m.slice(1));
             const mentionsHuman = mentionedUsers.some(u =>
               u !== 'github-actions[bot]' && humanParticipants.has(u)
             );
 
-            // Check if this looks like a reply to a previous human comment
+            // Check if this looks like a reply to a previous human comment.
             const humanComments = allComments.filter(c =>
               c.user.login !== 'github-actions[bot]'
             );
@@ -353,7 +335,7 @@ jobs:
               c.user.login !== commenter
             );
 
-            // If someone @mentions another human, it's a conversation — skip
+            // If someone mentions another participant, skip.
             if (mentionsHuman) {
               core.setOutput('skip', 'true');
               core.setOutput('reason', 'Comment mentions another user');
@@ -375,7 +357,7 @@ jobs:
               }
             }
 
-            // Build thread for AI
+            // Build thread context.
             const thread = allComments.map(c =>
               `[${c.user.login}]: ${c.body}`
             ).join('\n---\n');
@@ -391,7 +373,7 @@ jobs:
             core.setOutput('skip', 'false');
             core.setOutput('thread', result);
 
-      - name: Analyze follow-up with AI
+      - name: Analyze follow-up
         if: steps.should-reply.outputs.skip != 'true'
         id: ai
         uses: actions/ai-inference@v1
@@ -412,7 +394,7 @@ jobs:
             ${{ steps.readme.outputs.content }}
             </readme>
 
-            IMPORTANT — Deciding whether to reply:
+            Reply policy:
 
             You must figure out WHO the commenter is talking to based on context:
 
@@ -424,26 +406,18 @@ jobs:
             3. If the comment is a general question that isn't directed at anyone specific,
                and you can answer it using the README, go ahead and answer.
             4. If you're not confident in the answer, or it requires maintainer judgement
-               (e.g. design decisions, timeline questions, whether something will be
+               (for example design decisions, timeline questions, whether something will be
                supported), respond with NO_REPLY.
 
             Also respond with NO_REPLY for:
             - "thanks", "+1", "same here", acknowledgements, reactions, emoji-only
             - Comments where the user confirms the fix worked or says the issue is resolved
 
-            Write like a real human maintainer — casual, friendly, and concise.
-
-            Rules for tone:
-            - Always capitalize the first letter of each sentence — proper grammar matters
-            - Use contractions (can't, doesn't, won't, it's)
-            - NEVER use em dashes (—). Use commas, periods, or just start a new sentence
-            - It's okay to start with "Hey", "Ah", "Oh", "Hmm", "Yep", "Nah", etc.
-            - Keep it warm but not over-the-top. No exclamation marks spam
-            - NEVER use corporate/support phrases like: "Thank you for reaching out",
-              "I understand your frustration", "Happy to help", "Great question"
-            - NEVER use bullet points or numbered lists in your reply
-            - Don't say "feel free to", just tell them what to do
-            - Don't sign off with "cheers", "best regards", etc.
+            Tone:
+            - Write like a concise project maintainer.
+            - Use contractions where they sound natural.
+            - Do not use em dashes, bullet lists, signoffs, or corporate support phrases.
+            - Keep the reply warm, plain, and brief.
 
             Keep it to 1-3 short sentences max. Get to the point.
 
@@ -458,10 +432,10 @@ jobs:
         if: steps.should-reply.outputs.skip != 'true'
         uses: actions/github-script@v7
         env:
-          AI_RESPONSE: ${{ steps.ai.outputs.response }}
+          RESPONSE: ${{ steps.ai.outputs.response }}
         with:
           script: |
-            const response = process.env.AI_RESPONSE || '';
+            const response = process.env.RESPONSE || '';
 
             if (/^\s*NO_REPLY\s*$/i.test(response)) return;
 

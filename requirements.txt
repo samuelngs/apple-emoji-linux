@@ -1,1 +1,6 @@
 fonttools>=4.0.0
+PyYAML>=6.0
+# For -c configs/web.yaml (PNG compression)
+pillow>=10.0.0
+# For --recompute-ligatures (morx -> GSUB via HarfBuzz shaping)
+uharfbuzz>=0.40.0

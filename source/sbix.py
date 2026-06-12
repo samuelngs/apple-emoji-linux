@@ -1,4 +1,4 @@
-"""Read sbix strikes and PNG glyphs from Apple Color Emoji (or any sbix TTC)."""
+"""Read PNG glyphs from sbix strikes."""
 
 from __future__ import annotations
 
@@ -52,7 +52,6 @@ def iter_sbix_glyphs(
     *,
     validate_png: bool = True,
 ) -> Generator[tuple[int, str, bytes, StrikeMetadata], None, None]:
-    """Yield (gid, name, png_bytes, metadata) for each glyph with PNG in the chosen strike. ppem=None uses largest strike."""
     strikes = get_sbix_strikes(font)
     if not strikes:
         raise ValueError("Font has no sbix strikes")
@@ -88,7 +87,6 @@ def collect_sbix_glyphs(
     *,
     validate_png: bool = True,
 ) -> tuple[list[tuple[int, str, bytes]], StrikeMetadata]:
-    """Same as iter_sbix_glyphs but returns a list and the strike metadata."""
     ordered: list[tuple[int, str, bytes]] = []
     meta: StrikeMetadata | None = None
     for gid, name, png_data, m in iter_sbix_glyphs(font, ppem=ppem, validate_png=validate_png):
@@ -107,11 +105,6 @@ def get_emoji_png(
     codepoint: int,
     ppem: int | None = None,
 ) -> tuple[bytes, int] | None:
-    """
-    Return (png_bytes, actual_ppem) for the glyph at the given Unicode codepoint.
-    If ppem is not in the font's sbix strikes, uses the closest available ppem.
-    Returns None if the codepoint has no glyph or no PNG in sbix.
-    """
     cmap = font.getBestCmap()
     if not cmap or codepoint not in cmap:
         return None

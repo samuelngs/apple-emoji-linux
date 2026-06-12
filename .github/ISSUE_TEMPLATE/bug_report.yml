@@ -35,7 +35,6 @@ body:
         - .pkg.tar.zst (Arch Linux)
         - Manual install (copied TTF + fontconfig)
         - Windows (replaced seguiemj.ttf)
-        - Nix build
         - Built from source
     validations:
       required: true

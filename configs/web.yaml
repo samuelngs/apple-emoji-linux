@@ -1,0 +1,52 @@
+version: 1
+names:
+  family: Apple Color Emoji
+bitmap:
+  format: cbdt_cblc
+  strikes:
+    - 20
+    - 26
+    - 32
+    - 40
+    - 48
+    - 52
+    - 64
+    - 96
+  transforms:
+    merge_lr_halves:
+      cache: ../.ligatures-multi.json
+    flip_directional_variants: true
+  png:
+    compress: true
+    max_colors: 128
+    prefer_pngquant: true
+tables:
+  drop:
+    source_tables: true
+    outlines: true
+    vertical_metrics: true
+    after_shaping:
+      - GDEF
+      - GPOS
+      - bgcl
+      - feat
+      - meta
+      - trak
+      - DSIG
+  cmap:
+    bmp: true
+    ucs4: true
+  metrics:
+    policy: browser_safe
+    fs_type: installable
+shaping:
+  gsub:
+    enabled: true
+    ligatures_cache: ../.ligatures.json
+    recompute: false
+    delete_vs16: true
+    replace_morx: true
+split:
+  enabled: true
+  chunk_kb: 500
+  write_css: true

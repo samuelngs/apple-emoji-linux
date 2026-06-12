@@ -16,7 +16,6 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            // --- Shared validation function ---
             function validateIssue(body) {
               const isBugReport = body.includes('### Bug Description');
               const isFeatureRequest = body.includes('### Proposed Solution');
@@ -72,7 +71,6 @@ jobs:
               return { missing, missingCheckboxes, missingFields, issueType };
             }
 
-            // --- Event-driven: issues.opened ---
             const body = context.payload.issue.body || '';
             const issueNumber = context.payload.issue.number;
 
@@ -86,7 +84,6 @@ jobs:
               let comment;
 
               if (missingCheckboxes.length > 0 && missingFields.length === 0) {
-                // Only checkboxes unchecked — they didn't do their homework
                 comment = `Hey, it looks like you skipped a few steps before opening this ${issueType}. ` +
                   `We ask everyone to read through the ` +
                   `[README](https://github.com/samuelngs/apple-emoji-ttf/blob/v2/README.md), ` +
@@ -94,12 +91,10 @@ jobs:
                   `This helps us avoid chasing issues that are already answered or fixed.\n\n` +
                   `If you still run into problems after going through all of that, open a new issue and we'll be happy to help.`;
               } else if (missingFields.length > 0 && missingCheckboxes.length === 0) {
-                // Only fields empty
                 comment = `This ${issueType} is missing some required info:\n\n` +
                   missingFields.join('\n') +
                   `\n\nPlease open a new issue with all the fields filled in so we can help you out.`;
               } else {
-                // Both
                 comment = `Hey, this ${issueType} is missing some required info and it looks like ` +
                   `the prep steps weren't done either. Please read through the ` +
                   `[README](https://github.com/samuelngs/apple-emoji-ttf/blob/v2/README.md), ` +
