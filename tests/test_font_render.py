@@ -1,12 +1,4 @@
-"""
-Font render test: load the built TTF in headless Chromium and compare each emoji to a fixture PNG.
-
-Fixtures live in tests/fixtures/ as 1f600.png etc (hex = Unicode codepoint). Add more with:
-  python extract.py --emoji 1F600 --ppem 96 --output tests/fixtures/1f600.png
-
-Run:  python -m tests.test_font_render   or   pytest tests/test_font_render.py -v
-Need: pip install -r requirements-test.txt  then  playwright install chromium
-"""
+"""Render fixture emoji through Chromium and compare the screenshots."""
 
 from __future__ import annotations
 
@@ -20,13 +12,12 @@ from http.server import HTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
 
 TEST_FONT_FAMILY = "TestAppleEmoji"
-FIXTURE_PPEM = 96  # same as convert.py default so bitmaps line up
+FIXTURE_PPEM = 96  # recipes include a 96 ppem strike, so fixtures line up
 
 HEX_STEM_RE = re.compile(r"^[0-9a-f]{1,8}$")
 
 
 def _discover_fixtures(fixtures_dir: Path) -> list[tuple[int, Path]]:
-    """Find all *.png in fixtures whose name is a hex codepoint (e.g. 1f600.png)."""
     out: list[tuple[int, Path]] = []
     if not fixtures_dir.is_dir():
         return out
@@ -83,14 +74,12 @@ def _find_free_port():
 
 
 def _composite_on_white(img: "Image.Image") -> "Image.Image":
-    """Draw the image on a white background so we can compare to the browser screenshot (which is also on white)."""
     from PIL import Image
     white = Image.new("RGBA", img.size, (255, 255, 255, 255))
     return Image.alpha_composite(white, img)
 
 
 def _image_similarity(ref: "Image.Image", got: "Image.Image") -> float:
-    """Score 0-1: how many RGBA channels match (within a small tolerance). Ref is composited on white first."""
     from PIL import Image
     if ref.size != got.size:
         return 0.0
@@ -120,8 +109,6 @@ def run_font_render_emoji(
     similarity_threshold: float = 0.80,
     save_results_dir: Path | None = None,
 ) -> tuple[float, str | None]:
-    """Load the page for one emoji, screenshot it, compare to the fixture.
-    Returns (similarity, error_message). error_message is None on success."""
     from playwright.sync_api import sync_playwright
     emoji_char = chr(codepoint)
     size = FIXTURE_PPEM
@@ -172,7 +159,6 @@ def run_font_render(
     similarity_threshold: float = 0.80,
     save_results_dir: Path | None = None,
 ) -> None:
-    """Serve the font over HTTP, then for each fixture render that emoji and compare. Screenshots can be written to save_results_dir for debugging."""
     font_path = font_path.resolve()
     if not font_path.exists():
         raise FileNotFoundError(f"Font not found: {font_path}")
@@ -253,7 +239,6 @@ def _main() -> int:
 
 
 def test_font_render() -> None:
-    """On Linux/mac use the Linux TTF; on Windows use the Windows TTF. Compares each fixture to the rendered emoji."""
     import pytest
     root = Path(__file__).resolve().parent.parent
     fixtures_dir = Path(__file__).resolve().parent / "fixtures"

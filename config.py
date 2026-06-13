@@ -4,6 +4,7 @@ from pathlib import Path
 from typing import Any
 
 from config_types import (
+    BackfillMissingConfig,
     BitmapConfig,
     BitmapMetricsConfig,
     BitmapTransformsConfig,
@@ -15,7 +16,6 @@ from config_types import (
     GeneratedStrikesConfig,
     GsubConfig,
     HeadConfig,
-    MergeLrHalvesConfig,
     MetricsConfig,
     NameRecordConfig,
     NamesConfig,
@@ -118,7 +118,15 @@ def _parse_bitmap(raw: Any, base_dir: Path) -> BitmapConfig:
     data = require_mapping(raw, "bitmap")
     reject_unknown(
         data,
-        {"format", "strikes", "generated_strikes", "transforms", "png", "metrics"},
+        {
+            "format",
+            "strikes",
+            "generated_strikes",
+            "backfill_missing",
+            "transforms",
+            "png",
+            "metrics",
+        },
         "bitmap",
     )
     bitmap_format = data.get("format", "cbdt_cblc")
@@ -137,6 +145,7 @@ def _parse_bitmap(raw: Any, base_dir: Path) -> BitmapConfig:
         format=bitmap_format,
         strikes=strikes,
         generated_strikes=generated,
+        backfill_missing=_parse_backfill_missing(data.get("backfill_missing")),
         transforms=_parse_transforms(data.get("transforms"), base_dir),
         png=_parse_png(data.get("png")),
         metrics=_parse_bitmap_metrics(data.get("metrics")),
@@ -155,6 +164,17 @@ def _parse_generated_strikes(raw: Any) -> GeneratedStrikesConfig | None:
         source=source,
         sizes=parse_strikes(data.get("sizes"), "bitmap.generated_strikes.sizes"),
     )
+
+
+def _parse_backfill_missing(raw: Any) -> BackfillMissingConfig | None:
+    if raw is None:
+        return None
+    data = require_mapping(raw, "bitmap.backfill_missing")
+    reject_unknown(data, {"source"}, "bitmap.backfill_missing")
+    source = require_int(data.get("source"), "bitmap.backfill_missing.source")
+    if source < 1 or source > 255:
+        raise ConfigError("bitmap.backfill_missing.source must be between 1 and 255")
+    return BackfillMissingConfig(source=source)
 
 
 def _parse_bitmap_metrics(raw: Any) -> BitmapMetricsConfig:
@@ -181,35 +201,16 @@ def _parse_bitmap_metrics(raw: Any) -> BitmapMetricsConfig:
 
 
 def _parse_transforms(raw: Any, base_dir: Path) -> BitmapTransformsConfig:
+    del base_dir
     if raw is None:
         return BitmapTransformsConfig()
     data = require_mapping(raw, "bitmap.transforms")
     reject_unknown(
         data,
-        {"merge_lr_halves", "flip_directional_variants"},
+        {"flip_directional_variants"},
         "bitmap.transforms",
     )
-    merge = None
-    if "merge_lr_halves" in data:
-        merge_data = require_mapping(data["merge_lr_halves"], "bitmap.transforms.merge_lr_halves")
-        reject_unknown(
-            merge_data,
-            {"cache", "include_skin_tone_variants"},
-            "bitmap.transforms.merge_lr_halves",
-        )
-        cache_raw = require_nonempty_str(
-            merge_data.get("cache"),
-            "bitmap.transforms.merge_lr_halves.cache",
-        )
-        merge = MergeLrHalvesConfig(
-            cache=resolve_recipe_path(base_dir, cache_raw),
-            include_skin_tone_variants=require_bool(
-                merge_data.get("include_skin_tone_variants", True),
-                "bitmap.transforms.merge_lr_halves.include_skin_tone_variants",
-            ),
-        )
     return BitmapTransformsConfig(
-        merge_lr_halves=merge,
         flip_directional_variants=require_bool(
             data.get("flip_directional_variants", False),
             "bitmap.transforms.flip_directional_variants",
@@ -221,12 +222,13 @@ def _parse_png(raw: Any) -> PngConfig:
     if raw is None:
         return PngConfig()
     data = require_mapping(raw, "bitmap.png")
-    reject_unknown(data, {"compress", "max_colors", "prefer_pngquant"}, "bitmap.png")
+    reject_unknown(data, {"compress", "strikes", "max_colors", "prefer_pngquant"}, "bitmap.png")
     max_colors = require_int(data.get("max_colors", 128), "bitmap.png.max_colors")
     if max_colors < 2 or max_colors > 256:
         raise ConfigError("bitmap.png.max_colors must be between 2 and 256")
     return PngConfig(
         compress=require_bool(data.get("compress", False), "bitmap.png.compress"),
+        strikes=parse_strikes(data["strikes"], "bitmap.png.strikes") if "strikes" in data else (),
         max_colors=max_colors,
         prefer_pngquant=require_bool(
             data.get("prefer_pngquant", True),
@@ -462,25 +464,44 @@ def _parse_gsub(raw: Any, base_dir: Path) -> GsubConfig | None:
     data = require_mapping(raw, "shaping.gsub")
     reject_unknown(
         data,
-        {"enabled", "ligatures_cache", "recompute", "delete_vs16", "replace_morx"},
+        {"enabled", "sequence_files", "project_sequence_files", "replace_morx"},
         "shaping.gsub",
     )
-    cache = None
-    if data.get("ligatures_cache") is not None:
-        cache = resolve_recipe_path(
-            base_dir,
-            require_nonempty_str(
-                data.get("ligatures_cache"),
-                "shaping.gsub.ligatures_cache",
-            ),
-        )
+    enabled = require_bool(data.get("enabled", False), "shaping.gsub.enabled")
+    sequence_files = _parse_path_list(
+        data.get("sequence_files"),
+        base_dir,
+        "shaping.gsub.sequence_files",
+    )
+    project_sequence_files = _parse_path_list(
+        data.get("project_sequence_files"),
+        base_dir,
+        "shaping.gsub.project_sequence_files",
+    )
+    if enabled and not sequence_files:
+        raise ConfigError("shaping.gsub.sequence_files is required when GSUB is enabled")
     return GsubConfig(
-        enabled=require_bool(data.get("enabled", False), "shaping.gsub.enabled"),
-        ligatures_cache=cache,
-        recompute=require_bool(data.get("recompute", False), "shaping.gsub.recompute"),
-        delete_vs16=require_bool(data.get("delete_vs16", True), "shaping.gsub.delete_vs16"),
+        enabled=enabled,
+        sequence_files=sequence_files,
+        project_sequence_files=project_sequence_files,
         replace_morx=require_bool(data.get("replace_morx", False), "shaping.gsub.replace_morx"),
     )
+
+
+def _parse_path_list(raw: Any, base_dir: Path, path: str) -> tuple[Path, ...]:
+    if raw is None:
+        return ()
+    if not isinstance(raw, list):
+        raise ConfigError(f"{path} must be a list of paths")
+    paths: list[Path] = []
+    for index, value in enumerate(raw):
+        paths.append(
+            resolve_recipe_path(
+                base_dir,
+                require_nonempty_str(value, f"{path}[{index}]"),
+            ),
+        )
+    return tuple(paths)
 
 
 def _parse_split(raw: Any) -> SplitConfig | None:

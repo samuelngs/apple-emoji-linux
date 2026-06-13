@@ -12,6 +12,8 @@ bitmap:
     - 52
     - 64
     - 96
+  backfill_missing:
+    source: 160
 tables:
   drop:
     source_tables: true

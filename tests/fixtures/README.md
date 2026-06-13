@@ -1,6 +1,6 @@
 # Test fixtures
 
-One PNG per emoji. The font render test loads each fixture and compares it to what Chromium actually draws. Use **96 ppem** when extracting so it matches the default build (convert.py uses 96).
+One PNG per emoji. The font render test loads each fixture and compares it to what Chromium actually draws. Use **96 ppem** when extracting so it matches the 96 ppem strike in the build recipes.
 
 Add fixtures with `extract.py`:
 

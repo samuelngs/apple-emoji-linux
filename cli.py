@@ -6,6 +6,7 @@ import sys
 from pathlib import Path
 
 from config import ConfigError, load_recipe
+from emoji_data import update_unicode_sequence_files
 from models import BuildRequest
 from pipeline import build
 
@@ -45,15 +46,17 @@ def build_arg_parser() -> argparse.ArgumentParser:
         help="Font index in TTC (default: 0)",
     )
     parser.add_argument(
-        "--recompute-ligatures",
-        action="store_true",
-        help="Override a configured GSUB recipe to recompute ligatures.",
-    )
-    parser.add_argument(
         "-v",
         "--verbose",
         action="store_true",
         help="Verbose logging.",
+    )
+    parser.add_argument(
+        "--update-sequences",
+        nargs="?",
+        const="latest",
+        metavar="VERSION",
+        help="Update vendored Unicode emoji sequence files before building. Defaults to latest when no version is passed.",
     )
     return parser
 
@@ -64,6 +67,8 @@ def main(argv: list[str] | None = None) -> int:
     logging.basicConfig(level=logging.DEBUG if args.verbose else logging.INFO)
 
     try:
+        if args.update_sequences is not None:
+            update_unicode_sequence_files(args.update_sequences)
         build(request_from_args(args))
     except (ConfigError, OSError, ValueError) as e:
         LOG.error("%s", e)
@@ -77,7 +82,6 @@ def request_from_args(args: argparse.Namespace) -> BuildRequest:
         input_path=args.input,
         output_path=args.output,
         font_number=args.font_number,
-        recompute_ligatures=args.recompute_ligatures,
     )
 
 

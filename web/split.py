@@ -5,11 +5,15 @@ from __future__ import annotations
 import io
 import logging
 from pathlib import Path
+from typing import TYPE_CHECKING
 
 from fontTools.ttLib import TTFont
 
 from tables.cbdt_cblc import FontMetrics, build_cbdt, build_cblc
 from tables.skeleton import add_raw_table
+
+if TYPE_CHECKING:
+    from shaping.sequences import SequenceRule
 
 LOG = logging.getLogger(__name__)
 
@@ -49,6 +53,26 @@ def _analyze_gsub(
                     cs.update(lig.Component)
                     rs.add(lig.LigGlyph)
                     lig_rules.append((first, list(lig.Component), lig.LigGlyph))
+    return comp_map, res_map, lig_rules
+
+
+def _rules_from_sequence_rules(
+    cmap: dict[int, str],
+    rules: tuple["SequenceRule", ...] | list["SequenceRule"],
+) -> tuple[dict[str, set[str]], dict[str, set[str]], list[tuple[str, list[str], str]]]:
+    comp_map: dict[str, set[str]] = {}
+    res_map: dict[str, set[str]] = {}
+    lig_rules: list[tuple[str, list[str], str]] = []
+    for rule in rules:
+        names = [cmap.get(cp) for cp in rule.components]
+        if len(names) < 2 or any(name is None for name in names):
+            continue
+        first = names[0]
+        assert first is not None
+        components = [name for name in names[1:] if name is not None]
+        comp_map.setdefault(first, set()).update([first, *components])
+        res_map.setdefault(first, set()).add(rule.replacement)
+        lig_rules.append((first, components, rule.replacement))
     return comp_map, res_map, lig_rules
 
 
@@ -103,12 +127,16 @@ def split_web_font(
     *,
     y_bearing: str = "five_sixths_height",
     max_chunk_bytes: int = DEFAULT_MAX_CHUNK_BYTES,
+    sequence_rules: tuple["SequenceRule", ...] | list["SequenceRule"] = (),
 ) -> list[tuple[str, Path]]:
     """Split a font into budget-sized chunks for @font-face delivery."""
     font = TTFont(io.BytesIO(font_bytes))
     cmap = font.getBestCmap() or {}
     rev = _reverse_cmap(cmap)
-    comp_map, res_map, lig_rules = _analyze_gsub(font)
+    if sequence_rules:
+        comp_map, res_map, lig_rules = _rules_from_sequence_rules(cmap, sequence_rules)
+    else:
+        comp_map, res_map, lig_rules = _analyze_gsub(font)
     font.close()
 
     base_cps = sorted(cp for cp in cmap if cp not in _ALWAYS_SHARED)

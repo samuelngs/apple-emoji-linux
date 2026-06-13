@@ -105,6 +105,25 @@ python cli.py -c configs/linux.yaml --input "/path/to/Apple Color Emoji.ttc" --o
 
 Config-driven builds always require `--output`; `--input` defaults to the macOS path. The recipe owns build behavior, so Windows, Linux, and web outputs are selected by choosing a YAML file, not by passing target-specific flags.
 
+### Update emoji sequence data
+
+Unicode emoji sequence data lives in `sequences/`. The Unicode files can be refreshed manually:
+
+```bash
+python tools/update_emoji_data.py --version latest
+# or pin a release
+python tools/update_emoji_data.py --version 17.0
+```
+
+You can also refresh the Unicode sequence files before a build:
+
+```bash
+python cli.py -c configs/web.yaml --output output/AppleColorEmoji.ttf --update-sequences
+python cli.py -c configs/windows.yaml --output output/AppleColorEmoji-Windows.ttf --update-sequences 17.0
+```
+
+`sequences/project-sequences.txt` is project-owned and is not downloaded from Unicode.
+
 ## Acknowledgments
 
 This project would not be possible without the help, contributions, and knowledge sharing from the people listed below.

@@ -1,15 +1,14 @@
 from __future__ import annotations
 
 import logging
-from io import BytesIO
 
 from fontTools.ttLib import TTFont
-from PIL import Image
 
 from config_types import GeneratedStrikesConfig
 from models import BitmapGlyph, BitmapStrike
+from bitmap.png import resize_png
 from progress import Progress
-from source.sbix import collect_sbix_glyphs, get_sbix_strikes
+from source.sbix import collect_sbix_glyph_images, get_sbix_strikes
 
 LOG = logging.getLogger(__name__)
 
@@ -28,7 +27,7 @@ def generate_bitmap_strikes(
             f"{sorted(available)}",
         )
 
-    source_glyphs, _metadata = collect_sbix_glyphs(font, ppem=config.source)
+    source_glyphs, _metadata = collect_sbix_glyph_images(font, ppem=config.source)
     if not source_glyphs:
         raise ValueError(f"Generated bitmap strike source ppem={config.source} has no PNG glyphs")
 
@@ -38,12 +37,14 @@ def generate_bitmap_strikes(
     progress.start()
     for ppem in config.sizes:
         glyphs: list[BitmapGlyph] = []
-        for gid, name, png_data in source_glyphs:
+        for glyph in source_glyphs:
             glyphs.append(
                 BitmapGlyph(
-                    gid=gid,
-                    name=name,
-                    png=_resize_png(png_data, ppem),
+                    gid=glyph.gid,
+                    name=glyph.name,
+                    png=resize_png(glyph.png, ppem),
+                    origin_x=round(glyph.origin_x * ppem / config.source),
+                    origin_y=round(glyph.origin_y * ppem / config.source),
                 ),
             )
             progress.advance()
@@ -56,13 +57,3 @@ def generate_bitmap_strikes(
         )
     progress.finish()
     return strikes
-
-
-def _resize_png(png_data: bytes, ppem: int) -> bytes:
-    image = Image.open(BytesIO(png_data)).convert("RGBA")
-    if image.size != (ppem, ppem):
-        image = image.resize((ppem, ppem), Image.Resampling.LANCZOS)
-
-    out = BytesIO()
-    image.save(out, format="PNG", compress_level=6)
-    return out.getvalue()

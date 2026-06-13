@@ -20,6 +20,16 @@ class StrikeMetadata:
     resolution: int
 
 
+@dataclass(frozen=True)
+class SbixGlyphImage:
+    gid: int
+    name: str
+    png: bytes
+    origin_x: int
+    origin_y: int
+    metadata: StrikeMetadata
+
+
 def load_font(ttc_path: str | Path, font_number: int = 0) -> TTFont:
     """Load one face from a TTC."""
     path = Path(ttc_path)
@@ -35,15 +45,44 @@ def get_sbix_strikes(font: TTFont) -> dict[int, Any]:
     return font["sbix"].strikes
 
 
-def _resolve_image_data(glyph_obj, strike_glyphs: dict) -> bytes | None:
-    """Follow dupe/flip refs to get the actual image bytes."""
+def _glyph_origin(glyph_obj) -> tuple[int, int]:
+    return (
+        int(getattr(glyph_obj, "originOffsetX", 0) or 0),
+        int(getattr(glyph_obj, "originOffsetY", 0) or 0),
+    )
+
+
+def _resolve_image_record(
+    glyph_obj,
+    strike_glyphs: dict,
+    *,
+    origin_x: int = 0,
+    origin_y: int = 0,
+) -> tuple[bytes, int, int] | None:
+    """Follow dupe/flip refs to get image bytes and accumulated origin offsets."""
+    own_x, own_y = _glyph_origin(glyph_obj)
+    origin_x += own_x
+    origin_y += own_y
     if glyph_obj.imageData is not None:
-        return glyph_obj.imageData
+        return glyph_obj.imageData, origin_x, origin_y
     if getattr(glyph_obj, "is_reference_type", lambda: False)():
         ref_name = getattr(glyph_obj, "referenceGlyphName", None)
         if ref_name and ref_name in strike_glyphs:
-            return _resolve_image_data(strike_glyphs[ref_name], strike_glyphs)
+            return _resolve_image_record(
+                strike_glyphs[ref_name],
+                strike_glyphs,
+                origin_x=origin_x,
+                origin_y=origin_y,
+            )
     return None
+
+
+def _resolve_image_data(glyph_obj, strike_glyphs: dict) -> bytes | None:
+    """Follow dupe/flip refs to get the actual image bytes."""
+    record = _resolve_image_record(glyph_obj, strike_glyphs)
+    if record is None:
+        return None
+    return record[0]
 
 
 def iter_sbix_glyphs(
@@ -52,6 +91,16 @@ def iter_sbix_glyphs(
     *,
     validate_png: bool = True,
 ) -> Generator[tuple[int, str, bytes, StrikeMetadata], None, None]:
+    for image in iter_sbix_glyph_images(font, ppem=ppem, validate_png=validate_png):
+        yield image.gid, image.name, image.png, image.metadata
+
+
+def iter_sbix_glyph_images(
+    font: TTFont,
+    ppem: int | None = None,
+    *,
+    validate_png: bool = True,
+) -> Generator[SbixGlyphImage, None, None]:
     strikes = get_sbix_strikes(font)
     if not strikes:
         raise ValueError("Font has no sbix strikes")
@@ -68,9 +117,10 @@ def iter_sbix_glyphs(
         if glyph_name not in strike_glyphs:
             continue
         glyph_obj = strike_glyphs[glyph_name]
-        raw = _resolve_image_data(glyph_obj, strike_glyphs)
-        if not raw:
+        record = _resolve_image_record(glyph_obj, strike_glyphs)
+        if not record:
             continue
+        raw, origin_x, origin_y = record
         if validate_png and not raw.startswith(PNG_SIGNATURE):
             LOG.warning("Glyph %s has non-PNG sbix data, skipping", glyph_name)
             continue
@@ -78,7 +128,14 @@ def iter_sbix_glyphs(
             gid = font.getGlyphID(glyph_name)
         except KeyError:
             continue
-        yield gid, glyph_name, raw, metadata
+        yield SbixGlyphImage(
+            gid=gid,
+            name=glyph_name,
+            png=raw,
+            origin_x=origin_x,
+            origin_y=origin_y,
+            metadata=metadata,
+        )
 
 
 def collect_sbix_glyphs(
@@ -87,17 +144,28 @@ def collect_sbix_glyphs(
     *,
     validate_png: bool = True,
 ) -> tuple[list[tuple[int, str, bytes]], StrikeMetadata]:
-    ordered: list[tuple[int, str, bytes]] = []
+    images, meta = collect_sbix_glyph_images(font, ppem=ppem, validate_png=validate_png)
+    return [(image.gid, image.name, image.png) for image in images], meta
+
+
+def collect_sbix_glyph_images(
+    font: TTFont,
+    ppem: int | None = None,
+    *,
+    validate_png: bool = True,
+) -> tuple[list[SbixGlyphImage], StrikeMetadata]:
     meta: StrikeMetadata | None = None
-    for gid, name, png_data, m in iter_sbix_glyphs(font, ppem=ppem, validate_png=validate_png):
-        ordered.append((gid, name, png_data))
+    images: list[SbixGlyphImage] = []
+    for image in iter_sbix_glyph_images(font, ppem=ppem, validate_png=validate_png):
+        images.append(image)
+        m = image.metadata
         if meta is None:
             meta = m
     if meta is None:
         strikes = get_sbix_strikes(font)
         strike_ppem = max(strikes.keys()) if ppem is None else ppem
         meta = StrikeMetadata(ppem=strike_ppem, resolution=72)
-    return ordered, meta
+    return images, meta
 
 
 def get_emoji_png(

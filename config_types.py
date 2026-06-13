@@ -24,20 +24,14 @@ class NamesConfig:
 
 
 @dataclass(frozen=True)
-class MergeLrHalvesConfig:
-    cache: Path
-    include_skin_tone_variants: bool = True
-
-
-@dataclass(frozen=True)
 class BitmapTransformsConfig:
-    merge_lr_halves: MergeLrHalvesConfig | None = None
     flip_directional_variants: bool = False
 
 
 @dataclass(frozen=True)
 class PngConfig:
     compress: bool = False
+    strikes: tuple[int, ...] = ()
     max_colors: int = 128
     prefer_pngquant: bool = True
 
@@ -55,10 +49,16 @@ class GeneratedStrikesConfig:
 
 
 @dataclass(frozen=True)
+class BackfillMissingConfig:
+    source: int
+
+
+@dataclass(frozen=True)
 class BitmapConfig:
     format: str = "cbdt_cblc"
     strikes: tuple[int, ...] = (96,)
     generated_strikes: GeneratedStrikesConfig | None = None
+    backfill_missing: BackfillMissingConfig | None = None
     transforms: BitmapTransformsConfig = field(default_factory=BitmapTransformsConfig)
     png: PngConfig = field(default_factory=PngConfig)
     metrics: BitmapMetricsConfig = field(default_factory=BitmapMetricsConfig)
@@ -118,9 +118,8 @@ class TablesConfig:
 @dataclass(frozen=True)
 class GsubConfig:
     enabled: bool = False
-    ligatures_cache: Path | None = None
-    recompute: bool = False
-    delete_vs16: bool = True
+    sequence_files: tuple[Path, ...] = ()
+    project_sequence_files: tuple[Path, ...] = ()
     replace_morx: bool = False
 
 

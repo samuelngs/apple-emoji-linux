@@ -4,13 +4,16 @@ import io
 import logging
 from pathlib import Path
 
+from bitmap.backfill import backfill_missing_glyphs
 from bitmap.transforms import apply_bitmap_transforms
 from bitmap.generated import generate_bitmap_strikes
 from config import BuildRecipe
 from models import BitmapGlyph, BitmapStrike, BuildRequest
-from shaping.gsub import build_gsub_from_morx
+from shaping.gsub import build_gsub_from_sequence_rules
+from shaping.sequence_glyphs import SequenceGlyphBuildResult, materialize_sequence_glyphs
+from shaping.sequences import SequenceRule, load_sequence_inventory
 from source.font_loader import load_font
-from source.sbix import collect_sbix_glyphs, get_sbix_strikes
+from source.sbix import collect_sbix_glyph_images, get_sbix_strikes
 from tables.cbdt_cblc import (
     FontMetrics,
     build_cbdt_strikes,
@@ -38,11 +41,10 @@ def build(request: BuildRequest) -> list[Path]:
         raise ValueError("Font has no sbix table")
 
     strikes = _collect_configured_strikes(font, request.recipe)
-    strikes, extra_ligatures = apply_bitmap_transforms(
-        font,
-        strikes,
-        request.recipe.bitmap,
-    )
+    sequence_build = _materialize_sequences(font, strikes, request)
+    if sequence_build is not None:
+        strikes = sequence_build.strikes
+    strikes = apply_bitmap_transforms(strikes, request.recipe.bitmap)
 
     apply_head_policy(font, request.recipe.tables.head)
     apply_metrics_policy(font, request.recipe.tables.metrics, _font_metrics(font))
@@ -78,13 +80,19 @@ def build(request: BuildRequest) -> list[Path]:
     if drop.dsig:
         drop_dsig(font)
 
-    _apply_shaping_policy(font, request, extra_ligatures)
+    _apply_shaping_policy(font, request, sequence_build.rules if sequence_build else ())
     if drop.after_shaping:
         drop_tables(font, drop.after_shaping)
 
     request.output_path.parent.mkdir(parents=True, exist_ok=True)
     if request.recipe.split is not None and request.recipe.split.enabled:
-        return _write_split_font(font, strikes[-1], metrics, request)
+        return _write_split_font(
+            font,
+            strikes[-1],
+            metrics,
+            request,
+            sequence_build.rules if sequence_build else (),
+        )
 
     font.save(request.output_path)
     LOG.info("Wrote %s", request.output_path)
@@ -102,21 +110,51 @@ def _collect_configured_strikes(font, recipe: BuildRecipe) -> list[BitmapStrike]
 
     strikes: list[BitmapStrike] = []
     for ppem in recipe.bitmap.strikes:
-        glyphs, strike_meta = collect_sbix_glyphs(font, ppem=ppem)
+        glyphs, strike_meta = collect_sbix_glyph_images(font, ppem=ppem)
         if not glyphs:
             raise ValueError(f"Bitmap strike ppem={ppem} has no PNG glyphs")
         strike = BitmapStrike(
             ppem=strike_meta.ppem,
             glyphs=tuple(
-                BitmapGlyph(gid=gid, name=name, png=png_data)
-                for gid, name, png_data in glyphs
+                BitmapGlyph(
+                    gid=glyph.gid,
+                    name=glyph.name,
+                    png=glyph.png,
+                    origin_x=glyph.origin_x,
+                    origin_y=glyph.origin_y,
+                )
+                for glyph in glyphs
             ),
         )
         strikes.append(strike)
         LOG.info("Using strike ppem=%d, %d glyphs", strike.ppem, len(strike.glyphs))
 
+    strikes = backfill_missing_glyphs(font, strikes, recipe.bitmap.backfill_missing)
     strikes.extend(generate_bitmap_strikes(font, recipe.bitmap.generated_strikes))
     return sorted(strikes, key=lambda strike: strike.ppem)
+
+
+def _materialize_sequences(
+    font,
+    strikes: list[BitmapStrike],
+    request: BuildRequest,
+) -> SequenceGlyphBuildResult | None:
+    shaping = request.recipe.shaping
+    if shaping is None or shaping.gsub is None or not shaping.gsub.enabled:
+        return None
+
+    records = load_sequence_inventory(
+        shaping.gsub.sequence_files,
+        shaping.gsub.project_sequence_files,
+    )
+    LOG.info("Loaded %d normalized emoji sequence records", len(records))
+    return materialize_sequence_glyphs(
+        font,
+        request.input_path,
+        request.font_number,
+        strikes,
+        records,
+    )
 
 
 def _font_metrics(font, line_source: str = "hhea") -> FontMetrics:
@@ -136,22 +174,14 @@ def _font_metrics(font, line_source: str = "hhea") -> FontMetrics:
 def _apply_shaping_policy(
     font,
     request: BuildRequest,
-    extra_ligatures: list[tuple[list[str], str]] | None,
+    sequence_rules: tuple[SequenceRule, ...],
 ) -> None:
     shaping = request.recipe.shaping
     if shaping is None or shaping.gsub is None or not shaping.gsub.enabled:
         return
 
     gsub = shaping.gsub
-    gsub_table = build_gsub_from_morx(
-        font,
-        font_path=request.input_path,
-        font_number=request.font_number,
-        ligatures_cache_path=gsub.ligatures_cache,
-        recompute_ligatures=gsub.recompute or request.recompute_ligatures,
-        delete_vs16=gsub.delete_vs16,
-        extra_ligatures=extra_ligatures,
-    )
+    gsub_table = build_gsub_from_sequence_rules(font, sequence_rules)
     if gsub_table is None:
         return
     font["GSUB"] = gsub_table
@@ -165,6 +195,7 @@ def _write_split_font(
     primary_strike: BitmapStrike,
     metrics: FontMetrics,
     request: BuildRequest,
+    sequence_rules: tuple[SequenceRule, ...],
 ) -> list[Path]:
     split = request.recipe.split
     if split is None:
@@ -180,6 +211,7 @@ def _write_split_font(
         font_metrics=metrics,
         y_bearing=request.recipe.bitmap.metrics.y_bearing,
         max_chunk_bytes=split.chunk_kb * 1024,
+        sequence_rules=sequence_rules,
     )
     if not chunks:
         LOG.warning("No chunk files written (font has no cmap entries)")

@@ -12,7 +12,6 @@ class BuildRequest:
     input_path: Path
     output_path: Path
     font_number: int = 0
-    recompute_ligatures: bool = False
 
 
 @dataclass(frozen=True)
@@ -20,6 +19,8 @@ class BitmapGlyph:
     gid: int
     name: str
     png: bytes
+    origin_x: int = 0
+    origin_y: int = 0
 
 
 @dataclass(frozen=True)

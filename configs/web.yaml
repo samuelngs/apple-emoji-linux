@@ -4,17 +4,8 @@ names:
 bitmap:
   format: cbdt_cblc
   strikes:
-    - 20
-    - 26
-    - 32
-    - 40
-    - 48
-    - 52
-    - 64
     - 96
   transforms:
-    merge_lr_halves:
-      cache: ../.ligatures-multi.json
     flip_directional_variants: true
   png:
     compress: true
@@ -42,9 +33,13 @@ tables:
 shaping:
   gsub:
     enabled: true
-    ligatures_cache: ../.ligatures.json
-    recompute: false
-    delete_vs16: true
+    sequence_files:
+      - ../sequences/emoji-sequences.txt
+      - ../sequences/emoji-zwj-sequences.txt
+      - ../sequences/emoji-test.txt
+      - ../sequences/emoji-variation-sequences.txt
+    project_sequence_files:
+      - ../sequences/project-sequences.txt
     replace_morx: true
 split:
   enabled: true

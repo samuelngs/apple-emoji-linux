@@ -1,0 +1,2 @@
+# Project-specific emoji sequences promoted into the build.
+# Use Unicode-style lines: 1F469 200D 2695 ; project # comment

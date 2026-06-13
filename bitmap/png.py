@@ -72,6 +72,18 @@ def get_png_size(png_data: bytes) -> tuple[int, int] | None:
     return (width, height)
 
 
+def resize_png(png_data: bytes, ppem: int) -> bytes:
+    import io
+    from PIL import Image
+
+    image = Image.open(io.BytesIO(png_data)).convert("RGBA")
+    if image.size != (ppem, ppem):
+        image = image.resize((ppem, ppem), Image.Resampling.LANCZOS)
+    out = io.BytesIO()
+    image.save(out, format="PNG", compress_level=6)
+    return out.getvalue()
+
+
 def flip_png_horizontal(png_data: bytes) -> bytes:
     """Horizontally flip a PNG image. Used for directional emoji variants."""
     import io
