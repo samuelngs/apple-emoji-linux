@@ -2,9 +2,8 @@
 # Upstream: https://github.com/samuelngs/apple-emoji-ttf
 
 pkgname=ttf-apple-emoji
-# Update _pkgver to match a release tag from https://github.com/samuelngs/apple-emoji-ttf/releases
-pkgver=2026.02.19
-_pkgver=macos-26-20260219-2aa12422
+pkgver={{AUR_PKGVER}}
+_pkgver={{RELEASE_TAG}}
 pkgrel=1
 pkgdesc="Brings Apple's vibrant color emojis to Linux."
 url='https://github.com/samuelngs/apple-emoji-ttf'
@@ -15,9 +14,10 @@ source=(
   "AppleColorEmoji-Linux.ttf::${url}/releases/download/${_pkgver}/AppleColorEmoji-Linux.ttf"
   '75-apple-color-emoji.conf'
 )
-
-sha256sums=('535a043af04706d24471059e64745bfc80d6617ada2eea3435dc5620dc0f5318'
-            'f72154069e808e26f1ed800a33cfaba87c268e7e927a3d5987fde0159e341160')
+sha256sums=(
+  '{{FONT_SHA256}}'
+  '{{AUR_CONFIG_SHA256}}'
+)
 
 package() {
   install -Dm644 "$srcdir/AppleColorEmoji-Linux.ttf" \

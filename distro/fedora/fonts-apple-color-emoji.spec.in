@@ -2,8 +2,8 @@
 # See https://github.com/samuelngs/apple-emoji-ttf
 
 Name:           fonts-apple-color-emoji
-Version:        1.0.0
-Release:        1%{?dist}
+Version:        {{RPM_VERSION}}
+Release:        {{RPM_RELEASE}}%{?dist}
 Summary:        Apple Color Emoji as CBDT/CBLC TTF for Linux
 
 License:        custom
@@ -20,10 +20,10 @@ fontconfig snippet (50-apple-color-emoji.conf) so Apple Color Emoji is
 preferred for emoji, serif, sans-serif, and monospace.
 
 %prep
-# Sources are copied into build dir by CI; no unpack needed
+# Sources are copied into the build dir by CI; no unpack step is needed.
 
 %build
-# No compilation
+# No compilation.
 
 %install
 install -d %{buildroot}%{_datadir}/fonts/truetype/apple-color-emoji
@@ -44,5 +44,5 @@ if [ $1 -eq 0 ]; then
 fi
 
 %changelog
-* Mon Jan 01 2024 samuelngs <samuelngs@users.noreply.github.com> - 1.0.0-1
-- Initial release.
+* {{RPM_CHANGELOG_DATE}} samuelngs <samuelngs@users.noreply.github.com> - {{RPM_VERSION}}-{{RPM_RELEASE}}
+- Build from {{RELEASE_TAG}}.

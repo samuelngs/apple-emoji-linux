@@ -61,6 +61,13 @@ jobs:
         id: date
         run: echo "date=$(date -u +%Y%m%d)" >> $GITHUB_OUTPUT
 
+      - name: Set release info
+        id: release
+        run: |
+          tag="macos-${{ needs.build.outputs.macos_version }}-${{ steps.date.outputs.date }}-${{ steps.sha.outputs.short_sha }}"
+          echo "tag=$tag" >> $GITHUB_OUTPUT
+          echo "name=macOS ${{ needs.build.outputs.macos_version }} (${{ steps.date.outputs.date }}) [${{ steps.sha.outputs.short_sha }}]" >> $GITHUB_OUTPUT
+
       - name: Download font artifacts
         id: download
         uses: actions/download-artifact@v4
@@ -72,31 +79,48 @@ jobs:
           from="${{ steps.download.outputs.download-path }}"
           find "$from" -name '*.ttf' -exec cp {} . \;
 
-      - name: Build Debian package
-        id: deb
+      - name: Create prerelease with font assets
         env:
-          VERSION: "2.0.0+${{ steps.date.outputs.date }}.${{ steps.sha.outputs.short_sha }}"
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          mkdir -p deb-build
+          gh release create "${{ steps.release.outputs.tag }}" \
+            AppleColorEmoji-Linux.ttf \
+            AppleColorEmoji-Windows.ttf \
+            --target "$GITHUB_SHA" \
+            --title "${{ steps.release.outputs.name }}" \
+            --generate-notes \
+            --prerelease \
+            --latest=false
+
+      - name: Prepare package workspaces
+        run: |
+          mkdir -p deb-build rpm-build aur-build
           cp -r distro/debian deb-build/debian
           cp AppleColorEmoji-Linux.ttf deb-build/AppleColorEmoji.ttf
           cp distro/debian/50-apple-color-emoji.conf deb-build/
-          sed -i "s/(1.0.0)/(${VERSION})/" deb-build/debian/changelog
+          cp AppleColorEmoji-Linux.ttf rpm-build/AppleColorEmoji.ttf
+          cp distro/fedora/50-apple-color-emoji.conf rpm-build/
+          cp distro/aur/75-apple-color-emoji.conf aur-build/
+          python tools/render_package_templates.py \
+            --release-tag "${{ steps.release.outputs.tag }}" \
+            --date "${{ steps.date.outputs.date }}" \
+            --short-sha "${{ steps.sha.outputs.short_sha }}" \
+            --font AppleColorEmoji-Linux.ttf \
+            --debian-dir deb-build/debian \
+            --rpm-dir rpm-build \
+            --aur-dir aur-build
+
+      - name: Build Debian package
+        id: deb
+        run: |
           docker run --rm -v "$PWD:/work" -w /work/deb-build ubuntu:latest bash -c \
             'apt-get update -qq && apt-get install -y -qq dpkg-dev debhelper && dpkg-buildpackage -b -uc -us'
           cp fonts-apple-color-emoji_*_all.deb fonts-apple-color-emoji.deb
 
       - name: Build Fedora RPM package
         id: rpm
-        env:
-          RPM_VERSION: "2.0.0"
-          RPM_RELEASE: "0.${{ steps.date.outputs.date }}.${{ steps.sha.outputs.short_sha }}"
         run: |
           mkdir -p rpm-build/out
-          cp AppleColorEmoji-Linux.ttf rpm-build/AppleColorEmoji.ttf
-          cp distro/fedora/50-apple-color-emoji.conf distro/fedora/fonts-apple-color-emoji.spec rpm-build/
-          sed -i "s/^Version:.*/Version: ${RPM_VERSION}/" rpm-build/fonts-apple-color-emoji.spec
-          sed -i "s/^Release:.*/Release: ${RPM_RELEASE}%{?dist}/" rpm-build/fonts-apple-color-emoji.spec
           docker run --rm -v "$PWD/rpm-build:/work" -w /work fedora:latest bash -c \
             'dnf install -y -q rpm-build fontconfig && \
              rpmbuild -ba \
@@ -111,33 +135,18 @@ jobs:
 
       - name: Build AUR package
         id: aur
-        env:
-          # pkgver cannot contain hyphens; use dots (release tag stays macos-26-date-sha for GitHub)
-          AUR_PKGVER: "2.0.0.${{ steps.date.outputs.date }}.${{ steps.sha.outputs.short_sha }}"
         run: |
-          mkdir -p aur-build
-          cp distro/aur/PKGBUILD distro/aur/75-apple-color-emoji.conf aur-build/
-          cp AppleColorEmoji-Linux.ttf aur-build/
-          cd aur-build
-          sed -i "s|^pkgver=.*|pkgver=${AUR_PKGVER}|" PKGBUILD
-          sed -i 's|"AppleColorEmoji-Linux.ttf::${url}/releases/download/${pkgver}/AppleColorEmoji-Linux.ttf"|"AppleColorEmoji-Linux.ttf"|' PKGBUILD
           docker run --rm -v "$PWD:/build" -w /build archlinux:latest bash -c \
-            'pacman -Syu --noconfirm base-devel && useradd -m builder && chown -R builder:builder /build && su builder -c "cd /build && makepkg -sf --noconfirm"'
-          cp ttf-apple-emoji-*.pkg.tar.zst ../ttf-apple-emoji.pkg.tar.zst
-          cd ..
+            'pacman -Syu --noconfirm base-devel && useradd -m builder && chown -R builder:builder /build/aur-build && su builder -c "cd /build/aur-build && makepkg -sf --noconfirm"'
+          cp aur-build/ttf-apple-emoji-*.pkg.tar.zst ttf-apple-emoji.pkg.tar.zst
 
-      - name: Create release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: macos-${{ needs.build.outputs.macos_version }}-${{ steps.date.outputs.date }}-${{ steps.sha.outputs.short_sha }}
-          name: macOS ${{ needs.build.outputs.macos_version }} (${{ steps.date.outputs.date }}) [${{ steps.sha.outputs.short_sha }}]
-          make_latest: true
-          generate_release_notes: true
-          files: |
-            AppleColorEmoji-Linux.ttf
-            AppleColorEmoji-Windows.ttf
-            fonts-apple-color-emoji.deb
-            fonts-apple-color-emoji.rpm
-            ttf-apple-emoji.pkg.tar.zst
+      - name: Upload packages and publish release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release upload "${{ steps.release.outputs.tag }}" \
+            fonts-apple-color-emoji.deb \
+            fonts-apple-color-emoji.rpm \
+            ttf-apple-emoji.pkg.tar.zst \
+            --clobber
+          gh release edit "${{ steps.release.outputs.tag }}" --prerelease=false --latest

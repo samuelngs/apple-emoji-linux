@@ -1,0 +1,5 @@
+fonts-apple-color-emoji ({{DEBIAN_VERSION}}) unstable; urgency=medium
+
+  * Build from {{RELEASE_TAG}}.
+
+ -- samuelngs <samuelngs@users.noreply.github.com>  {{DEBIAN_DATE}}
