@@ -15,6 +15,9 @@ bitmap:
   backfill_missing:
     source: 160
 tables:
+  head:
+    units_per_em: 2048
+    mac_style: 0
   drop:
     source_tables: true
     outlines: true
