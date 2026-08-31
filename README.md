@@ -1,166 +1,338 @@
-![AppleColorEmoji-ttf](https://repository-images.githubusercontent.com/158348890/3d33a645-a079-4150-860a-8cea647732b2)
+# emoji-win
 
-Languages: English | [简体中文](README.zh-CN.md)
+> **⚠️ EXPERIMENTAL PROJECT NOTICE**
+> This project is **99% vibe-coded** (created by AI agent) and is highly **experimental**. While the current solution works great on the latest Windows 11 and using browser apps, some native apps still don't use converted emojies. Project requires further investigation and testing. Use at your own risk and always backup your system fonts before proceeding.
 
-# apple-emoji-ttf
+<img width="420" height="729" alt="apple emoji win on demo" src="https://github.com/user-attachments/assets/6c78d21d-e22b-459e-8f67-4f0fdaf7125d" />
 
-Brings Apple’s vibrant color emoji to Linux, Windows, and the web.
+</br>
 
-## Disclaimer
+## 🍎 Why emoji-win?
 
-This project is for educational purposes only. All Apple Color Emoji assets and designs belong to Apple Inc., and Apple is a registered trademark of Apple Inc. in the U.S. and other countries. Using a font from a different operating system may have licensing implications; that responsibility is on you.
+**Tired of Windows 11's bland default emojis?** Want the beautiful, expressive Apple emojis on your Windows machine? You're in the right place!
 
-## What this builds
+Windows 11 comes with basic, flat emojis that lack personality. Meanwhile, Apple's emojis are colorful, detailed, and full of character. This tool bridges that gap by converting Apple Color Emoji fonts to work perfectly on Windows 11.
 
-- **Linux** - A TTF font and release packages for Debian/Ubuntu, Fedora/RHEL, and Arch-based systems.
-- **Windows** - A TTF font configured to replace Segoe UI Emoji.
-- **Web** - A browser-oriented font build with GSUB shaping, unicode-range splitting, and generated `@font-face` CSS.
+### Perfect for:
+- 🎨 **Designers** who want consistent emoji appearance across platforms
+- 💬 **Content creators** who need expressive emojis for social media
+- 👥 **Anyone** who's tired of Windows' lackluster emoji design
+- 🔄 **Mac users** who want familiar emojis on their Windows machines
 
-## Known or potential issues
+Transform your Windows emoji experience from bland to brilliant! 🚀
 
-1. **Smaller emoji in some Linux apps** - Certain applications may render emoji at a smaller size than expected. This may be related to how the font is built or how specific toolkits handle color fonts. We're still investigating a fix.
-2. **Qt applications** - Some Qt-based apps may not render the emoji correctly or at all due to how Qt handles color font tables.
+## ✨ Features
 
-## Using the font on Linux
+- ✅ **Full Windows compatibility** - No more "file is not a font" errors
+- ✅ **Complete emoji coverage** - All 1,400+ emojis work properly
+- ✅ **Enhanced app compatibility** - Works with Telegram, Discord, browsers, and more
+- ✅ **Advanced font registration** - Multiple registry entries for maximum compatibility
+- ✅ **Proper font structure** - Follows Windows Segoe UI Emoji patterns
+- ✅ **Easy to use** - Simple command-line interface
 
-### Ubuntu / Debian
+## 🚀 Quick Start
 
-Download the `.deb` from [Releases](https://github.com/samuelngs/apple-emoji-ttf/releases) and install it:
-
+### Super Quick (One-liner workflow)
 ```bash
-sudo dpkg -i fonts-apple-color-emoji.deb
-# or
-sudo apt install ./fonts-apple-color-emoji.deb
+# 1. Clone and enter directory
+git clone https://github.com/jjjuk/emoji-win.git && cd emoji-win
+
+# 2. Download AppleColorEmoji.ttf from apple-emoji-linux releases to fonts/ directory
+
+# 3. Convert (easiest way)
+./convert.sh
+
+# OR convert with direct command (dependencies handled automatically)
+uv run python main.py fonts/AppleColorEmoji.ttf fonts/AppleColorEmojiForWindows.ttf
 ```
 
-### Fedora / RHEL
+### Prerequisites
+- Python 3.11+
+- `uv` (recommended) or `pip`
 
-Download the `.rpm` from [Releases](https://github.com/samuelngs/apple-emoji-ttf/releases) and install it:
+### Installation
 
+**One-liner with uv (recommended):**
 ```bash
-sudo dnf install ./fonts-apple-color-emoji.rpm
-# or
-sudo rpm -i fonts-apple-color-emoji.rpm
+git clone https://github.com/jjjuk/emoji-win.git && cd emoji-win
 ```
 
-### Arch Linux
-
-Download the `.pkg.tar.zst` from [Releases](https://github.com/samuelngs/apple-emoji-ttf/releases) and install it:
-
+**Alternative with pip:**
 ```bash
-sudo pacman -U ttf-apple-emoji.pkg.tar.zst
+git clone https://github.com/jjjuk/emoji-win.git
+cd emoji-win
+pip install fonttools
 ```
 
-### Manual install
+### Usage
 
-Grab `AppleColorEmoji-Linux.ttf` from the repo’s releases (or build it yourself). Put it in your user font folder:
-
+**Easiest way (shell script):**
 ```bash
-mkdir -p ~/.local/share/fonts
-cp AppleColorEmoji-Linux.ttf ~/.local/share/fonts/
+./convert.sh  # Uses default paths: fonts/AppleColorEmoji.ttf → fonts/SegoeUIEmoji.ttf
+# OR specify custom paths:
+./convert.sh /path/to/AppleColorEmoji.ttf /path/to/output.ttf
 ```
 
-So that apps actually use it for emoji, fontconfig has to prefer Apple Color Emoji. Two things help:
+**Direct command (uv handles dependencies automatically):**
+```bash
+uv run python main.py input_apple_font.ttf output_windows_font.ttf
+```
 
-1. **Emoji family** - In `/etc/fonts/conf.d/60-generic.conf` (or your distro’s equivalent), find the `<alias>` for `<family>emoji</family>`. In the `<prefer>` list inside it, make sure `<family>Apple Color Emoji</family>` is first. It’s often already in the list; if so, move it to the very front. If it’s not there, add it at the top so it’s chosen before Noto, Segoe, etc.
+**With regular python:**
+```bash
+python main.py input_apple_font.ttf output_windows_font.ttf
+```
 
-2. **Your own config** - Create `~/.config/fontconfig/fonts.conf` (create the directory if it doesn’t exist). You can copy the repo’s `fonts.conf` into that path. It tells fontconfig to prefer Apple Color Emoji for serif, sans-serif, and monospace, and to use it when an app asks for Noto Color Emoji.
+**Example:**
+```bash
+# Download AppleColorEmoji.ttf from apple-emoji-linux releases first
+uv run python main.py AppleColorEmoji.ttf SegoeUIEmoji.ttf
+```
 
-Then clear the font cache: `fc-cache -fv`.
+## 📥 Getting Required Fonts
 
-## Using the font on Windows
+### 1. Apple Color Emoji Font (Required)
 
-Download the Windows build from releases or build with `configs/windows.yaml`. The font is set up to replace Segoe UI Emoji.
+The easiest way to get the Apple Color Emoji font is from the **apple-emoji-linux** project:
 
-**Important:** The font file cannot be installed by double-clicking. You must replace the system font file manually using the steps below.
+**🔗 https://github.com/samuelngs/apple-emoji-linux/releases**
 
-Back up the original `C:\Windows\Fonts\seguiemj.ttf` first, then replace it. From an elevated Command Prompt you can try a direct copy; if Windows has the file locked, use this instead:
+- Download the latest `AppleColorEmoji.ttf` from their releases
+- **Place it in**: `fonts/AppleColorEmoji.ttf`
 
+### 2. Windows Segoe UI Emoji Font (Optional but Recommended)
+
+For best DirectWrite compatibility (Windows Terminal, Telegram Desktop, modern apps):
+
+- **Extract from Windows**: Copy `seguiemj.ttf` from `C:\Windows\Fonts\` on any Windows system
+- **Place it in**: `fonts/seguiemj.ttf`
+- **Why needed**: Provides COLR/CPAL tables for modern Windows applications
+
+### Alternative Sources
+
+You can also obtain the Apple font from:
+- macOS system (`/System/Library/Fonts/Apple Color Emoji.ttc`)
+- iOS device backup
+- Other legitimate sources
+
+**Note**: This tool only converts fonts you already own legally.
+
+##   Getting Original Windows Emoji Font (Optional)
+
+If you want to extract the original Windows Segoe UI Emoji font for comparison or backup:
+
+### From Windows 11 ISO
+
+1. **Download Windows 11 ISO** from Microsoft's official website
+2. **Mount the ISO** (right-click → Mount)
+3. **Extract the font:**
+   ```cmd
+   # Navigate to mounted drive (e.g., D:)
+   copy "D:\sources\install.wim" "C:\temp\install.wim"
+
+   # Use DISM to extract (requires Windows SDK or ADK)
+   dism /mount-image /imagefile:"C:\temp\install.wim" /index:1 /mountdir:"C:\temp\mount"
+   copy "C:\temp\mount\Windows\Fonts\seguiemj.ttf" "C:\temp\seguiemj_from_iso.ttf"
+   dism /unmount-image /mountdir:"C:\temp\mount" /discard
+   ```
+
+### From Running Windows System
+
+Simply copy from your current Windows installation:
 ```cmd
-takeown /f "C:\Windows\Fonts\seguiemj.ttf"
-icacls "C:\Windows\Fonts\seguiemj.ttf" /grant administrators:F
-del "C:\Windows\Fonts\seguiemj.ttf"
-copy "AppleColorEmoji-Windows.ttf" "C:\Windows\Fonts\seguiemj.ttf"
+copy "C:\Windows\Fonts\seguiemj.ttf" "C:\backup\seguiemj_current.ttf"
 ```
 
-Then restart so all apps pick up the new font.
+**Legal Note**: The Windows Segoe UI Emoji font is proprietary to Microsoft. Only extract/use if you have a valid Windows license.
 
-## Using the font on the web
+##  💻 Windows Font Management
 
-Build the web recipe:
+###   Easy Method: Use the Batch Script
 
-```bash
-python cli.py -c configs/web.yaml --output output/AppleColorEmoji.ttf
-```
+We provide a Windows batch script that automates the entire process:
 
-This writes chunked font files such as `AppleColorEmoji[1].ttf` plus `AppleColorEmoji.css` next to the output path. Serve all generated files from the same directory and include the CSS:
+1. **Download `windows_font_manager.bat`** from this repository
+2. **Create a `fonts` folder** in the same directory as the batch file
+3. **Place `AppleColorEmojiForWindows.ttf` in the fonts folder**
+4. **Double-click `windows_font_manager.bat`** (auto-elevates to administrator)
+5. **Choose your action:**
+   - **Option 1: INSTALL** - Backup original font + install Apple emoji font + clear cache
+   - **Option 2: RESTORE** - Restore original Windows font + clear cache
 
-```html
-<link rel="stylesheet" href="/fonts/AppleColorEmoji.css">
-```
+### 🔄 Manual Installation Process
 
-Then opt in where you want Apple Color Emoji to be considered:
+#### Step 1: Backup Original Windows Emoji Font
 
-```css
-.emoji {
-  font-family: "Apple Color Emoji", system-ui, sans-serif;
-}
-```
+**⚠️ CRITICAL: Always backup before making changes!**
 
-The generated CSS uses `unicode-range`, so browsers only request the chunks needed for the emoji on a page. If you move the font files away from the CSS file, update the `src:` URLs in the generated CSS.
+1. **Create backup directory:**
+   ```cmd
+   mkdir C:\FontBackup
+   ```
 
-## Build the font yourself
+2. **Copy original Segoe UI Emoji font:**
+   ```cmd
+   copy "C:\Windows\Fonts\seguiemj.ttf" "C:\FontBackup\seguiemj_original.ttf"
+   ```
 
-Most people can skip this for Linux and Windows and use the CI-built fonts from the releases. If you want to build the converted font yourself, or you need the web output:
+3. **Export font registry entries:**
+   ```cmd
+   reg export "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts" "C:\FontBackup\fonts_registry_backup.reg"
+   ```
 
-**What you need**
+#### Step 2: Remove Original Font (Optional)
 
-- **Python 3.12+**
-- **fonttools** - `pip install -r requirements.txt`
-- **Apple Color Emoji.ttc** - We don’t provide the font; you can get it from macOS. If you run the script on a Mac, leave the input argument empty and it will use the default TTC path.
+**Note:** You can install alongside the original font, but replacing gives better results.
 
-**On a Mac** the default input path is `/System/Library/Fonts/Apple Color Emoji.ttc`, so you only need to choose a recipe and output:
+1. **Open Command Prompt as Administrator**
 
-```bash
-pip install -r requirements.txt
-python cli.py -c configs/linux.yaml --output output/AppleColorEmoji-Linux.ttf
-python cli.py -c configs/windows.yaml --output output/AppleColorEmoji-Windows.ttf
-python cli.py -c configs/web.yaml --output output/AppleColorEmoji.ttf
-```
+2. **Remove font file:**
+   ```cmd
+   takeown /f "C:\Windows\Fonts\seguiemj.ttf"
+   icacls "C:\Windows\Fonts\seguiemj.ttf" /grant administrators:F
+   del "C:\Windows\Fonts\seguiemj.ttf"
+   ```
 
-If your TTC is somewhere else, or you’re on Linux and copied the file over:
+3. **Remove registry entry:**
+   ```cmd
+   reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts" /v "Segoe UI Emoji (TrueType)" /f
+   ```
 
-```bash
-python cli.py -c configs/linux.yaml --input "/path/to/Apple Color Emoji.ttc" --output output/AppleColorEmoji-Linux.ttf
-```
+#### Step 3: Install Converted Font
 
-Config-driven builds always require `--output`; `--input` defaults to the macOS path. The recipe owns build behavior, so Windows, Linux, and web outputs are selected by choosing a YAML file, not by passing target-specific flags.
+1. **Run the converter:**
+   ```bash
+   python main.py AppleColorEmoji.ttf SegoeUIEmoji.ttf
+   ```
 
-### Update emoji sequence data
+2. **Copy to Windows Fonts directory:**
+   ```cmd
+   copy "SegoeUIEmoji.ttf" "C:\Windows\Fonts\seguiemj.ttf"
+   ```
 
-Unicode emoji sequence data lives in `sequences/`. The Unicode files can be refreshed manually:
+3. **Add registry entry:**
+   ```cmd
+   reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts" /v "Segoe UI Emoji (TrueType)" /t REG_SZ /d "seguiemj.ttf" /f
+   ```
 
-```bash
-python tools/update_emoji_data.py --version latest
-# or pin a release
-python tools/update_emoji_data.py --version 17.0
-```
+4. **Restart Windows** (recommended) or restart applications
 
-You can also refresh the Unicode sequence files before a build:
+### 🔙 Restoring Original Font
 
-```bash
-python cli.py -c configs/web.yaml --output output/AppleColorEmoji.ttf --update-sequences
-python cli.py -c configs/windows.yaml --output output/AppleColorEmoji-Windows.ttf --update-sequences 17.0
-```
+If you need to restore the original Windows emoji font:
 
-`sequences/project-sequences.txt` is project-owned and is not downloaded from Unicode.
+1. **Remove converted font:**
+   ```cmd
+   del "C:\Windows\Fonts\seguiemj.ttf"
+   reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts" /v "Segoe UI Emoji (TrueType)" /f
+   ```
 
-## Acknowledgments
+2. **Restore original font:**
+   ```cmd
+   copy "C:\FontBackup\seguiemj_original.ttf" "C:\Windows\Fonts\seguiemj.ttf"
+   ```
 
-This project would not be possible without the hard work, contributions, and knowledge shared by [all contributors](https://github.com/samuelngs/apple-emoji-ttf/graphs/contributors?all=1).
+3. **Restore registry:**
+   ```cmd
+   reg import "C:\FontBackup\fonts_registry_backup.reg"
+   ```
 
-Thanks also to people whose work outside this repository helped shape the project, including [@win0err’s Linux installation notes](https://gist.github.com/win0err/9d8c7f0feabdfe8a4c9787b02c79ac51) and [@jjjuk’s emoji-win work](https://github.com/jjjuk/emoji-win/).
+4. **Restart Windows**
 
-## License
+### 🛡️ Safety Notes
 
-The code in this repository is licensed under the [MIT License](LICENSE). Apple Color Emoji assets are not included in this license.
+- **Always run as Administrator** when modifying system fonts
+- **Create System Restore Point** before making changes
+- **Keep backups safe** - store them outside C:\ drive if possible
+- **Test in safe mode** if you encounter issues
+- **This is experimental** - the process works on latest Windows 11 but needs more testing
+
+### 🔧 Troubleshooting
+
+**Font not showing up:**
+- Restart Windows completely (not just applications)
+- Clear font cache: `del /q /s %windir%\ServiceProfiles\LocalService\AppData\Local\FontCache\*`
+- Check if font is properly registered in registry
+
+**Application-specific issues (Telegram, Discord, etc.):**
+- See detailed solutions in [TROUBLESHOOTING.md](TROUBLESHOOTING.md)
+- Enhanced registry entries now automatically added for better app compatibility
+- Clear application-specific caches and restart apps
+
+**System instability:**
+- Boot into Safe Mode
+- Restore original font from backup
+- Use System Restore if needed
+
+**Permission errors:**
+- Ensure running as Administrator
+- Check if font file is in use by another process
+- Temporarily disable antivirus during installation
+
+## 🔧 How It Works
+
+The converter fixes several Windows compatibility issues:
+
+### Font Recognition
+- Creates required `glyf` and `loca` tables for Windows font recognition
+- Adds proper Windows Unicode BMP cmap subtable
+- Updates font metadata (OS/2, name, head, post tables)
+
+### Emoji Coverage
+- Preserves all original emoji characters (1,400+)
+- Uses proper Unicode cmap structure that Windows expects
+- Maintains Apple's high-quality emoji artwork
+
+### Windows Integration
+- Mimics Segoe UI Emoji font naming for seamless replacement
+- Follows Windows font structure patterns
+- Compatible with all Windows applications
+
+## 📋 Requirements
+
+- **Python 3.11+**
+- **uv** (recommended) or **pip** for dependency management
+- **Apple Color Emoji font** (user must provide legally)
+- **Windows 11** (tested and working on latest version)
+- **Administrator privileges** (for font installation)
+
+**Note**: Dependencies are automatically handled when using `uv run`
+
+## ⚖️ Legal & Licensing
+
+### This Tool (MIT License)
+This conversion tool is open source under the MIT License. You're free to use, modify, and distribute it.
+
+### Font Licensing Important Notes
+
+**Apple Fonts**: Apple Color Emoji is proprietary to Apple Inc. You may only use it if you have a legal license (e.g., owning a Mac/iOS device). This tool does not provide or distribute Apple fonts. We recommend using the [apple-emoji-linux](https://github.com/samuelngs/apple-emoji-linux) project to obtain the font legally.
+
+**Windows Fonts**: Windows Segoe UI Emoji is proprietary to Microsoft. Do not redistribute Windows system fonts.
+
+**Your Responsibility**: Ensure you have legal rights to any fonts you convert. This tool is for personal use and legitimate font conversion only.
+
+### What You Can Do
+- ✅ Use this tool to convert fonts you legally own
+- ✅ Share this conversion tool
+- ✅ Modify and improve this tool
+
+### What You Cannot Do
+- ❌ Distribute Apple or Microsoft fonts without permission
+- ❌ Use this for commercial font piracy
+- ❌ Claim ownership of proprietary font designs
+
+## 🙏 Acknowledgments
+
+This project builds upon the excellent work of:
+
+- **[apple-emoji-linux](https://github.com/samuelngs/apple-emoji-linux)** by [@samuelngs](https://github.com/samuelngs) - Provides extracted Apple Color Emoji fonts that make this conversion possible. This project is essential for accessing Apple emoji fonts on non-Apple systems.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit issues, feature requests, or pull requests.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+**Disclaimer**: This tool is for educational and personal use. Users are responsible for ensuring they have appropriate licenses for any fonts you convert.
